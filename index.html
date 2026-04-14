@@ -185,7 +185,8 @@ img{max-width:100%;display:block}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .nav-links{display:none}
+  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:rgba(253,251,247,0.98);backdrop-filter:blur(20px);flex-direction:column;gap:16px;padding:20px;border-bottom:1px solid var(--border);z-index:99}
+  .nav-links.open{display:flex}
   .hamburger{display:flex}
   .hero h1{font-size:clamp(32px,10vw,56px)}
   .hero-actions{flex-direction:column}
@@ -286,6 +287,29 @@ img{max-width:100%;display:block}
         <p>Trusted local partners, 24/7 concierge, and deep destination knowledge developed over decades of crafting remarkable journeys.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ═══════════════ AUDIENCE GATEWAY ═══════════════ -->
+<section style="padding:100px 24px;background:var(--bg);border-top:1px solid var(--border)">
+  <div class="container" style="text-align:center;margin-bottom:64px">
+    <div class="section-tag">Find Your Path</div>
+    <h2 class="section-heading">Are You Traveling <em>Solo</em> or With a <em>Group</em>?</h2>
+    <p class="section-sub" style="margin:0 auto">Dream Travel serves both individual explorers and group coordinators. Choose your path below.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:900px;margin:0 auto">
+    <a href="experiences.html" style="padding:48px;border:2px solid var(--border);border-radius:20px;text-align:center;transition:all 0.3s;text-decoration:none" onmouseover="this.style.borderColor='var(--accent)';this.style.boxShadow='0 12px 40px rgba(200,146,42,0.1)'" onmouseout="this.style.borderColor='var(--border)';this.style.boxShadow='none'">
+      <div style="font-size:40px;margin-bottom:16px">🧭</div>
+      <h3 style="font-family:var(--serif);font-size:24px;margin-bottom:12px;color:var(--text)">Solo Traveler</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:20px">Curated destinations, personal itineraries, and transformative journeys tailored to your passions.</p>
+      <span style="color:var(--accent);font-weight:600;font-size:14px">Explore Experiences →</span>
+    </a>
+    <a href="journeys.html" style="padding:48px;border:2px solid var(--border);border-radius:20px;text-align:center;transition:all 0.3s;text-decoration:none" onmouseover="this.style.borderColor='var(--accent)';this.style.boxShadow='0 12px 40px rgba(200,146,42,0.1)'" onmouseout="this.style.borderColor='var(--border)';this.style.boxShadow='none'">
+      <div style="font-size:40px;margin-bottom:16px">👥</div>
+      <h3 style="font-family:var(--serif);font-size:24px;margin-bottom:12px;color:var(--text)">Group Coordinator</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:20px">Private group tours, team retreats, community journeys, and host your own trips.</p>
+      <span style="color:var(--accent);font-weight:600;font-size:14px">Explore Group Options →</span>
+    </a>
   </div>
 </section>
 

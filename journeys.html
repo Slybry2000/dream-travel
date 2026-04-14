@@ -135,7 +135,7 @@
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 
 @media(max-width:1024px){.process-container{grid-template-columns:1fr}.process-visual{position:relative;top:0}.flip-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.flip-grid{grid-template-columns:1fr}.group-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px;text-align:center}.flip-card{height:320px}}
+@media(max-width:768px){.nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:rgba(253,251,247,0.98);backdrop-filter:blur(20px);flex-direction:column;gap:16px;padding:20px;border-bottom:1px solid var(--border);z-index:99}.nav-links.open{display:flex}.hamburger{display:flex}.flip-grid{grid-template-columns:1fr}.group-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px;text-align:center}.flip-card{height:320px}}
 </style>
 </head>
 <body>
@@ -335,7 +335,7 @@
         <h4><img src="logo-footer.webp" alt=""> Dream<span>Travel</span></h4>
         <p>We craft transformative, bespoke travel experiences for discerning individuals and groups seeking unparalleled journeys.</p>
       </div>
-      <div class="footer-col"><h5>Explore</h5><a href="journeys.html">Bespoke Journeys</a><a href="experiences.html">Experiences</a><a href="ambassador.html">Ambassador Program</a></div>
+      <div class="footer-col"><h5>Explore</h5><a href="experiences.html">Experiences</a><a href="ambassador.html">Ambassador Program</a></div>
       <div class="footer-col"><h5>Company</h5><a href="about.html">Our Story</a><a href="contact.html">Contact</a></div>
       <div class="footer-col"><h5>Connect</h5><a href="contact.html">Book Consultation</a><a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a><a href="tel:+15712068949">571 206 8949</a></div>
     </div>
