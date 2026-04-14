@@ -70,15 +70,15 @@ img{max-width:100%;display:block}
 .btn-ghost:hover{border-color:var(--muted);background:rgba(0,0,0,0.02)}
 
 /* ─── Marquee ─── */
-.marquee-band{padding:20px 0;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface)}
+.marquee-band{padding:20px 0;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);position:relative;z-index:2}
 .marquee-track{display:flex;white-space:nowrap;will-change:transform}
 .marquee-item{display:inline-flex;align-items:center;gap:20px;padding:0 48px;flex-shrink:0;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
 .marquee-item .diamond{color:var(--accent);font-size:8px}
 
 /* ─── Section utilities ─── */
-.section-dark{background:var(--bg-dark);color:var(--text-light)}
-.section-light{background:var(--bg)}
-.section-surface{background:var(--surface)}
+.section-dark{background:var(--bg-dark);color:var(--text-light);position:relative;z-index:1}
+.section-light{background:var(--bg);position:relative;z-index:1}
+.section-surface{background:var(--surface);position:relative;z-index:1}
 .container{max-width:1120px;margin:0 auto;padding:0 24px}
 .section-tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
 .section-heading{font-family:var(--serif);font-size:clamp(28px,5vw,52px);font-weight:400;letter-spacing:-0.02em;line-height:1.15;margin-bottom:16px}
@@ -111,7 +111,7 @@ img{max-width:100%;display:block}
 .journey-card:hover .card-arrow{opacity:1;transform:translateY(0)}
 
 /* ─── Stats Band ─── */
-.stats-band{padding:80px 24px;background:var(--bg-dark)}
+.stats-band{padding:80px 24px;background:var(--bg-dark);position:relative;z-index:1}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;max-width:1000px;margin:0 auto;text-align:center}
 .stat-item{opacity:0;transform:translateY(20px)}
 .stat-num{font-family:var(--serif);font-size:48px;font-weight:400;color:var(--accent);letter-spacing:-0.03em}
@@ -131,7 +131,7 @@ img{max-width:100%;display:block}
 .test-role{font-size:12px;color:var(--muted)}
 
 /* ─── Newsletter / Digest CTA ─── */
-.digest-section{padding:100px 24px;background:var(--bg-dark);text-align:center}
+.digest-section{padding:100px 24px;background:var(--bg-dark);text-align:center;position:relative;z-index:1}
 .digest-section .section-tag{color:var(--accent)}
 .digest-section .section-heading{color:#fff}
 .digest-section .section-sub{color:var(--muted-light);margin:0 auto 36px}
@@ -153,14 +153,14 @@ img{max-width:100%;display:block}
 .audience-card p{font-size:14px;color:var(--muted);line-height:1.65}
 
 /* ─── CTA Band ─── */
-.cta-band{padding:120px 24px;text-align:center;background:var(--surface);position:relative;overflow:hidden}
+.cta-band{padding:120px 24px;text-align:center;background:var(--surface);position:relative;z-index:1;overflow:hidden}
 .cta-band::before{content:'';position:absolute;inset:-50%;background:radial-gradient(ellipse at center,rgba(200,146,42,0.06) 0%,transparent 70%);pointer-events:none}
 .cta-band .section-heading{max-width:700px;margin:0 auto 16px}
 .cta-band .section-sub{margin:0 auto 36px}
 .cta-band .btn-primary{font-size:16px;padding:18px 44px}
 
 /* ─── Footer ─── */
-.site-footer{border-top:1px solid var(--border);padding:72px 24px 36px}
+.site-footer{border-top:1px solid var(--border);padding:72px 24px 36px;position:relative;z-index:1;background:var(--bg)}
 .footer-inner{max-width:1100px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
 .footer-brand p{font-size:14px;color:var(--muted);line-height:1.65;max-width:34ch;margin-top:12px}
