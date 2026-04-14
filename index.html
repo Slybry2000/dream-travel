@@ -146,12 +146,13 @@ section[id],
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  gap: 0;
 }
-.brand img { width: 42px; height: 42px; object-fit: contain; }
-.brand span { color: var(--gold-deep); }
+.brand img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
 .nav-links {
   display: flex;
   align-items: center;
@@ -932,8 +933,7 @@ section[id],
     padding: 12px 0;
   }
   .site-nav .container { align-items: center; }
-  .brand img { width: 30px; height: 30px; }
-  .brand { gap: 8px; font-size: 14px; }
+  .brand img { width: 116px; height: auto; }
   .nav-links { margin-left: auto; font-size: 12px; }
   .nav-links a:not(.btn) { display: none; }
   .nav-links .btn {
@@ -958,11 +958,25 @@ section[id],
     gap: 12px;
     transform: none;
   }
+  .hero-intro-stack > div:first-child {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
   .hero-intro-title,
   .hero-intro-reveal {
-    position: static;
     font-size: clamp(58px, 20vw, 94px);
     line-height: 0.88;
+  }
+  .hero-intro-title {
+    position: relative;
+  }
+  .hero-intro-reveal {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .hero-intro-subtitle {
     font-size: 15px;
@@ -1016,8 +1030,7 @@ section[id],
   <nav class="site-nav">
     <div class="container">
       <a class="brand" href="#top" aria-label="Dream Travel home">
-        <img src="logo-header.webp" alt="Dream Travel logo">
-        <div>Dream<span>Travel</span></div>
+        <img src="light_version.png" alt="Dream Travel">
       </a>
       <div class="nav-links">
         <a href="#why">Who It's For</a>
