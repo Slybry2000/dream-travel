@@ -190,9 +190,10 @@ img{max-width:100%;display:block}
 @media(max-width:768px){
   .nav-links{display:none}
   .hamburger{display:flex}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,16,21,0.97);padding:100px 40px 40px;gap:0;z-index:99;align-items:flex-start}
-  .nav-links.open a{color:var(--text-light);font-size:20px;padding:16px 0;border-bottom:1px solid var(--border-dark);width:100%;font-weight:400}
-  .nav-links.open .nav-cta{margin-top:24px;text-align:center;border-bottom:none}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);padding:100px 40px 40px;gap:0;z-index:99;align-items:flex-start;box-shadow:0 0 60px rgba(0,0,0,0.08)}
+  .nav-links.open a{color:var(--text);font-size:20px;padding:16px 0;border-bottom:1px solid var(--border);width:100%;font-weight:400}
+  .nav-links.open a:hover{color:var(--accent)}
+  .nav-links.open .nav-cta{margin-top:24px;text-align:center;border-bottom:none;color:#fff !important}
   .hero-mask-text,.hero-mask-reveal{font-size:clamp(36px,10vw,100px)}
   .hero-subtitle .hero-actions{flex-direction:column}
   .journeys-grid{grid-template-columns:1fr}
@@ -511,6 +512,14 @@ img{max-width:100%;display:block}
   gsap.to('#heroBg', {
     opacity: 0.35,
     scrollTrigger: { trigger: heroSection, start: '30% top', end: '50% top', scrub: true }
+  });
+  gsap.to('.hero-mask-overlay', {
+    opacity: 0,
+    scrollTrigger: { trigger: heroSection, start: '40% top', end: '55% top', scrub: true }
+  });
+  gsap.to('#heroReveal', {
+    opacity: 0,
+    scrollTrigger: { trigger: heroSection, start: '40% top', end: '55% top', scrub: true }
   });
   gsap.to('#heroSub', {
     opacity: 1, y: 0,
