@@ -46,25 +46,28 @@ img{max-width:100%;display:block}
 .nav-links a:hover{color:var(--text)}
 .nav-cta{padding:10px 24px;background:var(--accent);color:#fff !important;border-radius:8px;font-size:13px;font-weight:500;transition:transform 0.2s,background 0.2s}
 .nav-cta:hover{transform:translateY(-1px);background:var(--accent-hover)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:101;position:relative}
 .hamburger span{width:22px;height:2px;background:var(--text);transition:0.3s}
 
-/* ─── Hero — Full-Screen Cinematic ─── */
-.hero{position:relative;height:100vh;min-height:700px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--bg-dark)}
-.hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;opacity:0.45;will-change:transform}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(12,16,21,0.3) 0%,rgba(12,16,21,0.6) 60%,rgba(12,16,21,0.95) 100%)}
-.hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 24px}
-.hero-tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(200,146,42,0.3);padding:6px 20px;border-radius:100px;margin-bottom:28px;opacity:0;transform:translateY(20px)}
-.hero h1{font-family:var(--serif);font-size:clamp(40px,8vw,80px);font-weight:400;letter-spacing:-0.02em;line-height:1.05;color:#fff;margin-bottom:20px;opacity:0;transform:translateY(30px)}
-.hero h1 em{font-style:italic;color:var(--accent)}
-.hero-sub{font-size:clamp(16px,2vw,19px);color:var(--muted-light);line-height:1.7;max-width:560px;margin:0 auto 36px;opacity:0;transform:translateY(20px)}
-.hero-actions{display:flex;gap:16px;justify-content:center;align-items:center;opacity:0;transform:translateY(20px)}
+/* ─── Hero — Text Mask Reveal ─── */
+.hero-mask-section{position:relative;min-height:300vh}
+.hero-mask-sticky{position:sticky;top:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;opacity:0;transition:opacity 1s}
+.hero-gradient-bg{position:absolute;inset:0;background:linear-gradient(135deg,#F5EFE6 0%,#FDFBF7 40%,#F0E8DA 70%,#FDFBF7 100%)}
+.hero-gradient-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 50%,rgba(200,146,42,0.06),transparent),radial-gradient(ellipse 50% 60% at 80% 30%,rgba(91,124,94,0.06),transparent);animation:meshShift 12s ease-in-out infinite alternate}
+@keyframes meshShift{0%{transform:scale(1) rotate(0deg)}100%{transform:scale(1.15) rotate(3deg)}}
+.hero-mask-overlay{position:absolute;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column}
+.hero-mask-text{font-family:var(--serif);font-size:clamp(48px,12vw,160px);font-weight:400;font-style:italic;letter-spacing:-0.04em;line-height:0.95;text-align:center;color:transparent;-webkit-text-stroke:1.5px rgba(28,25,23,0.08)}
+.hero-mask-reveal{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:var(--serif);font-size:clamp(48px,12vw,160px);font-weight:400;font-style:italic;letter-spacing:-0.04em;line-height:0.95;text-align:center;background:linear-gradient(135deg,var(--accent),#B07D1E,var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;clip-path:inset(100% 0 0 0)}
+.hero-subtitle{position:absolute;bottom:15%;left:50%;transform:translateX(-50%);text-align:center;z-index:5;opacity:0}
+.hero-subtitle p{font-size:clamp(16px,2.5vw,22px);font-family:var(--sans);font-weight:300;color:var(--muted);line-height:1.6;max-width:54ch}
+.hero-subtitle .hero-actions{display:flex;gap:16px;justify-content:center;align-items:center;margin-top:32px}
+.hero-subtitle .scroll-cue{margin-top:24px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
 .btn-primary{padding:16px 36px;background:var(--accent);color:#fff;border-radius:10px;font-family:var(--sans);font-size:15px;font-weight:500;border:none;cursor:pointer;transition:transform 0.2s,background 0.2s,box-shadow 0.2s}
 .btn-primary:hover{transform:translateY(-2px);background:var(--accent-hover);box-shadow:0 12px 40px rgba(200,146,42,0.25)}
-.btn-ghost{padding:16px 36px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.2);border-radius:10px;font-family:var(--sans);font-size:15px;font-weight:400;cursor:pointer;transition:border-color 0.3s,background 0.3s}
-.btn-ghost:hover{border-color:rgba(255,255,255,0.5);background:rgba(255,255,255,0.05)}
-.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);color:var(--muted-light);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0}
-.hero-scroll .line{width:1px;height:40px;background:linear-gradient(to bottom,var(--accent),transparent)}
+.btn-ghost{padding:16px 36px;background:transparent;color:var(--text);border:1px solid var(--border);border-radius:10px;font-family:var(--sans);font-size:15px;font-weight:400;cursor:pointer;transition:border-color 0.3s,background 0.3s}
+.btn-ghost:hover{border-color:var(--muted);background:rgba(0,0,0,0.02)}
 
 /* ─── Marquee ─── */
 .marquee-band{padding:20px 0;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface)}
@@ -185,11 +188,13 @@ img{max-width:100%;display:block}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:rgba(253,251,247,0.98);backdrop-filter:blur(20px);flex-direction:column;gap:16px;padding:20px;border-bottom:1px solid var(--border);z-index:99}
-  .nav-links.open{display:flex}
+  .nav-links{display:none}
   .hamburger{display:flex}
-  .hero h1{font-size:clamp(32px,10vw,56px)}
-  .hero-actions{flex-direction:column}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,16,21,0.97);padding:100px 40px 40px;gap:0;z-index:99;align-items:flex-start}
+  .nav-links.open a{color:var(--text-light);font-size:20px;padding:16px 0;border-bottom:1px solid var(--border-dark);width:100%;font-weight:400}
+  .nav-links.open .nav-cta{margin-top:24px;text-align:center;border-bottom:none}
+  .hero-mask-text,.hero-mask-reveal{font-size:clamp(36px,10vw,100px)}
+  .hero-subtitle .hero-actions{flex-direction:column}
   .journeys-grid{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:1fr 1fr}
   .audience-grid{grid-template-columns:1fr}
@@ -220,22 +225,23 @@ img{max-width:100%;display:block}
   </div>
 </nav>
 
-<!-- ═══════════════ HERO ═══════════════ -->
-<section class="hero">
-  <div class="hero-img" id="heroImg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-tag">Bespoke Travel for the Discerning</div>
-    <h1>Travel That <em>Transforms</em> You</h1>
-    <p class="hero-sub">Every journey is a masterpiece — meticulously crafted around your deepest aspirations, granting unrivaled access to the world's most extraordinary experiences.</p>
-    <div class="hero-actions">
-      <a href="contact.html" class="btn-primary">Book a Consultation</a>
-      <a href="journeys.html" class="btn-ghost">Explore Journeys &rarr;</a>
+<!-- ═══════════════ HERO — Text Mask Reveal ═══════════════ -->
+<section class="hero-mask-section">
+  <div class="hero-mask-sticky">
+    <div class="hero-gradient-bg"></div>
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-mask-overlay">
+      <div class="hero-mask-text">Travel That<br>Transforms</div>
     </div>
-  </div>
-  <div class="hero-scroll">
-    Discover
-    <div class="line"></div>
+    <div class="hero-mask-reveal" id="heroReveal">Travel That<br>Transforms</div>
+    <div class="hero-subtitle" id="heroSub">
+      <p>Every journey is a masterpiece — meticulously crafted around your deepest aspirations, granting unrivaled access to the world's most extraordinary experiences.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Book a Consultation</a>
+        <a href="journeys.html" class="btn-ghost">Explore Journeys &rarr;</a>
+      </div>
+      <div class="scroll-cue">↓ Scroll to explore</div>
+    </div>
   </div>
 </section>
 
@@ -287,29 +293,6 @@ img{max-width:100%;display:block}
         <p>Trusted local partners, 24/7 concierge, and deep destination knowledge developed over decades of crafting remarkable journeys.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════ AUDIENCE GATEWAY ═══════════════ -->
-<section style="padding:100px 24px;background:var(--bg);border-top:1px solid var(--border)">
-  <div class="container" style="text-align:center;margin-bottom:64px">
-    <div class="section-tag">Find Your Path</div>
-    <h2 class="section-heading">Are You Traveling <em>Solo</em> or With a <em>Group</em>?</h2>
-    <p class="section-sub" style="margin:0 auto">Dream Travel serves both individual explorers and group coordinators. Choose your path below.</p>
-  </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:900px;margin:0 auto">
-    <a href="experiences.html" style="padding:48px;border:2px solid var(--border);border-radius:20px;text-align:center;transition:all 0.3s;text-decoration:none" onmouseover="this.style.borderColor='var(--accent)';this.style.boxShadow='0 12px 40px rgba(200,146,42,0.1)'" onmouseout="this.style.borderColor='var(--border)';this.style.boxShadow='none'">
-      <div style="font-size:40px;margin-bottom:16px">🧭</div>
-      <h3 style="font-family:var(--serif);font-size:24px;margin-bottom:12px;color:var(--text)">Solo Traveler</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:20px">Curated destinations, personal itineraries, and transformative journeys tailored to your passions.</p>
-      <span style="color:var(--accent);font-weight:600;font-size:14px">Explore Experiences →</span>
-    </a>
-    <a href="journeys.html" style="padding:48px;border:2px solid var(--border);border-radius:20px;text-align:center;transition:all 0.3s;text-decoration:none" onmouseover="this.style.borderColor='var(--accent)';this.style.boxShadow='0 12px 40px rgba(200,146,42,0.1)'" onmouseout="this.style.borderColor='var(--border)';this.style.boxShadow='none'">
-      <div style="font-size:40px;margin-bottom:16px">👥</div>
-      <h3 style="font-family:var(--serif);font-size:24px;margin-bottom:12px;color:var(--text)">Group Coordinator</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:20px">Private group tours, team retreats, community journeys, and host your own trips.</p>
-      <span style="color:var(--accent);font-weight:600;font-size:14px">Explore Group Options →</span>
-    </a>
   </div>
 </section>
 
@@ -518,16 +501,21 @@ img{max-width:100%;display:block}
 (function(){
   gsap.registerPlugin(ScrollTrigger);
 
-  /* Hero entrance */
-  var tl = gsap.timeline({defaults:{ease:'power3.out'}});
-  tl.to('.hero-tag',{opacity:1,y:0,duration:0.8,delay:0.3})
-    .to('.hero h1',{opacity:1,y:0,duration:1},'<0.15')
-    .to('.hero-sub',{opacity:1,y:0,duration:0.8},'<0.2')
-    .to('.hero-actions',{opacity:1,y:0,duration:0.8},'<0.2')
-    .to('.hero-scroll',{opacity:1,duration:0.6},'<0.3');
-
-  /* Hero parallax */
-  gsap.to('.hero-img',{y:'-15%',ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  /* Hero — Text Mask Reveal */
+  var heroSection = document.querySelector('.hero-mask-section');
+  gsap.to('#heroReveal', {
+    clipPath: 'inset(0% 0 0 0)',
+    ease: 'power2.inOut',
+    scrollTrigger: { trigger: heroSection, start: 'top top', end: '40% top', scrub: 0.5 }
+  });
+  gsap.to('#heroBg', {
+    opacity: 0.35,
+    scrollTrigger: { trigger: heroSection, start: '30% top', end: '50% top', scrub: true }
+  });
+  gsap.to('#heroSub', {
+    opacity: 1, y: 0,
+    scrollTrigger: { trigger: heroSection, start: '45% top', end: '55% top', scrub: true }
+  });
 
   /* Marquee */
   var track=document.getElementById('marqueeTrack');

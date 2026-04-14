@@ -16,7 +16,7 @@
 .nav-logo{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;letter-spacing:-0.02em}.nav-logo img{height:40px;width:auto}.nav-logo span{color:var(--accent)}
 .nav-links{display:flex;gap:32px;align-items:center}.nav-links a{font-size:13px;font-weight:400;color:var(--muted);letter-spacing:0.03em;transition:color 0.3s}.nav-links a:hover{color:var(--text)}
 .nav-cta{padding:10px 24px;background:var(--accent);color:#fff !important;border-radius:8px;font-size:13px;font-weight:500;transition:transform 0.2s,background 0.2s}.nav-cta:hover{transform:translateY(-1px);background:var(--accent-hover)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}.hamburger span{width:22px;height:2px;background:var(--text)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:101;position:relative}.hamburger span{width:22px;height:2px;background:var(--text);transition:0.3s}
 
 .container{max-width:1120px;margin:0 auto;padding:0 24px}
 .section-tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
@@ -104,7 +104,7 @@
 
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 @media(max-width:1024px){.dest-card.large{grid-column:span 12}.dest-card.medium{grid-column:span 6}.dest-card.third{grid-column:span 6}.itin-container{grid-template-columns:1fr}.itin-image{position:relative;top:0}.test-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:rgba(253,251,247,0.98);backdrop-filter:blur(20px);flex-direction:column;gap:16px;padding:20px;border-bottom:1px solid var(--border);z-index:99}.nav-links.open{display:flex}.hamburger{display:flex}.dest-card.large,.dest-card.medium,.dest-card.half,.dest-card.third{grid-column:span 12}.test-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px;text-align:center}}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,16,21,0.97);padding:100px 40px 40px;gap:0;z-index:99;align-items:flex-start}.nav-links.open a{color:var(--text-light);font-size:20px;padding:16px 0;border-bottom:1px solid var(--border-dark);width:100%;font-weight:400}.nav-links.open .nav-cta{margin-top:24px;text-align:center;border-bottom:none}.dest-card.large,.dest-card.medium,.dest-card.half,.dest-card.third{grid-column:span 12}.test-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:16px;text-align:center}}
 </style>
 </head>
 <body>
@@ -230,18 +230,18 @@
   <div class="test-grid">
     <div class="test-card">
       <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"The private vineyard dinner was magical — something I'll remember forever. Every detail was considered, and the wine pairings were extraordinary."</p>
-      <div class="test-author"><div class="test-avatar">A</div><div><div class="test-name">Anne S.</div><div class="test-role">Tuscany Journey</div></div></div>
+      <p class="test-quote">"The sunrise hike in Patagonia followed by a fireside dinner under the stars — I've never felt so alive. Dream Travel knows how to create moments that stay with you."</p>
+      <div class="test-author"><div class="test-avatar">L</div><div><div class="test-name">Laura M.</div><div class="test-role">Patagonia Adventure</div></div></div>
     </div>
     <div class="test-card">
       <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"Barcelona was incredible. Bonnie and our guide Jordy made the trip truly special — every meal, walk, and view felt personally designed for us."</p>
-      <div class="test-author"><div class="test-avatar">B</div><div><div class="test-name">Barbara J.</div><div class="test-role">Barcelona Cultural Tour</div></div></div>
+      <p class="test-quote">"Our group cooking class in a Tuscan farmhouse, followed by dinner with the family who's lived there for generations — you can't book that on any website."</p>
+      <div class="test-author"><div class="test-avatar">R</div><div><div class="test-name">Rachel D.</div><div class="test-role">Tuscany Culinary Tour</div></div></div>
     </div>
     <div class="test-card">
       <div class="test-stars">★★★★★</div>
-      <p class="test-quote">"I want to go back! The organization was impeccable, the people were wonderful, and I felt safe and free to simply enjoy every single moment."</p>
-      <div class="test-author"><div class="test-avatar">C</div><div><div class="test-name">Catherine B.</div><div class="test-role">Mediterranean Explorer</div></div></div>
+      <p class="test-quote">"Japan exceeded every expectation. From the private tea ceremony in Kyoto to the hidden ramen shops in Tokyo — every day was a revelation."</p>
+      <div class="test-author"><div class="test-avatar">M</div><div><div class="test-name">Michelle K.</div><div class="test-role">Japan Cultural Immersion</div></div></div>
     </div>
   </div>
 </section>
@@ -259,7 +259,7 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand"><h4><img src="logo-footer.webp" alt=""> Dream<span>Travel</span></h4><p>We craft transformative, bespoke travel experiences for discerning individuals and groups seeking unparalleled journeys.</p></div>
-      <div class="footer-col"><h5>Explore</h5><a href="journeys.html">Bespoke Journeys</a><a href="ambassador.html">Ambassador Program</a></div>
+      <div class="footer-col"><h5>Explore</h5><a href="journeys.html">Bespoke Journeys</a><a href="experiences.html">Experiences</a><a href="ambassador.html">Ambassador Program</a></div>
       <div class="footer-col"><h5>Company</h5><a href="about.html">Our Story</a><a href="contact.html">Contact</a></div>
       <div class="footer-col"><h5>Connect</h5><a href="contact.html">Book Consultation</a><a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a><a href="tel:+15712068949">571 206 8949</a></div>
     </div>
