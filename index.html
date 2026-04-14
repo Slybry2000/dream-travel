@@ -88,7 +88,8 @@ button { font: inherit; }
   margin-top: 18px;
   color: var(--muted);
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.75;
+  max-width: 58ch;
 }
 .section-head.light h2,
 .section-head.light p { color: var(--cream); }
@@ -154,6 +155,9 @@ button { font: inherit; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+.nav-links .btn {
+  padding-inline: 22px;
+}
 .nav-links a:hover { color: var(--ink); }
 .hero-shell { position: relative; min-height: 220vh; }
 .hero-sticky {
@@ -204,7 +208,7 @@ button { font: inherit; }
   margin-top: 20px;
   color: rgba(255, 248, 240, 0.82);
   font-size: clamp(18px, 2vw, 21px);
-  line-height: 1.8;
+  line-height: 1.7;
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 .hero-card {
@@ -216,6 +220,9 @@ button { font: inherit; }
   color: var(--cream);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
+}
+.hero-card .eyebrow {
+  margin-bottom: 18px;
 }
 .hero-card::before {
   content: "";
@@ -235,7 +242,7 @@ button { font: inherit; }
 .hero-card li {
   color: rgba(244, 237, 228, 0.76);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .hero-card .list {
   display: grid;
@@ -300,7 +307,7 @@ button { font: inherit; }
   color: rgba(209, 138, 63, 0.55);
   font-size: 12px;
 }
-.section { padding: 84px 0; }
+.section { padding: 92px 0; }
 .section.light { background: linear-gradient(180deg, rgba(255, 248, 240, 0.2), rgba(255, 248, 240, 0.52)); }
 .section.dark { background: linear-gradient(180deg, rgba(13, 19, 27, 0.02), rgba(13, 19, 27, 0.18)); }
 .visual-grid {
@@ -390,7 +397,7 @@ button { font: inherit; }
   margin-top: 10px;
   color: var(--muted);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .stack-layout {
   display: grid;
@@ -505,7 +512,7 @@ button { font: inherit; }
 .feature-card p {
   margin-top: 12px;
   color: rgba(244, 237, 228, 0.74);
-  line-height: 1.75;
+  line-height: 1.7;
 }
 .gallery-grid {
   display: grid;
@@ -594,7 +601,7 @@ button { font: inherit; }
 .apply-card p {
   margin-top: 14px;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.72;
 }
 .checklist,
 .contact-list {
@@ -608,7 +615,7 @@ button { font: inherit; }
   padding-top: 14px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .checklist strong,
 .contact-list strong {
@@ -660,9 +667,15 @@ button { font: inherit; }
   .site-nav .container,
   .nav-links { gap: 12px; }
   .nav-links { font-size: 12px; }
+  .nav-links .btn { width: 100%; }
   .hero-main h1 { max-width: none; }
   .metric-row,
   .spot-grid { grid-template-columns: 1fr; }
+  .section { padding: 76px 0; }
+  .hero-copy { padding: 64px 0 44px; }
+  .apply-card,
+  .hero-card,
+  .feature-card { padding: 24px; }
 }
 </style>
 </head>
@@ -747,7 +760,7 @@ button { font: inherit; }
         <div class="section-head reveal">
           <div class="eyebrow">Why host with Dream Travel</div>
           <h2>Travel can become your most memorable community experience.</h2>
-          <p>The strategy was already there. This version finally gives it a cinematic body: stronger imagery, more emotional pacing, and motion that helps the page feel like an invitation instead of a memo.</p>
+          <p>For the right host, travel can deepen loyalty, sharpen brand identity, and give the community a shared memory worth talking about long after the trip ends.</p>
         </div>
 
         <div class="visual-grid">
@@ -789,7 +802,7 @@ button { font: inherit; }
         <div class="section-head light reveal">
           <div class="eyebrow" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);color:#fff">Sticky narrative</div>
           <h2>A tighter path for leaders exploring a group trip with Dream Travel.</h2>
-          <p>The page now uses a more cinematic story rhythm: the visual stays pinned while the decision points move past it, which is a much better match for premium travel than a flat checklist.</p>
+          <p>The process is intentionally simple: clarify the audience, shape the concept, align the terms, and launch with a trip that feels coherent from the first invite forward.</p>
         </div>
 
         <div class="stack-layout">
@@ -860,7 +873,7 @@ button { font: inherit; }
         <div class="section-head reveal">
           <div class="eyebrow">Visualized formats</div>
           <h2>The strongest ambassador trips already have a point of view.</h2>
-          <p>These image-led cards make the audience types and trip formats feel tangible right away, which the previous version was missing.</p>
+          <p>The strongest programs feel specific from the beginning. The destination, tone, and format should make sense for your audience before anyone ever asks for details.</p>
         </div>
 
         <div class="gallery-grid">
@@ -894,7 +907,7 @@ button { font: inherit; }
         <div class="section-head light reveal">
           <div class="eyebrow" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);color:#fff">FAQ</div>
           <h2>Questions community leaders usually ask first.</h2>
-          <p>The page keeps the legal clarity we added earlier, but now it lives inside a more premium visual frame.</p>
+          <p>These are the practical questions most hosts ask early, especially around fit, responsibilities, and how terms are finalized before launch.</p>
         </div>
 
         <div class="faq-grid">
@@ -954,7 +967,7 @@ button { font: inherit; }
               <li><strong>Instagram</strong><a href="https://www.instagram.com/dreamtravel_adventures/" target="_blank" rel="noopener noreferrer">@dreamtravel_adventures</a></li>
               <li><strong>Privacy</strong>Inquiry details are used only to reply about trip fit and planning next steps.</li>
             </ul>
-            <div class="note">This page is a qualification funnel, not a contractual offer. Any traveler minimums, pricing support, host benefits, responsibilities, and commercial terms are confirmed in writing before promotion begins.</div>
+            <div class="note">Trip details, traveler minimums, pricing support, host benefits, responsibilities, and commercial terms are confirmed in writing before promotion begins.</div>
           </article>
         </div>
       </div>
