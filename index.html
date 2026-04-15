@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dream Travel | Group Trips for Community Leaders</title>
-<meta name="description" content="Dream Travel helps creators, educators, retreat hosts, founders, and community leaders design and launch custom hosted group trips for the people who already trust them.">
+<title>Dream Travel | Adult Travel, Your Way</title>
+<meta name="description" content="Customized adult travel for clubs, organizations, private groups, and travelers seeking meaningful experiences built around their interests, pace, and style.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -13,21 +13,19 @@
 <style>
 :root {
   --bg: #0d131b;
-  --cream: #f4ede4;
-  --cream-strong: #fff8f0;
-  --surface: #f7f0e7;
-  --surface-strong: #eedfce;
-  --ink: #171412;
-  --muted: #73675d;
-  --muted-dark: rgba(244, 237, 228, 0.72);
+  --cream: #f6efe6;
+  --cream-strong: #fff8ef;
+  --surface: rgba(255, 248, 239, 0.78);
+  --surface-strong: #f0e2d0;
+  --ink: #171411;
+  --muted: #6e655d;
+  --muted-dark: rgba(246, 239, 230, 0.76);
   --gold: #c97a4a;
   --gold-deep: #b5653c;
-  --sage: #7a8f7b;
-  --line: rgba(23, 20, 18, 0.1);
-  --line-dark: rgba(255, 255, 255, 0.1);
-  --shadow: 0 30px 80px rgba(4, 10, 16, 0.22);
-  --radius-xl: 20px;
-  --radius-lg: 16px;
+  --sage: #788d7a;
+  --line: rgba(23, 20, 17, 0.1);
+  --shadow: 0 26px 70px rgba(7, 11, 18, 0.16);
+  --radius-xl: 28px;
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "Outfit", system-ui, sans-serif;
   --mono: "JetBrains Mono", monospace;
@@ -35,17 +33,16 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  background:
-    radial-gradient(circle at 18% 8%, rgba(201, 122, 74, 0.18), transparent 24%),
-    radial-gradient(circle at 82% 0%, rgba(122, 143, 123, 0.14), transparent 22%),
-    linear-gradient(180deg, #f6f1ea 0%, #eadbca 28%, #f4ede4 54%, #141c26 54%, #0c1118 100%);
-  color: var(--ink);
   font-family: var(--sans);
+  color: var(--ink);
   overflow-x: hidden;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(201, 122, 74, 0.18), transparent 26%),
+    radial-gradient(circle at 88% 0%, rgba(120, 141, 122, 0.15), transparent 24%),
+    linear-gradient(180deg, #f8f2ea 0%, #eddccc 35%, #f6efe6 62%, #ddd2c4 76%, #15202a 91%, #0c1118 100%);
 }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
-button { font: inherit; }
 .page-shell::before {
   content: "";
   position: fixed;
@@ -54,26 +51,21 @@ button { font: inherit; }
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.32), transparent 72%);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 70%);
 }
 .container { width: min(1160px, calc(100vw - 36px)); margin: 0 auto; }
-section[id],
-.trust-band {
-  scroll-margin-top: 92px;
-}
 .eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 6px 12px;
+  border: 1px solid rgba(201, 122, 74, 0.24);
   border-radius: 999px;
-  border: 1px solid rgba(201, 122, 74, 0.22);
-  background: rgba(255, 248, 240, 0.52);
+  background: rgba(255, 248, 239, 0.7);
   color: var(--gold-deep);
   font-family: var(--mono);
   font-size: 11px;
-  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -84,24 +76,67 @@ section[id],
   border-radius: 50%;
   background: linear-gradient(135deg, var(--gold), var(--sage));
 }
-.section-head { max-width: 720px; }
+.section-head { max-width: 700px; }
 .section-head h2 {
-  margin-top: 18px;
+  margin-top: 16px;
   font-family: var(--serif);
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(40px, 6vw, 72px);
   line-height: 0.94;
   letter-spacing: -0.04em;
 }
 .section-head p {
   margin-top: 18px;
-  color: var(--muted);
   font-size: 17px;
   line-height: 1.75;
-  max-width: 58ch;
+  color: var(--muted);
 }
-.section-head.light h2,
-.section-head.light p { color: var(--cream); }
-.section-head.light p { color: var(--muted-dark); }
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 10px 0;
+  background: rgba(247, 240, 231, 0.82);
+  border-bottom: 1px solid rgba(23, 20, 17, 0.08);
+  backdrop-filter: blur(18px);
+}
+.site-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.brand img {
+  width: clamp(48px, 4.6vw, 64px);
+  height: auto;
+}
+.brand-name {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.nav-links a {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.nav-links a[aria-current="page"] { color: var(--ink); }
+.nav-links a:hover { color: var(--ink); }
 .btn,
 .btn-secondary {
   display: inline-flex;
@@ -109,2083 +144,798 @@ section[id],
   justify-content: center;
   gap: 10px;
   padding: 15px 24px;
-  border-radius: 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 .btn {
   background: linear-gradient(135deg, var(--gold), var(--gold-deep));
   color: #fff;
-  box-shadow: 0 18px 42px rgba(181, 105, 25, 0.26);
+  box-shadow: 0 18px 40px rgba(181, 101, 60, 0.26);
 }
 .btn-secondary {
-  border: 1px solid rgba(23, 20, 18, 0.12);
-  background: rgba(255, 248, 240, 0.82);
+  background: rgba(255, 248, 239, 0.78);
   color: var(--ink);
+  border-color: rgba(23, 20, 17, 0.12);
 }
 .btn:hover,
 .btn-secondary:hover { transform: translateY(-2px); }
-.site-nav {
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  padding: 8px 0;
-  backdrop-filter: blur(18px);
-  background: rgba(247, 240, 231, 0.76);
-  border-bottom: 1px solid rgba(23, 20, 18, 0.08);
-}
-.site-nav .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-.brand {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.brand img {
-  width: clamp(118px, 11vw, 152px);
-  height: auto;
-  object-fit: contain;
-}
-.nav-contact {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  color: var(--muted);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.nav-contact strong {
-  color: var(--ink);
-  font-weight: 700;
-}
-.nav-contact a {
-  color: inherit;
-}
-.nav-contact a:hover,
-.nav-links a:hover,
-.nav-links button:hover { color: var(--ink); }
-.nav-contact-divider {
-  width: 1px;
-  height: 10px;
-  background: rgba(23, 20, 18, 0.12);
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.nav-links .btn {
-  padding: 11px 16px;
-  font-size: 12px;
-}
-.hero-shell { position: relative; min-height: 220vh; }
-.hero-sticky {
-  position: sticky;
-  top: 0;
-  min-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-.hero-layer { position: absolute; inset: 0; will-change: transform; }
-.hero-bg {
-  background:
-    linear-gradient(180deg, rgba(12, 17, 24, 0.22), rgba(12, 17, 24, 0.56)),
-    url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
-  transform: scale(1.08);
-}
-.hero-mid {
-  background:
-    radial-gradient(circle at 18% 40%, rgba(209, 138, 63, 0.26), transparent 22%),
-    radial-gradient(circle at 78% 30%, rgba(100, 117, 98, 0.2), transparent 22%);
-  mix-blend-mode: screen;
-}
-.hero-veil {
-  background:
-    linear-gradient(180deg, rgba(12, 16, 21, 0.18) 0%, rgba(12, 16, 21, 0.48) 58%, rgba(246, 241, 234, 0.96) 100%);
-}
-.hero-intro {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-  pointer-events: none;
-  padding-top: 130px;
-}
-.hero-intro-stack {
+.hero {
   position: relative;
+  padding: 64px 0 110px;
+}
+.hero-grid {
   display: grid;
-  gap: 18px;
-  justify-items: center;
-  width: min(100%, 980px);
-  padding: 0 24px;
-  transform: none;
-  transform-origin: 50% 30%;
-  will-change: transform, opacity;
-}
-.hero-intro-title {
-  font-family: var(--sans);
-  font-size: clamp(64px, 12vw, 156px);
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  line-height: 0.84;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 248, 240, 0.24);
-}
-.hero-intro-reveal {
-  position: absolute;
-  inset: 0;
-  display: flex;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 36px;
   align-items: center;
-  justify-content: center;
-  font-family: var(--sans);
-  font-size: clamp(64px, 12vw, 156px);
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  line-height: 0.84;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, rgba(201, 122, 74, 0.98), rgba(181, 101, 60, 0.9), rgba(122, 143, 123, 0.88));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  clip-path: inset(100% 0 0 0);
-  animation: heroFillSweep 2.2s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
 }
-.hero-intro-subtitle {
-  max-width: 42ch;
-  color: rgba(255, 248, 240, 0.82);
-  font-size: clamp(16px, 2vw, 21px);
-  line-height: 1.55;
-}
-.hero-intro-cue {
-  color: rgba(255, 248, 240, 0.68);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-.hero-wordmark {
-  display: none;
-}
-.hero-wordmark-outline,
-.hero-wordmark-fill {
-  position: absolute;
-  font-family: var(--sans);
-  font-size: clamp(74px, 15vw, 220px);
-  font-weight: 800;
-  line-height: 0.86;
-  letter-spacing: -0.06em;
-  text-transform: uppercase;
-}
-.hero-wordmark-outline {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 248, 240, 0.12);
-}
-.hero-wordmark-fill {
-  background: linear-gradient(135deg, rgba(201, 122, 74, 0.95), rgba(181, 101, 60, 0.88), rgba(122, 143, 123, 0.86));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  clip-path: inset(100% 0 0 0);
-  animation: heroFillSweep 2.2s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
-  opacity: 0.7;
-}
-@keyframes heroFillSweep {
-  from { clip-path: inset(100% 0 0 0); }
-  to { clip-path: inset(0 0 0 0); }
-}
-.hero-copy {
-  position: relative;
-  z-index: 4;
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
-  gap: 32px;
-  align-items: end;
-  min-height: 180vh;
-  padding: 540px 0 72px;
-}
-.hero-main {
-  position: relative;
-  color: var(--cream-strong);
-  padding-top: 240px;
-  will-change: transform;
-}
-.hero-main::before {
-  content: "";
-  position: absolute;
-  inset: 10% -4% -8% -4%;
-  z-index: -1;
-  background: radial-gradient(circle at 30% 34%, rgba(12, 17, 24, 0.54), transparent 64%);
-  filter: blur(8px);
-}
-.hero-main h1 {
+.hero-copy h1 {
   margin-top: 18px;
-  max-width: 8ch;
   font-family: var(--serif);
-  font-size: clamp(58px, 8.6vw, 118px);
+  font-size: clamp(58px, 8vw, 108px);
   line-height: 0.9;
   letter-spacing: -0.05em;
-  text-shadow: 0 14px 32px rgba(8, 14, 20, 0.3);
+  max-width: 11ch;
 }
-.hero-main h1 em { font-style: italic; color: var(--gold); }
-.hero-main p {
-  max-width: 54ch;
+.hero-subhead {
   margin-top: 20px;
-  color: rgba(255, 248, 240, 0.82);
-  font-size: clamp(18px, 2vw, 21px);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2d251e;
+  max-width: 22ch;
+}
+.hero-body {
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 1.78;
+  color: var(--muted);
+  max-width: 58ch;
+}
+.hero-type {
+  margin-top: 20px;
+  min-height: 28px;
+  color: var(--gold-deep);
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.type-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  background: currentColor;
+  vertical-align: text-bottom;
+  animation: blink 0.7s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+.hero-note {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 14px;
   line-height: 1.7;
 }
-.hero-kicker {
-  margin-top: 22px;
-  max-width: 42ch;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 248, 240, 0.18);
-  color: rgba(255, 248, 240, 0.76);
-  font-size: 15px;
-  line-height: 1.65;
+.hero-visual {
+  position: relative;
+  min-height: 520px;
+  display: grid;
+  place-items: center;
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.hero-orbit {
+  position: absolute;
+  inset: 50%;
+  width: min(92vw, 380px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+}
+.hero-orbit svg {
+  width: 100%;
+  height: 100%;
+  animation: orbit 26s linear infinite;
+  filter: drop-shadow(0 18px 44px rgba(9, 16, 24, 0.14));
+}
+.hero-orbit text {
+  fill: rgba(23, 20, 17, 0.78);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+@keyframes orbit {
+  to { transform: rotate(360deg); }
+}
 .hero-card {
   position: relative;
+  width: min(100%, 380px);
   padding: 28px;
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(244, 237, 228, 0.4);
-  background: rgba(247, 240, 231, 0.9);
-  color: var(--ink);
-  box-shadow: 0 28px 64px rgba(12, 19, 28, 0.14);
-  backdrop-filter: blur(12px);
-  align-self: center;
-  margin-top: 260px;
-  will-change: transform;
-}
-.hero-card .eyebrow {
-  margin-bottom: 18px;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 239, 0.92), rgba(239, 224, 205, 0.84)),
+    url("https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=900&q=80") center/cover no-repeat;
+  background-blend-mode: screen;
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 .hero-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.44), transparent 38%);
-  pointer-events: none;
-}
-.hero-card h2 {
-  font-family: var(--serif);
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: 0.96;
-  letter-spacing: -0.03em;
-}
-.hero-card p,
-.hero-card li {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.65;
-}
-.hero-card .list {
-  display: grid;
-  gap: 10px;
-  margin-top: 16px;
-  list-style: none;
-}
-.hero-card .list li::before { content: "\203A  "; color: var(--gold); }
-.metric-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 18px;
-}
-.metric {
-  padding: 16px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.52);
-  border: 1px solid rgba(23, 20, 18, 0.08);
-}
-.metric strong {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold-deep);
-}
-.metric span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.55;
-}
-.trust-band {
-  position: relative;
-  z-index: 2;
-  margin-top: -8px;
-  padding: 0 0 18px;
-}
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-.trust-item {
-  padding: 18px 18px 16px;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(23, 20, 18, 0.08);
-  background: rgba(247, 240, 231, 0.88);
-  box-shadow: 0 16px 34px rgba(12, 19, 28, 0.06);
-}
-.trust-item strong {
-  display: block;
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.45;
-}
-.trust-item span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
-}
-.journey-mask-section {
-  position: relative;
-  min-height: 240vh;
-  margin-top: 8px;
-  background: linear-gradient(180deg, #111926 0%, #0a1017 100%);
-}
-.journey-mask-sticky {
-  position: sticky;
-  top: 0;
-  min-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.journey-mask-bg,
-.journey-mask-grain {
-  position: absolute;
-  inset: -14%;
-}
-.journey-mask-bg {
-  background:
-    radial-gradient(circle at 18% 24%, rgba(201, 122, 74, 0.34), transparent 20%),
-    radial-gradient(circle at 78% 28%, rgba(122, 143, 123, 0.26), transparent 18%),
-    radial-gradient(circle at 50% 68%, rgba(244, 237, 228, 0.08), transparent 26%),
-    linear-gradient(135deg, #16202b 0%, #0c131b 38%, #070b11 100%);
-  background-size: 140% 140%;
-  animation: driftGradient 16s ease-in-out infinite alternate;
-  will-change: transform;
-}
-.journey-mask-grain {
-  opacity: 0.14;
-  mix-blend-mode: screen;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-.journey-mask-overlay,
-.journey-mask-reveal {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 24px;
-}
-.journey-mask-overlay {
-  background: rgba(7, 12, 18, 0.78);
-}
-.journey-mask-reveal {
-  clip-path: inset(100% 0 0 0);
-}
-.journey-mask-text,
-.journey-mask-text-filled {
-  font-family: var(--sans);
-  font-size: clamp(74px, 14vw, 190px);
-  font-weight: 800;
-  letter-spacing: -0.07em;
-  line-height: 0.84;
-  text-align: center;
-  text-transform: uppercase;
-}
-.journey-mask-text {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 248, 240, 0.22);
-}
-.journey-mask-text-filled {
-  background: linear-gradient(135deg, rgba(255, 248, 240, 0.98), rgba(201, 122, 74, 0.96) 42%, rgba(122, 143, 123, 0.88));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
-}
-.journey-mask-copy {
-  position: absolute;
-  left: 50%;
-  bottom: 12%;
-  z-index: 4;
-  width: min(640px, calc(100vw - 40px));
-  text-align: center;
-  transform: translateX(-50%);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-.journey-mask-copy .eyebrow {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.12);
-  color: var(--cream);
-}
-.journey-mask-copy p {
-  margin-top: 18px;
-  color: rgba(244, 237, 228, 0.76);
-  font-size: clamp(16px, 2vw, 20px);
-  line-height: 1.75;
-}
-@keyframes driftGradient {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-.proof-section { padding-top: 28px; }
-.proof-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
-  gap: 22px;
-  margin-top: 28px;
-}
-.proof-panel,
-.proof-quote,
-.difference-card {
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--line);
-  box-shadow: 0 18px 40px rgba(12, 19, 28, 0.08);
-}
-.proof-panel {
-  padding: 32px;
-  background: linear-gradient(180deg, rgba(250, 245, 239, 0.98), rgba(238, 223, 206, 0.9));
-}
-.proof-panel h3,
-.difference-stack h3 {
-  margin-top: 14px;
-  font-family: var(--serif);
-  font-size: clamp(34px, 4vw, 48px);
-  line-height: 0.96;
-  letter-spacing: -0.03em;
-}
-.proof-panel p,
-.difference-stack p {
-  margin-top: 14px;
-  color: var(--muted);
-  line-height: 1.78;
-}
-.proof-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 22px;
-}
-.proof-stat {
-  padding: 18px;
-  border-radius: 14px;
-  border: 1px solid rgba(23, 20, 18, 0.08);
-  background: rgba(255, 248, 240, 0.78);
-}
-.proof-stat strong {
-  display: block;
-  color: var(--gold-deep);
-  font-family: var(--serif);
-  font-size: 38px;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-}
-.proof-stat span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.55;
-}
-.proof-quote {
-  margin-top: 18px;
-  padding: 24px;
-  background: rgba(255, 248, 240, 0.9);
-}
-.proof-quote p {
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 30px;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-.proof-quote footer {
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
-}
-.difference-stack {
-  display: grid;
-  gap: 18px;
-}
-.difference-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-.difference-card {
-  padding: 24px;
-  background: rgba(247, 240, 231, 0.92);
-}
-.difference-card strong {
-  display: inline-block;
-  color: var(--gold-deep);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.difference-card h4 {
-  margin-top: 12px;
-  font-family: var(--serif);
-  font-size: 30px;
-  line-height: 0.98;
-}
-.difference-card p {
-  margin-top: 10px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-.section { padding: 92px 0; }
-.section.light {
-  background:
-    radial-gradient(circle at 18% 20%, rgba(201, 122, 74, 0.1), transparent 24%),
-    linear-gradient(180deg, rgba(246, 241, 234, 0.98), rgba(241, 229, 214, 0.94));
-}
-.section.dark { background: linear-gradient(180deg, rgba(18, 25, 35, 0.94), rgba(10, 15, 22, 1)); }
-.process-head .eyebrow {
-  color: var(--ink);
-  background: rgba(255, 248, 240, 0.9);
-  border-color: rgba(255, 248, 240, 0.28);
-  font-weight: 700;
-}
-.audience-block {
-  display: grid;
-  gap: 16px;
-  margin-top: 24px;
-  max-width: 840px;
-}
-.audience-block p {
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.72;
-}
-.audience-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.audience-tags span {
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(23, 20, 18, 0.09);
-  background: rgba(247, 240, 231, 0.9);
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 500;
-}
-.visual-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 22px;
-  margin-top: 28px;
-}
-.image-card,
-.card,
-.fit-card,
-.process-card,
-.apply-card {
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: rgba(247, 240, 231, 0.86);
-  box-shadow: 0 18px 40px rgba(12, 19, 28, 0.07);
-}
-.image-card {
-  min-height: 580px;
-  position: relative;
-  background:
-    linear-gradient(180deg, rgba(10, 16, 24, 0.06), rgba(10, 16, 24, 0.5)),
-    url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
-}
-.image-card .overlay,
-.apply-photo .overlay {
-  position: absolute;
-  inset: auto 0 0;
-  padding: 28px;
-  color: var(--cream-strong);
-}
-.image-card .overlay h3,
-.apply-photo h3 {
-  font-family: var(--serif);
-  font-size: 42px;
-  line-height: 0.96;
-  letter-spacing: -0.03em;
-}
-.image-card .overlay p,
-.apply-photo p {
-  margin-top: 12px;
-  max-width: 30ch;
-  color: rgba(255, 248, 240, 0.8);
-  line-height: 1.75;
-}
-.spot-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-.spot-card {
-  position: relative;
-  padding: 28px 24px;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(23, 20, 18, 0.08);
-  background: rgba(247, 240, 231, 0.9);
-  box-shadow: 0 16px 34px rgba(12, 19, 28, 0.06);
-}
-.spot-card::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  background: radial-gradient(circle 180px at var(--mx, 50%) var(--my, 50%), rgba(201, 122, 74, 0.16), transparent 60%);
-  opacity: 0;
-  transition: opacity 180ms ease;
-  pointer-events: none;
-}
-.spot-card:hover::before { opacity: 1; }
-.spot-card .num {
-  font-family: var(--serif);
-  font-size: 44px;
-  font-weight: 600;
-  color: rgba(23, 20, 18, 0.14);
-}
-.spot-card h3 {
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold-deep);
-}
-.spot-card p {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.65;
-}
-.stack-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
-  gap: 32px;
-  margin-top: 32px;
-}
-.stack-visual {
-  position: sticky;
-  top: 108px;
-  height: fit-content;
-}
-.mockup {
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  border: 1px solid var(--line-dark);
-  background: linear-gradient(180deg, rgba(26, 37, 50, 0.98), rgba(15, 22, 31, 1));
-  box-shadow: var(--shadow);
-}
-.mockup-bar {
-  display: flex;
+  background: linear-gradient(180deg, rgba(255, 248, 239, 0.18), rgba(19, 25, 32, 0.24));
+}
+.hero-card > * { position: relative; z-index: 1; }
+.hero-card-label {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 18px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-}
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-}
-.mockup-body {
-  position: relative;
-  min-height: 420px;
-  padding: 30px;
-}
-.state {
-  position: absolute;
-  inset: 26px;
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 320ms ease, transform 320ms ease;
-}
-.state.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-.state-label {
-  color: rgba(244, 237, 228, 0.7);
-  font-size: 12px;
-  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(23, 20, 17, 0.66);
+  color: var(--cream);
+  font-family: var(--mono);
+  font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.state h3 {
-  margin-top: 14px;
-  color: var(--cream);
+.hero-card h3 {
+  margin-top: 110px;
   font-family: var(--serif);
-  font-size: 46px;
-  line-height: 0.95;
-}
-.state p {
-  margin-top: 14px;
-  max-width: 30ch;
-  color: rgba(244, 237, 228, 0.76);
-  line-height: 1.8;
-}
-.state-image {
-  margin-top: 22px;
-  height: 180px;
-  border-radius: 16px;
-  background-position: center;
-  background-size: cover;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-.feature-card {
-  padding: 28px;
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(247, 240, 231, 0.08);
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 0.92;
   color: var(--cream);
-  opacity: 0.42;
-  transform: translateY(8px);
-  transition: opacity 220ms ease, transform 220ms ease, border-color 220ms ease;
+  letter-spacing: -0.04em;
 }
-.feature-card.active {
-  opacity: 1;
-  transform: translateY(0);
-  border-color: rgba(201, 122, 74, 0.62);
-  background: rgba(247, 240, 231, 0.12);
+.hero-card p {
+  margin-top: 12px;
+  color: rgba(246, 239, 230, 0.86);
+  line-height: 1.7;
+  max-width: 28ch;
 }
-.feature-card strong {
-  display: inline-block;
-  color: var(--gold);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+.trust-band { padding: 0 0 42px; }
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.trust-card {
+  padding: 26px;
+  border-radius: 22px;
+  background: rgba(255, 248, 239, 0.7);
+  border: 1px solid rgba(23, 20, 17, 0.08);
+  box-shadow: 0 16px 40px rgba(8, 13, 20, 0.08);
+}
+.trust-card strong {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.feature-card h3 {
-  margin-top: 12px;
-  font-family: var(--serif);
-  font-size: 34px;
-  line-height: 0.98;
-}
-.feature-card p {
-  margin-top: 12px;
-  color: rgba(244, 237, 228, 0.74);
+.trust-card p {
+  margin-top: 10px;
+  color: var(--muted);
   line-height: 1.7;
 }
-.next-grid,
-.fit-grid {
+.section { padding: 90px 0; }
+.page-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 28px;
+  gap: 18px;
+  margin-top: 32px;
 }
-.next-card,
-.fit-card {
-  padding: 24px;
+.page-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.page-cta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  padding: 34px;
+  border-radius: 32px;
+  overflow: hidden;
+  color: var(--cream);
+  box-shadow: 0 28px 70px rgba(8, 12, 18, 0.2);
 }
-.next-card .step,
-.fit-card strong {
-  display: inline-block;
-  color: var(--gold-deep);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+.page-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 34%),
+    linear-gradient(135deg, rgba(11, 18, 26, 0.32), rgba(10, 15, 21, 0.72));
+}
+.page-cta > * {
+  position: relative;
+  z-index: 1;
+}
+.page-cta-kicker {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 248, 239, 0.08);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
-.next-card h3,
-.fit-card h3 {
-  margin-top: 12px;
+.page-cta h3 {
+  margin-top: 18px;
   font-family: var(--serif);
-  font-size: 30px;
-  line-height: 0.98;
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  max-width: 11ch;
 }
-.next-card p,
-.fit-card p {
-  margin-top: 12px;
+.page-cta p {
+  margin-top: 14px;
+  max-width: 42ch;
+  color: rgba(246, 239, 230, 0.9);
+  line-height: 1.82;
+}
+.page-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.page-cta-link::after {
+  content: "\2192";
+  font-size: 16px;
+}
+.page-cta-tours {
+  background:
+    linear-gradient(135deg, rgba(22, 31, 40, 0.24), rgba(12, 17, 24, 0.74)),
+    url("https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+}
+.page-cta-plan {
+  background:
+    linear-gradient(135deg, rgba(50, 30, 19, 0.24), rgba(18, 17, 22, 0.74)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+}
+.glass-card {
+  padding: 28px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(23, 20, 17, 0.1);
+  background: rgba(255, 248, 239, 0.72);
+  box-shadow: 0 18px 44px rgba(7, 11, 18, 0.08);
+}
+.glass-card .card-index {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+}
+.glass-card h3 {
+  margin-top: 14px;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.05;
+}
+.glass-card p {
+  margin-top: 14px;
   color: var(--muted);
-  line-height: 1.72;
+  line-height: 1.8;
 }
-.travel-marquee-band {
-  padding: 24px 0 30px;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(14, 21, 31, 0.98), rgba(10, 15, 22, 1));
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+.glass-card .card-link {
+  display: inline-flex;
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
 }
-.travel-marquee-label {
-  padding: 0 18px 18px;
-  text-align: center;
-  color: rgba(244, 237, 228, 0.54);
+.coverflow-shell {
+  margin-top: 34px;
+}
+.coverflow-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.coverflow-label {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  color: var(--gold-deep);
 }
-.travel-marquee-row {
-  display: flex;
-  white-space: nowrap;
-  will-change: transform;
-}
-.travel-marquee-row + .travel-marquee-row {
-  margin-top: 10px;
-}
-.travel-marquee-content {
-  display: flex;
-  align-items: center;
-}
-.travel-marquee-row .marquee-item {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
-  padding: 0 30px;
-  color: rgba(255, 248, 240, 0.92);
-  font-size: clamp(34px, 7vw, 84px);
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-.travel-marquee-row.is-outline .marquee-item {
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 248, 240, 0.44);
-}
-.travel-marquee-row .sep {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-left: 28px;
-  border-radius: 50%;
-  background: rgba(201, 122, 74, 0.72);
-}
-.travel-marquee-row.is-outline .sep {
-  background: transparent;
-  border: 1px solid rgba(255, 248, 240, 0.4);
-}
-.travel-marquee-note {
-  margin-top: 18px;
-  text-align: center;
-  color: rgba(244, 237, 228, 0.64);
+.coverflow-caption {
+  color: var(--muted);
   font-size: 14px;
-}
-.formats-shell {
-  margin-top: 34px;
-}
-.formats-stack {
-  width: min(840px, calc(100vw - 36px));
-  margin: 0 auto;
-  padding-bottom: 18px;
-}
-.formats-stack-card {
-  position: relative;
-  min-height: min(68vh, 620px);
-  overflow: hidden;
-  border-radius: 22px;
-  border: 1px solid rgba(23, 20, 18, 0.1);
-  box-shadow: 0 26px 60px rgba(12, 19, 28, 0.16);
-  background: #0f151d;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 26px;
-  position: sticky;
-  will-change: transform, opacity;
-}
-.formats-stack-card:nth-child(1) { top: 92px; z-index: 1; }
-.formats-stack-card:nth-child(2) { top: 112px; z-index: 2; }
-.formats-stack-card:nth-child(3) { top: 132px; z-index: 3; }
-.formats-stack-card:nth-child(4) { top: 152px; z-index: 4; }
-.formats-stack-card:nth-child(5) { top: 172px; z-index: 5; }
-.formats-stack-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(180deg, rgba(13, 19, 27, 0.08), rgba(13, 19, 27, 0.8));
-}
-.formats-stack-card img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.03);
-  transition: transform 420ms ease;
-}
-.formats-stack-card:hover img,
-.formats-stack-card:focus-within img {
-  transform: scale(1.1);
-}
-.formats-stack-card::after {
-  content: "";
-  position: absolute;
-  inset: 18px;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  z-index: 2;
-  pointer-events: none;
-}
-.format-card-content {
-  position: absolute;
-  inset: auto 0 0;
-  z-index: 3;
-  padding: 30px 28px 28px;
-  color: var(--cream-strong);
-}
-.format-card-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: rgba(255, 248, 240, 0.82);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.format-card-kicker::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--sage));
-}
-.format-card-content h3 {
-  margin-top: 14px;
-  font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 54px);
-  line-height: 0.92;
-  letter-spacing: -0.04em;
-}
-.format-card-content p {
-  margin-top: 12px;
-  max-width: 32ch;
-  color: rgba(255, 248, 240, 0.82);
-  line-height: 1.72;
-}
-.format-card-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: space-between;
-  margin-top: 18px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  color: rgba(255, 248, 240, 0.74);
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 28px;
-}
-.faq-grid details {
-  padding: 22px 24px;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(244, 237, 228, 0.12);
-  background: rgba(247, 240, 231, 0.9);
-  color: var(--ink);
-}
-.faq-grid summary {
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 1.55;
-}
-.faq-grid p {
-  margin-top: 14px;
-  color: var(--muted);
-  line-height: 1.8;
-}
-.apply-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 22px;
-  margin-top: 28px;
-}
-.apply-photo {
-  min-height: 520px;
-  position: relative;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(13, 19, 27, 0.12), rgba(13, 19, 27, 0.62)),
-    url("https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
-  box-shadow: 0 20px 48px rgba(12, 19, 28, 0.14);
-}
-.apply-card { padding: 32px; }
-.apply-card h3 {
-  margin-top: 12px;
-  font-family: var(--serif);
-  font-size: 40px;
-  line-height: 0.96;
-  letter-spacing: -0.03em;
-}
-.apply-card p {
-  margin-top: 14px;
-  color: var(--muted);
-  line-height: 1.72;
-}
-.checklist,
-.contact-list {
-  display: grid;
-  gap: 14px;
-  margin-top: 20px;
-  list-style: none;
-}
-.checklist li,
-.contact-list li {
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  line-height: 1.65;
-}
-.checklist strong,
-.contact-list strong {
-  display: block;
-  color: var(--ink);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-.apply-microcopy {
-  margin-top: 14px;
-  color: var(--muted);
-  line-height: 1.68;
-}
-.note {
-  margin-top: 18px;
-  padding: 16px 18px;
-  border-radius: 14px;
-  background: rgba(201, 122, 74, 0.08);
-  color: var(--muted);
   line-height: 1.7;
 }
-.site-footer {
-  padding: 26px 0 44px;
-  color: rgba(244, 237, 228, 0.72);
-  font-size: 13px;
+.coverflow-stage {
+  position: relative;
+  padding: 18px 0 14px;
+  perspective: 1400px;
+  overflow: hidden;
 }
-.footer-brand {
-  display: inline-flex;
-  align-items: center;
-}
-.footer-brand img {
-  width: 132px;
-  height: auto;
-  object-fit: contain;
-}
-.site-footer .row {
+.coverflow-track {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 520px;
+  transform-style: preserve-3d;
+}
+.coverflow-item {
+  position: absolute;
+  width: min(100%, 360px);
+  min-height: 460px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.65s cubic-bezier(.16,1,.3,1), opacity 0.65s cubic-bezier(.16,1,.3,1), filter 0.65s cubic-bezier(.16,1,.3,1), box-shadow 0.65s cubic-bezier(.16,1,.3,1);
+  box-shadow: 0 30px 80px rgba(9, 15, 24, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform-origin: center center;
+}
+.coverflow-media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+.coverflow-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(11, 16, 24, 0.08) 0%, rgba(13, 20, 27, 0.16) 28%, rgba(13, 20, 27, 0.85) 100%),
+    linear-gradient(135deg, rgba(201, 122, 74, 0.18), rgba(15, 24, 32, 0.1));
+}
+.coverflow-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 460px;
+  padding: 30px 28px;
+  color: var(--cream);
+}
+.coverflow-index {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(255, 248, 239, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.coverflow-copy h3 {
+  margin-top: 18px;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+.coverflow-copy p {
+  margin-top: 14px;
+  color: rgba(246, 239, 230, 0.9);
+  line-height: 1.78;
+}
+.coverflow-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.coverflow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(23, 20, 17, 0.12);
+  background: rgba(255, 248, 239, 0.72);
+  color: var(--ink);
+  font-size: 18px;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+.coverflow-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(23, 20, 17, 0.22);
+  background: rgba(255, 248, 239, 0.92);
+}
+.coverflow-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.coverflow-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(23, 20, 17, 0.2);
+  transition: transform 180ms ease, background 180ms ease;
+}
+.coverflow-dot.is-active {
+  transform: scale(1.25);
+  background: var(--gold-deep);
+}
+.quote-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: end;
+  padding: 34px;
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(25, 38, 34, 0.48), rgba(16, 26, 30, 0.62)),
+    url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80") center 28%/cover no-repeat;
+  color: var(--cream);
+  box-shadow: 0 34px 90px rgba(10, 15, 24, 0.24);
+}
+.quote-panel blockquote {
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  max-width: 12ch;
+}
+.quote-panel p {
+  margin-top: 14px;
+  color: var(--muted-dark);
+  line-height: 1.75;
+  max-width: 50ch;
+}
+.quote-panel footer {
+  color: rgba(246, 239, 230, 0.72);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.site-footer {
+  padding: 34px 0 44px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(9, 13, 19, 0.92);
+  color: var(--cream);
+}
+.site-footer .container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 18px;
+  flex-wrap: wrap;
 }
-.reveal { opacity: 0; transform: translateY(26px); }
-@media (max-width: 1024px) {
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.footer-links a,
+.footer-meta {
+  color: rgba(246, 239, 230, 0.72);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.reveal-card { opacity: 0; transform: translateY(26px); }
+@media (max-width: 980px) {
+  .hero-grid,
   .trust-grid,
-  .proof-grid,
-  .next-grid,
-  .fit-grid,
-  .hero-copy,
-  .visual-grid,
-  .stack-layout,
-  .apply-grid,
-  .faq-grid { grid-template-columns: 1fr; }
-  .stack-visual { display: none; }
-  .feature-card,
-  .feature-card.active {
-    opacity: 1;
-    transform: none;
-  }
-  .journey-mask-section {
-    min-height: 170vh;
-  }
-  .journey-mask-copy {
-    bottom: 10%;
-  }
-  .formats-stack {
-    width: min(840px, calc(100vw - 28px));
-  }
-  .formats-stack-card {
-    position: relative;
-    top: auto !important;
-    height: 440px;
-  }
+  .page-grid,
+  .quote-panel { grid-template-columns: 1fr; }
+  .hero-visual { min-height: 420px; }
+  .coverflow-track { min-height: 460px; }
+  .coverflow-item,
+  .coverflow-copy { min-height: 410px; }
 }
 @media (max-width: 760px) {
-  body {
-    background:
-      radial-gradient(circle at 18% 8%, rgba(201, 122, 74, 0.16), transparent 24%),
-      linear-gradient(180deg, #f6f1ea 0%, #eadbca 28%, #f4ede4 42%, #141c26 42%, #0c1118 100%);
-  }
   .site-nav .container,
-  .nav-contact,
-  .nav-links { gap: 12px; }
-  .site-nav {
-    position: relative;
-    padding: 8px 0;
+  .site-footer .container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .site-nav .container { align-items: center; }
-  .brand img { width: 118px; }
-  .nav-contact {
-    width: 100%;
-    gap: 10px;
-    font-size: 10px;
-    letter-spacing: 0.06em;
+  .brand-name { display: none; }
+  .hero { padding-top: 42px; padding-bottom: 78px; }
+  .hero-card h3 { margin-top: 90px; }
+  .coverflow-topline { flex-direction: column; align-items: flex-start; }
+  .coverflow-track { min-height: 420px; }
+  .coverflow-item {
+    width: min(100%, 310px);
+    min-height: 380px;
   }
-  .nav-contact-divider,
-  .nav-contact strong { display: none; }
-  .nav-links { margin-left: auto; font-size: 12px; }
-  .nav-links a:not(.btn) { display: none; }
-  .nav-links .btn {
-    width: auto;
-    padding: 10px 14px;
-    font-size: 12px;
-  }
-  .hero-shell { min-height: auto; }
-  .hero-sticky {
-    position: relative;
-    min-height: auto;
-    display: block;
-  }
-  .hero-intro {
-    position: relative;
-    min-height: 300px;
-    padding-top: 10px;
-  }
-  .hero-intro-stack {
-    width: 100%;
-    padding: 24px 18px 12px;
-    gap: 12px;
-    transform: none;
-  }
-  .hero-logo { width: 72px; }
-  .hero-intro-stack > div:first-child {
-    position: relative;
-    display: grid;
-    place-items: center;
-  }
-  .hero-intro-title,
-  .hero-intro-reveal {
-    font-size: clamp(58px, 20vw, 94px);
-    line-height: 0.88;
-  }
-  .hero-intro-title {
-    position: relative;
-  }
-  .hero-intro-reveal {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero-intro-subtitle {
-    font-size: 15px;
-    max-width: 26ch;
-  }
-  .hero-intro-cue { font-size: 11px; }
-  .hero-copy {
-    min-height: auto;
-    padding: 12px 0 28px;
-    gap: 20px;
-  }
-  .hero-main h1 {
-    max-width: none;
-    font-size: clamp(48px, 14vw, 68px);
-  }
-  .hero-main { padding-top: 0; }
-  .hero-main::before { inset: 8% -8% -8% -8%; }
-  .hero-main p,
-  .hero-kicker {
-    max-width: none;
-    font-size: 15px;
-  }
-  .journey-mask-text,
-  .journey-mask-text-filled {
-    font-size: clamp(58px, 18vw, 94px);
-    line-height: 0.9;
-  }
-  .journey-mask-copy {
-    bottom: 9%;
-    width: calc(100vw - 32px);
-  }
-  .journey-mask-copy p {
-    font-size: 15px;
-  }
-  .travel-marquee-row .marquee-item {
-    padding: 0 20px;
-    font-size: clamp(24px, 10vw, 44px);
-  }
-  .travel-marquee-row .sep {
-    width: 9px;
-    height: 9px;
-    margin-left: 18px;
-  }
-  .hero-card {
-    margin-top: 0;
-    padding: 22px;
-  }
-  .trust-item,
-  .next-card,
-  .fit-card { padding: 20px; }
-  .image-card { min-height: 380px; }
-  .apply-photo { min-height: 360px; }
-  .formats-stack {
-    width: calc(100vw - 24px);
-  }
-  .formats-stack-card { height: 360px; }
-  .format-card-content {
-    padding: 24px 22px 22px;
-  }
-  .metric-row,
-  .proof-stats,
-  .difference-grid,
-  .spot-grid { grid-template-columns: 1fr; }
-  .section {
-    padding: 76px 0;
-  }
-  .apply-card,
-  .hero-card,
-  .feature-card { padding: 24px; }
+  .coverflow-copy { min-height: 380px; }
+  .coverflow-copy h3 { font-size: 28px; }
 }
 </style>
 </head>
 <body>
 <div class="page-shell">
-  <nav class="site-nav">
+  <header class="site-nav">
     <div class="container">
-      <a class="brand" href="#top" aria-label="Dream Travel home">
-        <img src="logo-header.webp" alt="Dream Travel">
+      <a class="brand" href="index.html" aria-label="Dream Travel home">
+        <img src="logo-header.webp" alt="Dream Travel logo">
+        <span class="brand-name">Dream Travel</span>
       </a>
-      <div class="nav-contact">
-        <strong>Dream Travel</strong>
-        <a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a>
-        <span class="nav-contact-divider" aria-hidden="true"></span>
-        <a href="tel:+15712068949">571 206 8949</a>
-        <span class="nav-contact-divider" aria-hidden="true"></span>
-        <a href="https://www.instagram.com/dreamtravel_adventures/" target="_blank" rel="noopener noreferrer">@dreamtravel_adventures</a>
-      </div>
-      <div class="nav-links">
-        <a href="#why">Who It's For</a>
-        <a href="#how">How It Works</a>
-        <a href="#next">Next Steps</a>
-        <a href="#apply" class="btn">Apply to Host a Trip</a>
-      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="experiences.html">Private &amp; Custom Tours</a>
+        <a href="contact.html">Start Planning</a>
+        <a class="btn" href="contact.html">Contact Us</a>
+      </nav>
     </div>
-  </nav>
-
-  <main id="top">
-    <section class="hero-shell">
-      <div class="hero-sticky">
-        <div class="hero-layer hero-bg"></div>
-        <div class="hero-layer hero-mid"></div>
-        <div class="hero-layer hero-veil"></div>
-        <div class="hero-intro" aria-hidden="true">
-          <div class="hero-intro-stack">
-            <div style="position:relative;">
-              <div class="hero-intro-title">Group<br>Trips</div>
-              <div class="hero-intro-reveal">Group<br>Trips</div>
-            </div>
-            <div class="hero-intro-subtitle">Custom hosted travel for people who already know how to bring a community together.</div>
-            <div class="hero-intro-cue">Scroll to explore</div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Adult travel, your way</span>
+          <h1>Travel Together, Discover More</h1>
+          <p class="hero-subhead">Designed for clubs or organizations seeking an unforgettable shared experience.</p>
+          <p class="hero-body">We design customized travel experiences that bring people closer together. Travel is not one-size-fits-all, and adult travel should not be either. Whether you are dreaming of a private tailor-made journey, joining a small-group departure with set dates, or planning a getaway with family or friends, Dream Travel builds the experience around your interests, pace, and style.</p>
+          <div class="hero-type" id="heroType" aria-live="polite"></div>
+          <div class="hero-actions">
+            <a class="btn" href="experiences.html">See What We Do</a>
+            <a class="btn-secondary" href="contact.html">Start Planning</a>
           </div>
+          <p class="hero-note">From culinary and wine regions to culture, history, and nature, you choose how you travel and we take care of the rest.</p>
         </div>
-        <div class="hero-wordmark" aria-hidden="true">
-          <div class="hero-wordmark-outline">Group<br>Trips</div>
-          <div class="hero-wordmark-fill">Group<br>Trips</div>
-        </div>
-        <div class="container hero-copy">
-          <div class="hero-main">
-            <div class="eyebrow reveal">For hosts with real trust</div>
-            <h1 class="reveal">Turn your community into a hosted group trip.</h1>
-            <p class="reveal">Dream Travel helps creators, educators, retreat hosts, founders, chefs, and community leaders design and launch custom trips for the people who already trust them, without having to run the travel operation yourself.</p>
-            <div class="hero-kicker reveal">Share your audience, trip idea, and timing. We will quickly tell you whether it looks like a fit.</div>
-            <div class="hero-actions reveal">
-              <a class="btn" href="#apply">Apply to Host a Trip</a>
-              <a class="btn-secondary" href="#how">See How It Works</a>
-            </div>
+        <div class="hero-visual">
+          <div class="hero-orbit" aria-hidden="true">
+            <svg viewBox="0 0 300 300">
+              <defs><path id="heroCircle" d="M150,150 m-122,0 a122,122 0 1,1 244,0 a122,122 0 1,1 -244,0"></path></defs>
+              <text><textPath href="#heroCircle">ADULT TRAVEL - PRIVATE GROUPS - TRAVEL WITH PURPOSE - DREAM TRAVEL - ADULT TRAVEL - PRIVATE GROUPS - TRAVEL WITH PURPOSE - DREAM TRAVEL - </textPath></text>
+            </svg>
           </div>
-          <aside class="hero-card reveal">
-            <div class="eyebrow">Who this is for</div>
-            <h2>Built for people who already bring a group together.</h2>
-            <p>Creators, retreat hosts, educators, chefs, photographers, founders, and community builders with a clear point of view and an audience that actually shows up.</p>
-            <div class="metric-row">
-              <div class="metric">
-                <strong>Best fit</strong>
-                <span>An engaged community and a trip idea that makes sense for them.</span>
-              </div>
-              <div class="metric">
-                <strong>Dream Travel</strong>
-                <span>Trip design, planning structure, and traveler coordination support.</span>
-              </div>
-              <div class="metric">
-                <strong>Next step</strong>
-                <span>We review fit, schedule a conversation, and shape the trip if it aligns.</span>
-              </div>
-            </div>
-            <ul class="list">
-              <li>You want to lead the experience, not manage every operational detail.</li>
-              <li>You want a premium group trip that feels specific to your world.</li>
-              <li>You want an experienced travel partner behind the offer before it goes live.</li>
-            </ul>
-          </aside>
+          <article class="hero-card reveal-card">
+            <span class="hero-card-label">Dedicated personal service</span>
+            <h3>Meaningful travel, built around your group.</h3>
+            <p>Whether it is a wine weekend, a city stay, or a regional escape, our well-planned journeys are designed to feel seamless, personal, and memorable from start to finish.</p>
+          </article>
         </div>
       </div>
     </section>
-
-    <div class="trust-band">
+    <section class="trust-band">
+      <div class="container trust-grid">
+        <article class="trust-card reveal-card">
+          <strong>Fully customized itineraries</strong>
+          <p>Every trip is shaped around your destination interests, preferred pace, and the type of shared experience your group wants to have.</p>
+        </article>
+        <article class="trust-card reveal-card">
+          <strong>Professional coordination</strong>
+          <p>We handle the planning details, supplier communication, logistics, and structure that turn a great idea into an easy trip to join.</p>
+        </article>
+        <article class="trust-card reveal-card">
+          <strong>Dedicated personal service</strong>
+          <p>From the first conversation to the final itinerary, your group has a travel partner focused on making the experience feel thoughtful and well supported.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
       <div class="container">
-        <div class="trust-grid reveal">
-          <div class="trust-item">
-            <strong>Custom group travel, built around your community</strong>
-            <span>The trip is shaped around your audience and point of view, not a generic package.</span>
-          </div>
-          <div class="trust-item">
-            <strong>Dream Travel handles the travel backbone</strong>
-            <span>Trip design, supplier coordination, and traveler support are built in so you can stay focused on the hosted experience.</span>
-          </div>
-          <div class="trust-item">
-            <strong>Commercial terms are aligned before launch</strong>
-            <span>Responsibilities, pricing structure, and the commercial structure are confirmed in writing before promotion begins.</span>
-          </div>
-          <div class="trust-item">
-            <strong>Built on existing travel experience</strong>
-            <span>Dream Travel's broader trip business already spans 500+ designed journeys across 40+ destinations.</span>
-          </div>
+        <div class="section-head">
+          <span class="eyebrow">Travel together, discover more</span>
+          <h2>Choose the kind of adult travel experience that fits your group.</h2>
+          <p>Some travelers want a private custom group tour, some want a purpose-driven trip that gives back, and others want a themed small-group departure with fixed dates. Dream Travel supports each path with the same care and coordination.</p>
         </div>
-      </div>
-    </div>
-
-    <section class="journey-mask-section" aria-labelledby="journeyMaskHeading">
-      <div class="journey-mask-sticky">
-        <div class="journey-mask-bg"></div>
-        <div class="journey-mask-grain"></div>
-        <div class="journey-mask-overlay">
-          <h2 class="journey-mask-text" id="journeyMaskHeading">Lead<br>The Journey</h2>
-        </div>
-        <div class="journey-mask-reveal" aria-hidden="true">
-          <div class="journey-mask-text-filled">Lead<br>The Journey</div>
-        </div>
-        <div class="journey-mask-copy">
-          <div class="eyebrow">Show Your Taste</div>
-          <p>The strongest hosted trips do more than move people from one place to another. They carry your taste, your community, and your point of view all the way through the experience.</p>
+        <div class="coverflow-shell reveal-card">
+          <div class="coverflow-topline">
+          </div>
+          <div class="coverflow-stage">
+            <div class="coverflow-track" id="homeCoverflow" aria-live="polite"></div>
+          </div>
+          <div class="coverflow-nav" aria-label="Carousel navigation">
+            <button class="coverflow-btn" id="coverflowPrev" type="button" aria-label="Previous card">&larr;</button>
+            <button class="coverflow-btn" id="coverflowNext" type="button" aria-label="Next card">&rarr;</button>
+          </div>
+          <div class="coverflow-dots" id="coverflowDots" aria-hidden="true"></div>
         </div>
       </div>
     </section>
-
-    <section class="section light proof-section" id="proof">
+    <section class="section">
       <div class="container">
-        <div class="proof-grid">
-          <article class="proof-panel reveal">
-            <div class="eyebrow">Why Dream Travel</div>
-            <h3>A host-led offer backed by real travel experience.</h3>
-            <p>This is not a polished concept without operating depth behind it. Dream Travel already designs custom and group journeys, and this host partnership model is built on that same planning foundation, supplier coordination, and traveler care.</p>
-
-            <div class="proof-stats">
-              <div class="proof-stat">
-                <strong>500+</strong>
-                <span>Journeys designed across Dream Travel's broader trip business.</span>
-              </div>
-              <div class="proof-stat">
-                <strong>40+</strong>
-                <span>Destinations already supported through existing travel planning work.</span>
-              </div>
-              <div class="proof-stat">
-                <strong>Repeat</strong>
-                <span>Traveler feedback already points to return bookings and strong word of mouth.</span>
-              </div>
-            </div>
-
-            <blockquote class="proof-quote">
-              <p>"Well organized and planned beautifully. Very knowledgeable guide, fun travel group and an excellent driver. I have already booked another trip!"</p>
-              <footer>Eileen R. - Returning traveler</footer>
-            </blockquote>
-          </article>
-
-          <div class="difference-stack reveal">
-            <div class="section-head">
-              <div class="eyebrow">Why hosts choose Dream Travel</div>
-              <h3>Specific enough to feel like your trip. Structured enough to launch responsibly.</h3>
-              <p>What sets Dream Travel apart is not just access to travel logistics. It is the combination of custom concept work, host-aware planning, and behind-the-scenes support that lets the trip feel branded around you instead of generic.</p>
-            </div>
-
-            <div class="difference-grid">
-              <article class="difference-card">
-                <strong>Custom, not template</strong>
-                <h4>Built around your audience.</h4>
-                <p>The trip starts with your point of view, your community dynamic, and the kind of experience they would actually say yes to.</p>
-              </article>
-              <article class="difference-card">
-                <strong>High-touch shaping</strong>
-                <h4>Designed before it is promoted.</h4>
-                <p>Dream Travel helps define the concept, guest profile, pacing, and launch framing before the offer goes public.</p>
-              </article>
-              <article class="difference-card">
-                <strong>Operational backbone</strong>
-                <h4>Support without taking over.</h4>
-                <p>Planning, supplier coordination, and traveler communication support sit behind the scenes while the host relationship stays front-facing.</p>
-              </article>
-              <article class="difference-card">
-                <strong>Trusted planning base</strong>
-                <h4>Experience you can build on.</h4>
-                <p>Existing destination partners, group-travel planning experience, and traveler reviews give the offer more weight than tone alone.</p>
-              </article>
-            </div>
+        <article class="quote-panel reveal-card">
+          <div>
+            <blockquote>"You focus on your people. We take care of the trip."</blockquote>
+            <p>That same approach carries through the next pages, where Dream Travel shows how private custom tours are structured and how a group can start planning with confidence.</p>
           </div>
-        </div>
+          <footer>Dream Travel</footer>
+        </article>
       </div>
     </section>
-
-    <section class="section light" id="why">
+    <section class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">Who this is for</div>
-          <h2>For the right host, travel becomes a community-defining experience.</h2>
-          <p>A strong trip can deepen loyalty, create a premium offer, and give people a reason to gather in real life around something that already matters to them.</p>
+        <div class="section-head">
+          <span class="eyebrow">Discover more</span>
+          <h2>See what's possible, then start planning.</h2>
+          <p></p>
         </div>
-
-        <div class="audience-block reveal">
-          <p>This is for people who already bring a group together, online or offline, and want to turn that trust into a thoughtfully designed shared experience.</p>
-          <div class="audience-tags">
-            <span>Creators</span>
-            <span>Retreat hosts</span>
-            <span>Educators</span>
-            <span>Community builders</span>
-            <span>Chefs and tastemakers</span>
-            <span>Photographers</span>
-            <span>Founders with engaged communities</span>
-          </div>
-        </div>
-
-        <div class="visual-grid">
-          <article class="image-card reveal">
-            <div class="overlay">
-              <div class="eyebrow" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.12);color:#fff">Shared experience</div>
-              <h3>Shared travel deepens trust.</h3>
-              <p>It gives your community time together that digital interaction cannot and turns shared interest into lived memory.</p>
-            </div>
-          </article>
-
-          <div class="spot-grid reveal" id="spotGrid">
-            <article class="spot-card">
-              <div class="num">01</div>
-              <h3>Deepen loyalty</h3>
-              <p>Shared travel turns online trust into lived memory and gives your audience a reason to stay close.</p>
-            </article>
-            <article class="spot-card">
-              <div class="num">02</div>
-              <h3>Add a premium offer</h3>
-              <p>Add a premium experience to your brand or community without turning yourself into a travel operator.</p>
-            </article>
-            <article class="spot-card">
-              <div class="num">03</div>
-              <h3>Lead the experience</h3>
-              <p>You stay focused on the teaching, access, taste, or community dynamic you are already known for.</p>
-            </article>
-            <article class="spot-card">
-              <div class="num">04</div>
-              <h3>Make the offer clear</h3>
-              <p>Clear positioning and polished launch materials help the right travelers understand the trip quickly.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="travel-marquee-band" aria-label="Hosted journey themes">
-      <div class="travel-marquee-label">Scroll-reactive hosted journey themes</div>
-      <div class="travel-marquee-row" data-speed="1" data-direction="left">
-        <div class="travel-marquee-content">
-          <span class="marquee-item">Culture-led journeys<span class="sep"></span></span>
-          <span class="marquee-item">Retreat formats<span class="sep"></span></span>
-          <span class="marquee-item">Taste-driven travel<span class="sep"></span></span>
-          <span class="marquee-item">Community access<span class="sep"></span></span>
-        </div>
-      </div>
-      <div class="travel-marquee-row is-outline" data-speed="0.72" data-direction="right">
-        <div class="travel-marquee-content">
-          <span class="marquee-item">Founders<span class="sep"></span></span>
-          <span class="marquee-item">Creators<span class="sep"></span></span>
-          <span class="marquee-item">Educators<span class="sep"></span></span>
-          <span class="marquee-item">Chefs<span class="sep"></span></span>
-          <span class="marquee-item">Photographers<span class="sep"></span></span>
-        </div>
-      </div>
-      <div class="travel-marquee-note">Movement should make the offer feel alive before anyone fills out the form.</div>
-    </section>
-
-    <section class="section dark" id="how">
-      <div class="container">
-        <div class="section-head light process-head reveal">
-          <div class="eyebrow">Hosted journey process</div>
-          <h2>A clear path from host idea to launch-ready trip.</h2>
-          <p>The process is intentionally simple: check fit, shape the concept, define responsibilities, and prepare the trip for launch.</p>
-        </div>
-
-        <div class="stack-layout">
-          <div class="stack-visual reveal">
-            <div class="mockup">
-              <div class="mockup-bar">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-              <div class="mockup-body">
-                <div class="state active" data-state="1">
-                  <div class="state-label">Discover</div>
-                  <h3>Discovery</h3>
-                  <p>You share the audience, trip concept, timing, and the role you want to play in the experience.</p>
-                  <div class="state-image" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');"></div>
-                </div>
-                <div class="state" data-state="2">
-                  <div class="state-label">Design</div>
-                  <h3>Shape</h3>
-                  <p>Together we define the concept, guest profile, pacing, and support needed to make the trip feel coherent and workable.</p>
-                  <div class="state-image" style="background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80');"></div>
-                </div>
-                <div class="state" data-state="3">
-                  <div class="state-label">Confirm</div>
-                  <h3>Align</h3>
-                  <p>Responsibilities, traveler minimums, and the commercial structure are defined before promotion starts.</p>
-                  <div class="state-image" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80');"></div>
-                </div>
-                <div class="state" data-state="4">
-                  <div class="state-label">Launch</div>
-                  <h3>Launch</h3>
-                  <p>You bring the right people into a trip that already feels branded, polished, and worth joining.</p>
-                  <div class="state-image" style="background-image:url('https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=1200&q=80');"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-list">
-            <article class="feature-card active reveal" data-feature="1">
-              <strong>01 Discovery</strong>
-              <h3>We start with audience clarity.</h3>
-              <p>We look at who your people are, why they would travel with you, and whether the concept fits the trust you already have with them.</p>
-            </article>
-            <article class="feature-card reveal" data-feature="2">
-              <strong>02 Shape</strong>
-              <h3>We turn the idea into a travel format.</h3>
-              <p>Retreat, mastermind, culinary immersion, photography trip, or themed cultural journey. The format determines the rhythm.</p>
-            </article>
-            <article class="feature-card reveal" data-feature="3">
-              <strong>03 Align</strong>
-              <h3>We define the business side before launch.</h3>
-              <p>Responsibilities, traveler minimums, and any host compensation or hosted travel arrangement are set case by case and confirmed in writing before promotion begins.</p>
-            </article>
-            <article class="feature-card reveal" data-feature="4">
-              <strong>04 Launch</strong>
-              <h3>We make the trip easy to understand.</h3>
-              <p>Messaging, guest profile, and launch materials are shaped so the offer feels clear before the first invitation goes out.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light" id="next">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">What happens next</div>
-          <h2>What happens after you apply.</h2>
-          <p>You should know early whether the concept is worth developing and what the next step looks like.</p>
-        </div>
-
-        <div class="next-grid">
-          <article class="card next-card reveal">
-            <div class="step">01 Review fit</div>
-            <h3>We review the concept.</h3>
-            <p>We look at your audience, trip idea, and timing to see whether the opportunity is strong enough to develop.</p>
-          </article>
-          <article class="card next-card reveal">
-            <div class="step">02 Conversation</div>
-            <h3>We talk through the details.</h3>
-            <p>If it feels aligned, we schedule a conversation about goals, format, support needs, and your role as host.</p>
-          </article>
-          <article class="card next-card reveal">
-            <div class="step">03 Shape the trip</div>
-            <h3>We build the framework.</h3>
-            <p>We define the concept, guest profile, experience format, and the operational split required to launch responsibly.</p>
-          </article>
-          <article class="card next-card reveal">
-            <div class="step">04 Confirm terms</div>
-            <h3>We finalize before promotion.</h3>
-            <p>If it moves forward, responsibilities, pricing structure, traveler minimums, and the commercial structure are confirmed before anything goes public.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light" id="formats">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">Hosted journeys</div>
-          <h2>The strongest host-led trips already have a point of view.</h2>
-          <p>The strongest programs feel specific from the beginning. The destination, tone, and format should make sense for your audience before anyone asks for details.</p>
-        </div>
-      </div>
-
-      <div class="formats-shell">
-        <div class="formats-stack" id="formatsStack">
-          <article class="formats-stack-card">
-            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80" alt="Wine glasses on a table during a tasting">
-            <div class="format-card-content">
-              <div class="format-card-kicker">01 Culinary access</div>
-              <h3>Wine + Taste</h3>
-              <p>For sommeliers, chefs, curators, and tastemakers building a trip around access, flavor, and people who travel for a point of view.</p>
-              <div class="format-card-meta">
-                <span>Best for chefs</span>
-                <span>Small-group energy</span>
-              </div>
-            </div>
-          </article>
-          <article class="formats-stack-card">
-            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80" alt="Small group walking through a scenic coastal destination">
-            <div class="format-card-content">
-              <div class="format-card-kicker">02 Presence-led</div>
-              <h3>Retreat + Wellness</h3>
-              <p>For coaches, facilitators, and hosts whose people want immersion, reset, and a shared pace that feels restorative from arrival onward.</p>
-              <div class="format-card-meta">
-                <span>Best for retreat hosts</span>
-                <span>Slow itinerary</span>
-              </div>
-            </div>
-          </article>
-          <article class="formats-stack-card">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=80" alt="Creative professional photographing a destination">
-            <div class="format-card-content">
-              <div class="format-card-kicker">03 Story-driven</div>
-              <h3>Creator + Culture</h3>
-              <p>For photographers, educators, and founders turning a worldview into a place-based experience that feels like stepping inside the brand.</p>
-              <div class="format-card-meta">
-                <span>Best for creators</span>
-                <span>Content-rich moments</span>
-              </div>
-            </div>
-          </article>
-          <article class="formats-stack-card">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80" alt="Group of founders in conversation at a table">
-            <div class="format-card-content">
-              <div class="format-card-kicker">04 Community depth</div>
-              <h3>Founder + Mastermind</h3>
-              <p>For founders and operators with engaged circles who want sharper conversation, curated rooms, and a format built around meaningful access.</p>
-              <div class="format-card-meta">
-                <span>Best for founders</span>
-                <span>Conversation-led</span>
-              </div>
-            </div>
-          </article>
-          <article class="formats-stack-card">
-            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1400&q=80" alt="Group enjoying a guided travel experience together">
-            <div class="format-card-content">
-              <div class="format-card-kicker">05 Learning-led</div>
-              <h3>Education + Immersion</h3>
-              <p>For educators and community leaders who want teaching, shared experience, and well-paced travel to feel like one coherent offer.</p>
-              <div class="format-card-meta">
-                <span>Best for educators</span>
-                <span>Clear learning arc</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark" id="faq">
-      <div class="container">
-        <div class="section-head light reveal">
-          <div class="eyebrow" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);color:#fff">FAQ</div>
-          <h2>Questions hosts usually ask first.</h2>
-          <p>These are the practical questions most hosts ask early, especially around role, structure, and what gets finalized before launch.</p>
-        </div>
-
-        <div class="faq-grid">
-          <details class="reveal" open>
-            <summary>Do you only work with big creators or influencers?</summary>
-            <p>No. A focused community with real trust and a clear trip concept can be a stronger fit than a larger but passive audience.</p>
-          </details>
-          <details class="reveal">
-            <summary>What role am I expected to play as the host?</summary>
-            <p>You are usually the reason people join. Dream Travel can support the planning and travel backbone while you stay centered on the experience, teaching, taste, or access your audience values.</p>
-          </details>
-          <details class="reveal">
-            <summary>How are host benefits or compensation handled?</summary>
-            <p>They are structured case by case. If host compensation, revenue share, or hosted travel is part of the model, it is defined in writing before promotion begins.</p>
-          </details>
-          <details class="reveal">
-            <summary>What gets finalized before the trip is promoted?</summary>
-            <p>Responsibilities, pricing structure, traveler minimums, booking conditions, and the commercial structure are all confirmed before the trip goes public.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light" id="apply">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">Apply to host</div>
-          <h2>If you can gather the right people, we should talk.</h2>
-          <p>A strong application usually has three things: real audience trust, a clear trip lens, and a host who wants to shape the experience.</p>
-        </div>
-
-        <div class="fit-grid" id="fit">
-          <article class="fit-card reveal">
-            <strong>Good fit</strong>
-            <h3>You already have an engaged audience.</h3>
-            <p>The right host already brings people together through content, teaching, events, membership, or community leadership.</p>
-          </article>
-          <article class="fit-card reveal">
-            <strong>Clear theme</strong>
-            <h3>You know what the trip should be about.</h3>
-            <p>A strong concept has a clear lens, whether that is food, culture, retreat, wellness, creativity, education, or access.</p>
-          </article>
-          <article class="fit-card reveal">
-            <strong>Host role</strong>
-            <h3>You want to lead the experience.</h3>
-            <p>You want to be the reason people join, without being responsible for every operational detail behind the scenes.</p>
-          </article>
-          <article class="fit-card reveal">
-            <strong>Quality bar</strong>
-            <h3>You care about memorable, not generic.</h3>
-            <p>The strongest host trips feel thoughtful, coherent, and worth talking about long after people get home.</p>
-          </article>
-        </div>
-
-        <div class="apply-grid">
-          <article class="apply-photo reveal">
-            <div class="overlay">
-              <div class="eyebrow" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.12);color:#fff">Next step</div>
-              <h3>Tell us about the audience, the lens, and the timing.</h3>
-              <p>The strongest inquiries explain who the trip is for, why it fits, and how visible you want to be as the host.</p>
-            </div>
-          </article>
-
-          <article class="apply-card reveal">
-            <div class="eyebrow">What to send</div>
-            <h3>Apply to host a trip.</h3>
-            <p>Send the core details and we will review whether the concept looks strong enough to develop.</p>
-            <ul class="checklist">
-              <li><strong>Community</strong>Who already shows up for you, and how you currently bring them together.</li>
-              <li><strong>Trip idea</strong>The concept, format, and why it makes sense for your audience.</li>
-              <li><strong>Timing</strong>Your rough window and whether you already have likely travelers in mind.</li>
-              <li><strong>Host role</strong>How hands-on you want to be during planning and during the trip itself.</li>
-            </ul>
-            <div class="cta-row">
-              <a class="btn" href="mailto:clients@dream-travel.net?subject=Apply%20to%20Host%20a%20Trip&body=Name:%0ACommunity:%0ATrip%20idea:%0AType%20of%20experience:%0ATiming:%0ARole:%0A">Apply to Host a Trip</a>
-              <a class="btn-secondary" href="tel:+15712068949">Call Dream Travel</a>
-            </div>
-            <div class="apply-microcopy">We review fit first. If the concept is aligned, the next step is a direct conversation about structure, scope, and timing.</div>
-            <ul class="contact-list">
-              <li><strong>Email</strong><a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a></li>
-              <li><strong>Instagram</strong><a href="https://www.instagram.com/dreamtravel_adventures/" target="_blank" rel="noopener noreferrer">@dreamtravel_adventures</a></li>
-              <li><strong>Privacy</strong>Inquiry details are used only to reply about trip fit and planning next steps.</li>
-            </ul>
-            <div class="note">Responsibilities, pricing structure, traveler minimums, and the commercial structure are documented before promotion begins.</div>
-          </article>
+        <div class="page-grid">
+          <a class="page-cta page-cta-tours reveal-card" href="experiences.html">
+            <span class="page-cta-kicker">Page two</span>
+            <h3>Private &amp; Custom Group Tours</h3>
+            <p>Explore who these tours are for, what Dream Travel handles, and the kinds of group journeys we can build together.</p>
+            <span class="page-cta-link">View More</span>
+          </a>
+          <a class="page-cta page-cta-plan reveal-card" href="contact.html">
+            <span class="page-cta-kicker">Page three</span>
+            <h3>Start Planning Your Trip</h3>
+            <p>Share your group's travel goals, ask practical questions, and move from idea to itinerary with direct support.</p>
+            <span class="page-cta-link">Start Planning</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="container row">
-      <a class="footer-brand" href="#top" aria-label="Dream Travel home">
-        <img src="logo-footer.webp" alt="Dream Travel">
-      </a>
-      <div>&copy; 2026 Dream Travel International Corp. Hosted group trip partnerships are reviewed and scoped individually.</div>
-      <div><a href="#proof">Why Dream Travel</a> &middot; <a href="#next">Next Steps</a> &middot; <a href="#apply">Apply</a></div>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Private &amp; Custom Tours</a>
+        <a href="contact.html">Start Planning</a>
+      </div>
+      <div class="footer-meta">Copyright © 2026 | clients@dream-travel.net | 571 206 8949</div>
     </div>
   </footer>
 </div>
-
 <script>
 (function () {
   gsap.registerPlugin(ScrollTrigger);
+  var phrases = [
+    "Private journeys.",
+    "Small-group trips.",
+    "Travel with purpose."
+  ];
+  var typeEl = document.getElementById("heroType");
+  if (typeEl) {
+    var phraseIndex = 0;
+    var charIndex = 0;
+    var deleting = false;
+    function tick() {
+      var phrase = phrases[phraseIndex];
+      if (!deleting) {
+        charIndex += 1;
+        if (charIndex >= phrase.length) {
+          typeEl.innerHTML = phrase + '<span class="type-cursor"></span>';
+          deleting = true;
+          setTimeout(tick, 1500);
+          return;
+        }
+      } else {
+        charIndex -= 1;
+        if (charIndex <= 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(tick, 220);
+          return;
+        }
+      }
+      typeEl.innerHTML = phrase.substring(0, charIndex) + '<span class="type-cursor"></span>';
+      setTimeout(tick, deleting ? 28 : 52);
+    }
+    tick();
+  }
+  var coverflowItems = [
+    {
+      index: "01",
+      title: "Private & Custom Group Tours",
+      description: "Perfect for long weekends, special celebrations, regional escapes, and shared journeys designed around your people, your theme, and your preferred style of travel.",
+      image: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      index: "02",
+      title: "Travel With Purpose",
+      description: "Bring people together, travel to inspiring destinations, and support a school, community, or organization through Dream Travel's giving-back program.",
+      image: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      index: "03",
+      title: "Join One of Our Trips",
+      description: "Travel with like-minded people on thoughtfully curated small-group journeys with fixed dates and clear themes such as culinary, cultural, art-focused, or experiential travel.",
+      image: "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      index: "04",
+      title: "Host Your Own Tours",
+      description: "If you have a loyal audience, professional network, club, or shared-passion community, we can help you travel with them under your own name while we manage the logistics.",
+      image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80"
+    }
+  ];
+  var coverflowTrack = document.getElementById("homeCoverflow");
+  var coverflowDots = document.getElementById("coverflowDots");
+  var coverflowCurrent = 0;
+  if (coverflowTrack && coverflowDots) {
+    coverflowItems.forEach(function (item, index) {
+      var slide = document.createElement("article");
+      slide.className = "coverflow-item";
+      slide.setAttribute("role", "button");
+      slide.setAttribute("tabindex", "0");
+      slide.setAttribute("aria-label", item.title);
+      slide.innerHTML =
+        '<div class="coverflow-media" style="background-image:url(\'' + item.image + '\')"></div>' +
+        '<div class="coverflow-copy">' +
+        '<span class="coverflow-index">' + item.index + "</span>" +
+        "<h3>" + item.title + "</h3>" +
+        "<p>" + item.description + "</p>" +
+        "</div>";
+      slide.addEventListener("click", function () {
+        coverflowCurrent = index;
+        renderCoverflow();
+      });
+      slide.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          coverflowCurrent = index;
+          renderCoverflow();
+        }
+      });
+      coverflowTrack.appendChild(slide);
 
-  document.querySelectorAll(".reveal").forEach(function (el, index) {
-    gsap.to(el, {
+      var dot = document.createElement("span");
+      dot.className = "coverflow-dot";
+      coverflowDots.appendChild(dot);
+    });
+
+    function renderCoverflow() {
+      var slides = coverflowTrack.children;
+      var dots = coverflowDots.children;
+      var compact = window.innerWidth <= 760;
+      for (var i = 0; i < slides.length; i += 1) {
+        var offset = i - coverflowCurrent;
+        var absOffset = Math.abs(offset);
+        var translateX = compact ? offset * 160 : offset * 220;
+        var rotateY = compact ? (offset < 0 ? 32 : offset > 0 ? -32 : 0) : (offset < 0 ? 42 : offset > 0 ? -42 : 0);
+        var scale = absOffset === 0 ? 1 : compact ? 0.82 : 0.84;
+        var opacity = absOffset > 2 ? 0 : 1 - absOffset * 0.22;
+        var brightness = absOffset === 0 ? 1 : 0.64;
+        slides[i].style.transform = "translateX(" + translateX + "px) rotateY(" + rotateY + "deg) scale(" + scale + ")";
+        slides[i].style.zIndex = String(20 - absOffset);
+        slides[i].style.opacity = String(opacity);
+        slides[i].style.filter = "brightness(" + brightness + ")";
+        slides[i].setAttribute("aria-hidden", absOffset > 2 ? "true" : "false");
+        dots[i].classList.toggle("is-active", i === coverflowCurrent);
+      }
+    }
+
+    var prevBtn = document.getElementById("coverflowPrev");
+    var nextBtn = document.getElementById("coverflowNext");
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener("click", function () {
+        coverflowCurrent = Math.max(0, coverflowCurrent - 1);
+        renderCoverflow();
+      });
+      nextBtn.addEventListener("click", function () {
+        coverflowCurrent = Math.min(coverflowItems.length - 1, coverflowCurrent + 1);
+        renderCoverflow();
+      });
+    }
+    window.addEventListener("resize", renderCoverflow);
+    renderCoverflow();
+  }
+  gsap.utils.toArray(".reveal-card").forEach(function (card) {
+    gsap.to(card, {
       opacity: 1,
       y: 0,
       duration: 0.9,
       ease: "power2.out",
-      delay: (index % 3) * 0.05,
       scrollTrigger: {
-        trigger: el,
-        start: "top 84%",
-        once: true
-      }
-    });
-  });
-
-  ScrollTrigger.matchMedia({
-    "(min-width: 761px)": function () {
-      gsap.to(".hero-intro-stack", {
-        scale: 3.7,
-        yPercent: -18,
-        opacity: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".hero-shell",
-          start: "top top",
-          end: "52% top",
-          scrub: true
-        }
-      });
-
-      gsap.to(".hero-main", {
-        yPercent: -10,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".hero-shell",
-          start: "top top",
-          end: "bottom top",
-          scrub: true
-        }
-      });
-
-      gsap.to(".hero-card", {
-        yPercent: -18,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".hero-shell",
-          start: "top top",
-          end: "bottom top",
-          scrub: true
-        }
-      });
-    }
-  });
-
-  gsap.to(".hero-bg", {
-    scale: 1.3,
-    yPercent: 14,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".hero-shell",
-      start: "top top",
-      end: "bottom top",
-      scrub: true
-    }
-  });
-
-  gsap.to(".hero-mid", {
-    yPercent: -16,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".hero-shell",
-      start: "top top",
-      end: "bottom top",
-      scrub: true
-    }
-  });
-
-  if (document.querySelector(".journey-mask-section")) {
-    gsap.to(".journey-mask-reveal", {
-      clipPath: "inset(0% 0 0 0)",
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".journey-mask-section",
-        start: "top top",
-        end: "60% bottom",
-        scrub: 0.3
-      }
-    });
-
-    gsap.to(".journey-mask-bg", {
-      scale: 1.2,
-      yPercent: -8,
-      rotate: -6,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".journey-mask-section",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-      }
-    });
-
-    gsap.fromTo(".journey-mask-copy",
-      { opacity: 0, y: 24 },
-      {
-        opacity: 1,
-        y: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".journey-mask-section",
-          start: "52% top",
-          end: "72% top",
-          scrub: true
-        }
-      }
-    );
-  }
-
-  var spotGrid = document.getElementById("spotGrid");
-  if (spotGrid) {
-    spotGrid.addEventListener("mousemove", function (event) {
-      spotGrid.querySelectorAll(".spot-card").forEach(function (card) {
-        var rect = card.getBoundingClientRect();
-        card.style.setProperty("--mx", (event.clientX - rect.left) + "px");
-        card.style.setProperty("--my", (event.clientY - rect.top) + "px");
-      });
-    });
-  }
-
-  var featureCards = document.querySelectorAll(".feature-card");
-  var states = document.querySelectorAll(".state");
-
-  function activateState(index) {
-    featureCards.forEach(function (card, cardIndex) {
-      card.classList.toggle("active", cardIndex === index);
-    });
-    states.forEach(function (state, stateIndex) {
-      state.classList.toggle("active", stateIndex === index);
-    });
-  }
-
-  featureCards.forEach(function (card, index) {
-    ScrollTrigger.create({
-      trigger: card,
-      start: "top 48%",
-      end: "bottom 48%",
-      onEnter: function () { activateState(index); },
-      onEnterBack: function () { activateState(index); }
-    });
-  });
-
-  var marqueeRows = document.querySelectorAll(".travel-marquee-row");
-  if (marqueeRows.length) {
-    marqueeRows.forEach(function (row) {
-      var content = row.querySelector(".travel-marquee-content");
-      if (content && row.children.length === 1) {
-        row.appendChild(content.cloneNode(true));
-      }
-    });
-
-    var marqueeVelocity = 0;
-    var marqueeData = [];
-
-    marqueeRows.forEach(function (row) {
-      var content = row.querySelector(".travel-marquee-content");
-      var width = content ? content.offsetWidth : 0;
-      var direction = row.dataset.direction === "right" ? 1 : -1;
-
-      marqueeData.push({
-        row: row,
-        width: width,
-        x: direction === 1 ? -width : 0,
-        direction: direction,
-        speed: parseFloat(row.dataset.speed) || 1
-      });
-    });
-
-    function refreshMarqueeWidths() {
-      marqueeData.forEach(function (item) {
-        var content = item.row.querySelector(".travel-marquee-content");
-        item.width = content ? content.offsetWidth : 0;
-        if (item.direction === 1) {
-          item.x = -item.width;
-        }
-      });
-    }
-
-    ScrollTrigger.addEventListener("refreshInit", refreshMarqueeWidths);
-    ScrollTrigger.create({
-      start: 0,
-      end: "max",
-      onUpdate: function (self) {
-        marqueeVelocity = Math.abs(self.getVelocity());
-      }
-    });
-
-    gsap.ticker.add(function () {
-      marqueeVelocity *= 0.92;
-
-      marqueeData.forEach(function (item) {
-        if (!item.width) return;
-
-        var frameSpeed = (0.55 + Math.min(marqueeVelocity * 0.00035, 2.4)) * item.speed;
-        item.x += item.direction * -1 * frameSpeed;
-
-        if (item.direction === -1 && item.x <= -item.width) {
-          item.x += item.width;
-        }
-
-        if (item.direction === 1 && item.x >= 0) {
-          item.x -= item.width;
-        }
-
-        item.row.style.transform = "translateX(" + item.x + "px)";
-      });
-    });
-  }
-
-  var stackCards = document.querySelectorAll(".formats-stack-card");
-  stackCards.forEach(function (card, index) {
-    if (index >= stackCards.length - 1) return;
-
-    gsap.to(card, {
-      scale: 0.95,
-      opacity: 0.56,
-      ease: "none",
-      scrollTrigger: {
-        trigger: stackCards[index + 1],
-        start: "top 82%",
-        end: "top 24%",
-        scrub: true
+        trigger: card,
+        start: "top 82%"
       }
     });
   });

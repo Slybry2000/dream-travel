@@ -2,12 +2,526 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Redirecting | Dream Travel</title>
-<meta http-equiv="refresh" content="0; url=index.html#apply">
-<link rel="canonical" href="index.html#apply">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dream Travel | Start Planning Your Trip</title>
+<meta name="description" content="Turn your group's travel goals into a reality with Dream Travel's planning support for private and custom group tours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+:root {
+  --cream: #f6efe6;
+  --surface: rgba(255, 248, 239, 0.76);
+  --ink: #171411;
+  --muted: #6e655d;
+  --muted-dark: rgba(246, 239, 230, 0.76);
+  --gold: #c97a4a;
+  --gold-deep: #b5653c;
+  --sage: #788d7a;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Outfit", system-ui, sans-serif;
+  --mono: "JetBrains Mono", monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(201, 122, 74, 0.18), transparent 24%),
+    radial-gradient(circle at 88% 0%, rgba(120, 141, 122, 0.14), transparent 20%),
+    linear-gradient(180deg, #f8f2ea 0%, #ecdccc 34%, #f6efe6 58%, #d8ccbf 74%, #16202a 92%, #0c1118 100%);
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font: inherit; border: 0; cursor: pointer; }
+.container { width: min(1160px, calc(100vw - 36px)); margin: 0 auto; }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 248, 239, 0.68);
+  border: 1px solid rgba(201, 122, 74, 0.24);
+  color: var(--gold-deep);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--sage));
+}
+.section-head { max-width: 760px; }
+.section-head h1,
+.section-head h2 {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+}
+.section-head p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.78;
+}
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 10px 0;
+  background: rgba(247, 240, 231, 0.82);
+  border-bottom: 1px solid rgba(23, 20, 17, 0.08);
+  backdrop-filter: blur(18px);
+}
+.site-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand img {
+  width: clamp(48px, 4.6vw, 64px);
+  height: auto;
+}
+.brand-name {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.nav-links a {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.nav-links a[aria-current="page"] { color: var(--ink); }
+.nav-links a:hover { color: var(--ink); }
+.hero { padding: 72px 0 74px; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+  gap: 28px;
+  align-items: start;
+}
+.hero-type {
+  margin-top: 22px;
+  min-height: 30px;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.type-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  background: currentColor;
+  vertical-align: text-bottom;
+  animation: blink 0.7s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.contact-panel {
+  padding: 30px;
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(22, 32, 42, 0.92), rgba(13, 20, 27, 0.98)),
+    url("https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+  background-blend-mode: multiply;
+  color: var(--cream);
+  box-shadow: 0 30px 80px rgba(8, 12, 18, 0.24);
+}
+.contact-panel h3 {
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  max-width: 10ch;
+}
+.contact-panel p {
+  margin-top: 14px;
+  color: var(--muted-dark);
+  line-height: 1.8;
+}
+.contact-meta {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.section { padding: 92px 0; }
+.steps-grid,
+.faq-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 34px;
+}
+.steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.faq-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
+.card {
+  padding: 30px;
+  border-radius: 28px;
+  border: 1px solid rgba(23, 20, 17, 0.1);
+  background: var(--surface);
+  box-shadow: 0 18px 44px rgba(7, 11, 18, 0.08);
+}
+.card-index {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+}
+.card h3 {
+  margin-top: 16px;
+  font-size: clamp(24px, 4vw, 34px);
+  line-height: 1.02;
+}
+.card p,
+.faq-column p {
+  margin-top: 14px;
+  color: var(--muted);
+  line-height: 1.82;
+}
+.faq-stack {
+  display: grid;
+  gap: 14px;
+}
+details {
+  padding: 22px 24px;
+  border-radius: 22px;
+  background: rgba(255, 248, 239, 0.72);
+  border: 1px solid rgba(23, 20, 17, 0.08);
+  box-shadow: 0 12px 34px rgba(8, 13, 20, 0.05);
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+summary::-webkit-details-marker { display: none; }
+details p { margin-top: 12px; }
+.apply-panel {
+  padding: 34px;
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(18, 27, 35, 0.94), rgba(12, 18, 24, 0.98)),
+    radial-gradient(circle at 80% 20%, rgba(201, 122, 74, 0.18), transparent 30%);
+  color: var(--cream);
+  box-shadow: 0 30px 80px rgba(8, 12, 18, 0.24);
+}
+.apply-panel p {
+  margin-top: 14px;
+  color: var(--muted-dark);
+  line-height: 1.8;
+  max-width: 58ch;
+}
+.apply-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+.particle-btn,
+.btn-secondary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.particle-btn {
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(181, 101, 60, 0.26);
+}
+.btn-secondary {
+  background: rgba(255, 248, 239, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--cream);
+}
+.particle-btn:hover,
+.btn-secondary:hover { transform: translateY(-2px); }
+.site-footer {
+  padding: 34px 0 44px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(9, 13, 19, 0.92);
+  color: var(--cream);
+}
+.site-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.footer-links a,
+.footer-meta {
+  color: rgba(246, 239, 230, 0.72);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.particle {
+  position: fixed;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.reveal-card { opacity: 0; transform: translateY(26px); }
+@media (max-width: 980px) {
+  .hero-grid,
+  .steps-grid,
+  .faq-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .site-nav .container,
+  .site-footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .brand-name { display: none; }
+}
+</style>
 </head>
 <body>
-<p>Redirecting to the ambassador experience. If you are not redirected, <a href="index.html#apply">continue here</a>.</p>
+  <header class="site-nav">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Dream Travel home">
+        <img src="logo-header.webp" alt="Dream Travel logo">
+        <span class="brand-name">Dream Travel</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Private &amp; Custom Tours</a>
+        <a href="contact.html" aria-current="page">Start Planning</a>
+        <a class="particle-btn" href="mailto:clients@dream-travel.net?subject=Start%20Planning%20My%20Trip&body=Name:%0AGroup%20or%20organization:%0ADestination%20interest:%0ATrip%20idea:%0ATiming:%0AGroup%20size:%0A">Email Dream Travel</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="section-head">
+          <span class="eyebrow">Start planning your trip</span>
+          <h1>We'll turn your group's travel goals into a reality.</h1>
+          <p>Discover the world your way. This page is where a private custom tour turns from an idea into a conversation with Dream Travel about destination, group fit, timing, and next steps.</p>
+          <div class="hero-type" id="applyType" aria-live="polite"></div>
+        </div>
+        <aside class="contact-panel reveal-card">
+          <h3>Ready to customize every step of your adventure?</h3>
+          <p>Whether you are planning for a club, organization, professional community, or shared-passion group, Dream Travel can help shape the right journey.</p>
+          <div class="contact-meta">
+            <span>clients@dream-travel.net</span>
+            <span>571 206 8949</span>
+            <span>@dreamtravel_adventures</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">As a host, you may choose to</span>
+          <h2>Build the trip around your group and your goals.</h2>
+          <p>Dream Travel provides the infrastructure so you can focus on your audience while choosing the kind of host role and long-term value that makes sense for you.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="card reveal-card">
+            <span class="card-index">01 Host benefit</span>
+            <h3>Travel free with your group</h3>
+            <p>For some hosts, the right structure allows them to travel alongside the group without personally carrying the cost of the trip.</p>
+          </article>
+          <article class="card reveal-card">
+            <span class="card-index">02 Host benefit</span>
+            <h3>Earn a host commission</h3>
+            <p>Depending on the structure, hosts may be able to earn a commission while Dream Travel manages pricing, payments, and coordination.</p>
+          </article>
+          <article class="card reveal-card">
+            <span class="card-index">03 Long-term path</span>
+            <h3>Build recurring departures</h3>
+            <p>Many communities turn one successful trip into an annual departure or a themed travel series that grows over time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-column">
+          <div class="section-head">
+            <span class="eyebrow">Frequently asked questions</span>
+            <h2>Here are the practical details most group organizers want to know.</h2>
+            <p>This page keeps the planning questions in one place so it is easier to move from interest to a real conversation.</p>
+          </div>
+        </div>
+        <div class="faq-stack">
+          <details class="reveal-card" open>
+            <summary>Who are private custom group tours ideal for?</summary>
+            <p>They are ideal for group leaders, creators, teachers, chefs, sports clubs, professionals, and community organizers who want to travel with their group without becoming tour operators.</p>
+          </details>
+          <details class="reveal-card">
+            <summary>What does Dream Travel take care of?</summary>
+            <p>Dream Travel can handle itinerary design, accommodations, transportation, experiences, local partners, registration, payments, logistics, and on-the-ground coordination.</p>
+          </details>
+          <details class="reveal-card">
+            <summary>What group size works best?</summary>
+            <p>Typical group size is 10 to 25 travelers, with private departures scheduled around season, destination availability, and what works for your audience.</p>
+          </details>
+          <details class="reveal-card">
+            <summary>What kinds of themes can we build around?</summary>
+            <p>Trips can be built around art, history, language, culture, wine, culinary experiences, photography, sports, wellness, or any clear theme that gives the group a reason to travel together.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="apply-panel reveal-card">
+          <span class="eyebrow">Discover the world, your way</span>
+          <h2>Start planning when you are ready to customize the trip.</h2>
+          <p>Share the rough shape of the group, destination, timing, and travel style. Dream Travel will help turn that direction into a customized journey built for your people.</p>
+          <div class="apply-actions">
+            <a class="particle-btn" href="mailto:clients@dream-travel.net?subject=Start%20Planning%20My%20Trip&body=Name:%0AGroup%20or%20organization:%0ADestination%20interest:%0ATrip%20idea:%0ATiming:%0AGroup%20size:%0A">Start Planning Your Trip</a>
+            <a class="btn-secondary" href="experiences.html">See What We Do</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Private &amp; Custom Tours</a>
+        <a href="contact.html">Start Planning</a>
+      </div>
+      <div class="footer-meta">Copyright © 2026 | clients@dream-travel.net | 571 206 8949</div>
+    </div>
+  </footer>
+<script>
+(function () {
+  gsap.registerPlugin(ScrollTrigger);
+  var typeEl = document.getElementById("applyType");
+  var phrases = [
+    "Private groups.",
+    "Custom itineraries.",
+    "Meaningful travel."
+  ];
+  if (typeEl) {
+    var phraseIndex = 0;
+    var charIndex = 0;
+    var deleting = false;
+    function tick() {
+      var phrase = phrases[phraseIndex];
+      if (!deleting) {
+        charIndex += 1;
+        if (charIndex >= phrase.length) {
+          typeEl.innerHTML = phrase + '<span class="type-cursor"></span>';
+          deleting = true;
+          setTimeout(tick, 1200);
+          return;
+        }
+      } else {
+        charIndex -= 1;
+        if (charIndex <= 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(tick, 220);
+          return;
+        }
+      }
+      typeEl.innerHTML = phrase.substring(0, charIndex) + '<span class="type-cursor"></span>';
+      setTimeout(tick, deleting ? 28 : 54);
+    }
+    tick();
+  }
+  gsap.utils.toArray(".reveal-card").forEach(function (card) {
+    gsap.to(card, {
+      opacity: 1,
+      y: 0,
+      duration: 0.9,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 84%"
+      }
+    });
+  });
+  document.querySelectorAll(".particle-btn").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var rect = button.getBoundingClientRect();
+      var centerX = rect.left + rect.width / 2;
+      var centerY = rect.top + rect.height / 2;
+      for (var i = 0; i < 18; i += 1) {
+        var particle = document.createElement("span");
+        particle.className = "particle";
+        particle.style.left = centerX + "px";
+        particle.style.top = centerY + "px";
+        particle.style.background = i % 2 === 0 ? "#fff" : "#f6d2b5";
+        document.body.appendChild(particle);
+        var angle = Math.random() * Math.PI * 2;
+        var distance = 34 + Math.random() * 76;
+        var x = Math.cos(angle) * distance;
+        var y = Math.sin(angle) * distance - 12;
+        particle.animate([
+          { transform: "translate(0, 0) scale(1)", opacity: 1 },
+          { transform: "translate(" + x + "px," + y + "px) scale(0)", opacity: 0 }
+        ], {
+          duration: 640,
+          easing: "cubic-bezier(.16,1,.3,1)"
+        });
+        setTimeout(function (node) {
+          node.remove();
+        }, 700, particle);
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
