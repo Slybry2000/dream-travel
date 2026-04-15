@@ -131,43 +131,58 @@ section[id],
   position: sticky;
   top: 0;
   z-index: 40;
-  padding: 16px 0;
+  padding: 8px 0;
   backdrop-filter: blur(18px);
-  background: rgba(247, 240, 231, 0.84);
+  background: rgba(247, 240, 231, 0.76);
   border-bottom: 1px solid rgba(23, 20, 18, 0.08);
 }
 .site-nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
 }
-.brand {
+.nav-contact {
   display: inline-flex;
   align-items: center;
-  gap: 0;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
-.brand img {
-  width: 150px;
-  height: auto;
-  object-fit: contain;
+.nav-contact strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+.nav-contact a {
+  color: inherit;
+}
+.nav-contact a:hover,
+.nav-links a:hover,
+.nav-links button:hover { color: var(--ink); }
+.nav-contact-divider {
+  width: 1px;
+  height: 10px;
+  background: rgba(23, 20, 18, 0.12);
 }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
   color: var(--muted);
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 .nav-links .btn {
-  padding-inline: 22px;
+  padding: 11px 16px;
+  font-size: 12px;
 }
-.nav-links a:hover { color: var(--ink); }
 .hero-shell { position: relative; min-height: 220vh; }
 .hero-sticky {
   position: sticky;
@@ -205,6 +220,16 @@ section[id],
   pointer-events: none;
   padding-top: 130px;
 }
+.hero-corner-logo {
+  position: absolute;
+  z-index: 4;
+  top: 88px;
+  left: max(18px, calc((100vw - 1160px) / 2 + 18px));
+  width: clamp(110px, 12vw, 168px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 28px rgba(7, 12, 18, 0.32));
+}
 .hero-intro-stack {
   position: relative;
   display: grid;
@@ -213,6 +238,8 @@ section[id],
   width: min(100%, 980px);
   padding: 0 24px;
   transform: none;
+  transform-origin: 50% 30%;
+  will-change: transform, opacity;
 }
 .hero-intro-title {
   font-family: var(--sans);
@@ -300,6 +327,7 @@ section[id],
   position: relative;
   color: var(--cream-strong);
   padding-top: 240px;
+  will-change: transform;
 }
 .hero-main::before {
   content: "";
@@ -347,6 +375,7 @@ section[id],
   backdrop-filter: blur(12px);
   align-self: center;
   margin-top: 260px;
+  will-change: transform;
 }
 .hero-card .eyebrow {
   margin-bottom: 18px;
@@ -435,6 +464,106 @@ section[id],
   color: var(--muted);
   font-size: 13px;
   line-height: 1.6;
+}
+.journey-mask-section {
+  position: relative;
+  min-height: 240vh;
+  margin-top: 8px;
+  background: linear-gradient(180deg, #111926 0%, #0a1017 100%);
+}
+.journey-mask-sticky {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journey-mask-bg,
+.journey-mask-grain {
+  position: absolute;
+  inset: -14%;
+}
+.journey-mask-bg {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(201, 122, 74, 0.34), transparent 20%),
+    radial-gradient(circle at 78% 28%, rgba(122, 143, 123, 0.26), transparent 18%),
+    radial-gradient(circle at 50% 68%, rgba(244, 237, 228, 0.08), transparent 26%),
+    linear-gradient(135deg, #16202b 0%, #0c131b 38%, #070b11 100%);
+  background-size: 140% 140%;
+  animation: driftGradient 16s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.journey-mask-grain {
+  opacity: 0.14;
+  mix-blend-mode: screen;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.journey-mask-overlay,
+.journey-mask-reveal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+.journey-mask-overlay {
+  background: rgba(7, 12, 18, 0.78);
+}
+.journey-mask-reveal {
+  clip-path: inset(100% 0 0 0);
+}
+.journey-mask-text,
+.journey-mask-text-filled {
+  font-family: var(--sans);
+  font-size: clamp(74px, 14vw, 190px);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  line-height: 0.84;
+  text-align: center;
+  text-transform: uppercase;
+}
+.journey-mask-text {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 248, 240, 0.22);
+}
+.journey-mask-text-filled {
+  background: linear-gradient(135deg, rgba(255, 248, 240, 0.98), rgba(201, 122, 74, 0.96) 42%, rgba(122, 143, 123, 0.88));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+.journey-mask-copy {
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+  z-index: 4;
+  width: min(640px, calc(100vw - 40px));
+  text-align: center;
+  transform: translateX(-50%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.journey-mask-copy .eyebrow {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--cream);
+}
+.journey-mask-copy p {
+  margin-top: 18px;
+  color: rgba(244, 237, 228, 0.76);
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.75;
+}
+@keyframes driftGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 .proof-section { padding-top: 28px; }
 .proof-grid {
@@ -608,8 +737,7 @@ section[id],
     url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
 }
 .image-card .overlay,
-.apply-photo .overlay,
-.gallery-card .caption {
+.apply-photo .overlay {
   position: absolute;
   inset: auto 0 0;
   padding: 28px;
@@ -822,76 +950,173 @@ section[id],
   color: var(--muted);
   line-height: 1.72;
 }
-.gallery-grid {
-  display: flex;
-  gap: 10px;
-  margin-top: 28px;
-  min-height: 560px;
-}
-.gallery-card {
-  flex: 1;
-  min-height: 560px;
-  position: relative;
-  border-radius: 18px;
+.travel-marquee-band {
+  padding: 24px 0 30px;
   overflow: hidden;
-  box-shadow: 0 20px 48px rgba(12, 19, 28, 0.14);
-  transition: flex 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s ease;
-  cursor: pointer;
+  background: linear-gradient(180deg, rgba(14, 21, 31, 0.98), rgba(10, 15, 22, 1));
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
-.gallery-grid:hover .gallery-card {
-  flex: 0.92;
+.travel-marquee-label {
+  padding: 0 18px 18px;
+  text-align: center;
+  color: rgba(244, 237, 228, 0.54);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
-.gallery-card:hover,
-.gallery-card:focus-within,
-.gallery-card.is-featured {
-  flex: 1.6;
+.travel-marquee-row {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
 }
-.gallery-card::before {
+.travel-marquee-row + .travel-marquee-row {
+  margin-top: 10px;
+}
+.travel-marquee-content {
+  display: flex;
+  align-items: center;
+}
+.travel-marquee-row .marquee-item {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 30px;
+  color: rgba(255, 248, 240, 0.92);
+  font-size: clamp(34px, 7vw, 84px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.travel-marquee-row.is-outline .marquee-item {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 248, 240, 0.44);
+}
+.travel-marquee-row .sep {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 28px;
+  border-radius: 50%;
+  background: rgba(201, 122, 74, 0.72);
+}
+.travel-marquee-row.is-outline .sep {
+  background: transparent;
+  border: 1px solid rgba(255, 248, 240, 0.4);
+}
+.travel-marquee-note {
+  margin-top: 18px;
+  text-align: center;
+  color: rgba(244, 237, 228, 0.64);
+  font-size: 14px;
+}
+.formats-shell {
+  margin-top: 34px;
+}
+.formats-stack {
+  width: min(840px, calc(100vw - 36px));
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+.formats-stack-card {
+  position: relative;
+  min-height: min(68vh, 620px);
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(23, 20, 18, 0.1);
+  box-shadow: 0 26px 60px rgba(12, 19, 28, 0.16);
+  background: #0f151d;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 26px;
+  position: sticky;
+  will-change: transform, opacity;
+}
+.formats-stack-card:nth-child(1) { top: 92px; z-index: 1; }
+.formats-stack-card:nth-child(2) { top: 112px; z-index: 2; }
+.formats-stack-card:nth-child(3) { top: 132px; z-index: 3; }
+.formats-stack-card:nth-child(4) { top: 152px; z-index: 4; }
+.formats-stack-card:nth-child(5) { top: 172px; z-index: 5; }
+.formats-stack-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(13, 19, 27, 0.06), rgba(13, 19, 27, 0.72));
   z-index: 1;
+  background: linear-gradient(180deg, rgba(13, 19, 27, 0.08), rgba(13, 19, 27, 0.8));
 }
-.gallery-card img {
+.formats-stack-card img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.02);
-  transition: transform 500ms ease;
+  transform: scale(1.03);
+  transition: transform 420ms ease;
 }
-.gallery-card:hover img,
-.gallery-card:focus-within img,
-.gallery-card.is-featured img { transform: scale(1.08); }
-.gallery-card .caption {
+.formats-stack-card:hover img,
+.formats-stack-card:focus-within img {
+  transform: scale(1.1);
+}
+.formats-stack-card::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   z-index: 2;
-  padding: 30px 26px 28px;
+  pointer-events: none;
 }
-.gallery-card .caption h3 {
+.format-card-content {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 3;
+  padding: 30px 28px 28px;
+  color: var(--cream-strong);
+}
+.format-card-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 248, 240, 0.82);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.format-card-kicker::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--sage));
+}
+.format-card-content h3 {
+  margin-top: 14px;
   font-family: var(--serif);
-  font-size: 34px;
-  line-height: 0.96;
-  max-width: 10ch;
-  transform: translateY(12px);
-  transition: transform 360ms ease;
+  font-size: clamp(38px, 4.4vw, 54px);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
 }
-.gallery-card .caption p {
-  margin-top: 10px;
-  color: rgba(255, 248, 240, 0.78);
-  line-height: 1.7;
-  max-width: 30ch;
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 360ms ease, transform 360ms ease;
+.format-card-content p {
+  margin-top: 12px;
+  max-width: 32ch;
+  color: rgba(255, 248, 240, 0.82);
+  line-height: 1.72;
 }
-.gallery-card:hover .caption h3,
-.gallery-card:focus-within .caption h3,
-.gallery-card.is-featured .caption h3,
-.gallery-card:hover .caption p,
-.gallery-card:focus-within .caption p,
-.gallery-card.is-featured .caption p {
-  opacity: 1;
-  transform: translateY(0);
+.format-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 248, 240, 0.74);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .faq-grid {
   display: grid;
@@ -1022,22 +1247,19 @@ section[id],
     opacity: 1;
     transform: none;
   }
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    min-height: 0;
+  .journey-mask-section {
+    min-height: 170vh;
   }
-  .gallery-card,
-  .gallery-grid:hover .gallery-card,
-  .gallery-card:hover,
-  .gallery-card:focus-within,
-  .gallery-card.is-featured {
-    flex: unset;
-    min-height: 420px;
+  .journey-mask-copy {
+    bottom: 10%;
   }
-  .gallery-card .caption p {
-    opacity: 1;
-    transform: translateY(0);
+  .formats-stack {
+    width: min(840px, calc(100vw - 28px));
+  }
+  .formats-stack-card {
+    position: relative;
+    top: auto !important;
+    height: 440px;
   }
 }
 @media (max-width: 760px) {
@@ -1047,18 +1269,26 @@ section[id],
       linear-gradient(180deg, #f6f1ea 0%, #eadbca 28%, #f4ede4 42%, #141c26 42%, #0c1118 100%);
   }
   .site-nav .container,
+  .nav-contact,
   .nav-links { gap: 12px; }
   .site-nav {
     position: relative;
-    padding: 12px 0;
+    padding: 8px 0;
   }
   .site-nav .container { align-items: center; }
-  .brand img { width: 116px; height: auto; }
+  .nav-contact {
+    width: 100%;
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+  .nav-contact-divider,
+  .nav-contact strong { display: none; }
   .nav-links { margin-left: auto; font-size: 12px; }
   .nav-links a:not(.btn) { display: none; }
   .nav-links .btn {
     width: auto;
-    padding: 11px 16px;
+    padding: 10px 14px;
     font-size: 12px;
   }
   .hero-shell { min-height: auto; }
@@ -1072,12 +1302,18 @@ section[id],
     min-height: 300px;
     padding-top: 10px;
   }
+  .hero-corner-logo {
+    top: 74px;
+    left: 18px;
+    width: 118px;
+  }
   .hero-intro-stack {
     width: 100%;
     padding: 24px 18px 12px;
     gap: 12px;
     transform: none;
   }
+  .hero-logo { width: 72px; }
   .hero-intro-stack > div:first-child {
     position: relative;
     display: grid;
@@ -1119,6 +1355,27 @@ section[id],
     max-width: none;
     font-size: 15px;
   }
+  .journey-mask-text,
+  .journey-mask-text-filled {
+    font-size: clamp(58px, 18vw, 94px);
+    line-height: 0.9;
+  }
+  .journey-mask-copy {
+    bottom: 9%;
+    width: calc(100vw - 32px);
+  }
+  .journey-mask-copy p {
+    font-size: 15px;
+  }
+  .travel-marquee-row .marquee-item {
+    padding: 0 20px;
+    font-size: clamp(24px, 10vw, 44px);
+  }
+  .travel-marquee-row .sep {
+    width: 9px;
+    height: 9px;
+    margin-left: 18px;
+  }
   .hero-card {
     margin-top: 0;
     padding: 22px;
@@ -1128,12 +1385,13 @@ section[id],
   .fit-card { padding: 20px; }
   .image-card { min-height: 380px; }
   .apply-photo { min-height: 360px; }
-  .gallery-card,
-  .gallery-grid:hover .gallery-card,
-  .gallery-card:hover,
-  .gallery-card:focus-within,
-  .gallery-card.is-featured { min-height: 340px; }
-  .gallery-card .caption h3 { max-width: none; }
+  .formats-stack {
+    width: calc(100vw - 24px);
+  }
+  .formats-stack-card { height: 360px; }
+  .format-card-content {
+    padding: 24px 22px 22px;
+  }
   .metric-row,
   .proof-stats,
   .difference-grid,
@@ -1151,9 +1409,14 @@ section[id],
 <div class="page-shell">
   <nav class="site-nav">
     <div class="container">
-      <a class="brand" href="#top" aria-label="Dream Travel home">
-        <img src="logo-header.webp" alt="Dream Travel">
-      </a>
+      <div class="nav-contact">
+        <strong>Dream Travel</strong>
+        <a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a>
+        <span class="nav-contact-divider" aria-hidden="true"></span>
+        <a href="tel:+15712068949">571 206 8949</a>
+        <span class="nav-contact-divider" aria-hidden="true"></span>
+        <a href="https://www.instagram.com/dreamtravel_adventures/" target="_blank" rel="noopener noreferrer">@dreamtravel_adventures</a>
+      </div>
       <div class="nav-links">
         <a href="#why">Who It's For</a>
         <a href="#how">How It Works</a>
@@ -1169,6 +1432,7 @@ section[id],
         <div class="hero-layer hero-bg"></div>
         <div class="hero-layer hero-mid"></div>
         <div class="hero-layer hero-veil"></div>
+        <img class="hero-corner-logo" src="logo-header.webp" alt="Dream Travel">
         <div class="hero-intro" aria-hidden="true">
           <div class="hero-intro-stack">
             <div style="position:relative;">
@@ -1244,6 +1508,23 @@ section[id],
         </div>
       </div>
     </div>
+
+    <section class="journey-mask-section" aria-labelledby="journeyMaskHeading">
+      <div class="journey-mask-sticky">
+        <div class="journey-mask-bg"></div>
+        <div class="journey-mask-grain"></div>
+        <div class="journey-mask-overlay">
+          <h2 class="journey-mask-text" id="journeyMaskHeading">Lead<br>The Journey</h2>
+        </div>
+        <div class="journey-mask-reveal" aria-hidden="true">
+          <div class="journey-mask-text-filled">Lead<br>The Journey</div>
+        </div>
+        <div class="journey-mask-copy">
+          <div class="eyebrow">Show Your Taste</div>
+          <p>The strongest hosted trips do more than move people from one place to another. They carry your taste, your community, and your point of view all the way through the experience.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section light proof-section" id="proof">
       <div class="container">
@@ -1363,6 +1644,29 @@ section[id],
         </div>
       </div>
     </section>
+
+    <section class="travel-marquee-band" aria-label="Hosted journey themes">
+      <div class="travel-marquee-label">Scroll-reactive hosted journey themes</div>
+      <div class="travel-marquee-row" data-speed="1" data-direction="left">
+        <div class="travel-marquee-content">
+          <span class="marquee-item">Culture-led journeys<span class="sep"></span></span>
+          <span class="marquee-item">Retreat formats<span class="sep"></span></span>
+          <span class="marquee-item">Taste-driven travel<span class="sep"></span></span>
+          <span class="marquee-item">Community access<span class="sep"></span></span>
+        </div>
+      </div>
+      <div class="travel-marquee-row is-outline" data-speed="0.72" data-direction="right">
+        <div class="travel-marquee-content">
+          <span class="marquee-item">Founders<span class="sep"></span></span>
+          <span class="marquee-item">Creators<span class="sep"></span></span>
+          <span class="marquee-item">Educators<span class="sep"></span></span>
+          <span class="marquee-item">Chefs<span class="sep"></span></span>
+          <span class="marquee-item">Photographers<span class="sep"></span></span>
+        </div>
+      </div>
+      <div class="travel-marquee-note">Movement should make the offer feel alive before anyone fills out the form.</div>
+    </section>
+
     <section class="section dark" id="how">
       <div class="container">
         <div class="section-head light process-head reveal">
@@ -1474,27 +1778,68 @@ section[id],
           <h2>The strongest host-led trips already have a point of view.</h2>
           <p>The strongest programs feel specific from the beginning. The destination, tone, and format should make sense for your audience before anyone asks for details.</p>
         </div>
+      </div>
 
-        <div class="gallery-grid">
-          <article class="gallery-card is-featured reveal">
-            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" alt="Wine glasses on a table during a tasting">
-            <div class="caption">
+      <div class="formats-shell">
+        <div class="formats-stack" id="formatsStack">
+          <article class="formats-stack-card">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80" alt="Wine glasses on a table during a tasting">
+            <div class="format-card-content">
+              <div class="format-card-kicker">01 Culinary access</div>
               <h3>Wine + Taste</h3>
-              <p>For sommeliers, chefs, curators, and community tastemakers building a trip around access and flavor.</p>
+              <p>For sommeliers, chefs, curators, and tastemakers building a trip around access, flavor, and people who travel for a point of view.</p>
+              <div class="format-card-meta">
+                <span>Best for chefs</span>
+                <span>Small-group energy</span>
+              </div>
             </div>
           </article>
-          <article class="gallery-card reveal">
-            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Small group walking through a scenic coastal destination">
-            <div class="caption">
+          <article class="formats-stack-card">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80" alt="Small group walking through a scenic coastal destination">
+            <div class="format-card-content">
+              <div class="format-card-kicker">02 Presence-led</div>
               <h3>Retreat + Wellness</h3>
-              <p>For coaches, facilitators, and hosts whose people want immersion, presence, and a sense of reset.</p>
+              <p>For coaches, facilitators, and hosts whose people want immersion, reset, and a shared pace that feels restorative from arrival onward.</p>
+              <div class="format-card-meta">
+                <span>Best for retreat hosts</span>
+                <span>Slow itinerary</span>
+              </div>
             </div>
           </article>
-          <article class="gallery-card reveal">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80" alt="Creative professional photographing a destination">
-            <div class="caption">
+          <article class="formats-stack-card">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=80" alt="Creative professional photographing a destination">
+            <div class="format-card-content">
+              <div class="format-card-kicker">03 Story-driven</div>
               <h3>Creator + Culture</h3>
-              <p>For photographers, educators, and founders turning a worldview into a place-based community experience.</p>
+              <p>For photographers, educators, and founders turning a worldview into a place-based experience that feels like stepping inside the brand.</p>
+              <div class="format-card-meta">
+                <span>Best for creators</span>
+                <span>Content-rich moments</span>
+              </div>
+            </div>
+          </article>
+          <article class="formats-stack-card">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80" alt="Group of founders in conversation at a table">
+            <div class="format-card-content">
+              <div class="format-card-kicker">04 Community depth</div>
+              <h3>Founder + Mastermind</h3>
+              <p>For founders and operators with engaged circles who want sharper conversation, curated rooms, and a format built around meaningful access.</p>
+              <div class="format-card-meta">
+                <span>Best for founders</span>
+                <span>Conversation-led</span>
+              </div>
+            </div>
+          </article>
+          <article class="formats-stack-card">
+            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1400&q=80" alt="Group enjoying a guided travel experience together">
+            <div class="format-card-content">
+              <div class="format-card-kicker">05 Learning-led</div>
+              <h3>Education + Immersion</h3>
+              <p>For educators and community leaders who want teaching, shared experience, and well-paced travel to feel like one coherent offer.</p>
+              <div class="format-card-meta">
+                <span>Best for educators</span>
+                <span>Clear learning arc</span>
+              </div>
             </div>
           </article>
         </div>
@@ -1627,9 +1972,48 @@ section[id],
     });
   });
 
+  ScrollTrigger.matchMedia({
+    "(min-width: 761px)": function () {
+      gsap.to(".hero-intro-stack", {
+        scale: 3.7,
+        yPercent: -18,
+        opacity: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".hero-shell",
+          start: "top top",
+          end: "52% top",
+          scrub: true
+        }
+      });
+
+      gsap.to(".hero-main", {
+        yPercent: -10,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".hero-shell",
+          start: "top top",
+          end: "bottom top",
+          scrub: true
+        }
+      });
+
+      gsap.to(".hero-card", {
+        yPercent: -18,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".hero-shell",
+          start: "top top",
+          end: "bottom top",
+          scrub: true
+        }
+      });
+    }
+  });
+
   gsap.to(".hero-bg", {
-    scale: 1.22,
-    yPercent: 10,
+    scale: 1.3,
+    yPercent: 14,
     ease: "none",
     scrollTrigger: {
       trigger: ".hero-shell",
@@ -1640,7 +2024,7 @@ section[id],
   });
 
   gsap.to(".hero-mid", {
-    yPercent: -12,
+    yPercent: -16,
     ease: "none",
     scrollTrigger: {
       trigger: ".hero-shell",
@@ -1649,6 +2033,47 @@ section[id],
       scrub: true
     }
   });
+
+  if (document.querySelector(".journey-mask-section")) {
+    gsap.to(".journey-mask-reveal", {
+      clipPath: "inset(0% 0 0 0)",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".journey-mask-section",
+        start: "top top",
+        end: "60% bottom",
+        scrub: 0.3
+      }
+    });
+
+    gsap.to(".journey-mask-bg", {
+      scale: 1.2,
+      yPercent: -8,
+      rotate: -6,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".journey-mask-section",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+      }
+    });
+
+    gsap.fromTo(".journey-mask-copy",
+      { opacity: 0, y: 24 },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".journey-mask-section",
+          start: "52% top",
+          end: "72% top",
+          scrub: true
+        }
+      }
+    );
+  }
 
   var spotGrid = document.getElementById("spotGrid");
   if (spotGrid) {
@@ -1683,17 +2108,88 @@ section[id],
     });
   });
 
-  var galleryCards = document.querySelectorAll(".gallery-card");
-  galleryCards.forEach(function (card) {
-    function featureCard() {
-      galleryCards.forEach(function (item) {
-        item.classList.toggle("is-featured", item === card);
+  var marqueeRows = document.querySelectorAll(".travel-marquee-row");
+  if (marqueeRows.length) {
+    marqueeRows.forEach(function (row) {
+      var content = row.querySelector(".travel-marquee-content");
+      if (content && row.children.length === 1) {
+        row.appendChild(content.cloneNode(true));
+      }
+    });
+
+    var marqueeVelocity = 0;
+    var marqueeData = [];
+
+    marqueeRows.forEach(function (row) {
+      var content = row.querySelector(".travel-marquee-content");
+      var width = content ? content.offsetWidth : 0;
+      var direction = row.dataset.direction === "right" ? 1 : -1;
+
+      marqueeData.push({
+        row: row,
+        width: width,
+        x: direction === 1 ? -width : 0,
+        direction: direction,
+        speed: parseFloat(row.dataset.speed) || 1
+      });
+    });
+
+    function refreshMarqueeWidths() {
+      marqueeData.forEach(function (item) {
+        var content = item.row.querySelector(".travel-marquee-content");
+        item.width = content ? content.offsetWidth : 0;
+        if (item.direction === 1) {
+          item.x = -item.width;
+        }
       });
     }
 
-    card.addEventListener("mouseenter", featureCard);
-    card.addEventListener("focusin", featureCard);
-    card.addEventListener("click", featureCard);
+    ScrollTrigger.addEventListener("refreshInit", refreshMarqueeWidths);
+    ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: function (self) {
+        marqueeVelocity = Math.abs(self.getVelocity());
+      }
+    });
+
+    gsap.ticker.add(function () {
+      marqueeVelocity *= 0.92;
+
+      marqueeData.forEach(function (item) {
+        if (!item.width) return;
+
+        var frameSpeed = (0.55 + Math.min(marqueeVelocity * 0.00035, 2.4)) * item.speed;
+        item.x += item.direction * -1 * frameSpeed;
+
+        if (item.direction === -1 && item.x <= -item.width) {
+          item.x += item.width;
+        }
+
+        if (item.direction === 1 && item.x >= 0) {
+          item.x -= item.width;
+        }
+
+        item.row.style.transform = "translateX(" + item.x + "px)";
+      });
+    });
+  }
+
+  var stackCards = document.querySelectorAll(".formats-stack-card");
+  stackCards.forEach(function (card, index) {
+    if (index >= stackCards.length - 1) return;
+
+    gsap.to(card, {
+      scale: 0.95,
+      opacity: 0.56,
+      ease: "none",
+      scrollTrigger: {
+        trigger: stackCards[index + 1],
+        start: "top 82%",
+        end: "top 24%",
+        scrub: true
+      }
+    });
   });
 })();
 </script>
