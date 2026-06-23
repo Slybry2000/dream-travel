@@ -340,6 +340,135 @@ img { display: block; max-width: 100%; }
   max-width: 62ch;
 }
 
+/* ----- Hosting tiers (pricing-style cards) ----- */
+.tier-grid {
+  list-style: none;
+  margin: clamp(64px, 9vh, 96px) 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 1.6vw, 24px);
+}
+.tier {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(28px, 3vw, 40px);
+  border: 1px solid var(--line-dark);
+  background: rgba(241, 232, 216, 0.035);
+  transition: border-color 240ms ease, background 240ms ease, transform 240ms ease;
+}
+.tier:hover {
+  border-color: rgba(184, 92, 56, 0.6);
+  background: rgba(241, 232, 216, 0.06);
+  transform: translateY(-4px);
+}
+.tier__tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+.tier__value {
+  margin-top: clamp(18px, 2.2vw, 26px);
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.2vw, 42px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  color: var(--cream-strong);
+}
+.tier__value em { font-style: italic; color: var(--terracotta); }
+.tier__name {
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(241, 232, 216, 0.62);
+}
+.tier__body {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(241, 232, 216, 0.82);
+}
+.tier__foot {
+  margin-top: auto;
+  padding-top: clamp(22px, 2.6vw, 30px);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(241, 232, 216, 0.5);
+}
+
+/* ----- Who hosts (audience tags) ----- */
+.host-for {
+  margin-top: clamp(56px, 8vh, 84px);
+}
+.host-for__label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: clamp(18px, 2.4vw, 24px);
+}
+.host-for__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.host-for__tags li {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  color: rgba(241, 232, 216, 0.86);
+  padding: 9px 16px;
+  border: 1px solid var(--line-dark);
+  background: rgba(241, 232, 216, 0.035);
+}
+.host-for__line {
+  margin-top: clamp(22px, 3vh, 30px);
+  font-family: var(--serif);
+  font-size: clamp(16px, 1.2vw, 19px);
+  line-height: 1.6;
+  color: rgba(241, 232, 216, 0.72);
+  max-width: 58ch;
+}
+
+/* ----- Travelers (testimonials) ----- */
+.praise-list {
+  list-style: none;
+  margin: clamp(64px, 9vh, 96px) 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 2.4vw, 36px);
+}
+.praise {
+  padding: clamp(28px, 3vw, 40px);
+  border-top: 2px solid var(--terracotta);
+  background: rgba(255, 251, 244, 0.5);
+}
+.praise__quote {
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.praise__name {
+  margin-top: clamp(18px, 2.4vw, 24px);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terracotta-deep);
+}
+
 .section-note {
   margin-top: clamp(40px, 6vh, 60px);
   max-width: 62ch;
@@ -504,6 +633,26 @@ img { display: block; max-width: 100%; }
 }
 .field input::placeholder,
 .field textarea::placeholder { color: rgba(74, 59, 48, 0.45); }
+.field--check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.field--check input {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  margin-top: 2px;
+  padding: 0;
+  accent-color: var(--terracotta);
+  cursor: pointer;
+}
+.field__check-label {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted-ink);
+}
 .field input:focus,
 .field textarea:focus {
   outline: none;
@@ -601,6 +750,9 @@ img { display: block; max-width: 100%; }
   .section-head { max-width: 100%; }
   .method-list { max-width: 100%; }
   .final-grid { grid-template-columns: 1fr; gap: clamp(36px, 6vh, 56px); }
+  .tier-grid { grid-template-columns: 1fr; }
+  .tier__foot { margin-top: clamp(18px, 3vh, 28px); }
+  .praise-list { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   .hero__chrome { padding-top: 18px; }
