@@ -255,38 +255,19 @@
       <p class="lede">Tell us about your people, your dates, the kind of trip you would like to host. We answer with a draft, not a brochure.</p>
       <p class="final-detail">Clients@dream-travel.net &nbsp;&middot;&nbsp; Call or text 571 206 8949</p>
     </div>
-    <form class="plan-form" action="mailto:clients@dream-travel.net" method="post" enctype="text/plain">
-      <label class="field">
-        <span class="field__label">Your name</span>
-        <input type="text" name="name" required autocomplete="name">
-      </label>
-      <label class="field">
-        <span class="field__label">Email</span>
-        <input type="email" name="email" required autocomplete="email">
-      </label>
-      <label class="field">
-        <span class="field__label">Where your group is based</span>
-        <input type="text" name="location" placeholder="City, state, or country">
-      </label>
-      <label class="field">
-        <span class="field__label">Group size &amp; window</span>
-        <input type="text" name="window" placeholder="e.g. 12 guests, October 2026">
-      </label>
-      <label class="field">
-        <span class="field__label">A few lines about the trip</span>
-        <textarea name="notes" rows="4" placeholder="Where you might want to go. How you like to travel."></textarea>
-      </label>
-      <label class="field field--check">
-        <input type="checkbox" name="newsletter" value="yes">
-        <span class="field__check-label">Add me to Dream Travel&rsquo;s adult-travel list &mdash; occasional notes on new trips. Kept separate from our student-group newsletter.</span>
-      </label>
-      <button class="cta cta--filled" type="submit">
-        <span>Send a note</span>
-        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-          <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/>
-        </svg>
-      </button>
-    </form>
+    <!-- Plan form. Served from a here.now Site Data page so submissions are captured
+         back to us (no mailto). Embedded transparently; auto-sized via postMessage. -->
+    <div class="plan-embed">
+      <iframe id="plan-frame" title="Send Dream Travel a note about your trip"
+        src="https://woody-palm-vmne.here.now/" loading="lazy" scrolling="no"
+        style="width:100%;border:0;background:transparent;min-height:820px;display:block;color-scheme:light"></iframe>
+      <noscript>
+        <p style="font-family:var(--mono);font-size:12px;color:var(--muted-ink);line-height:1.7">
+          To begin, email <a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a>
+          or call / text 571&nbsp;206&nbsp;8949.
+        </p>
+      </noscript>
+    </div>
   </div>
   <span class="index-marker index-marker--inline index-marker--ink">Index / 07 &mdash; Plan</span>
 </section>
@@ -307,6 +288,26 @@
     <span class="footer__meta">&copy; 2026 &nbsp;/&nbsp; <a href="mailto:clients@dream-travel.net">clients@dream-travel.net</a> &nbsp;/&nbsp; <a href="tel:+15712068949">571 206 8949</a></span>
   </div>
 </footer>
+
+<script>
+  // Auto-size the embedded plan form to its content (it posts its height on load,
+  // submit, and resize). Only trust messages from the form's own origin.
+  (function(){
+    var f = document.getElementById("plan-frame");
+    if (!f) return;
+    window.addEventListener("message", function(e){
+      if (!e.data || e.data.type !== "dt-plan-height") return;
+      if (typeof e.origin === "string" && e.origin.indexOf("woody-palm-vmne.here.now") === -1) return;
+      var h = parseInt(e.data.height, 10);
+      if (h > 0) {
+        // handshake is live — let the iframe size exactly to content (drop the
+        // no-JS floor so the short thank-you state doesn't leave a gap).
+        f.style.minHeight = "0px";
+        f.style.height = (h + 8) + "px";
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
