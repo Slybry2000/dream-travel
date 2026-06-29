@@ -684,6 +684,24 @@ img { display: block; max-width: 100%; }
 .cta--filled:hover svg { transform: translateX(4px); }
 .cta--filled:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
+/* Plan CTA — links to the here.now note form (capture back to us) */
+.plan-cta {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.plan-cta .cta--filled { text-decoration: none; }
+.plan-cta__note {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted-ink);
+  max-width: 34ch;
+  margin: 0;
+}
+
 /* ============  FOOTER  ============ */
 .site-footer {
   background: #0c0805;
