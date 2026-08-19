@@ -8,31 +8,50 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=mobile-final-20260819">
+<script src="site.js?v=mobile-20260819" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+<div class="hero__chrome">
+  <a class="wordmark" href="#" aria-label="Dream Travel home">
+    <img class="wordmark__logo" src="images/logo-header-2x.webp" alt="" width="37" height="32">
+    <span>Dream Travel</span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#method">Method</a>
+    <a href="#journeys">Journeys</a>
+    <a href="#hosting">Hosting</a>
+    <a href="#travelers">Travelers</a>
+    <a href="#plan">Plan</a>
+  </nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+    <span class="menu-toggle__label">Menu</span>
+    <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+  </button>
+</div>
+
 <header class="hero" id="main">
   <picture class="hero__picture">
-    <source media="(max-width: 768px)" srcset="images/hero-background-mobile.png">
-    <img class="hero__media" src="images/hero-background.png" alt="A host stands at the head of a long Mediterranean cliffside dinner table, her group of guests seated together behind her at golden hour.">
+    <source media="(max-width: 768px) and (orientation: portrait)" type="image/avif"
+            srcset="images/hero-background-mobile-480w.avif 480w, images/hero-background-mobile-768w.avif 768w, images/hero-background-mobile-941w.avif 941w, images/hero-background-mobile-r2-1200w.avif 1200w, images/hero-background-mobile-r2-1440w.avif 1440w"
+            sizes="80vh">
+    <source media="(max-width: 768px) and (orientation: portrait)" type="image/webp"
+            srcset="images/hero-background-mobile-480w.webp 480w, images/hero-background-mobile-768w.webp 768w, images/hero-background-mobile-941w.webp 941w, images/hero-background-mobile-r2-1200w.webp 1200w, images/hero-background-mobile-r2-1440w.webp 1440w"
+            sizes="80vh">
+    <source media="(max-width: 768px) and (orientation: portrait)" srcset="images/hero-background-mobile.png">
+    <source type="image/avif"
+            srcset="images/hero-background-640w.avif 640w, images/hero-background-941w.avif 941w, images/hero-background-r2-1280w.avif 1280w, images/hero-background-r2-1920w.avif 1920w"
+            sizes="(min-aspect-ratio: 16/9) 100vw, 178vh">
+    <source type="image/webp"
+            srcset="images/hero-background-640w.webp 640w, images/hero-background-941w.webp 941w, images/hero-background-r2-1280w.webp 1280w, images/hero-background-r2-1920w.webp 1920w"
+            sizes="(min-aspect-ratio: 16/9) 100vw, 178vh">
+    <img class="hero__media" src="images/hero-background.png" alt="A host stands at the head of a long Mediterranean cliffside dinner table, her group of guests seated together behind her at golden hour." width="941" height="529" fetchpriority="high" decoding="async">
   </picture>
   <div class="hero__scrim" aria-hidden="true"></div>
 
-  <div class="hero__chrome">
-    <a class="wordmark" href="#" aria-label="Dream Travel home">
-      <img class="wordmark__logo" src="images/logo-header.webp" alt="" width="37" height="32">
-      <span>Dream Travel</span>
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#method">Method</a>
-      <a href="#journeys">Journeys</a>
-      <a href="#hosting">Hosting</a>
-      <a href="#travelers">Travelers</a>
-      <a href="#plan">Plan</a>
-    </nav>
-  </div>
+  <div class="hero__chrome-spacer" aria-hidden="true"></div>
 
   <div class="hero__content">
     <h1 class="display">
@@ -42,17 +61,39 @@
     </h1>
     <span class="accent-rule" aria-hidden="true"></span>
     <p class="meta">Hosted. Private. Custom.</p>
+    <a class="cta cta--floating" href="#plan">
+      <span>Begin a journey</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+        <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+    </a>
   </div>
-
-  <a class="cta cta--floating" href="#plan">
-    <span>Begin a journey</span>
-    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-      <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/>
-    </svg>
-  </a>
 
   <span class="index-marker">Index / 01 &mdash; Terrace</span>
 </header>
+
+<dialog class="mobile-menu" id="mobile-menu" aria-label="Primary navigation">
+  <div class="mobile-menu__frame">
+    <div class="mobile-menu__header">
+      <a class="mobile-menu__brand" href="#" aria-label="Dream Travel home">
+        <img src="images/logo-header-2x.webp" alt="" width="37" height="32">
+        <span>Dream Travel</span>
+      </a>
+      <button class="mobile-menu__close" type="button" data-menu-close aria-label="Close menu">
+        <span>Close</span>
+        <i aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Primary mobile">
+      <a href="#method">Method</a>
+      <a href="#journeys">Journeys</a>
+      <a href="#hosting">Hosting</a>
+      <a href="#travelers">Travelers</a>
+      <a href="#plan">Plan</a>
+    </nav>
+    <span class="mobile-menu__rule" aria-hidden="true"></span>
+  </div>
+</dialog>
 
 <!-- 02 — METHOD: how a hosted journey gets built -->
 <section class="surface surface--dark" id="method">
@@ -105,7 +146,7 @@
       <p class="lede">Not destinations, exactly. Closer to a way of being in a place for a week.</p>
     </header>
 
-    <ul class="journeys-list">
+    <ul class="journeys-list" tabindex="0" aria-label="Example journeys. Use the left and right arrow keys to browse.">
       <li class="journey">
         <div class="journey__head">
           <span class="journey__num">01</span>
@@ -154,7 +195,7 @@
       <p class="lede">A trip is built around a host and the people they bring. In return, you travel, you earn, or you give it back &mdash; whichever shape fits your community.</p>
     </header>
 
-    <ul class="tier-grid">
+    <ul class="tier-grid" tabindex="0" aria-label="Hosting choices. Use the left and right arrow keys to browse.">
       <li class="tier">
         <span class="tier__tag">Option 01</span>
         <p class="tier__value">Travel <em>free.</em></p>
@@ -212,7 +253,7 @@
       <p class="lede">Real notes from groups we have hosted &mdash; teachers, art circles, and the people they brought along.</p>
     </header>
 
-    <ul class="praise-list">
+    <ul class="praise-list" tabindex="0" aria-label="Traveler reviews. Use the left and right arrow keys to browse.">
       <li class="praise">
         <p class="praise__quote">&ldquo;Wonderful time, a great group of people, and a great tour guide. The hotel was very nice and in a great area.&rdquo;</p>
         <p class="praise__name">Rebecca W.</p>
@@ -274,7 +315,7 @@
 <footer class="site-footer">
   <div class="footer__inner">
     <a class="footer__brand" href="#" aria-label="Dream Travel home">
-      <img class="footer__logo" src="images/logo-footer.webp" alt="" width="56" height="48">
+      <img class="footer__logo" src="images/logo-footer-2x.webp" alt="" width="56" height="48">
       <span>Dream Travel</span>
     </a>
     <nav class="footer__nav" aria-label="Footer">
