@@ -12,7 +12,9 @@ Hosted, considered, intimate. The brand voice sounds like a trusted host writing
 | `--cream-strong` | `#faf3e6` | Headline text on dark, secondary surface background | Never as a small UI fill (looks like SaaS surface) |
 | `--paper` | `#ece2cf` | Section-flip surface, card backgrounds | Never gradiented |
 | `--terracotta` | `#b85c38` | Single accent — underlines, filled CTA, italic word emphasis | NEVER as a gradient; NEVER as a glow; NEVER as a stroke wider than 4px; max ~3% of page pixels |
-| `--terracotta-deep` | `#984a2c` | Hover / pressed state of `--terracotta` only | Never as default state |
+| `--terracotta-deep` | `#984a2c` | Fill of the single `.cta--filled`, and hover / pressed state of `--terracotta` | Never as a large background field; never as a second accent |
+| `--terracotta-press` | `#7d3c23` | Hover / pressed state of the filled CTA only | Never as a default state, never as text |
+| `--terracotta-text` | `#984a2c` light, `#c96a44` on ink, `#d3764e` / `#e69a77` on dark surfaces | Terracotta used as *text* (kickers, step numbers, slot fields, compare titles) | Accessibility tint only. `#b85c38` stays the accent for rules, borders and large italic display words |
 | `--muted-ink` | `#4a3b30` | Body copy on cream surfaces | Never as a primary headline color |
 
 **Forbidden combos:** terracotta + sage green together (looks Christmas); terracotta over cream-strong with a drop shadow (looks 2014 flat-design); any two-color gradient anywhere; any cyan/blue/violet/neon.
@@ -69,7 +71,7 @@ Rhythm-flip rule: alternate dark hero-style surfaces with cream `--paper` surfac
 
 **Ghost CTA (default)** — 1px `--cream` border on dark / 1px `--ink` border on cream. Fraunces 500 12px caps, `letter-spacing: 0.22em`. Right-arrow SVG (`5 12 → 18 12`) on the end, translates +4px on hover. Used in hero and at every section CTA *except* the final.
 
-**Filled CTA (final only)** — `--terracotta` fill, `--cream-strong` text, same typography as ghost CTA. Hover → `--terracotta-deep`. Used **once per page**, on the final-CTA section.
+**Filled CTA (final only)** — `--terracotta-deep` (`#984a2c`) fill, `--cream-strong` text, same typography as ghost CTA. Hover → `--terracotta-press` (`#7d3c23`). The deep tone is the CTA's default fill by exception, so that white-on-terracotta clears AA at body size; `--terracotta` `#b85c38` does not. Used **once per page**, on the final-CTA section.
 
 **Meta line** — JetBrains Mono 11px caps, `letter-spacing: 0.22em`, 66% opacity. Period-separated. Examples: `HOSTED. PRIVATE. CUSTOM.` / `LISBON. PUGLIA. MARRAKECH.` / `04 NIGHTS. 12 GUESTS.`
 
@@ -107,3 +109,19 @@ Rhythm-flip rule: alternate dark hero-style surfaces with cream `--paper` surfac
 14. **"Book now"** or **"Reserve your spot"** CTA copy. The site is hosted, not transactional. Use "Begin a journey", "Plan together", "Start a conversation".
 15. **Drop shadows** on cards, buttons, or images. The page works on warm light, not depth-layering.
 16. **A second accent color.** Terracotta is alone. Sage and gold from the previous palette are explicitly retired in this redesign.
+
+---
+
+## 2026 Reference-Format Addendum
+
+This addendum governs the current homepage and supersedes the earlier rules above where they conflict. The source content remains Dream Travel's; the page format follows the supplied luxury-travel reference without reusing its trademarks, copy, claims, or media.
+
+- **Voice:** direct, assured, editorial. Verified Dream Travel copy stays human and specific.
+- **Palette:** verified Dream Travel deep green `#00120b`, peach `#fba676`, mint `#95cdb8`, off-white `#fcfcfc`, and slate body text `#233744`. Terracotta `#b96d55` is reserved for the closing action field.
+- **Type:** Newsreader 400/500/600 is the editorial voice for major headlines, section titles, reassurance titles, testimonial copy, and large hosting numerals. Locally hosted Story Script Regular is reserved for the emotional hero phrase and trip/group names. Poppins 400/500/600/700 handles body copy, navigation, buttons, forms, links, kickers, and practical metadata. Change `data-type-system="journal"` to another value to remove the Newsreader overrides and restore the prior Story Script/Poppins hierarchy.
+- **Composition:** full-height centered hero; centered narrative block; horizontal proof rail; one combined 3D discovery sphere for group types and example trips; buffered alternating story cards; five icon-pack reassurance points; terracotta closing field; dense deep-green footer. The former dual rails remain available through the reversible layout flag.
+- **Imagery:** the verified Dream Travel hero remains responsive AVIF/WebP with its original PNG fallback. Ten distinct, locally optimized WebP photographs were generated specifically for the six group types and four example trips; supporting story cards reuse three of these contextual plates.
+- **Graphic flourishes:** six bespoke, line-only marks act as visual punctuation: hero loop, introductory swoop, incomplete sphere orbit, hosting route with waypoints, story arrow, and closing sunburst. Use rounded imperfect strokes in peach, mint, or terracotta; never place them over faces or essential text. `data-flourishes="off"` removes the full layer.
+- **Motion:** the discovery sphere auto-rotates slowly, responds to horizontal touch drag and two-axis mouse drag with restrained inertia, and exposes pause and reset controls. Its ambient background is a progressive enhancement: one muted group-specific clip at a time, crossfaded only when another group comes forward. The current free Pexels clips are visibly labeled previews and must be replaced or approved before production. Posters remain the first paint and the fallback for reduced motion, data saving, playback failure, or disabled motion. The sphere pause control also pauses video. Custom flourish paths draw once as they enter view; reduced-motion paints them statically. The former carousels retain their controls when rail mode is restored.
+- **Motion art direction:** show the human heartbeat of a group, not a generic destination reel. Favor conversation, shared attention, hands making or tasting, relaxed walking, laughter, and small arrival moments. Avoid drone establishing shots, rapid cuts, timelapses, camera-whip transitions, visible logos, staged pointing, and model-release ambiguity. Keep clips silent, 6–12 seconds, H.264 MP4, and locally hosted. `data-motion-preview="off"` removes the complete preview layer.
+- **Forbidden:** reference-site branding or copy, unverified awards, invented destinations or claims, visible horizontal scrollbars, fake forms, tracker scripts, glass effects, autoplay audio, generic travel clip art, airplanes, luggage, passports, stock doodle packs, and decorative marks without narrative meaning.

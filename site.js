@@ -1,430 +1,400 @@
 (() => {
-  const hero = document.querySelector('.hero');
-  const chrome = document.querySelector('.hero__chrome');
-  const toggle = document.querySelector('.menu-toggle');
+  const header = document.querySelector('[data-header]');
   const menu = document.querySelector('#mobile-menu');
-  const menuFrame = menu?.querySelector('.mobile-menu__frame');
-  const mobileQuery = window.matchMedia('(max-width: 768px)');
-  const menuQuery = window.matchMedia('(max-width: 768px), (orientation: landscape) and (max-height: 540px)');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const journeyRail = document.querySelector('#journeys .journeys-list');
-  const pageSections = [hero, ...document.querySelectorAll('.surface[id]')].filter(Boolean);
-  const sectionLinks = [...document.querySelectorAll('.nav a[href^="#"], .mobile-menu__nav a[href^="#"]')];
+  const openMenu = document.querySelector('[data-menu-open]');
+  const closeMenu = document.querySelector('[data-menu-close]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const enableSmoothScrolling = () => {
-    document.documentElement.classList.add('smooth-scroll-ready');
+  const flourishes = [...document.querySelectorAll('.flourish')];
+  if (document.body.dataset.flourishes === 'on' && flourishes.length) {
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      document.documentElement.classList.add('flourish-animate');
+      const flourishObserver = new IntersectionObserver((entries, instance) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-drawn');
+          instance.unobserve(entry.target);
+        });
+      }, { threshold: .25 });
+      flourishes.forEach((flourish) => flourishObserver.observe(flourish));
+    } else {
+      flourishes.forEach((flourish) => flourish.classList.add('is-drawn'));
+    }
+  }
+
+  if (header) {
+    const syncHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
+    syncHeader();
+    window.addEventListener('scroll', syncHeader, { passive: true });
+  }
+
+  const showMenu = () => {
+    if (!menu || menu.open) return;
+    menu.showModal();
+    openMenu?.setAttribute('aria-expanded', 'true');
+    document.documentElement.classList.add('menu-open');
   };
-  if (window.location.hash) {
-    if (document.readyState === 'complete') window.requestAnimationFrame(enableSmoothScrolling);
-    else window.addEventListener('load', () => window.requestAnimationFrame(enableSmoothScrolling), { once: true });
-  } else {
-    enableSmoothScrolling();
-  }
-
-  if (hero && chrome) {
-    const setPastHero = (pastHero) => {
-      chrome.classList.toggle('is-past-hero', pastHero);
-    };
-
-    if ('IntersectionObserver' in window) {
-      const heroObserver = new IntersectionObserver(
-        ([entry]) => setPastHero(!entry.isIntersecting),
-        { rootMargin: '-64px 0px 0px 0px', threshold: 0 }
-      );
-      heroObserver.observe(hero);
-    } else {
-      let navFrame = 0;
-      const updateChrome = () => {
-        navFrame = 0;
-        setPastHero(hero.getBoundingClientRect().bottom <= 64);
-      };
-      const requestChromeUpdate = () => {
-        if (!navFrame) navFrame = window.requestAnimationFrame(updateChrome);
-      };
-      updateChrome();
-      window.addEventListener('scroll', requestChromeUpdate, { passive: true });
-      window.addEventListener('resize', requestChromeUpdate, { passive: true });
-    }
-  }
-
-  if (journeyRail) {
-    const journeys = [...journeyRail.querySelectorAll('.journey')];
-    let activeJourney = 0;
-    let journeyFrame = 0;
-    let commandedJourney = null;
-    let journeySettleTimer = 0;
-
-    const finishJourneyScroll = () => {
-      window.clearTimeout(journeySettleTimer);
-      journeySettleTimer = 0;
-      commandedJourney = null;
-      updateJourneyFromScroll();
-    };
-
-    const selectJourney = (nextIndex, shouldScroll = false) => {
-      activeJourney = Math.max(0, Math.min(journeys.length - 1, nextIndex));
-      journeys.forEach((journey, index) => {
-        const isActive = index === activeJourney;
-        journey.classList.toggle('is-active', isActive);
-        if (isActive) journey.setAttribute('aria-current', 'true');
-        else journey.removeAttribute('aria-current');
-      });
-
-      if (!shouldScroll || !mobileQuery.matches) return;
-      const journey = journeys[activeJourney];
-      const railLeft = journeyRail.getBoundingClientRect().left;
-      const journeyLeft = journey.getBoundingClientRect().left;
-      const scrollPadding = Number.parseFloat(getComputedStyle(journeyRail).scrollPaddingLeft) || 0;
-      commandedJourney = activeJourney;
-      journeyRail.scrollTo({
-        left: journeyRail.scrollLeft + journeyLeft - railLeft - scrollPadding,
-        behavior: reducedMotion.matches ? 'auto' : 'smooth'
-      });
-      window.clearTimeout(journeySettleTimer);
-      if (reducedMotion.matches) {
-        window.requestAnimationFrame(finishJourneyScroll);
-      } else {
-        journeySettleTimer = window.setTimeout(finishJourneyScroll, 700);
-      }
-    };
-
-    selectJourney(0);
-    journeyRail.addEventListener('keydown', (event) => {
-      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
-      event.preventDefault();
-      selectJourney(activeJourney + (event.key === 'ArrowRight' ? 1 : -1), true);
-    });
-
-    const updateJourneyFromScroll = () => {
-      journeyFrame = 0;
-      if (!mobileQuery.matches) return;
-      if (commandedJourney !== null) {
-        selectJourney(commandedJourney);
-        return;
-      }
-      const railRect = journeyRail.getBoundingClientRect();
-      const railCenter = railRect.left + railRect.width / 2;
-      const nearestIndex = journeys.reduce((nearest, journey, index) => {
-        const rect = journey.getBoundingClientRect();
-        const distance = Math.abs(rect.left + rect.width / 2 - railCenter);
-        return distance < nearest.distance ? { index, distance } : nearest;
-      }, { index: 0, distance: Number.POSITIVE_INFINITY }).index;
-      selectJourney(nearestIndex);
-    };
-
-    journeyRail.addEventListener('scroll', () => {
-      if (!journeyFrame) journeyFrame = window.requestAnimationFrame(updateJourneyFromScroll);
-    }, { passive: true });
-    journeyRail.addEventListener('scrollend', () => {
-      if (commandedJourney !== null) finishJourneyScroll();
-    });
-
-    const syncJourneyViewport = ({ matches }) => {
-      if (matches) window.requestAnimationFrame(updateJourneyFromScroll);
-    };
-    if (typeof mobileQuery.addEventListener === 'function') {
-      mobileQuery.addEventListener('change', syncJourneyViewport);
-    } else {
-      mobileQuery.addListener(syncJourneyViewport);
-    }
-  }
-
-  // The hosting and traveler rails are native touch scrollers. Mirror the
-  // journey rail's item-by-item arrow-key behavior without adding controls or
-  // changing their desktop layouts.
-  document.querySelectorAll('#hosting .tier-grid, #travelers .praise-list').forEach((rail) => {
-    const items = [...rail.children];
-    if (!items.length) return;
-
-    const nearestItemIndex = () => {
-      const railLeft = rail.getBoundingClientRect().left;
-      const scrollPadding = Number.parseFloat(getComputedStyle(rail).scrollPaddingLeft) || 0;
-      return items.reduce((nearest, item, index) => {
-        const distance = Math.abs(item.getBoundingClientRect().left - railLeft - scrollPadding);
-        return distance < nearest.distance ? { index, distance } : nearest;
-      }, { index: 0, distance: Number.POSITIVE_INFINITY }).index;
-    };
-
-    rail.addEventListener('keydown', (event) => {
-      if (!mobileQuery.matches || (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight')) return;
-      event.preventDefault();
-      const nextIndex = Math.max(0, Math.min(
-        items.length - 1,
-        nearestItemIndex() + (event.key === 'ArrowRight' ? 1 : -1)
-      ));
-      const railLeft = rail.getBoundingClientRect().left;
-      const itemLeft = items[nextIndex].getBoundingClientRect().left;
-      const scrollPadding = Number.parseFloat(getComputedStyle(rail).scrollPaddingLeft) || 0;
-      rail.scrollTo({
-        left: rail.scrollLeft + itemLeft - railLeft - scrollPadding,
-        behavior: reducedMotion.matches ? 'auto' : 'smooth'
-      });
-    });
+  const hideMenu = () => {
+    if (!menu?.open) return;
+    menu.close();
+    openMenu?.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('menu-open');
+  };
+  openMenu?.addEventListener('click', showMenu);
+  closeMenu?.addEventListener('click', hideMenu);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menu?.open) hideMenu();
+  });
+  menu?.addEventListener('click', (event) => {
+    if (event.target === menu || event.target.closest('[data-menu-link]')) hideMenu();
+  });
+  menu?.addEventListener('close', () => {
+    openMenu?.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('menu-open');
   });
 
-  if (pageSections.length && sectionLinks.length) {
-    let commandedSectionId = null;
-    let pendingFocusTarget = null;
-    let sectionSettleTimer = 0;
-    let sectionHardStopTimer = 0;
+  const orbitStage = document.querySelector('[data-orbit-stage]');
+  if (orbitStage && document.body.dataset.discoveryLayout === 'orbit') {
+    const items = [...orbitStage.querySelectorAll('[data-orbit-item]')];
+    const toggleOrbit = document.querySelector('[data-orbit-toggle]');
+    const resetOrbit = document.querySelector('[data-orbit-reset]');
+    const orbitSection = orbitStage.closest('.discovery-orbit');
+    const motionShell = document.querySelector('[data-orbit-motion]');
+    const motionVideos = [...(motionShell?.querySelectorAll('[data-orbit-motion-video]') || [])];
+    const motionLabel = document.querySelector('[data-orbit-motion-label]');
+    const motionCredit = document.querySelector('[data-orbit-motion-credit]');
+    const saveData = Boolean(navigator.connection?.saveData);
+    const allowMotionPreview = document.body.dataset.motionPreview === 'on' && !reduceMotion && !saveData && motionVideos.length === 2;
+    const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+    const points = items.map((item, index) => {
+      const y = 1 - ((index + .5) / items.length) * 2;
+      const radius = Math.sqrt(1 - y * y);
+      const theta = goldenAngle * index;
+      return { item, x: Math.cos(theta) * radius, y, z: Math.sin(theta) * radius };
+    });
+    let yaw = .18;
+    let pitch = -.12;
+    let dragging = false;
+    let moved = false;
+    let hovering = false;
+    let manualPause = reduceMotion;
+    let startX = 0;
+    let startY = 0;
+    let previousX = 0;
+    let previousY = 0;
+    let velocityYaw = 0;
+    let velocityPitch = 0;
+    let previousTime = 0;
+    let activeMotionItem = null;
+    let activeMotionVideo = 0;
+    let motionVisible = false;
+    let motionSwapToken = 0;
 
-    const setActiveSection = (sectionId) => {
-      sectionLinks.forEach((link) => {
-        const isCurrent = sectionId && link.getAttribute('href') === `#${sectionId}`;
-        if (isCurrent) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
+    const updateMotionMeta = (item) => {
+      if (motionLabel && item.dataset.motionLabel) motionLabel.textContent = item.dataset.motionLabel;
+      if (motionCredit && item.dataset.motionCredit) motionCredit.href = item.dataset.motionCredit;
+    };
+    const syncMotionPlayback = () => {
+      motionVideos.forEach((video, index) => {
+        if (allowMotionPreview && motionVisible && !manualPause && index === activeMotionVideo) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
       });
     };
+    const setMotionItem = (item, force = false) => {
+      if (!item?.dataset.motionSrc || (!force && item === activeMotionItem)) return;
+      activeMotionItem = item;
+      updateMotionMeta(item);
 
-    const updateActiveSection = () => {
-      if (commandedSectionId !== null) {
-        setActiveSection(commandedSectionId);
+      const poster = item.dataset.motionPoster || '';
+      if (!allowMotionPreview || !motionVisible) {
+        const current = motionVideos[activeMotionVideo];
+        if (current && poster) current.poster = poster;
         return;
       }
-      const readingLine = window.innerHeight * 0.28;
-      const activeSection = pageSections.find((section) => {
-        const rect = section.getBoundingClientRect();
-        return rect.top <= readingLine && rect.bottom > readingLine;
-      });
-      setActiveSection(activeSection === hero ? '' : activeSection?.id || '');
-    };
 
-    if ('IntersectionObserver' in window) {
-      const sectionObserver = new IntersectionObserver(updateActiveSection, {
-        rootMargin: '-24% 0px -66% 0px',
-        threshold: 0
-      });
-      pageSections.forEach((section) => sectionObserver.observe(section));
-    } else {
-      let sectionFrame = 0;
-      const requestSectionUpdate = () => {
-        if (sectionFrame) return;
-        sectionFrame = window.requestAnimationFrame(() => {
-          sectionFrame = 0;
-          updateActiveSection();
-        });
-      };
-      window.addEventListener('scroll', requestSectionUpdate, { passive: true });
-      window.addEventListener('resize', requestSectionUpdate, { passive: true });
-    }
-    updateActiveSection();
-
-    const resolveHashTarget = (hash) => {
-      if (!hash || hash === '#') return hero;
-      try {
-        return document.getElementById(decodeURIComponent(hash.slice(1)));
-      } catch {
-        return null;
+      const token = ++motionSwapToken;
+      const nextIndex = activeMotionVideo === 0 ? 1 : 0;
+      const next = motionVideos[nextIndex];
+      const previous = motionVideos[activeMotionVideo];
+      next.classList.remove('is-active');
+      if (poster) next.poster = poster;
+      if (next.getAttribute('src') !== item.dataset.motionSrc) {
+        next.src = item.dataset.motionSrc;
+        next.load();
       }
-    };
-
-    const focusDestination = (target) => {
-      const focusTarget = target?.querySelector('h1, h2') || target;
-      if (!focusTarget) return;
-      const hadTabIndex = focusTarget.hasAttribute('tabindex');
-      const previousTabIndex = focusTarget.getAttribute('tabindex');
-      if (!hadTabIndex) focusTarget.setAttribute('tabindex', '-1');
-      focusTarget.dataset.hashFocus = '';
-      const cleanup = () => {
-        delete focusTarget.dataset.hashFocus;
-        if (!hadTabIndex) focusTarget.removeAttribute('tabindex');
-        else focusTarget.setAttribute('tabindex', previousTabIndex);
+      const reveal = () => {
+        if (token !== motionSwapToken) return;
+        if (!manualPause) next.play().catch(() => {});
+        next.classList.add('is-active');
+        previous.classList.remove('is-active');
+        activeMotionVideo = nextIndex;
+        window.setTimeout(() => {
+          if (previous !== motionVideos[activeMotionVideo]) previous.pause();
+        }, 950);
       };
-      focusTarget.addEventListener('blur', cleanup, { once: true });
-      focusTarget.focus({ preventScroll: true });
+      if (next.readyState >= 3) reveal();
+      else next.addEventListener('canplay', reveal, { once: true });
     };
 
-    const finishSectionNavigation = () => {
-      window.clearTimeout(sectionSettleTimer);
-      window.clearTimeout(sectionHardStopTimer);
-      sectionSettleTimer = 0;
-      sectionHardStopTimer = 0;
-      const focusTarget = pendingFocusTarget;
-      commandedSectionId = null;
-      pendingFocusTarget = null;
-      if (focusTarget?.isConnected) focusDestination(focusTarget);
-      updateActiveSection();
+    const renderOrbit = () => {
+      const cosYaw = Math.cos(yaw);
+      const sinYaw = Math.sin(yaw);
+      const cosPitch = Math.cos(pitch);
+      const sinPitch = Math.sin(pitch);
+      const radiusX = Math.min(orbitStage.clientWidth * .31, 350);
+      const radiusY = Math.min(orbitStage.clientHeight * .33, 205);
+      const radiusZ = Math.min(orbitStage.clientWidth * .24, 280);
+      let frontMotionItem = null;
+      let frontMotionDepth = -Infinity;
+      points.forEach(({ item, x, y, z }) => {
+        const rotatedX = x * cosYaw + z * sinYaw;
+        const yawZ = -x * sinYaw + z * cosYaw;
+        const rotatedY = y * cosPitch - yawZ * sinPitch;
+        const rotatedZ = y * sinPitch + yawZ * cosPitch;
+        const depth = (rotatedZ + 1) / 2;
+        const scale = .68 + depth * .38;
+        item.style.transform = `translate(-50%, -50%) translate3d(${(rotatedX * radiusX).toFixed(2)}px, ${(rotatedY * radiusY).toFixed(2)}px, ${(rotatedZ * radiusZ).toFixed(2)}px) scale(${scale.toFixed(3)})`;
+        item.style.opacity = (.36 + depth * .64).toFixed(3);
+        item.style.zIndex = String(Math.round(depth * 100));
+        item.style.filter = depth < .35 ? 'saturate(.72) brightness(.68)' : 'none';
+        if (item.dataset.motionSrc && rotatedZ > frontMotionDepth) {
+          frontMotionDepth = rotatedZ;
+          frontMotionItem = item;
+        }
+      });
+      if (frontMotionItem) setMotionItem(frontMotionItem);
+    };
+    const syncOrbitToggle = () => {
+      if (!toggleOrbit) return;
+      toggleOrbit.setAttribute('aria-pressed', String(manualPause));
+      toggleOrbit.setAttribute('aria-label', manualPause ? 'Play sphere and background motion' : 'Pause sphere and background motion');
+      const icon = toggleOrbit.querySelector('i');
+      icon?.classList.toggle('fa-pause', !manualPause);
+      icon?.classList.toggle('fa-play', manualPause);
+      syncMotionPlayback();
+    };
+    const resetPosition = () => {
+      yaw = .18;
+      pitch = -.12;
+      velocityYaw = 0;
+      velocityPitch = 0;
+      renderOrbit();
+    };
+    const animateOrbit = (time) => {
+      const elapsed = previousTime ? Math.min(time - previousTime, 40) : 16;
+      previousTime = time;
+      if (!dragging) {
+        if (!manualPause && !hovering && !document.hidden) yaw += elapsed * .000085;
+        if (!reduceMotion) {
+          yaw += velocityYaw;
+          pitch = Math.max(-.72, Math.min(.72, pitch + velocityPitch));
+          velocityYaw *= .94;
+          velocityPitch *= .9;
+          if (Math.abs(velocityYaw) < .00005) velocityYaw = 0;
+          if (Math.abs(velocityPitch) < .00005) velocityPitch = 0;
+        }
+      }
+      renderOrbit();
+      requestAnimationFrame(animateOrbit);
     };
 
-    const queueSectionSettle = () => {
-      window.clearTimeout(sectionSettleTimer);
-      sectionSettleTimer = window.setTimeout(
-        finishSectionNavigation,
-        reducedMotion.matches ? 0 : 120
-      );
-    };
+    document.querySelectorAll('a[href="#journeys"], a[href^="#trip-"]').forEach((link) => link.setAttribute('href', '#orbit'));
+    document.body.classList.add('has-orbit');
+    document.documentElement.classList.toggle('motion-static', !allowMotionPreview);
+    orbitStage.classList.add('orbit-ready');
+    renderOrbit();
+    syncOrbitToggle();
+    requestAnimationFrame(animateOrbit);
 
-    const beginSectionNavigation = (target, shouldFocus = false) => {
-      if (!target) return;
-      window.clearTimeout(sectionSettleTimer);
-      window.clearTimeout(sectionHardStopTimer);
-      commandedSectionId = target === hero ? '' : target.id;
-      pendingFocusTarget = shouldFocus ? target : null;
-      setActiveSection(commandedSectionId);
-      window.requestAnimationFrame(queueSectionSettle);
-      sectionHardStopTimer = window.setTimeout(
-        finishSectionNavigation,
-        reducedMotion.matches ? 32 : 1600
-      );
-    };
-
-    document.addEventListener('click', (event) => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const link = event.target.closest('a[href^="#"]');
-      if (!link) return;
-      const target = resolveHashTarget(link.getAttribute('href'));
-      if (!target) return;
-      const shouldFocus = event.detail === 0 || Boolean(link.closest('#mobile-menu'));
-      beginSectionNavigation(target, shouldFocus);
-    });
-
-    window.addEventListener('scroll', () => {
-      if (commandedSectionId !== null) queueSectionSettle();
-    }, { passive: true });
-
-    if ('onscrollend' in window) {
-      window.addEventListener('scrollend', () => {
-        if (commandedSectionId !== null) finishSectionNavigation();
-      }, { passive: true });
+    if (orbitSection && 'IntersectionObserver' in window) {
+      const motionObserver = new IntersectionObserver(([entry]) => {
+        motionVisible = entry.isIntersecting;
+        if (motionVisible && activeMotionItem) setMotionItem(activeMotionItem, true);
+        else syncMotionPlayback();
+      }, { rootMargin: '120px 0px', threshold: .08 });
+      motionObserver.observe(orbitSection);
+    } else {
+      motionVisible = true;
+      if (activeMotionItem) setMotionItem(activeMotionItem, true);
     }
 
-    window.addEventListener('hashchange', () => {
-      const target = resolveHashTarget(window.location.hash);
-      if (!target) return;
-      const targetId = target === hero ? '' : target.id;
-      if (commandedSectionId === targetId) return;
-      const shouldFocus = Boolean(document.activeElement?.hasAttribute('data-hash-focus'));
-      beginSectionNavigation(target, shouldFocus);
+    orbitStage.addEventListener('pointerdown', (event) => {
+      if (event.pointerType === 'mouse' && event.button !== 0) return;
+      dragging = true;
+      moved = false;
+      startX = previousX = event.clientX;
+      startY = previousY = event.clientY;
+      velocityYaw = velocityPitch = 0;
+      orbitStage.classList.add('is-dragging');
+      orbitStage.setPointerCapture(event.pointerId);
     });
-
-    const syncDeepLink = () => {
-      if (!window.location.hash) return;
-      beginSectionNavigation(resolveHashTarget(window.location.hash));
+    orbitStage.addEventListener('pointermove', (event) => {
+      if (!dragging) return;
+      const dx = event.clientX - previousX;
+      const dy = event.clientY - previousY;
+      if (Math.hypot(event.clientX - startX, event.clientY - startY) > 5) moved = true;
+      yaw += dx * .006;
+      if (event.pointerType !== 'touch') pitch = Math.max(-.72, Math.min(.72, pitch - dy * .0045));
+      velocityYaw = dx * .0012;
+      velocityPitch = event.pointerType === 'touch' ? 0 : -dy * .0008;
+      previousX = event.clientX;
+      previousY = event.clientY;
+      renderOrbit();
+    });
+    const endOrbitDrag = (event) => {
+      if (!dragging) return;
+      dragging = false;
+      orbitStage.classList.remove('is-dragging');
+      if (orbitStage.hasPointerCapture(event.pointerId)) orbitStage.releasePointerCapture(event.pointerId);
     };
-    if (document.readyState === 'complete') window.requestAnimationFrame(syncDeepLink);
-    else window.addEventListener('load', () => window.requestAnimationFrame(syncDeepLink), { once: true });
+    orbitStage.addEventListener('pointerup', endOrbitDrag);
+    orbitStage.addEventListener('pointercancel', endOrbitDrag);
+    orbitStage.addEventListener('click', (event) => {
+      if (!moved) return;
+      event.preventDefault();
+      event.stopPropagation();
+      moved = false;
+    }, true);
+    orbitStage.addEventListener('mouseenter', () => { hovering = true; });
+    orbitStage.addEventListener('mouseleave', () => { hovering = false; });
+    orbitStage.addEventListener('focusin', () => { hovering = true; });
+    orbitStage.addEventListener('focusout', () => { hovering = false; });
+    orbitStage.addEventListener('keydown', (event) => {
+      const rotationKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', ' '];
+      if (!rotationKeys.includes(event.key)) return;
+      event.preventDefault();
+      if (event.key === 'ArrowLeft') yaw -= .22;
+      if (event.key === 'ArrowRight') yaw += .22;
+      if (event.key === 'ArrowUp') pitch = Math.max(-.72, pitch - .14);
+      if (event.key === 'ArrowDown') pitch = Math.min(.72, pitch + .14);
+      if (event.key === 'Home') resetPosition();
+      if (event.key === ' ') {
+        manualPause = !manualPause;
+        syncOrbitToggle();
+      }
+      renderOrbit();
+    });
+    toggleOrbit?.addEventListener('click', () => {
+      manualPause = !manualPause;
+      syncOrbitToggle();
+    });
+    resetOrbit?.addEventListener('click', resetPosition);
+    if (reduceMotion && toggleOrbit) {
+      toggleOrbit.disabled = true;
+      toggleOrbit.setAttribute('aria-label', 'Automatic rotation disabled by motion preference');
+    }
+    window.addEventListener('resize', renderOrbit, { passive: true });
   }
 
-  if (!reducedMotion.matches && 'IntersectionObserver' in window) {
-    const deepLinkedSection = document.getElementById(window.location.hash.slice(1));
-    const motionSections = pageSections.filter((section) => section.matches?.('#method, #about'));
-    motionSections.forEach((section) => {
-      const inner = section.querySelector(':scope > .surface__inner');
-      if (!inner) return;
-      inner.classList.add('motion-step');
-      section.classList.add('motion-pending');
-      if (section === deepLinkedSection) section.classList.add('is-entered');
-    });
+  document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    if (document.body.dataset.discoveryLayout === 'orbit' && carousel.closest('.journey-picker, .trip-showcase')) return;
+    const rail = carousel.querySelector('[data-carousel-rail]');
+    const previous = carousel.querySelector('[data-carousel-prev]');
+    const next = carousel.querySelector('[data-carousel-next]');
+    const toggle = carousel.querySelector('[data-carousel-toggle]');
+    if (!rail) return;
 
+    let timer = 0;
+    let manuallyPaused = reduceMotion;
+    let hovering = false;
+    let dragging = false;
+    let moved = false;
+    let pointerStart = 0;
+    let scrollStart = 0;
+
+    const stepSize = () => {
+      const item = rail.firstElementChild;
+      if (!item) return rail.clientWidth * .8;
+      const styles = getComputedStyle(rail);
+      return item.getBoundingClientRect().width + (parseFloat(styles.columnGap || styles.gap) || 0);
+    };
+    const go = (direction) => {
+      const max = rail.scrollWidth - rail.clientWidth;
+      let left = rail.scrollLeft + direction * stepSize();
+      if (direction > 0 && left >= max - 8) left = 0;
+      if (direction < 0 && left <= 8) left = max;
+      rail.scrollTo({ left, behavior: reduceMotion ? 'auto' : 'smooth' });
+    };
+    const stop = () => { window.clearInterval(timer); timer = 0; };
+    const start = () => {
+      stop();
+      if (manuallyPaused || hovering || document.hidden || carousel.dataset.autoplay !== 'true') return;
+      timer = window.setInterval(() => go(1), 4200);
+    };
+    const syncToggle = () => {
+      if (!toggle) return;
+      toggle.setAttribute('aria-pressed', String(manuallyPaused));
+      toggle.setAttribute('aria-label', manuallyPaused ? 'Play carousel' : 'Pause carousel');
+      const icon = toggle.querySelector('i');
+      icon?.classList.toggle('fa-pause', !manuallyPaused);
+      icon?.classList.toggle('fa-play', manuallyPaused);
+    };
+
+    previous?.addEventListener('click', () => { go(-1); start(); });
+    next?.addEventListener('click', () => { go(1); start(); });
+    toggle?.addEventListener('click', () => {
+      manuallyPaused = !manuallyPaused;
+      syncToggle();
+      start();
+    });
+    carousel.addEventListener('mouseenter', () => { hovering = true; stop(); });
+    carousel.addEventListener('mouseleave', () => { hovering = false; start(); });
+    carousel.addEventListener('focusin', stop);
+    carousel.addEventListener('focusout', start);
+    rail.addEventListener('keydown', (event) => {
+      if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault();
+      go(event.key === 'ArrowRight' ? 1 : -1);
+    });
+    rail.addEventListener('pointerdown', (event) => {
+      if (event.pointerType === 'mouse' && event.button !== 0) return;
+      dragging = true;
+      moved = false;
+      pointerStart = event.clientX;
+      scrollStart = rail.scrollLeft;
+      rail.classList.add('is-dragging');
+      rail.setPointerCapture(event.pointerId);
+      stop();
+    });
+    rail.addEventListener('pointermove', (event) => {
+      if (!dragging) return;
+      const distance = event.clientX - pointerStart;
+      if (Math.abs(distance) > 4) moved = true;
+      rail.scrollLeft = scrollStart - distance;
+    });
+    const endDrag = (event) => {
+      if (!dragging) return;
+      dragging = false;
+      rail.classList.remove('is-dragging');
+      if (rail.hasPointerCapture(event.pointerId)) rail.releasePointerCapture(event.pointerId);
+      start();
+    };
+    rail.addEventListener('pointerup', endDrag);
+    rail.addEventListener('pointercancel', endDrag);
+    rail.addEventListener('click', (event) => {
+      if (!moved) return;
+      event.preventDefault();
+      event.stopPropagation();
+      moved = false;
+    }, true);
+    document.addEventListener('visibilitychange', start);
+    syncToggle();
+    start();
+  });
+
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    const observed = document.querySelectorAll('.intro__inner, .quote-rail, .section-heading, .carousel-shell, .host-options__grid, .story-row__copy, .story-row__media, .why__grid, .final-cta > div');
     document.documentElement.classList.add('motion-ready');
-    const motionObserver = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries, instance) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-entered');
-        observer.unobserve(entry.target);
+        entry.target.classList.add('is-visible');
+        instance.unobserve(entry.target);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
-    motionSections.forEach((section) => motionObserver.observe(section));
-  }
-
-  if (!toggle || !menu || !menuFrame) return;
-
-  let closeTimer = 0;
-  let restoreFocus = true;
-
-  const lockPage = () => {
-    const gap = Math.max(0, window.innerWidth - document.documentElement.clientWidth);
-    document.body.style.setProperty('--nav-scrollbar-gap', `${gap}px`);
-    document.body.classList.add('menu-open');
-  };
-
-  const unlockPage = () => {
-    document.body.classList.remove('menu-open');
-    document.body.style.removeProperty('--nav-scrollbar-gap');
-  };
-
-  const finishClose = () => {
-    window.clearTimeout(closeTimer);
-    closeTimer = 0;
-    menu.classList.remove('is-ready');
-    if (menu.open) menu.close();
-    toggle.setAttribute('aria-expanded', 'false');
-    unlockPage();
-    if (restoreFocus && menuQuery.matches) toggle.focus({ preventScroll: true });
-    restoreFocus = true;
-  };
-
-  const closeMenu = ({ immediate = false, returnFocus = true } = {}) => {
-    if (!menu.open) return;
-    restoreFocus = returnFocus;
-    menu.classList.remove('is-ready');
-    if (immediate || reducedMotion.matches) {
-      finishClose();
-      return;
-    }
-    closeTimer = window.setTimeout(finishClose, 500);
-  };
-
-  const openMenu = () => {
-    if (!menuQuery.matches || menu.open) return;
-    window.clearTimeout(closeTimer);
-    lockPage();
-    menu.showModal();
-    toggle.setAttribute('aria-expanded', 'true');
-    window.requestAnimationFrame(() => {
-      menu.classList.add('is-ready');
-      menu.querySelector('.mobile-menu__nav a')?.focus({ preventScroll: true });
-    });
-  };
-
-  toggle.addEventListener('click', () => {
-    if (menu.open) closeMenu();
-    else openMenu();
-  });
-
-  menu.addEventListener('cancel', (event) => {
-    event.preventDefault();
-    closeMenu();
-  });
-
-  menu.addEventListener('click', (event) => {
-    if (event.target === menu || event.target.closest('[data-menu-close]')) {
-      closeMenu();
-      return;
-    }
-
-    if (event.target.closest('.mobile-menu a[href^="#"]')) {
-      closeMenu({ immediate: true, returnFocus: false });
-    }
-  });
-
-  menu.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      event.preventDefault();
-      closeMenu();
-      return;
-    }
-    if (event.key !== 'Tab') return;
-    const focusable = [...menu.querySelectorAll('a[href], button:not([disabled])')];
-    if (!focusable.length) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
-  });
-
-  const handleViewportChange = ({ matches }) => {
-    if (!matches && menu.open) closeMenu({ immediate: true, returnFocus: false });
-  };
-
-  if (typeof menuQuery.addEventListener === 'function') {
-    menuQuery.addEventListener('change', handleViewportChange);
-  } else {
-    menuQuery.addListener(handleViewportChange);
+    }, { threshold: .12 });
+    observed.forEach((element) => observer.observe(element));
   }
 })();
