@@ -13,12 +13,17 @@
   </style>
 </head>
 <body>
-  <iframe
-    src="https://dream-travel-click-planner.perseidechocreations.chatgpt.site/"
+  <iframe id="planner"
     title="Dream Travel group trip planner"
     allow="clipboard-write"
     referrerpolicy="strict-origin-when-cross-origin"
   ></iframe>
+  <script>
+    const planner = document.getElementById('planner');
+    const destination = new URL('https://dream-travel-click-planner.perseidechocreations.chatgpt.site/');
+    destination.search = location.search;
+    planner.src = destination.toString();
+  </script>
   <noscript>
     <p class="fallback">JavaScript is required for the planner. <a href="https://dream-travel-click-planner.perseidechocreations.chatgpt.site/">Open the Dream Travel planner</a>.</p>
   </noscript>
