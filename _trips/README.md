@@ -7,7 +7,11 @@ Our own version of WeTravel's itinerary pages, without the $500 WeTravel website
     python _trips/import_wetravel.py https://dream-travel.wetravel.com/i/<id>
     python _trips/build.py
 
-Then commit and push. The build prints the trip's private link.
+Then commit and push. The trip's card appears on Rene's private list and its country
+page, and clicking it opens the trip on WeTravel. WeTravel stays the one place the
+itinerary lives, so Rene's edits there show immediately. Re-import only when the title,
+photo, days or places on the card change. (Set `"host_copy": true` on a trip to host
+our own copy of the itinerary instead.)
 
 **Link-only, on purpose.** Nobody can browse these pages. Each trip lives at an
 unguessable address (`/trips/<trip>-<random key>/`), every page tells search engines

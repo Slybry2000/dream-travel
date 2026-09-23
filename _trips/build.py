@@ -2,15 +2,18 @@
 
     python _trips/build.py
 
-Every trip file becomes an itinerary page, and every destination page is rebuilt from
-whatever trips are tagged with that country, so a new trip shows up everywhere by
-itself.
+Every destination page is rebuilt from whatever trips are tagged with that country, so a
+new trip shows up everywhere by itself.
+
+Trips built in WeTravel link straight to their WeTravel itinerary: Rene edits there and
+the change is live at once, with no second copy to go stale. Only a trip with no WeTravel
+"source" (written by hand), or one marked "host_copy": true, gets its own page here.
 
 The library is LINK-ONLY: every page is noindex, nothing on the public site links here,
 and each address carries a random key, so only people given a link can find a page.
-A trip page never links to other trips. Output (generated, safe to delete and rebuild):
+Output (generated, safe to delete and rebuild):
 
-    trips/<trip>-<key>/index.html                   one itinerary (share this link)
+    trips/<trip>-<key>/index.html                   hand-made trips only (share this link)
     trips/<library key>/index.html                  every trip, for Rene only
     trips/<library key>/<country>/index.html        one destination's trips as cards
     trips/trips.json                                feed for embed.js, "listed": true trips only
@@ -80,7 +83,8 @@ def load():
         if t.get("status", "published") != "published":
             continue
         t["country_slug"] = slugify(t.get("country") or "elsewhere")
-        t["url"] = f"{BASE}/{t['slug']}-{t['key']}/"
+        t["hosted"] = t.get("host_copy") or not t.get("source")
+        t["url"] = f"{BASE}/{t['slug']}-{t['key']}/" if t["hosted"] else t["source"]
         trips.append(t)
     trips.sort(key=lambda t: (t.get("sort", 100), t["title"]))
     extra = SRC / "destinations.json"
@@ -307,23 +311,24 @@ def main():
     by_country = {}
     for t in trips:
         by_country.setdefault(t["country_slug"], (t.get("country") or "Elsewhere", []))[1].append(t)
-        out = OUT / f"{t['slug']}-{t['key']}" / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(itinerary(t), encoding="utf-8")
+        if t["hosted"]:
+            out = OUT / f"{t['slug']}-{t['key']}" / "index.html"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(itinerary(t), encoding="utf-8")
 
     for slug, (name, group) in by_country.items():
         (lib_dir / slug).mkdir(parents=True, exist_ok=True)
         (lib_dir / slug / "index.html").write_text(destination(slug, name, group, dests.get(slug, {})), encoding="utf-8")
     (lib_dir / "index.html").write_text(library(by_country, dests, lib), encoding="utf-8")
 
-    feed = [{"title": t["title"], "url": SITE + t["url"], "country": t.get("country"), "country_slug": t["country_slug"],
+    feed = [{"title": t["title"], "url": SITE + t["url"] if t["hosted"] else t["url"], "country": t.get("country"), "country_slug": t["country_slug"],
              "days": t.get("days"), "duration": duration(t), "image": SITE + img_url(t.get("hero")),
              "locations": t.get("locations", []), "tags": t.get("tags", []), "overnights": overnights_line(t),
              "summary": t.get("summary", "")} for t in trips if t.get("listed")]
     (OUT / "trips.json").write_text(json.dumps({"updated": VERSION, "trips": feed}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Built {len(trips)} trip(s). Private links:")
+    print(f"Built {len(trips)} trip(s). Links:")
     for t in trips:
-        print(f"  {t['title']}: {SITE}{t['url']}")
+        print(f"  {t['title']}: {SITE + t['url'] if t['hosted'] else t['url'] + '  (WeTravel)'}")
     print(f"  All trips (Rene only): {SITE}{lib}/")
 
 
