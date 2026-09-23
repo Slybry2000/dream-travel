@@ -1,24 +1,4 @@
 {
   "updated": "20260923",
-  "trips": [
-    {
-      "title": "Arenal Volcano Yoga & Wellness Retreat",
-      "url": "https://adults.dream-travel.net/trips/costa-rica/arenal-volcano-yoga-wellness-retreat/",
-      "country": "Costa Rica",
-      "country_slug": "costa-rica",
-      "days": 6,
-      "duration": "6 Days",
-      "image": "https://adults.dream-travel.net/trips/images/arenal-volcano-yoga-wellness-retreat/ZTRptp4QRbCr4kJxoTCC.webp",
-      "locations": [
-        "San José",
-        "Arenal Volcano",
-        "La Fortuna",
-        "Fortuna Waterfall",
-        "Proyecto Asis"
-      ],
-      "tags": [],
-      "overnights": "Arenal Lodge (5)",
-      "summary": "Nestled in the lush rainforest at the base of the majestic Arenal Volcano, this Yoga & Wellness retreat invites you to slow down, reconnect with nature, and restore balance to body and mind."
-    }
-  ]
+  "trips": []
 }

@@ -1,27 +1,37 @@
-"""Build the Dream Travel trips library from trips/data/*.json.
+"""Build the Dream Travel trips library from _trips/data/*.json.
 
-    python trips/build.py
+    python _trips/build.py
 
 Every trip file becomes an itinerary page, and every destination page is rebuilt from
 whatever trips are tagged with that country, so a new trip shows up everywhere by
-itself. Output (all generated, safe to delete and rebuild):
+itself.
 
-    trips/index.html                        every destination and trip
-    trips/<country>/index.html              one destination, its trips as cards
-    trips/<country>/<trip>/index.html       one itinerary, WeTravel-style split layout
-    trips/trips.json                        card feed read by trips/embed.js
+The library is LINK-ONLY: every page is noindex, nothing on the public site links here,
+and each address carries a random key, so only people given a link can find a page.
+A trip page never links to other trips. Output (generated, safe to delete and rebuild):
 
-Only trips with "status": "published" are built. Set "draft" to hide one.
-Destination intros and hero photos can be set in trips/destinations.json.
+    trips/<trip>-<key>/index.html                   one itinerary (share this link)
+    trips/<library key>/index.html                  every trip, for Rene only
+    trips/<library key>/<country>/index.html        one destination's trips as cards
+    trips/trips.json                                feed for embed.js, "listed": true trips only
+
+Only trips with "status": "published" are built. Set "draft" to take one offline.
+A trip's key lives in its JSON; change it to kill an old link.
+Destination intros and hero photos can be set in _trips/destinations.json.
+
+Source lives in _trips/ because GitHub Pages (Jekyll) never publishes folders that
+start with an underscore, so the data files cannot leak the private links.
 """
 import html
 import json
 import re
+import secrets
 import shutil
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+SRC = Path(__file__).resolve().parent            # _trips/: data + config, never published
+OUT = SRC.parent / "trips"                         # trips/: the pages GitHub Pages serves
 SITE = "https://adults.dream-travel.net"
 BASE = "/trips"
 VERSION = date.today().strftime("%Y%m%d")
@@ -46,17 +56,34 @@ def focal(ref):
     return f"object-position:{ref.get('x', 50)}% {ref.get('y', 50)}%" if ref else ""
 
 
+def new_key():
+    return "".join(secrets.choice("abcdefghjkmnpqrstuvwxyz23456789") for _ in range(7))
+
+
+def library_key():
+    """The private address of the all-trips listing, created once and kept."""
+    cfg_path = SRC / "config.json"
+    cfg = json.loads(cfg_path.read_text(encoding="utf-8")) if cfg_path.exists() else {}
+    if not cfg.get("library_key"):
+        cfg["library_key"] = "library-" + new_key()
+        cfg_path.write_text(json.dumps(cfg, indent=2) + "\n", encoding="utf-8")
+    return cfg["library_key"]
+
+
 def load():
     trips = []
-    for p in sorted((ROOT / "data").glob("*.json")):
+    for p in sorted((SRC / "data").glob("*.json")):
         t = json.loads(p.read_text(encoding="utf-8"))
+        if not t.get("key"):              # first build: give the trip its private link
+            t["key"] = new_key()
+            p.write_text(json.dumps(t, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         if t.get("status", "published") != "published":
             continue
         t["country_slug"] = slugify(t.get("country") or "elsewhere")
-        t["url"] = f"{BASE}/{t['country_slug']}/{t['slug']}/"
+        t["url"] = f"{BASE}/{t['slug']}-{t['key']}/"
         trips.append(t)
     trips.sort(key=lambda t: (t.get("sort", 100), t["title"]))
-    extra = ROOT / "destinations.json"
+    extra = SRC / "destinations.json"
     dests = json.loads(extra.read_text(encoding="utf-8")) if extra.exists() else {}
     return trips, dests
 
@@ -80,6 +107,8 @@ def head(title, description, image="", extra=""):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="strict-origin">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
   {og}
@@ -95,7 +124,7 @@ def head(title, description, image="", extra=""):
 def site_header():
     return f"""  <header class="tl-header">
     <a class="tl-brand" href="/" aria-label="Dream Travel home"><img src="/images/logo-header-2x.webp" alt="" width="75" height="64"><span>Dream Travel</span></a>
-    <nav class="tl-header__nav" aria-label="Primary"><a href="{BASE}/">All trips</a><a href="/#hosting">Hosting</a><a href="/#plan">Contact</a></nav>
+    <nav class="tl-header__nav" aria-label="Primary"><a href="/#hosting">Hosting</a><a href="/#plan">Contact</a></nav>
     <a class="tl-button tl-button--small" href="/planning/">Plan a trip</a>
   </header>"""
 
@@ -175,7 +204,7 @@ def itinerary(t):
           <p>Every program here is a starting point. Dates, pace, hotels and activities are adjusted with your group before anything is confirmed.</p>
           <p><strong>René Piard</strong>, Founder &amp; Chief Travel Officer<br><a href="mailto:go@dream-travel.net">go@dream-travel.net</a> &middot; <a href="tel:+15712068949">571 206 8949</a></p>
         </div>
-        <div class="tl-cta"><a class="tl-button" href="/planning/">Plan this trip for your group</a><a class="tl-button tl-button--line" href="{BASE}/{t['country_slug']}/">More {esc(t.get('country', ''))} trips</a></div>
+        <div class="tl-cta"><a class="tl-button" href="/planning/">Plan this trip for your group</a></div>
       </div>
     </section>"""
 
@@ -196,7 +225,7 @@ def itinerary(t):
     <section class="tl-row tl-row--hero">
       <div class="tl-row__media"><img src="{img_url(hero)}" alt="" style="{focal(hero)}"><h1>{esc(t['title'])}</h1></div>
       <div class="tl-row__text" id="overview">
-        <p class="tl-crumbs"><a href="{BASE}/">Trips</a> / <a href="{BASE}/{t['country_slug']}/">{esc(t.get('country', ''))}</a></p>
+        <p class="tl-crumbs">{esc(t.get('country', ''))}</p>
         <p class="tl-kicker">Overview</p>
         <p class="tl-lede">{esc(t.get('summary', ''))}</p>
         <dl class="tl-facts">{facts_html}</dl>
@@ -241,11 +270,11 @@ def destination(slug, name, trips, meta):
 """
 
 
-def library(by_country, dests):
+def library(by_country, dests, lib):
     blocks = []
     for slug, (name, trips) in by_country.items():
         cards = "\n".join(card(t) for t in trips)
-        blocks.append(f"""    <section class="tl-grid-wrap"><div class="tl-grid-head"><h2><a href="{BASE}/{slug}/">{esc(name)}</a></h2><a href="{BASE}/{slug}/">{len(trips)} trip{'s' if len(trips) != 1 else ''}</a></div><div class="tl-grid">
+        blocks.append(f"""    <section class="tl-grid-wrap"><div class="tl-grid-head"><h2><a href="{lib}/{slug}/">{esc(name)}</a></h2><a href="{lib}/{slug}/">{len(trips)} trip{'s' if len(trips) != 1 else ''}</a></div><div class="tl-grid">
 {cards}
     </div></section>""")
     first = next(iter(by_country.values()))[1][0] if by_country else None
@@ -267,29 +296,35 @@ def library(by_country, dests):
 
 def main():
     trips, dests = load()
-    # Wipe previously generated pages so a removed or renamed trip disappears too.
-    for d in ROOT.iterdir():
-        if d.is_dir() and (d / "index.html").exists() and d.name not in ("data", "images"):
+    lib_dir = OUT / library_key()
+    lib = f"{BASE}/{lib_dir.name}"
+    # Wipe previously generated pages so a removed, drafted or re-keyed trip disappears too.
+    for d in OUT.iterdir():
+        if d.is_dir() and (d / "index.html").exists() and d.name != "images":
             shutil.rmtree(d)
+    (OUT / "index.html").unlink(missing_ok=True)   # there is deliberately no public /trips/ page
 
     by_country = {}
     for t in trips:
         by_country.setdefault(t["country_slug"], (t.get("country") or "Elsewhere", []))[1].append(t)
-        out = ROOT / t["country_slug"] / t["slug"] / "index.html"
+        out = OUT / f"{t['slug']}-{t['key']}" / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(itinerary(t), encoding="utf-8")
 
     for slug, (name, group) in by_country.items():
-        (ROOT / slug / "index.html").write_text(destination(slug, name, group, dests.get(slug, {})), encoding="utf-8")
-    (ROOT / "index.html").write_text(library(by_country, dests), encoding="utf-8")
+        (lib_dir / slug).mkdir(parents=True, exist_ok=True)
+        (lib_dir / slug / "index.html").write_text(destination(slug, name, group, dests.get(slug, {})), encoding="utf-8")
+    (lib_dir / "index.html").write_text(library(by_country, dests, lib), encoding="utf-8")
 
     feed = [{"title": t["title"], "url": SITE + t["url"], "country": t.get("country"), "country_slug": t["country_slug"],
              "days": t.get("days"), "duration": duration(t), "image": SITE + img_url(t.get("hero")),
              "locations": t.get("locations", []), "tags": t.get("tags", []), "overnights": overnights_line(t),
-             "summary": t.get("summary", "")} for t in trips]
-    (ROOT / "trips.json").write_text(json.dumps({"updated": VERSION, "trips": feed}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Built {len(trips)} trip(s) across {len(by_country)} destination(s): "
-          + ", ".join(f"{n} ({len(g)})" for n, g in by_country.values()))
+             "summary": t.get("summary", "")} for t in trips if t.get("listed")]
+    (OUT / "trips.json").write_text(json.dumps({"updated": VERSION, "trips": feed}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"Built {len(trips)} trip(s). Private links:")
+    for t in trips:
+        print(f"  {t['title']}: {SITE}{t['url']}")
+    print(f"  All trips (Rene only): {SITE}{lib}/")
 
 
 if __name__ == "__main__":

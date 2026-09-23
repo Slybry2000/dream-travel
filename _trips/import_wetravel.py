@@ -1,15 +1,15 @@
 """Import a WeTravel itinerary link into the Dream Travel trips library.
 
-    python trips/import_wetravel.py https://dream-travel.wetravel.com/i/<id> [--country "Costa Rica"]
+    python _trips/import_wetravel.py https://dream-travel.wetravel.com/i/<id> [--country "Costa Rica"]
 
 WeTravel server-renders the whole itinerary into the page as Next.js flight data, so
 one plain GET is enough: no login, no browser. This writes:
 
-    trips/data/<slug>.json        the trip, in our own format
+    _trips/data/<slug>.json       the trip, in our own format
     trips/images/<slug>/*.webp    every photo, copied locally so we never depend on WeTravel
 
 Re-importing the same link refreshes the itinerary but keeps any hand-edited fields
-listed in KEEP (tags, country, status...). Run trips/build.py afterwards.
+listed in KEEP (tags, country, status...). Run _trips/build.py afterwards.
 """
 import argparse
 import html
@@ -21,10 +21,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-IMAGES = ROOT / "images"
+IMAGES = ROOT.parent / "trips" / "images"   # published photos
 UA = {"User-Agent": "Mozilla/5.0 (Dream Travel trip importer)"}
 # Fields a person may edit by hand; a re-import never overwrites them.
-KEEP = ("slug", "country", "tags", "status", "summary", "sort", "hero_position", "overnights")
+KEEP = ("slug", "key", "listed", "country", "tags", "status", "summary", "sort", "hero_position", "overnights")
 SKIP_SECTIONS = ("about dream-travel", "about dream travel", "about us")
 
 
