@@ -12,66 +12,79 @@
   <style>
     @font-face { font-family: "Story Script"; src: url("../fonts/StoryScript-Regular.ttf") format("truetype"); font-display: swap; }
 
-    /* Hero: shorter than the homepage, copy sits over the open sea on the left */
-    /* Hero: split panel. Forest text column left, photo right. Shorter than the homepage. */
-    .hero { height: auto; min-height: clamp(500px, 72vh, 660px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); place-items: stretch; background: var(--forest); }
+    /* Solid header on this page so the menu never sits on bright photo sky */
+    .site-header, .site-header.is-scrolled { background: var(--ink); box-shadow: 0 1px 0 rgba(255,255,255,.12); }
+    .hero { margin-top: 78px; }
+    @media (max-width: 760px) { .hero { margin-top: 68px; } }
+
+    /* Hero: compact split panel. Forest text column left, photo right. */
+    .hero { height: auto; min-height: clamp(400px, 52vh, 480px); display: grid; grid-template-columns: clamp(460px, 42vw, 640px) minmax(0, 1fr); place-items: stretch; background: var(--forest); }
     .hero__picture { position: relative; grid-column: 2; grid-row: 1; inset: auto; height: auto; min-height: 100%; }
     .hero__picture img { position: absolute; inset: 0; object-position: 62% center; }
-    .hero__shade { display: none; }
-    .hero__content { grid-column: 1; grid-row: 1; align-self: center; width: auto; max-width: 600px; padding: 120px clamp(24px, 4vw, 64px) 64px var(--gutter); justify-items: start; text-align: left; gap: 22px; transform: none; }
-    [data-type-system="journal"] .hero h1 { font-size: clamp(56px, 5.6vw, 92px); }
-    .hero .scroll-cue { display: none; }
-    .hero__buttons { flex-wrap: wrap; justify-content: flex-start; gap: 12px; }
+    .hero__shade, .hero .scroll-cue { display: none; }
+    .hero__content { grid-column: 1; grid-row: 1; align-self: center; width: auto; max-width: 580px; padding: 40px clamp(24px, 4vw, 56px) 40px var(--gutter); justify-items: start; text-align: left; gap: 18px; transform: none; }
+    [data-type-system="journal"] .hero h1 { font-size: clamp(50px, 4.8vw, 80px); }
+    .hero__content > p.hero__lede { max-width: 520px; font-size: clamp(15px, 1.15vw, 17px); font-weight: 400; letter-spacing: 0; text-transform: none; line-height: 1.55; }
+    .hero__buttons { flex-wrap: wrap; justify-content: flex-start; gap: 10px; }
+    @media (min-width: 1100px) { .hero__buttons { flex-wrap: nowrap; } }
     .hero__buttons .button { min-width: 0; }
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; min-height: 0; }
-      .hero__picture { grid-column: 1; grid-row: 1; height: clamp(300px, 52vw, 420px); min-height: 0; }
+      .hero__picture { grid-column: 1; grid-row: 1; height: clamp(240px, 46vw, 360px); min-height: 0; }
       .hero__picture img { object-position: 58% 30%; }
-      .hero__content { grid-column: 1; grid-row: 2; max-width: none; padding: 32px 20px 44px; justify-items: center; text-align: center; }
+      .hero__content { grid-column: 1; grid-row: 2; max-width: none; padding: 24px 20px 32px; justify-items: center; text-align: center; }
       .hero__buttons { justify-content: center; }
-      [data-type-system="journal"] .hero h1 { font-size: clamp(50px, 13vw, 72px); }
+      [data-type-system="journal"] .hero h1 { font-size: clamp(46px, 12vw, 64px); }
     }
 
-    /* Compact the rest of the page */
-    .section-pad { padding-block: clamp(56px, 6vw, 88px); }
-    .story-row { min-height: 0; }
-    .story-row__copy { padding: clamp(28px, 4vw, 56px) clamp(18px, 3vw, 48px); }
-    .story-row__media { min-height: 380px; max-height: 560px; }
-    [data-type-system="journal"] .story-row h2, [data-type-system="journal"] .section-heading h2 { font-size: clamp(40px, 4vw, 60px); }
-    .host-options__grid { margin-top: 36px; }
-    .host-options__note { margin-top: 28px; }
-    .kit-faq__list { margin-top: 32px; }
-    .kit-faq details { padding: 16px 4px; }
-    .final-cta { min-height: 0; padding: 56px 24px; }
-    .hero__content > p.hero__lede { max-width: 560px; font-size: clamp(16px, 1.3vw, 19px); font-weight: 400; letter-spacing: 0; text-transform: none; line-height: 1.55; }
+    /* The whole pitch in one band: three columns */
+    .kit { padding: clamp(36px, 4vw, 56px) var(--gutter); background: var(--paper); }
+    .kit__grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .kit__col { padding: 0 clamp(18px, 2.4vw, 36px); border-left: 1px solid var(--line); }
+    .kit__col:first-child { padding-left: 0; border-left: 0; }
+    .kit__col:last-child { padding-right: 0; }
+    [data-type-system="journal"] .kit h2 { font-size: clamp(28px, 2.3vw, 36px); line-height: 1.05; margin: 0 0 14px; }
+    .kit__label { margin: 12px 0 4px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+    .kit__label--ours { color: var(--terracotta); }
+    .kit ul, .kit ol { margin: 0; padding: 0; list-style: none; }
+    .kit li { padding: 6px 0; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.45; }
+    .kit ol { counter-reset: s; }
+    .kit ol li { counter-increment: s; position: relative; padding: 9px 0 9px 36px; }
+    .kit ol li::before { content: counter(s); position: absolute; left: 0; top: 2px; color: var(--terracotta); font-family: var(--display); font-size: 30px; line-height: 1; }
+    .kit li strong { display: block; color: var(--ink); font-size: 15px; font-weight: 600; }
+    .kit__note { margin: 12px 0 0; font-size: 12px; line-height: 1.5; opacity: .8; }
+    .kit .button { margin-top: 16px; }
+    @media (max-width: 900px) {
+      .kit__grid { grid-template-columns: 1fr; gap: 28px; }
+      .kit__col, .kit__col:first-child, .kit__col:last-child { padding: 0; border-left: 0; }
+      .kit__col + .kit__col { padding-top: 24px; border-top: 1px solid var(--line); }
+    }
 
-    /* Your list / our list inside a story row */
-    .jobs { margin: 26px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-    [data-type-system="journal"] .jobs h3 { font-size: 26px; margin: 0 0 10px; }
-    .jobs ul { margin: 0; padding: 0; list-style: none; }
-    .jobs li { padding: 9px 0; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.45; }
-    .jobs .ours h3 { color: var(--terracotta); }
-    @media (max-width: 560px) { .jobs { grid-template-columns: 1fr; } }
-
-    /* Three steps */
-    .steps3 { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: s; }
-    .steps3 li { counter-increment: s; position: relative; padding: 14px 0 14px 58px; border-top: 1px solid var(--line); }
-    .steps3 li::before { content: counter(s); position: absolute; left: 0; top: 4px; color: var(--terracotta); font-family: var(--display); font-size: 40px; line-height: 1; }
-    .steps3 strong { display: block; color: var(--ink); font-size: 17px; }
-    .steps3 span { font-size: 15px; }
-
-    /* Short FAQ */
-    .kit-faq { background: var(--paper); border-top: 1px solid var(--line); }
-    .kit-faq__list { max-width: 820px; margin: 48px auto 0; border-top: 1px solid var(--line); }
-    .kit-faq details { border-bottom: 1px solid var(--line); padding: 20px 4px; }
-    .kit-faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 20px; color: var(--ink); font-family: var(--editorial); font-size: clamp(20px, 1.8vw, 24px); font-weight: 500; }
+    /* Questions: two by two, closed by default */
+    .kit-faq { padding: 0 var(--gutter) clamp(36px, 4vw, 56px); background: var(--paper); }
+    .kit-faq__grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(24px, 4vw, 56px); border-top: 1px solid var(--line); }
+    .kit-faq details { border-bottom: 1px solid var(--line); padding: 12px 2px; }
+    .kit-faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; color: var(--ink); font-family: var(--editorial); font-size: 19px; font-weight: 500; }
     .kit-faq summary::-webkit-details-marker { display: none; }
     .kit-faq summary::after { content: "+"; color: var(--terracotta); font-family: var(--body); }
     .kit-faq details[open] summary::after { content: "\2013"; }
-    .kit-faq details p { margin: 12px 0 0; max-width: 680px; font-size: 16px; }
+    .kit-faq details p { margin: 8px 0 0; font-size: 14px; line-height: 1.55; }
+    @media (max-width: 760px) { .kit-faq__grid { grid-template-columns: 1fr; } }
 
-    .skip-line { margin-top: 16px; font-size: 14px; }
+    /* Closing band, slim */
+    .final-cta { min-height: 0; padding: 28px 24px 30px; }
+    [data-type-system="journal"] .final-cta h2 { font-size: clamp(32px, 3vw, 44px); }
+    .final-cta p { margin-top: 10px; font-size: 16px; }
+    .final-cta__actions { margin-top: 14px; }
+    .final-cta .final-cta__skip { margin-top: 10px; }
+    .final-cta .flourish { display: none; }
+
+    .skip-line { margin: 10px 0 0; font-size: 13px; }
     .skip-line a { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* A/B test. Version A shows the direct booking links, version B is form only. */
+    .ab-a .ab-formonly, .ab-b .ab-direct { display: none !important; }
+    .ab-b .stickybar { justify-content: center; }
 
     /* "Already did the form" mode */
     .is-done .if-new { display: none !important; }
@@ -95,8 +108,8 @@
       <span>Dream Travel</span>
     </a>
     <nav class="desktop-nav" aria-label="Page navigation">
-      <a href="#jobs">Who does what</a>
-      <a href="#hosting">How you are paid</a>
+      <a href="#kit">How it works</a>
+      <a href="#paid">How you are paid</a>
       <a href="#questions">Questions</a>
     </nav>
     <div class="header-actions">
@@ -109,111 +122,92 @@
     <!-- 1. HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <picture class="hero__picture">
-        <source type="image/webp" srcset="../images/generated/leader-kit-hero-960w.webp 960w, ../images/generated/leader-kit-hero-1600w.webp 1600w, ../images/generated/leader-kit-hero-2048w.webp 2048w" sizes="100vw">
+        <source type="image/webp" srcset="../images/generated/leader-kit-hero-960w.webp 960w, ../images/generated/leader-kit-hero-1600w.webp 1600w, ../images/generated/leader-kit-hero-2048w.webp 2048w" sizes="(max-width: 860px) 100vw, 55vw">
         <img src="../images/generated/leader-kit-hero-1600w.webp" alt="A group leader smiles back at her friends as they walk a whitewashed clifftop path above the sea." width="1600" height="800" fetchpriority="high">
       </picture>
-      <div class="hero__shade" aria-hidden="true"></div>
       <div class="hero__content">
         <p class="welcome">Your answers are in. Next step: a call with Rene.</p>
         <h1 id="hero-title"><span>You gather</span> <em>your people<svg class="flourish flourish--hero-loop" viewBox="0 0 460 130" aria-hidden="true"><path pathLength="1" d="M25 76C56 111 355 126 427 78C468 50 413 13 259 11C109 9 12 31 25 76Z"></path><path pathLength="1" d="M39 84C111 120 352 117 420 68"></path></svg></em></h1>
         <p class="hero__lede">We plan the trip, book it, take every payment, and answer every guest question. Your name is on the invitation. Ours is on everything else. Hosting costs you nothing.</p>
         <div class="hero__buttons" id="hero-cta">
           <a class="button button--pink" data-primary="hero" data-label-done="Book your call with Rene" href="https://adults.dream-travel.net/planning/?utm_source=leader-kit&amp;utm_content=hero"><span class="lbl">Tell us about your group</span></a>
-          <a class="button button--outline if-new" data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=hero-done" target="_blank" rel="noopener">Already did the form? Book a call</a>
+          <a class="button button--outline if-new ab-formonly" href="#kit">See how it works</a>
+          <a class="button button--outline if-new ab-direct" data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=hero-done" target="_blank" rel="noopener">Already did the form? Book a call</a>
         </div>
       </div>
-      <a class="scroll-cue" href="#jobs">Scroll down</a>
     </section>
 
-    <!-- 2. WHO DOES WHAT -->
-    <section class="story-sections" id="jobs" aria-label="Who does what">
-      <article class="story-row">
-        <div class="story-row__copy">
-          <h2>Your list is short. Ours is long.</h2>
-          <div class="jobs">
-            <div>
-              <h3>You</h3>
-              <ul>
-                <li>Invite your people.</li>
-                <li>Help pick the pace and feel of the week.</li>
-                <li>Pass questions on to us.</li>
-              </ul>
-            </div>
-            <div class="ours">
-              <h3>Dream Travel</h3>
-              <ul>
-                <li>Plan and book the whole trip.</li>
-                <li>Collect every payment. No money passes through you.</li>
-                <li>Answer every guest question.</li>
-                <li>Carry the contracts and the insurance.</li>
-                <li>Look after the group on the ground.</li>
-              </ul>
-            </div>
-          </div>
-          <a class="button button--black" data-primary="jobs" data-label-done="Book your call with Rene" href="https://adults.dream-travel.net/planning/?utm_source=leader-kit&amp;utm_content=jobs"><span class="lbl">Hand us the long list</span></a>
+    <!-- 2. THE WHOLE PITCH, ONE BAND -->
+    <section class="kit" id="kit" aria-label="How hosting works">
+      <div class="kit__grid">
+        <div class="kit__col">
+          <h2>Who does what</h2>
+          <p class="kit__label">You</p>
+          <ul>
+            <li>Invite your people and pick the feel of the week.</li>
+          </ul>
+          <p class="kit__label kit__label--ours">Dream Travel</p>
+          <ul>
+            <li>Plan and book the whole trip.</li>
+            <li>Collect every payment. No money passes through you.</li>
+            <li>Answer every guest question.</li>
+            <li>Carry the contracts and the insurance.</li>
+            <li>Look after the group on the ground.</li>
+          </ul>
         </div>
-        <div class="story-row__media"><img src="../images/generated/wellness-groups.webp" alt="A wellness group traveling together by the sea" width="1024" height="1280" loading="lazy"></div>
-      </article>
 
-      <!-- 3. HOW IT STARTS -->
-      <article class="story-row story-row--reverse">
-        <div class="story-row__copy">
+        <div class="kit__col">
           <h2>How it starts</h2>
-          <ol class="steps3">
-            <li><strong>Tell us about your people.</strong><span>A few questions: who they are, what they can spend, the kind of week they want.</span></li>
-            <li><strong>We send you a sample trip.</strong><span>A real trip we run, matched to your answers.</span></li>
-            <li><strong>Thirty minutes with Rene.</strong><span>Rene has already read your answers. You leave knowing whether this is a fit.</span></li>
+          <ol>
+            <li><strong>Tell us about your people.</strong>A few questions: who they are, their budget, the week they want.</li>
+            <li><strong>We send you a sample trip.</strong>A real trip we run, matched to your answers.</li>
+            <li><strong>Thirty minutes with Rene.</strong>You leave knowing whether this is a fit.</li>
           </ol>
           <a class="button button--black" data-primary="steps" data-label-done="Book your call with Rene" href="https://adults.dream-travel.net/planning/?utm_source=leader-kit&amp;utm_content=steps"><span class="lbl">Start step one</span></a>
-          <p class="skip-line if-new">Already did step one? <a data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=steps-done" target="_blank" rel="noopener">Book your call with Rene.</a></p>
+          <p class="skip-line if-new ab-direct">Already did step one? <a data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=steps-done" target="_blank" rel="noopener">Book your call with Rene.</a></p>
         </div>
-        <div class="story-row__media"><img src="../images/generated/culinary-groups.webp" alt="A travel group gathered around a table" width="1024" height="1280" loading="lazy"></div>
-      </article>
-    </section>
 
-    <!-- 4. HOW YOU ARE PAID -->
-    <section class="host-options section-pad" id="hosting" aria-labelledby="hosting-title">
-      <div class="section-heading section-heading--center"><h2 id="hosting-title">Hosting has its own return</h2><p>Pick one. You do not need to decide today.</p></div>
-      <svg class="flourish flourish--host-route" viewBox="0 0 1200 190" aria-hidden="true"><path pathLength="1" d="M72 119C230 34 351 153 517 84C670 20 806 47 1122 116"></path><circle cx="72" cy="119" r="8"></circle><circle cx="600" cy="62" r="8"></circle><circle cx="1122" cy="116" r="8"></circle></svg>
-      <div class="host-options__grid">
-        <article><span>01</span><h3>Travel free</h3><p>Once your group fills the trip, your own seat is covered.</p></article>
-        <article><span>02</span><h3>Earn a share</h3><p>A set amount for every guest who books, paid to you after the trip.</p></article>
-        <article><span>03</span><h3>Give it back</h3><p>Send your share to a charity, a scholarship or your studio fund.</p></article>
+        <div class="kit__col" id="paid">
+          <h2>How you are paid</h2>
+          <ul>
+            <li><strong>Travel free.</strong>Once your group fills the trip, your seat is covered.</li>
+            <li><strong>Earn a share.</strong>A set amount per guest who books, paid after the trip.</li>
+            <li><strong>Give it back.</strong>Send your share to a charity or your studio fund.</li>
+          </ul>
+          <p class="kit__note">Pick one later. Your numbers are agreed with you in writing before anyone is invited.</p>
+        </div>
       </div>
-      <p class="host-options__note">Your numbers are agreed with you and put in writing before anyone in your group is invited.</p>
     </section>
 
-    <!-- 5. QUESTIONS -->
-    <section class="kit-faq section-pad" id="questions" aria-labelledby="faq-title">
-      <div class="section-heading section-heading--center"><h2 id="faq-title">What leaders ask first</h2></div>
-      <div class="kit-faq__list">
-        <details open>
+    <!-- 3. QUESTIONS -->
+    <section class="kit-faq" id="questions" aria-label="Questions leaders ask first">
+      <div class="kit-faq__grid">
+        <details>
           <summary>Can this cost me money?</summary>
           <p>No. There is no fee to host and nothing to buy. If the trip does not fill, it does not run, every guest is refunded, and you owe nothing.</p>
         </details>
         <details>
-          <summary>Do I have to handle anyone's money?</summary>
+          <summary>Do I handle anyone's money?</summary>
           <p>No. Every guest pays Dream Travel directly on our own payment page. You never hold a deposit or chase a payment.</p>
         </details>
         <details>
-          <summary>Will this feel like a sales pitch to my people?</summary>
-          <p>It should not. You see the price before anyone else, you can rewrite the trip description in your own voice, and anyone with a question talks to us, not you.</p>
+          <summary>Will this feel like a sales pitch?</summary>
+          <p>It should not. You see the price first, you can rewrite the trip description in your own voice, and anyone with a question talks to us, not you.</p>
         </details>
         <details>
-          <summary>I have never organized international travel.</summary>
+          <summary>I have never organized travel.</summary>
           <p>That is the normal case, and it is why this exists. You know your people. We know the travel. You never plan a route or read a hotel contract.</p>
         </details>
       </div>
     </section>
 
-    <!-- 6. CLOSE -->
+    <!-- 4. CLOSE -->
     <section class="final-cta" id="plan" aria-labelledby="plan-title">
-      <svg class="flourish flourish--final-burst" viewBox="0 0 190 190" aria-hidden="true"><circle cx="95" cy="95" r="29"></circle><path pathLength="1" d="M95 8V47"></path><path pathLength="1" d="M95 143V182"></path><path pathLength="1" d="M8 95H47"></path><path pathLength="1" d="M143 95H182"></path><path pathLength="1" d="M34 34L61 61"></path><path pathLength="1" d="M129 129L156 156"></path><path pathLength="1" d="M156 34L129 61"></path><path pathLength="1" d="M61 129L34 156"></path></svg>
       <div>
         <h2 id="plan-title">Tell us about your group.</h2>
-        <p>No plan required. A rough group size and a season is enough. We will tell you what is possible.</p>
+        <p>No plan required. A rough group size and a season is enough.</p>
         <div class="final-cta__actions"><a class="button button--black" data-primary="close" data-label-done="Book your call with Rene" href="https://adults.dream-travel.net/planning/?utm_source=leader-kit&amp;utm_content=close"><span class="lbl">Tell us about your group</span></a></div>
-        <p class="final-cta__skip if-new">Already filled in the form? <a data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=close-done" target="_blank" rel="noopener">Book your call with Rene.</a></p>
+        <p class="final-cta__skip if-new ab-direct">Already filled in the form? <a data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=close-done" target="_blank" rel="noopener">Book your call with Rene.</a></p>
       </div>
     </section>
   </main>
@@ -224,7 +218,7 @@
   </footer>
 
   <div class="stickybar" id="stickybar" aria-hidden="true">
-    <a class="if-new" data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=sticky-done" target="_blank" rel="noopener">Did the form? Book a call</a>
+    <a class="if-new ab-direct" data-done-link href="https://calendly.com/rene-piard/30min?utm_source=leader-kit&amp;utm_content=sticky-done" target="_blank" rel="noopener">Did the form? Book a call</a>
     <a class="button button--pink button--small" data-primary="sticky" data-label-done="Book your call" tabindex="-1" href="https://adults.dream-travel.net/planning/?utm_source=leader-kit&amp;utm_content=sticky"><span class="lbl">Get started</span></a>
   </div>
 
@@ -238,6 +232,20 @@
     var CAL = 'https://calendly.com/rene-piard/30min';
     var KEY = 'dt_leader_form_done';
     var done = /[?&]done=1(&|$)/.test(location.search);
+
+    /* A/B test: each visitor is put in A or B once and stays there.
+       A = direct "already did the form? book a call" links shown.
+       B = form only. Preview either with ?v=a or ?v=b.
+       Every link carries utm_campaign=leaderkit-a or leaderkit-b so
+       Calendly bookings show which version the person saw. */
+    var AB = 'dt_leader_ab', v = (location.search.match(/[?&]v=(a|b)(&|$)/) || [])[1];
+    try { v = v || localStorage.getItem(AB); } catch (e) {}
+    if (v !== 'a' && v !== 'b') v = Math.random() < 0.5 ? 'a' : 'b';
+    try { localStorage.setItem(AB, v); } catch (e) {}
+    document.documentElement.classList.add('ab-' + v);
+    var tag = function (a) {
+      if (a.href.indexOf('utm_source=leader-kit') > -1 && a.href.indexOf('utm_campaign=') < 0) a.href += '&utm_campaign=leaderkit-' + v;
+    };
     try {
       if (done) localStorage.setItem(KEY, '1');
       if (localStorage.getItem(KEY) === '1') done = true;
@@ -252,10 +260,13 @@
       document.querySelectorAll('[data-primary]').forEach(function (a) {
         a.href = CAL + '?utm_source=leader-kit&utm_content=' + a.getAttribute('data-primary') + '-cal';
         a.target = '_blank'; a.rel = 'noopener';
+        tag(a);
         var l = a.querySelector('.lbl');
         if (l) l.textContent = a.getAttribute('data-label-done');
       });
     }
+
+    document.querySelectorAll('a[href*="utm_source=leader-kit"]').forEach(tag);
 
     var bar = document.getElementById('stickybar');
     var hero = document.getElementById('hero-cta');
