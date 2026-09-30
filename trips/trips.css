@@ -1,3 +1,4 @@
+@font-face { font-family: "Story Script"; src: url("/fonts/StoryScript-Regular.ttf") format("truetype"); font-display: swap; }
 /* Dream Travel trips library: itinerary pages (WeTravel-style split layout) and
    destination listings. Tokens match the adults site (styles.css). */
 :root {
@@ -81,9 +82,6 @@ h1, h2, h3, p { margin: 0; }
 .tl-header__nav a { text-decoration: none; } .tl-header__nav a:hover { opacity: .75; }
 .tl-hero { position: relative; min-height: min(78vh, 720px); display: grid; place-items: center; overflow: hidden; color: #fff; text-align: center; background: var(--forest); }
 .tl-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.tl-hero--slides > img { opacity: 0; transform: scale(1.06); transition: opacity 1.6s ease, transform 9s linear; }
-.tl-hero--slides > img.is-active { opacity: 1; transform: scale(1); }
-@media (prefers-reduced-motion: reduce) { .tl-hero--slides > img { transition: opacity 1.6s ease; transform: none; } .tl-hero--slides > img.is-active { transform: none; } }
 .tl-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,18,11,.5), rgba(0,18,11,.15) 40%, rgba(0,18,11,.55)); }
 .tl-hero > div { position: relative; z-index: 1; padding: 120px var(--gutter) 64px; }
 .tl-hero .tl-kicker { color: #fff; opacity: .9; }
@@ -111,16 +109,41 @@ h1, h2, h3, p { margin: 0; }
 .tl-card .tl-button { margin-top: auto; align-self: flex-start; }
 .tl-card__body > :nth-last-child(2) { margin-bottom: 12px; }
 /* Country pages: compact, one screen to see what's there */
-.tl-hero--band { min-height: clamp(250px, 36vh, 340px); }
-.tl-hero--band > div { padding: 78px var(--gutter) 22px; }
-.tl-hero--band h1 { margin-bottom: 8px; font-size: clamp(40px, 5.5vw, 68px); }
-.tl-hero--band .tl-kicker { margin-bottom: 6px; }
-.tl-hero__sub { max-width: 640px; margin: 0 auto; font-size: 15px; line-height: 1.5; opacity: .92; }
+/* Listing pages: solid header, then a split panel (text left, rotating photos right), like the group leader kit */
+.tl-dest .tl-header { position: relative; background: var(--ink); box-shadow: 0 1px 0 rgba(255,255,255,.12); }
+.tl-split { display: grid; grid-template-columns: clamp(420px, 42vw, 600px) minmax(0, 1fr); min-height: clamp(330px, 46vh, 430px); color: var(--paper); background: var(--forest); }
+.tl-split__media { position: relative; grid-column: 2; grid-row: 1; overflow: hidden; background: var(--ink); }
+.tl-split__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 1.6s ease, transform 9s linear; }
+.tl-split__media img.is-active { opacity: 1; transform: scale(1); }
+.tl-split__text { grid-column: 1; grid-row: 1; align-self: center; display: grid; justify-items: start; gap: 14px; padding: 34px clamp(24px, 4vw, 56px) 34px var(--gutter); }
+.tl-split__kicker { color: var(--peach); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.tl-split h1 { font: 400 clamp(40px, 4.2vw, 64px)/.95 var(--editorial); letter-spacing: -.03em; }
+.tl-split h1 span { display: block; }
+.tl-split h1 em { position: relative; isolation: isolate; display: inline-block; margin-top: 4px; font-family: "Story Script", cursive; font-size: 1.02em; font-style: normal; letter-spacing: 0; line-height: 1.05; }
+.tl-loop { position: absolute; z-index: -1; top: 40%; left: -6%; width: 112%; height: 92%; overflow: visible; color: var(--peach); opacity: .86; pointer-events: none; }
+.tl-loop path { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.tl-split__lede { max-width: 500px; color: rgba(252,252,252,.86); font-size: 15px; line-height: 1.55; }
+.tl-split__buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.tl-button--ghost { color: var(--paper); background: transparent; border-color: rgba(252,252,252,.8); }
+.tl-button--ghost:hover { color: var(--ink); background: var(--paper); border-color: var(--paper); }
+@media (max-width: 860px) {
+  .tl-split { grid-template-columns: 1fr; min-height: 0; }
+  .tl-split__media { grid-column: 1; grid-row: 1; height: clamp(190px, 48vw, 300px); }
+  .tl-split__text { grid-column: 1; grid-row: 2; justify-items: center; gap: 10px; padding: 22px 20px 26px; text-align: center; }
+  .tl-split h1 { font-size: clamp(34px, 10vw, 48px); }
+  .tl-split__lede { font-size: 14px; }
+  .tl-split__buttons { justify-content: center; flex-wrap: nowrap; gap: 8px; }
+  .tl-split__buttons .tl-button { min-height: 40px; padding: 0 12px; font-size: 10px; white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) { .tl-split__media img { transform: none !important; } }
 .tl-tabs { position: sticky; top: 0; z-index: 10; display: flex; justify-content: center; gap: 6px; padding: 10px var(--gutter); overflow-x: auto; background: var(--paper); border-bottom: 1px solid rgba(0,18,11,.08); scrollbar-width: none; }
 .tl-tabs a { flex: none; padding: 8px 16px; border-radius: 999px; color: var(--ink); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
 .tl-tabs a:hover { background: var(--blush); }
 .tl-tabs a[aria-current] { color: var(--paper); background: var(--ink); }
 .tl-dest .tl-grid-wrap { padding: 28px var(--gutter) 36px; }
+.tl-dest .tl-grid-wrap + .tl-grid-wrap { padding-top: 8px; }
+.tl-dest .tl-grid-head { margin-bottom: 14px; }
+.tl-dest .tl-grid-head h2 { font-size: clamp(24px, 2.2vw, 30px); }
 .tl-dest .tl-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 18px; }
 .tl-dest .tl-card__media { aspect-ratio: 16 / 10; }
 .tl-dest .tl-card__body { gap: 4px; padding: 14px 16px 16px; }
@@ -145,7 +168,6 @@ h1, h2, h3, p { margin: 0; }
   .tl-tabs { justify-content: flex-start; }
   .tl-strip__row { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; }
   .tl-mini { scroll-snap-align: start; }
-  .tl-hero__sub { font-size: 13px; }
   .tl-dest .tl-grid { gap: 12px; }
   .tl-dest .tl-card { flex-direction: row; }
   .tl-dest .tl-card__media { flex: none; width: 38%; aspect-ratio: auto; }

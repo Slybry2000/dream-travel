@@ -255,6 +255,38 @@ def itinerary(t):
 
 # --- listing pages -------------------------------------------------------------------
 
+LOOP = ('<svg class="tl-loop" viewBox="0 0 460 130" aria-hidden="true">'
+        '<path d="M25 76C56 111 355 126 427 78C468 50 413 13 259 11C109 9 12 31 25 76Z"></path>'
+        '<path d="M39 84C111 120 352 117 420 68"></path></svg>')
+
+
+def split_hero(kicker, lead, script, lede, slides):
+    """Top of every listing page: forest text panel left, rotating photos right."""
+    slides = list(dict.fromkeys(slides)) or ["/images/hero-background-r2-1920w.webp"]
+    imgs = "".join(f'<img src="{esc(src)}" alt=""{" class=" + chr(34) + "is-active" + chr(34) if i == 0 else " loading=" + chr(34) + "lazy" + chr(34)} data-hero-slide>'
+                   for i, src in enumerate(slides))
+    return f"""    <section class="tl-split">
+      <div class="tl-split__media">{imgs}</div>
+      <div class="tl-split__text">
+        <p class="tl-split__kicker">{kicker}</p>
+        <h1><span>{lead}</span> <em>{script}{LOOP}</em></h1>
+        <p class="tl-split__lede">{lede}</p>
+        <div class="tl-split__buttons"><a class="tl-button" href="#trips">See the trips</a><a class="tl-button tl-button--ghost" href="/planning/">Plan a custom trip</a></div>
+      </div>
+    </section>"""
+
+
+def tabs(lib, by_country, current=None):
+    links = [(f"{lib}/", "All trips", current is None)] + \
+            [(f"{lib}/{s}/", n, s == current) for s, (n, _) in by_country.items()]
+    return '    <nav class="tl-tabs" aria-label="Sample trips by destination">' + "".join(
+        f'<a href="{href}"{" aria-current=" + chr(34) + "page" + chr(34) if on else ""}>{esc(label)}</a>'
+        for href, label, on in links) + "</nav>"
+
+
+CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>"""
+
+
 def mini_card(t):
     """Small photo-and-title card for the "More sample trips" strip."""
     return (f'      <a class="tl-mini" href="{t["url"]}"><img src="{img_url(t.get("hero"))}" alt="" loading="lazy" style="{focal(t.get("hero"))}">'
@@ -262,14 +294,15 @@ def mini_card(t):
 
 
 def destination(slug, name, trips, meta, lib, by_country):
-    hero = meta.get("hero") or img_url(trips[0].get("hero"))
+    # Hero photos: "country_heroes" in config.json (paths under trips/), else the trips' cover photos.
+    slides = [f"{BASE}/{src}" for src in config().get("country_heroes", {}).get(slug, [])] or \
+             [img_url(t.get("hero")) for t in trips if t.get("hero")]
+    if meta.get("hero"):
+        slides.insert(0, meta["hero"])
     intro = meta.get("intro") or [
         f"Sample programs for private groups traveling to {name}. Each one is a starting point: "
         "we shape the dates, pace, hotels and activities around your group."]
     cards = "\n".join(card(t) for t in trips)
-    tabs = f'<a href="{lib}/">All trips</a>' + "".join(
-        f'<a href="{lib}/{s}/" aria-current="page">{esc(n)}</a>' if s == slug else f'<a href="{lib}/{s}/">{esc(n)}</a>'
-        for s, (n, _) in by_country.items())
     # "More sample trips": up to 6 trips from the other countries, taken in turn so every country shows.
     pools = [list(ts) for s, (_, ts) in by_country.items() if s != slug]
     more = []
@@ -283,18 +316,19 @@ def destination(slug, name, trips, meta, lib, by_country):
     </div></section>
 """ if more else "")
     count = f"{len(trips)} sample trip{'s' if len(trips) != 1 else ''}"
-    return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], hero, public=True)}
+    return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], slides[0], public=True)}
 <body class="tl-dest">
 {site_header()}
   <main>
-    <section class="tl-hero tl-hero--band"><img src="{hero}" alt=""><div><p class="tl-kicker">{count}</p><h1>{esc(name)}</h1><p class="tl-hero__sub">{esc(intro[0])}</p></div></section>
-    <nav class="tl-tabs" aria-label="Sample trips by destination">{tabs}</nav>
+{split_hero(count, "Group trips to", esc(name), esc(intro[0]), slides)}
+{tabs(lib, by_country, slug)}
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
     </div></section>
-{more_html}    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>
+{more_html}{CTA}
   </main>
 {site_footer()}
+  <script src="{BASE}/trips.js?v={VERSION}" defer></script>
 </body>
 </html>
 """
@@ -304,26 +338,24 @@ def library(by_country, dests, lib):
     blocks = []
     for slug, (name, trips) in by_country.items():
         cards = "\n".join(card(t) for t in trips)
-        blocks.append(f"""    <section class="tl-grid-wrap"><div class="tl-grid-head"><h2><a href="{lib}/{slug}/">{esc(name)}</a></h2><a href="{lib}/{slug}/">{len(trips)} trip{'s' if len(trips) != 1 else ''}</a></div><div class="tl-grid">
+        blocks.append(f"""    <section class="tl-grid-wrap"><div class="tl-grid-head"><h2><a href="{lib}/{slug}/">{esc(name)}</a></h2><a href="{lib}/{slug}/">{len(trips)} trip{'s' if len(trips) != 1 else ''} &rarr;</a></div><div class="tl-grid">
 {cards}
     </div></section>""")
     # Hero slideshow: "hero_rotation" in config.json (paths under trips/), else every trip's cover photo.
-    slides = [f"{BASE}/{src}" for src in config().get("hero_rotation", [])]
-    if not slides:
-        slides = [img_url(t.get("hero")) for _, ts in by_country.values() for t in ts if t.get("hero")]
-    slides = list(dict.fromkeys(slides)) or ["/images/hero-background-r2-1920w.webp"]
-    hero = slides[0]
-    first_attr, rest_attr = ' class="is-active"', ' loading="lazy"'
-    hero_imgs = "".join(f'<img src="{esc(src)}" alt=""{first_attr if i == 0 else rest_attr} data-hero-slide>'
-                        for i, src in enumerate(slides))
-    return f"""{head("Group Trips | Dream Travel", "Sample itineraries for private group travel with Dream Travel.", hero, public=True)}
-<body>
+    slides = [f"{BASE}/{src}" for src in config().get("hero_rotation", [])] or \
+             [img_url(t.get("hero")) for _, ts in by_country.values() for t in ts if t.get("hero")]
+    total = sum(len(ts) for _, ts in by_country.values())
+    lede = ("These are just samples. Any destination, any type of trip: pick one close to what your people want "
+            "and we will shape it from there, or tell us where you want to go and we will build it.")
+    return f"""{head("Group Trips | Dream Travel", "Sample itineraries for private group travel with Dream Travel.", slides[0] if slides else "", public=True)}
+<body class="tl-dest">
 {site_header()}
   <main>
-    <section class="tl-hero tl-hero--slides">{hero_imgs}<div><p class="tl-kicker">Sample itineraries</p><h1>Where will your group go?</h1><a class="tl-button" href="#all">See trips</a></div></section>
-    <section class="tl-intro" id="all"><h2>These are just samples. We can do much more.</h2><p>Any destination, any type of trip. Pick one close to what your people want and we will shape it from there, or tell us where you want to go and we will build it.</p><p><a class="tl-button" href="/planning/">Tell us what you have in mind</a></p></section>
+{split_hero(f"{total} sample trips &middot; {len(by_country)} countries", "Where will", "your group go?", lede, slides)}
+{tabs(lib, by_country)}
+    <div id="trips"></div>
 {chr(10).join(blocks)}
-    <section class="tl-closing"><h2>Don't see your trip?</h2><p>Most of what we run is built from scratch.</p><a class="tl-button" href="/planning/">Plan a custom trip</a></section>
+{CTA}
   </main>
 {site_footer()}
   <script src="{BASE}/trips.js?v={VERSION}" defer></script>

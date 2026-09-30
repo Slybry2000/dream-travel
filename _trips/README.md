@@ -22,7 +22,9 @@ are still link-only: noindex, unguessable address, never linked from other trips
 - Overview of every trip: `/trips/<library key>/` (key in `config.json`), with a card page
   per country like dream-travel.net's France page. Its hero crossfades through the photos
   listed in `config.json` `"hero_rotation"` (paths under `trips/`); delete that list to
-  rotate through every trip's cover photo instead.
+  rotate through every trip's cover photo instead. Each country page rotates its own
+  photos from `config.json` `"country_heroes"` (keyed by country slug); a country with no
+  list there rotates its trips' cover photos.
 - **New country?** Add a matching card to the orbit in `/index.html` by hand.
 - **Revoke a link:** change the trip's `"key"` in its JSON and rebuild. The old link dies.
 - **Take a trip offline:** set `"status": "draft"` and rebuild.

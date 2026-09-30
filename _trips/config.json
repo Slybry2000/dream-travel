@@ -11,5 +11,55 @@
     "images/costa-rica-sustainability-culture-wellness-journey/5Uphqf37TiTTcKXrOBH6.webp",
     "images/grw1-greece-a-journey-of-wellness-culture-discovery/UJsAJY8KSAOlygeVUIuP.webp",
     "images/costa-rica-from-forest-to-sea-a-wellness-journey/IvgxJK7mQiyY6QdL7D7K.webp"
-  ]
+  ],
+  "country_heroes": {
+    "costa-rica": [
+      "images/costa-rica-sustainability-culture-wellness-journey/5Uphqf37TiTTcKXrOBH6.webp",
+      "images/costa-rica-from-forest-to-sea-a-wellness-journey/1TOqrOAQS6FzxS2WLDS2.webp",
+      "images/arenal-volcano-yoga-wellness-retreat/eXkeAfQJCV2Ok5bdJ75g.webp",
+      "images/costa-rica-mother-nature-s-gifts-a-jungle-beach-wellness-journey/10pbbKtpStuZ5aaSoeb5.webp",
+      "images/6-night-rainforest-and-wellness-reset/7mjTw0EQem5k9qc6YtSw.webp",
+      "images/costa-rica-from-forest-to-sea-a-wellness-journey/IvgxJK7mQiyY6QdL7D7K.webp",
+      "images/arenal-volcano-yoga-wellness-retreat/TjTEbXbSt20K79ugZDAw.webp",
+      "images/6-night-rainforest-and-wellness-reset/C58QSKGXTWuIsxPrbyVU.webp",
+      "images/costa-rica-mother-nature-s-gifts-a-jungle-beach-wellness-journey/9kSd0PcJSDOLz5IBlV5s.webp",
+      "images/arenal-volcano-yoga-wellness-retreat/iNUrh8SpTK6dSsBfOs97.webp"
+    ],
+    "portugal": [
+      "images/po6-wild-algarve-yoga-atlantic-escape/OB4wDhtIRemkQK2txCaJ.webp",
+      "images/po6-wild-algarve-yoga-atlantic-escape/PucYdFoORAex4DLRbntu.webp",
+      "images/po5-portugal-the-art-of-well-being/THERJWzYSYC36aeuatLr.webp",
+      "images/po6-wild-algarve-yoga-atlantic-escape/SgwuJJ4QOrdqWW1K9YAp.webp",
+      "images/po5-portugal-the-art-of-well-being/U0MMmpNJQgS4Q24OMbVV.webp",
+      "images/po5-portugal-the-art-of-well-being/1vwEqYWnSwaGntc6dARy.webp",
+      "images/po6-wild-algarve-yoga-atlantic-escape/ZUE7HPOSRkmCMNTDxOgD.webp",
+      "images/po5-portugal-the-art-of-well-being/nF7V50mS5KcIXI75griT.webp"
+    ],
+    "greece": [
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/GcHVlBnNS1mdHzT1LfnQ.webp",
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/dBo70yjtT9SRV7o8QpKI.webp",
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/UJsAJY8KSAOlygeVUIuP.webp",
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/658et3n9RuCFLQAPuM29.webp",
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/Im72Tl5XQPG1mO7cCgig.webp",
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/92yywOcGSUiQFaT9xwEU.webp",
+      "images/grw1-greece-a-journey-of-wellness-culture-discovery/Zwwv9SnmTD6wIR7mq3lH.webp"
+    ],
+    "peru": [
+      "images/peru-culture-connection-andes-and-more/HLg6sdQvSDmtUAStXLHP.webp",
+      "images/peru-culture-connection-andes-and-more/8o66N4YtS5iwcceULunm.webp",
+      "images/peru-culture-connection-andes-and-more/MnvEYW2iTyqKbAFrC2ld.webp",
+      "images/peru-culture-connection-andes-and-more/XD4KJunGQKSCs6kldMyJ.webp",
+      "images/peru-culture-connection-andes-and-more/8NaxSTThR6y2RqBXppdT.webp",
+      "images/peru-culture-connection-andes-and-more/Wk5qJzusQd6obIs2yTYE.webp"
+    ],
+    "chile": [
+      "images/chile-chile-from-desert-skies-to-southern-shores/FNPxyw0HTninsR7KeDxl.webp",
+      "images/chile-chile-from-desert-skies-to-southern-shores/4NEXRBO6Q36XzvZhgMj5.webp",
+      "images/chile-chile-from-desert-skies-to-southern-shores/P0h5nUMsTfCyz6HkslcC.webp",
+      "images/chile-chile-from-desert-skies-to-southern-shores/CUOrnryRBChDbegI3VMh.webp",
+      "images/chile-chile-from-desert-skies-to-southern-shores/0qvabLESDmvwk0tnvc8Y.webp",
+      "images/chile-chile-from-desert-skies-to-southern-shores/SYzNgRISTaCYNJZwUAow.webp",
+      "images/chile-chile-from-desert-skies-to-southern-shores/LtvboshbTdaPkpuzvMij.webp"
+    ]
+  }
 }
