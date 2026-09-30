@@ -1,3 +1,17 @@
+// Listing hero: crossfade through trip photos every few seconds.
+(() => {
+  const slides = [...document.querySelectorAll('[data-hero-slide]')];
+  if (slides.length < 2) return;
+  let i = 0;
+  setInterval(() => {
+    if (document.hidden) return;
+    slides[i].classList.remove('is-active');
+    i = (i + 1) % slides.length;
+    slides[i].loading = 'eager';
+    slides[i].classList.add('is-active');
+  }, 6000);
+})();
+
 // Itinerary pages: highlight the section link in view, and draw the pin map.
 (() => {
   const links = [...document.querySelectorAll('.tl-bar__nav a[href^="#"]:not(.tl-bar__title)')];

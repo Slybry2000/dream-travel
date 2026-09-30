@@ -13,14 +13,17 @@ itinerary lives, so Rene's edits there show immediately. Re-import only when the
 photo, days or places on the card change. (Set `"host_copy": true` on a trip to host
 our own copy of the itinerary instead.)
 
-**Link-only, on purpose.** Nobody can browse these pages. Each trip lives at an
-unguessable address (`/trips/<trip>-<random key>/`), every page tells search engines
-not to index it, nothing on the public site links here, and a trip page never links
-to other trips. Only people Rene sends a link to can see it.
+**The overview is public (changed 2026-09-30).** The all-trips page and its country pages
+are linked from the homepage orbit ("See all sample trips" plus one card per destination)
+and search engines may index them. Hand-made trip pages (`/trips/<trip>-<random key>/`)
+are still link-only: noindex, unguessable address, never linked from other trips.
 
 - One trip: `/trips/<trip>-<key>/` (split photo/text layout, like WeTravel's). Share this.
-- Rene's overview of every trip: `/trips/<library key>/` (key in `config.json`), with a
-  card page per country like dream-travel.net's France page. Do not share it.
+- Overview of every trip: `/trips/<library key>/` (key in `config.json`), with a card page
+  per country like dream-travel.net's France page. Its hero crossfades through the photos
+  listed in `config.json` `"hero_rotation"` (paths under `trips/`); delete that list to
+  rotate through every trip's cover photo instead.
+- **New country?** Add a matching card to the orbit in `/index.html` by hand.
 - **Revoke a link:** change the trip's `"key"` in its JSON and rebuild. The old link dies.
 - **Take a trip offline:** set `"status": "draft"` and rebuild.
 

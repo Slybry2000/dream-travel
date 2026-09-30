@@ -9,12 +9,12 @@ Trips built in WeTravel link straight to their WeTravel itinerary: Rene edits th
 the change is live at once, with no second copy to go stale. Only a trip with no WeTravel
 "source" (written by hand), or one marked "host_copy": true, gets its own page here.
 
-The library is LINK-ONLY: every page is noindex, nothing on the public site links here,
-and each address carries a random key, so only people given a link can find a page.
+The library overview and its country pages are PUBLIC: the homepage orbit links to them
+and search engines may index them. Hand-made trip pages stay link-only (noindex, random key).
 Output (generated, safe to delete and rebuild):
 
     trips/<trip>-<key>/index.html                   hand-made trips only (share this link)
-    trips/<library key>/index.html                  every trip, for Rene only
+    trips/<library key>/index.html                  every trip (public, linked from the homepage)
     trips/<library key>/<country>/index.html        one destination's trips as cards
     trips/trips.json                                feed for embed.js, "listed": true trips only
 
@@ -63,10 +63,15 @@ def new_key():
     return "".join(secrets.choice("abcdefghjkmnpqrstuvwxyz23456789") for _ in range(7))
 
 
-def library_key():
-    """The private address of the all-trips listing, created once and kept."""
+def config():
     cfg_path = SRC / "config.json"
-    cfg = json.loads(cfg_path.read_text(encoding="utf-8")) if cfg_path.exists() else {}
+    return json.loads(cfg_path.read_text(encoding="utf-8")) if cfg_path.exists() else {}
+
+
+def library_key():
+    """The address of the all-trips listing, created once and kept."""
+    cfg_path = SRC / "config.json"
+    cfg = config()
     if not cfg.get("library_key"):
         cfg["library_key"] = "library-" + new_key()
         cfg_path.write_text(json.dumps(cfg, indent=2) + "\n", encoding="utf-8")
@@ -102,7 +107,8 @@ def overnights_line(t):
 
 # --- shared chrome -----------------------------------------------------------------
 
-def head(title, description, image="", extra=""):
+def head(title, description, image="", extra="", public=False):
+    robots = "index, follow" if public else "noindex, nofollow, noarchive"
     og = f'<meta property="og:image" content="{SITE}{esc(image)}">' if image else ""
     return f"""<!doctype html>
 <html lang="en">
@@ -111,7 +117,7 @@ def head(title, description, image="", extra=""):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
-  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="robots" content="{robots}">
   <meta name="referrer" content="strict-origin">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
@@ -257,7 +263,7 @@ def destination(slug, name, trips, meta):
         "Programs can also be combined with other countries."]
     intro_html = "".join(f"<p>{esc(p)}</p>" for p in intro)
     cards = "\n".join(card(t) for t in trips)
-    return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], hero)}
+    return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], hero, public=True)}
 <body>
 {site_header()}
   <main>
@@ -281,18 +287,26 @@ def library(by_country, dests, lib):
         blocks.append(f"""    <section class="tl-grid-wrap"><div class="tl-grid-head"><h2><a href="{lib}/{slug}/">{esc(name)}</a></h2><a href="{lib}/{slug}/">{len(trips)} trip{'s' if len(trips) != 1 else ''}</a></div><div class="tl-grid">
 {cards}
     </div></section>""")
-    first = next(iter(by_country.values()))[1][0] if by_country else None
-    hero = img_url(first.get("hero")) if first else "/images/hero-background-r2-1920w.webp"
-    return f"""{head("Group Trips | Dream Travel", "Sample itineraries for private group travel with Dream Travel.", hero)}
+    # Hero slideshow: "hero_rotation" in config.json (paths under trips/), else every trip's cover photo.
+    slides = [f"{BASE}/{src}" for src in config().get("hero_rotation", [])]
+    if not slides:
+        slides = [img_url(t.get("hero")) for _, ts in by_country.values() for t in ts if t.get("hero")]
+    slides = list(dict.fromkeys(slides)) or ["/images/hero-background-r2-1920w.webp"]
+    hero = slides[0]
+    first_attr, rest_attr = ' class="is-active"', ' loading="lazy"'
+    hero_imgs = "".join(f'<img src="{esc(src)}" alt=""{first_attr if i == 0 else rest_attr} data-hero-slide>'
+                        for i, src in enumerate(slides))
+    return f"""{head("Group Trips | Dream Travel", "Sample itineraries for private group travel with Dream Travel.", hero, public=True)}
 <body>
 {site_header()}
   <main>
-    <section class="tl-hero"><img src="{hero}" alt=""><div><p class="tl-kicker">Sample itineraries</p><h1>Where will your group go?</h1><a class="tl-button" href="#all">See trips</a></div></section>
+    <section class="tl-hero tl-hero--slides">{hero_imgs}<div><p class="tl-kicker">Sample itineraries</p><h1>Where will your group go?</h1><a class="tl-button" href="#all">See trips</a></div></section>
     <section class="tl-intro" id="all"><h2>These are just samples. We can do much more.</h2><p>Any destination, any type of trip. Pick one close to what your people want and we will shape it from there, or tell us where you want to go and we will build it.</p><p><a class="tl-button" href="/planning/">Tell us what you have in mind</a></p></section>
 {chr(10).join(blocks)}
     <section class="tl-closing"><h2>Don't see your trip?</h2><p>Most of what we run is built from scratch.</p><a class="tl-button" href="/planning/">Plan a custom trip</a></section>
   </main>
 {site_footer()}
+  <script src="{BASE}/trips.js?v={VERSION}" defer></script>
 </body>
 </html>
 """
@@ -329,7 +343,7 @@ def main():
     print(f"Built {len(trips)} trip(s). Links:")
     for t in trips:
         print(f"  {t['title']}: {SITE + t['url'] if t['hosted'] else t['url'] + '  (WeTravel)'}")
-    print(f"  All trips (Rene only): {SITE}{lib}/")
+    print(f"  All trips (public): {SITE}{lib}/")
 
 
 if __name__ == "__main__":

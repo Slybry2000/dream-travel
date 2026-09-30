@@ -59,12 +59,7 @@
     const toggleOrbit = document.querySelector('[data-orbit-toggle]');
     const resetOrbit = document.querySelector('[data-orbit-reset]');
     const orbitSection = orbitStage.closest('.discovery-orbit');
-    const motionShell = document.querySelector('[data-orbit-motion]');
-    const motionVideos = [...(motionShell?.querySelectorAll('[data-orbit-motion-video]') || [])];
-    const motionLabel = document.querySelector('[data-orbit-motion-label]');
-    const motionCredit = document.querySelector('[data-orbit-motion-credit]');
-    const saveData = Boolean(navigator.connection?.saveData);
-    const allowMotionPreview = document.body.dataset.motionPreview === 'on' && !reduceMotion && !saveData && motionVideos.length === 2;
+    const scenes = [...document.querySelectorAll('[data-orbit-scene]')];
     const goldenAngle = Math.PI * (3 - Math.sqrt(5));
     const points = items.map((item, index) => {
       const y = 1 - ((index + .5) / items.length) * 2;
@@ -85,58 +80,21 @@
     let velocityYaw = 0;
     let velocityPitch = 0;
     let previousTime = 0;
-    let activeMotionItem = null;
-    let activeMotionVideo = 0;
-    let motionVisible = false;
-    let motionSwapToken = 0;
+    let sceneVisible = false;
+    let sceneIndex = 0;
+    let sceneTimer = 0;
 
-    const updateMotionMeta = (item) => {
-      if (motionLabel && item.dataset.motionLabel) motionLabel.textContent = item.dataset.motionLabel;
-      if (motionCredit && item.dataset.motionCredit) motionCredit.href = item.dataset.motionCredit;
-    };
-    const syncMotionPlayback = () => {
-      motionVideos.forEach((video, index) => {
-        if (allowMotionPreview && motionVisible && !manualPause && index === activeMotionVideo) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      });
-    };
-    const setMotionItem = (item, force = false) => {
-      if (!item?.dataset.motionSrc || (!force && item === activeMotionItem)) return;
-      activeMotionItem = item;
-      updateMotionMeta(item);
-
-      const poster = item.dataset.motionPoster || '';
-      if (!allowMotionPreview || !motionVisible) {
-        const current = motionVideos[activeMotionVideo];
-        if (current && poster) current.poster = poster;
-        return;
-      }
-
-      const token = ++motionSwapToken;
-      const nextIndex = activeMotionVideo === 0 ? 1 : 0;
-      const next = motionVideos[nextIndex];
-      const previous = motionVideos[activeMotionVideo];
-      next.classList.remove('is-active');
-      if (poster) next.poster = poster;
-      if (next.getAttribute('src') !== item.dataset.motionSrc) {
-        next.src = item.dataset.motionSrc;
-        next.load();
-      }
-      const reveal = () => {
-        if (token !== motionSwapToken) return;
-        if (!manualPause) next.play().catch(() => {});
-        next.classList.add('is-active');
-        previous.classList.remove('is-active');
-        activeMotionVideo = nextIndex;
-        window.setTimeout(() => {
-          if (previous !== motionVideos[activeMotionVideo]) previous.pause();
-        }, 950);
-      };
-      if (next.readyState >= 3) reveal();
-      else next.addEventListener('canplay', reveal, { once: true });
+    // Background: slow crossfade through destination scenery while the section is on screen.
+    const syncScenery = () => {
+      window.clearInterval(sceneTimer);
+      if (scenes.length < 2 || reduceMotion || manualPause || !sceneVisible) return;
+      sceneTimer = window.setInterval(() => {
+        if (document.hidden) return;
+        scenes[sceneIndex].classList.remove('is-active');
+        sceneIndex = (sceneIndex + 1) % scenes.length;
+        scenes[sceneIndex].loading = 'eager';
+        scenes[sceneIndex].classList.add('is-active');
+      }, 7000);
     };
 
     const renderOrbit = () => {
@@ -147,8 +105,6 @@
       const radiusX = Math.min(orbitStage.clientWidth * .31, 350);
       const radiusY = Math.min(orbitStage.clientHeight * .33, 205);
       const radiusZ = Math.min(orbitStage.clientWidth * .24, 280);
-      let frontMotionItem = null;
-      let frontMotionDepth = -Infinity;
       points.forEach(({ item, x, y, z }) => {
         const rotatedX = x * cosYaw + z * sinYaw;
         const yawZ = -x * sinYaw + z * cosYaw;
@@ -160,21 +116,16 @@
         item.style.opacity = (.36 + depth * .64).toFixed(3);
         item.style.zIndex = String(Math.round(depth * 100));
         item.style.filter = depth < .35 ? 'saturate(.72) brightness(.68)' : 'none';
-        if (item.dataset.motionSrc && rotatedZ > frontMotionDepth) {
-          frontMotionDepth = rotatedZ;
-          frontMotionItem = item;
-        }
       });
-      if (frontMotionItem) setMotionItem(frontMotionItem);
     };
     const syncOrbitToggle = () => {
       if (!toggleOrbit) return;
       toggleOrbit.setAttribute('aria-pressed', String(manualPause));
-      toggleOrbit.setAttribute('aria-label', manualPause ? 'Play sphere and background motion' : 'Pause sphere and background motion');
+      toggleOrbit.setAttribute('aria-label', manualPause ? 'Play sphere and background' : 'Pause sphere and background');
       const icon = toggleOrbit.querySelector('i');
       icon?.classList.toggle('fa-pause', !manualPause);
       icon?.classList.toggle('fa-play', manualPause);
-      syncMotionPlayback();
+      syncScenery();
     };
     const resetPosition = () => {
       yaw = .18;
@@ -203,22 +154,20 @@
 
     document.querySelectorAll('a[href="#journeys"], a[href^="#trip-"]').forEach((link) => link.setAttribute('href', '#orbit'));
     document.body.classList.add('has-orbit');
-    document.documentElement.classList.toggle('motion-static', !allowMotionPreview);
     orbitStage.classList.add('orbit-ready');
     renderOrbit();
     syncOrbitToggle();
     requestAnimationFrame(animateOrbit);
 
     if (orbitSection && 'IntersectionObserver' in window) {
-      const motionObserver = new IntersectionObserver(([entry]) => {
-        motionVisible = entry.isIntersecting;
-        if (motionVisible && activeMotionItem) setMotionItem(activeMotionItem, true);
-        else syncMotionPlayback();
+      const sceneObserver = new IntersectionObserver(([entry]) => {
+        sceneVisible = entry.isIntersecting;
+        syncScenery();
       }, { rootMargin: '120px 0px', threshold: .08 });
-      motionObserver.observe(orbitSection);
+      sceneObserver.observe(orbitSection);
     } else {
-      motionVisible = true;
-      if (activeMotionItem) setMotionItem(activeMotionItem, true);
+      sceneVisible = true;
+      syncScenery();
     }
 
     orbitStage.addEventListener('pointerdown', (event) => {

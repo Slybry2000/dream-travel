@@ -69,15 +69,12 @@ h2 { font-size: clamp(38px, 4vw, 62px); } h3 { font-size: clamp(28px, 2.5vw, 42p
 
 .discovery-orbit { position: relative; padding: clamp(88px, 8vw, 112px) var(--gutter) 76px; overflow: hidden; color: var(--paper); background: var(--ink); }
 .discovery-orbit::before { content: ""; position: absolute; z-index: 1; inset: 0; opacity: 1; pointer-events: none; background: linear-gradient(180deg, rgba(0,18,11,.9) 0%, rgba(0,18,11,.55) 36%, rgba(0,18,11,.7) 72%, rgba(0,18,11,.94) 100%), radial-gradient(circle at 68% 47%, rgba(149,205,184,.2), transparent 36%); }
-.orbit-motion { position: absolute; z-index: 0; inset: 0; overflow: hidden; background: var(--ink); pointer-events: none; }
-.orbit-motion__video { position: absolute; inset: -3%; width: 106%; height: 106%; object-fit: cover; opacity: 0; filter: saturate(.72) contrast(1.06) brightness(.64); transform: scale(1.03); transition: opacity 900ms var(--ease); }
-.orbit-motion__video.is-active { opacity: 1; }
-.orbit-motion-meta { position: absolute; z-index: 3; right: var(--gutter); bottom: 26px; display: grid; justify-items: end; gap: 2px; color: rgba(252,252,252,.76); font-size: 9px; letter-spacing: .09em; text-align: right; text-transform: uppercase; }
-.orbit-motion-meta span { color: var(--peach); font-weight: 700; }
-.orbit-motion-meta strong { color: var(--paper); font-size: 10px; font-weight: 600; }
-.orbit-motion-meta a { color: rgba(252,252,252,.56); text-decoration-color: rgba(252,252,252,.32); text-underline-offset: 3px; }
-.orbit-motion-meta a:hover, .orbit-motion-meta a:focus-visible { color: var(--mint); }
-[data-motion-preview="off"] .orbit-motion, [data-motion-preview="off"] .orbit-motion-meta { display: none; }
+.orbit-scenery { position: absolute; z-index: 0; inset: 0; overflow: hidden; background: var(--ink); pointer-events: none; }
+.orbit-scenery img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; filter: saturate(.85) brightness(.7); transform: scale(1.1); transition: opacity 2.4s var(--ease), transform 14s linear; }
+.orbit-scenery img.is-active { opacity: 1; transform: scale(1); }
+.orbit-cta { position: relative; z-index: 1; margin-top: 18px; text-align: center; }
+.orbit-cta__link { display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px; border: 1px solid var(--peach); color: var(--ink); background: var(--peach); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; transition: background 180ms ease, color 180ms ease; }
+.orbit-cta__link:hover, .orbit-cta__link:focus-visible { color: var(--peach); background: transparent; }
 .orbit-heading { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; text-align: center; }
 .orbit-kicker { display: block; margin-bottom: 15px; color: var(--peach); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .orbit-heading h2 { color: var(--paper); }
@@ -245,8 +242,6 @@ h2 { font-size: clamp(38px, 4vw, 62px); } h3 { font-size: clamp(28px, 2.5vw, 42p
   .flourish--host-route, .flourish--story-arrow { display: none; }
   .flourish--final-burst { right: -38px; width: 132px; opacity: .38; }
   .discovery-orbit { padding-inline: 0; }
-  .orbit-motion-meta { right: 16px; bottom: 16px; font-size: 8px; }
-  .orbit-motion-meta strong { max-width: 190px; font-size: 9px; }
   .orbit-heading { padding-inline: 20px; }
   .orbit-heading h2 { font-size: clamp(34px, 10vw, 46px); }
   .orbit-viewport { margin-top: 8px; }
@@ -273,7 +268,7 @@ h2 { font-size: clamp(38px, 4vw, 62px); } h3 { font-size: clamp(28px, 2.5vw, 42p
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .orbit-motion__video { transition: none; }
+  .orbit-scenery img { transition: none; transform: none; }
 }
 @media (max-width: 390px) { .site-header .brand span { display: none; } .hero__buttons .button { font-size: 9px; } .mobile-menu { padding: 22px; } .mobile-menu__contact { left: 22px; right: 22px; } .footer-main { grid-template-columns: 1fr; } .footer-brand { grid-column: auto; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; } }
