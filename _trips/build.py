@@ -255,15 +255,19 @@ def itinerary(t):
 
 # --- listing pages -------------------------------------------------------------------
 
+def mini_card(t):
+    """Small photo-and-title card for the "More sample trips" strip."""
+    return (f'      <a class="tl-mini" href="{t["url"]}"><img src="{img_url(t.get("hero"))}" alt="" loading="lazy" style="{focal(t.get("hero"))}">'
+            f'<span><small>{esc(t.get("country", ""))} &middot; {esc(duration(t))}</small>{esc(t["title"])}</span></a>')
+
+
 def destination(slug, name, trips, meta, lib, by_country):
     hero = meta.get("hero") or img_url(trips[0].get("hero"))
     intro = meta.get("intro") or [
         f"Sample programs for private groups traveling to {name}. Each one is a starting point: "
-        "we shape the dates, pace, hotels and activities around your group before anything is confirmed.",
-        "Programs can also be combined with other countries."]
-    intro_html = "".join(f"<p>{esc(p)}</p>" for p in intro)
+        "we shape the dates, pace, hotels and activities around your group."]
     cards = "\n".join(card(t) for t in trips)
-    countries = "".join(
+    tabs = f'<a href="{lib}/">All trips</a>' + "".join(
         f'<a href="{lib}/{s}/" aria-current="page">{esc(n)}</a>' if s == slug else f'<a href="{lib}/{s}/">{esc(n)}</a>'
         for s, (n, _) in by_country.items())
     # "More sample trips": up to 6 trips from the other countries, taken in turn so every country shows.
@@ -274,22 +278,21 @@ def destination(slug, name, trips, meta, lib, by_country):
             if pool and len(more) < 6:
                 more.append(pool.pop(0))
         pools = [pool for pool in pools if pool]
-    more_cards = "\n".join(card(t) for t in more)
-    more_html = (f"""    <section class="tl-grid-wrap tl-grid-wrap--more"><div class="tl-grid-head"><h2>More sample trips</h2><a href="{lib}/">See all</a></div><div class="tl-grid">
-{more_cards}
+    more_html = (f"""    <section class="tl-strip"><div class="tl-grid-head"><h2>More sample trips</h2><a href="{lib}/">See all &rarr;</a></div><div class="tl-strip__row">
+{chr(10).join(mini_card(t) for t in more)}
     </div></section>
 """ if more else "")
+    count = f"{len(trips)} sample trip{'s' if len(trips) != 1 else ''}"
     return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], hero, public=True)}
-<body>
+<body class="tl-dest">
 {site_header()}
   <main>
-    <section class="tl-hero"><img src="{hero}" alt=""><a class="tl-back" href="{lib}/">&larr; All sample trips</a><div><p class="tl-kicker">Group travel destinations</p><h1>{esc(name)}</h1><a class="tl-button" href="#trips">See trips</a></div></section>
-    <section class="tl-intro"><h2>Explore our {esc(name)} programs</h2>{intro_html}<p><strong>Let's build your group's trip together.</strong></p></section>
+    <section class="tl-hero tl-hero--band"><img src="{hero}" alt=""><div><p class="tl-kicker">{count}</p><h1>{esc(name)}</h1><p class="tl-hero__sub">{esc(intro[0])}</p></div></section>
+    <nav class="tl-tabs" aria-label="Sample trips by destination">{tabs}</nav>
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
     </div></section>
-{more_html}    <nav class="tl-more" aria-label="Sample trips by destination"><a class="tl-button tl-button--line" href="{lib}/">&larr; See all sample trips</a><p>Browse by destination:</p><div>{countries}</div></nav>
-    <section class="tl-closing"><h2>Ready to plan your group's trip?</h2><p>Tell us who is going and what they love. René shapes the rest.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>
+{more_html}    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>
   </main>
 {site_footer()}
 </body>
