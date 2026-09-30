@@ -30,14 +30,14 @@ import json
 import re
 import secrets
 import shutil
-from datetime import date
+from datetime import datetime
 from pathlib import Path
 
 SRC = Path(__file__).resolve().parent            # _trips/: data + config, never published
 OUT = SRC.parent / "trips"                         # trips/: the pages GitHub Pages serves
 SITE = "https://adults.dream-travel.net"
 BASE = "/trips"
-VERSION = date.today().strftime("%Y%m%d")
+VERSION = datetime.now().strftime("%Y%m%d%H%M")
 esc = html.escape
 
 
@@ -134,7 +134,7 @@ def head(title, description, image="", extra="", public=False):
 def site_header():
     return f"""  <header class="tl-header">
     <a class="tl-brand" href="/" aria-label="Dream Travel home"><img src="/images/logo-header-2x.webp" alt="" width="75" height="64"><span>Dream Travel</span></a>
-    <nav class="tl-header__nav" aria-label="Primary"><a href="/#hosting">Hosting</a><a href="/#plan">Contact</a></nav>
+    <nav class="tl-header__nav" aria-label="Primary"><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/#hosting">Hosting</a><a href="/#plan">Contact</a></nav>
     <a class="tl-button tl-button--small" href="/planning/">Plan a trip</a>
   </header>"""
 
@@ -255,7 +255,7 @@ def itinerary(t):
 
 # --- listing pages -------------------------------------------------------------------
 
-def destination(slug, name, trips, meta):
+def destination(slug, name, trips, meta, lib, by_country):
     hero = meta.get("hero") or img_url(trips[0].get("hero"))
     intro = meta.get("intro") or [
         f"Sample programs for private groups traveling to {name}. Each one is a starting point: "
@@ -263,15 +263,17 @@ def destination(slug, name, trips, meta):
         "Programs can also be combined with other countries."]
     intro_html = "".join(f"<p>{esc(p)}</p>" for p in intro)
     cards = "\n".join(card(t) for t in trips)
+    others = "".join(f'<a href="{lib}/{s}/">{esc(n)}</a>' for s, (n, _) in by_country.items() if s != slug)
     return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], hero, public=True)}
 <body>
 {site_header()}
   <main>
-    <section class="tl-hero"><img src="{hero}" alt=""><div><p class="tl-kicker">Group travel destinations</p><h1>{esc(name)}</h1><a class="tl-button" href="#trips">See trips</a></div></section>
+    <section class="tl-hero"><img src="{hero}" alt=""><a class="tl-back" href="{lib}/">&larr; All sample trips</a><div><p class="tl-kicker">Group travel destinations</p><h1>{esc(name)}</h1><a class="tl-button" href="#trips">See trips</a></div></section>
     <section class="tl-intro"><h2>Explore our {esc(name)} programs</h2>{intro_html}<p><strong>Let's build your group's trip together.</strong></p></section>
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
     </div></section>
+    <nav class="tl-more" aria-label="More sample trips"><a class="tl-button tl-button--line" href="{lib}/">&larr; See all sample trips</a><p>Or browse another destination:</p><div>{others}</div></nav>
     <section class="tl-closing"><h2>Ready to plan your group's trip?</h2><p>Tell us who is going and what they love. René shapes the rest.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>
   </main>
 {site_footer()}
@@ -332,7 +334,7 @@ def main():
 
     for slug, (name, group) in by_country.items():
         (lib_dir / slug).mkdir(parents=True, exist_ok=True)
-        (lib_dir / slug / "index.html").write_text(destination(slug, name, group, dests.get(slug, {})), encoding="utf-8")
+        (lib_dir / slug / "index.html").write_text(destination(slug, name, group, dests.get(slug, {}), lib, by_country), encoding="utf-8")
     (lib_dir / "index.html").write_text(library(by_country, dests, lib), encoding="utf-8")
 
     feed = [{"title": t["title"], "url": SITE + t["url"] if t["hosted"] else t["url"], "country": t.get("country"), "country_slug": t["country_slug"],

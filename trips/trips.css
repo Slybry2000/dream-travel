@@ -110,6 +110,12 @@ h1, h2, h3, p { margin: 0; }
 .tl-card__tags { display: flex; flex-wrap: wrap; gap: 6px; } .tl-card__tags span { padding: 2px 10px; border-radius: 99px; background: var(--blush); font-size: 12px; }
 .tl-card .tl-button { margin-top: auto; align-self: flex-start; }
 .tl-card__body > :nth-last-child(2) { margin-bottom: 12px; }
+.tl-back { position: absolute; z-index: 2; top: 96px; left: var(--gutter); display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border: 1px solid rgba(255,255,255,.7); border-radius: 999px; color: #fff; background: rgba(0,18,11,.35); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; backdrop-filter: blur(4px); }
+.tl-back:hover, .tl-back:focus-visible { color: var(--ink); background: #fff; }
+.tl-more { padding: 0 var(--gutter) clamp(48px, 7vh, 80px); background: var(--blush); text-align: center; }
+.tl-more p { margin: 22px 0 10px; color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+.tl-more div { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; }
+.tl-more div a { color: var(--ink); font: 400 22px/1.2 var(--editorial); text-underline-offset: 4px; }
 .tl-closing { padding: clamp(72px, 11vh, 120px) var(--gutter); text-align: center; }
 .tl-closing h2 { margin-bottom: 12px; color: var(--ink); font: 400 clamp(30px, 3vw, 44px)/1.1 var(--editorial); }
 .tl-closing p { margin-bottom: 28px; font-size: 17px; }
