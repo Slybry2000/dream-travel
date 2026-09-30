@@ -1,0 +1,431 @@
+{
+  "slug": "po6-wild-algarve-yoga-atlantic-escape",
+  "title": "Wild Algarve: Yoga & Atlantic Escape",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ab9082ccd3e5b735ae044d4",
+  "updated_at": "2026-09-27T12:34:49.115Z",
+  "status": "published",
+  "hero": {
+    "src": "images/po6-wild-algarve-yoga-atlantic-escape/wLbOdPI3TOO5gD8ETk05.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 8,
+  "nights": 7,
+  "country": "Portugal",
+  "locations": [
+    "Faro",
+    "Aljezur",
+    "Sagres",
+    "Cape St. Vincent",
+    "Ponta da Piedade",
+    "Praia da Arrifana",
+    "Vilamoura",
+    "São Brás de Alportel"
+  ],
+  "tags": [],
+  "tagline": "Wild Algarve: Yoga & Atlantic Escape",
+  "summary": "Portugal’s Algarve is known for its Atlantic coastline, golden cliffs, fishing towns, and unhurried pace. On this retreat, you’ll stay in Aljezur, a small town near the wilder western coast, and explore both the region’s landscapes and its traditions. Walk the trails of the Costa Vicentina, paddle beneath the cliffs at Ponta da Piedade, ride along the beach, and learn how local producers make olive oil and cork. Each morning offers time for yoga at your own pace, with room in the schedule to rest and enjoy the Algarve your way.",
+  "pins": [
+    {
+      "name": "Faro",
+      "address": "Faro, Portugal",
+      "lat": 37.0164626,
+      "lng": -7.9351983
+    },
+    {
+      "name": "Aljezur",
+      "address": "Aljezur, Portugal",
+      "lat": 37.31657,
+      "lng": -8.7992645
+    },
+    {
+      "name": "Sagres",
+      "address": "Sagres, Portugal",
+      "lat": 37.0168293,
+      "lng": -8.9405931
+    },
+    {
+      "name": "Cape St. Vincent",
+      "address": "Cape St. Vincent, Sagres, Portugal",
+      "lat": 37.0303232,
+      "lng": -8.9811275
+    },
+    {
+      "name": "Ponta da Piedade",
+      "address": "Estr. da Ponta da Piedade, 8600-544 Lagos, Portugal",
+      "lat": 37.0798758,
+      "lng": -8.6685911
+    },
+    {
+      "name": "Praia da Arrifana",
+      "address": "Praia da Arrifana, Portugal",
+      "lat": 37.2921779,
+      "lng": -8.8648484
+    },
+    {
+      "name": "Vilamoura",
+      "address": "Vilamoura, Quarteira, Portugal",
+      "lat": 37.0902287,
+      "lng": -8.1173454
+    },
+    {
+      "name": "São Brás de Alportel",
+      "address": "São Brás de Alportel, Portugal",
+      "lat": 37.152575999999996,
+      "lng": -7.889052299999999
+    }
+  ],
+  "sections": [
+    {
+      "id": "wild-algarve-yoga-atlantic-escape",
+      "title": "Wild Algarve: Yoga & Atlantic Escape",
+      "subtitle": "Eight days of coastal adventure, quiet mornings, and time to reconnect",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/wLbOdPI3TOO5gD8ETk05.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Portugal’s Algarve is known for its Atlantic coastline, golden cliffs, fishing towns, and unhurried pace. On this retreat, you’ll stay in Aljezur, a small town near the wilder western coast, and explore both the region’s landscapes and its traditions. Walk the trails of the Costa Vicentina, paddle beneath the cliffs at Ponta da Piedade, ride along the beach, and learn how local producers make olive oil and cork. Each morning offers time for yoga at your own pace, with room in the schedule to rest and enjoy the Algarve your way.</strong></p>",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-the-algarve",
+      "title": "Day 1 — Welcome to the Algarve",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/Eka5HZVNSSiVJnj9qvcI.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Welcome to Portugal! </strong>Arrive at Faro Airport and transfer to your hotel in Aljezur. As you travel west, you’ll leave the Algarve’s busier resort areas behind and approach a region of small towns and rugged Atlantic scenery. <strong>Settle in and enjoy your first evening at leisure,</strong> with dinner wherever you choose. Overnight in Aljezur.</p><h3></h3>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/RZB3cTxSp6cdQoFMQ1sL.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/5QVASkWpReaNC9diyJRQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/kTfG0AMuQuOlnoeAq6tY.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/fp4ptVpSTSATOR890UYp.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/r54d1H8kTS68K2AqQTr6.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-2-the-edge-of-europe-and-the-cliffs-of-lagos",
+      "title": "Day 2 — The Edge of Europe and the Cliffs of Lagos",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/SgwuJJ4QOrdqWW1K9YAp.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast and<strong> time for self-guided yoga</strong>, <strong>travel to Sagres</strong>, a windswept town near the southwestern edge of mainland Europe. <strong>Visit the fortress overlooking the sea </strong>and continue to <strong>Cape St. Vincent</strong>, whose high cliffs have long made it a landmark for sailors. Enjoy lunch on your own during the excursion. In the afternoon, head toward <strong>Lagos for a boat excursion and included kayak experience</strong> at <strong>Ponta da Piedade</strong>, where the sea has carved arches, caves, and sheltered passages into golden limestone cliffs. Return to Aljezur for dinner on your own and an overnight stay.</p>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/ZUE7HPOSRkmCMNTDxOgD.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/yCa63mUSBeOK8TsOmCQf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/PucYdFoORAex4DLRbntu.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/kg4lweB0RsmFk5Uu8Rj9.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/Uw3K8KHfShWODzXv3jSH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-3-walking-the-costa-vicentina",
+      "title": "Day 3 — Walking the Costa Vicentina",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/CRd1G59Qk6WaiYPQk77g.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Begin with breakfast and time for self-guided yoga</strong> before setting out on a walk toward <strong>Praia da Arrifana</strong>. This beach lies along the <strong>Costa Vicentina</strong>, the dramatic stretch of Portugal’s western coast where trails follow cliffs above the Atlantic. The planned round-trip hike is approximately 17.5 km (11 miles), takes about six hours, and is rated moderate. After a full day outdoors, return to Aljezur for dinner on your own and an overnight stay.</p>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/ZDZ1WMT5TSqfWbxGOue2.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/OB4wDhtIRemkQK2txCaJ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/yg6QHaIWQdW3BQAnypdI.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/a03PmCzbSrif6Jqyh9Ud.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/3RoCZgv2Qpeq6TpqAnoH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/P9fk9P1ES7eUZHn1Bk8B.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-4-a-beach-ride-and-an-easy-afternoon",
+      "title": "Day 4 — A Beach Ride and an Easy Afternoon",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/9ocqoWdnSwiOmllDGN2O.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast and time for self-guided yoga, enjoy a slower start to the day. Have lunch on your own, then take a <strong>horseback ride along the beach for a different view of the Algarve’s coastline</strong>. Spend the rest of the day as you wish before dinner on your own and an overnight stay in Aljezur.</p>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/wJQe62VPSkBOjvCyXxpK.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/RZupeG5SRxW4NMCvfddZ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/dzf6wVUTaCg8lko5OMy1.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/E2R1agb2TkGAFwBon7Lg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/oqWS2RkbTt6gVVZC4UVl.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-5-a-day-on-the-water",
+      "title": "Day 5 — A Day on the Water",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/meMNd4cuRUiDbshVZpBI.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast, <strong>travel from Aljezur to Vilamoura for a full-day boat tour along the Algarve coast</strong>, scheduled from approximately 10:00 a.m. to 5:00 p.m. Enjoy the sea views and make time for yoga and meditation on board with your own instructor or self-guided practice. A picnic lunch is served on the boat. Return to Aljezur for dinner on your own and an overnight stay. </p>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/WQboISjTcmKKEMneyR8n.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/UoIoNR8RsQDwIHwQPKgA.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/qjasq9OiSaCOFcNf19bC.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/ObfK1sraREamg3f0omEY.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/WXiTisXUS1iQPpIInH8u.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-6-olive-groves-and-the-story-of-cork",
+      "title": "Day 6 — Olive Groves and the Story of Cork",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/Sq5EsieSIGfwmMAhpumk.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast and time for self-guided yoga, travel into the Algarve’s rural interior to discover two products closely tied to Portuguese life. <strong>Visit an olive-growing estate to learn how olives are harvested and pressed into extra virgin olive oil.</strong> After lunch on your own, continue to <strong>São Brás de Alportel</strong>, a town with a long history in the cork trade. At its <strong>Ethnographic Museum</strong>, explore the region’s traditions, then visit a cork factory to see how the bark is prepared and processed. Return to Aljezur for dinner on your own and an overnight stay.</p>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/v4zCecImQJiqZEzTop03.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/GhuRWeLSh22rwM1b4Zwg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/cZU3tTR3TA2Qpwk74yve.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/NVXSrokfQFK8UEKgCq9H.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/y16x2ZQdSMi0545mQvBn.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-7-sound-healing-and-time-to-yourself",
+      "title": "Day 7 — Sound Healing and Time to Yourself",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/DjCu00h3SQqdyU5dmwJI.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Enjoy breakfast and time for self-guided yoga, followed by an <strong>included sound healing session. The rest of the day is open:</strong> revisit a favorite beach, explore Aljezur, or simply rest at the hotel. Lunch and dinner are on your own. Overnight in Aljezur.</p>",
+      "gallery": [
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/3ePHQBAOQzaTI2iLTqxg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/0PpG4i9gQ0OS3yjfCju9.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/BuztcTeMSey2QHmKe5qf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/oco3k4jVSmuMm2tO3BUd.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po6-wild-algarve-yoga-atlantic-escape/311J4cY9TJyeHixUBC0X.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-8-farewell-to-portugal",
+      "title": "Day 8 — Farewell to Portugal",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/CDmT21oGRcaWWESDJ1yK.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast, enjoy a final opportunity for self-guided yoga if your flight schedule allows. Transfer from Aljezur to Faro Airport for your departure.</p>",
+      "gallery": []
+    },
+    {
+      "id": "what-is-included",
+      "title": "What is included",
+      "subtitle": "",
+      "image": {
+        "src": "images/po6-wild-algarve-yoga-atlantic-escape/D4nYYw4zQd65VMNPnC5n.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h2>What’s included</h2><ul><li><p>Round-trip international airfare </p></li><li><p>Seven nights of hotel accommodation in Aljezur</p></li><li><p>Daily hotel breakfast</p></li><li><p>Dinners (unless otherwise specified)</p></li><li><p>Transfers between Faro Airport and Aljezur</p></li><li><p>Excursions and visits described in the itinerary</p></li><li><p>Boat and kayak experience at Ponta da Piedade</p></li><li><p>Beach horseback ride</p></li><li><p>Full-day coastal boat tour from Vilamoura, with a picnic lunch on board</p></li><li><p>Olive oil and cork visits</p></li><li><p>Sound healing session</p></li></ul><h2>What’s not included</h2><ul><li><p>Lunches, except the Day 5 picnic lunch</p></li><li><p>A yoga or meditation teacher</p></li><li><p>Personal expenses and optional activities</p></li><li><p>Travel insurance</p></li></ul>",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "Aljezur",
+      "nights": 2
+    }
+  ],
+  "key": "ushnwv2"
+}

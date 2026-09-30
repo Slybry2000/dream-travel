@@ -1,0 +1,406 @@
+{
+  "slug": "po7-algarve-coastal-wellness-culture",
+  "title": "Algarve: Coastal Wellness & Culture",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ab565fccd3e5b735adbe7cc",
+  "updated_at": "2026-09-25T02:48:23.108Z",
+  "status": "published",
+  "hero": {
+    "src": "images/po7-algarve-coastal-wellness-culture/3j6pRIW5RLyltmrHI9Rw.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 8,
+  "nights": 7,
+  "country": "Portugal",
+  "locations": [
+    "Lagos",
+    "Sagres",
+    "Cape St. Vincent",
+    "Ponta da Piedade",
+    "Vilamoura",
+    "São Brás de Alportel"
+  ],
+  "tags": [],
+  "tagline": "Algarve: Coastal Wellness & Culture",
+  "summary": "Golden cliffs, quiet coves, and Atlantic horizons set the pace for this journey through Portugal’s Algarve. Based in Lagos, you’ll have time to move your body, explore the coast, learn from local makers, and enjoy the pleasures of a shared meal. A hike above the sea, a cooking lesson, a day on the water, and a restorative sound healing session offer different ways to feel present in this remarkable place. An English-speaking tour escort accompanies the group throughout the trip.",
+  "pins": [
+    {
+      "name": "Lagos",
+      "address": "Lagos, Portugal",
+      "lat": 37.1027881,
+      "lng": -8.6730275
+    },
+    {
+      "name": "Sagres",
+      "address": "Sagres, Portugal",
+      "lat": 37.0168293,
+      "lng": -8.9405931
+    },
+    {
+      "name": "Cape St. Vincent",
+      "address": "Cape St. Vincent, Sagres, Portugal",
+      "lat": 37.0303232,
+      "lng": -8.9811275
+    },
+    {
+      "name": "Ponta da Piedade",
+      "address": "Estr. da Ponta da Piedade, 8600-544 Lagos, Portugal",
+      "lat": 37.0798758,
+      "lng": -8.6685911
+    },
+    {
+      "name": "Vilamoura",
+      "address": "Vilamoura, Quarteira, Portugal",
+      "lat": 37.0902287,
+      "lng": -8.1173454
+    },
+    {
+      "name": "São Brás de Alportel",
+      "address": "São Brás de Alportel, Portugal",
+      "lat": 37.152575999999996,
+      "lng": -7.889052299999999
+    }
+  ],
+  "sections": [
+    {
+      "id": "algarve-coastal-wellness-culture",
+      "title": "Algarve: Coastal Wellness & Culture",
+      "subtitle": "An eight-day coastal wellness journey of movement, creativity, and connection",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/3j6pRIW5RLyltmrHI9Rw.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Golden cliffs, quiet coves, and Atlantic horizons set the pace for this journey through Portugal’s Algarve. Based in Lagos, you’ll have time to move your body, explore the coast, learn from local makers, and enjoy the pleasures of a shared meal. A hike above the sea, a cooking lesson, a day on the water, and a restorative sound healing session offer different ways to feel present in this remarkable place. An English-speaking tour escort accompanies the group throughout the trip.</strong></p>",
+      "gallery": []
+    },
+    {
+      "id": "day-1-arrive-and-exhale",
+      "title": "Day 1 — Arrive and Exhale",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/0h181nvaTyewLQN8JdTn.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Welcome to Portugal! </strong>After your international flight, arrive at Faro Airport and meet your English-speaking tour escort for the <strong>transfer to Lagos</strong>. This historic coastal town will be your home for the week, with its walkable streets, harbor, and beaches framed by the Algarve’s golden cliffs. Settle into the hotel, take your first look at the Atlantic, and enjoy a welcome dinner with the group.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/ROvIi6NxRWyLs8Ne1DC7.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/3Tl3QN9QSACYqZqM6Ep6.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/rvK83lLPRcCymJbl0oUB.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/m5UEVjGQL23j1fGcHqCL.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/kBhqtgfkQPGERoURSMTW.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-2-where-land-meets-the-atlantic",
+      "title": "Day 2 — Where Land Meets the Atlantic",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/08qeGGaXT7KbJGgIhqCj.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Begin with breakfast at the hotel and time for a gentle, <strong>self-guided morning yoga practice.</strong> <strong>Travel west to Sagres</strong>, where windswept cliffs and an old fortress recall Portugal’s maritime past. At nearby <strong>Cape St. Vincent, </strong>stand above the Atlantic at the southwestern edge of mainland Europe. After time for lunch, return toward Lagos for a <strong>boat excursion and kayaking </strong>among the sea caves and sculpted rock formations of <strong>Ponta da Piedade</strong>. Enjoy dinner with the group and overnight in Lagos.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/HW7Egj9vTIGjIaYr1cbP.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/XCRB2RSmOPO7AAXGK0wu.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/8uhGHN0iTcOw7tSnvPB6.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/fOWMuMYjRgunPCkHwiEk.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/jQDqEOfaQuCN5X1ZaYgN.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-3-a-walk-above-the-sea",
+      "title": "Day 3 — A Walk Above the Sea",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/fexMZy1RrOHOpJc9CJJz.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel and time for self-guided yoga, set out on the <strong>Seven Hanging Valleys Trail.</strong> This coastal walk connects viewpoints above beaches, coves, and limestone cliffs, giving you a close look at the landscape that makes the Algarve so distinctive. The planned round-trip walk is approximately 11.4 km (7 miles), takes about six hours, and is rated moderate. <strong>Pause for an included picnic lunch along the way</strong>, then return to Lagos for dinner and a restful evening.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/ZDZ1WMT5TSqfWbxGOue2.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/rr57UWgFRnqpYFuwmxUl.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/aMLH33YS4qLqyEvbCgxI.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/qOGYZzjoStCrg9xHtlIp.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/U9KekI5rSVGt6Kru8uur.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-4-made-by-hand",
+      "title": "Day 4 — Made by Hand",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/SGJh5fcT1urY7KarKK0E.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Start with breakfast at the hotel and an opportunity for self-guided yoga. Meet a local host who will introduce you to <strong>Portuguese ingredients and teach you to prepare regional dishes.</strong> Share the meal you’ve made for lunch. Back at the hotel, try your <strong>hand at pottery with a local maker</strong>, learning through a craft rooted in everyday Portuguese life. Gather for dinner and overnight in Lagos.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/ThbggrgSv6HIlc6LAyrH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/jnMHa1f5SyWRgH9qGqqR.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/yncG1WThTNW2nM08shmH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/4h5PUPMTnK10gRUeAEl1.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/APmuB7chQzalNo195AQt.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-5-a-day-afloat",
+      "title": "Day 5 — A Day Afloat",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/yuGoaODXR1O9Q0AdB7rh.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Enjoy breakfast at the hotel and time for self-guided yoga before <strong>traveling to Vilamoura for a full-day boat excursion along the Algarve coast.</strong> From the water, take in a different view of the shoreline while making space for quiet reflection and self-guided yoga or meditation on board. A picnic lunch is included. Return to Lagos in the evening for dinner.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/IMVRbYPSR6dqC8S2pcBf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/RxWhxMFkSqnFJUiExt8Q.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/2vA4psXnS76GCUxVj916.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/zUpRU5GQG6wxL77vVefe.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/DBpCHQHLQ9abgEFRDQgx.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-6-the-rural-algarve",
+      "title": "Day 6 — The Rural Algarve",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/2RMdJrW3Q0aB1Hd0DhVG.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Following breakfast at the hotel and time for self-guided yoga, travel inland to discover two traditions that have shaped the Algarve beyond its beaches. <strong>Visit an olive grove</strong> and learn how olives become extra virgin olive oil, then continue after lunch to<strong> São Brás de Alportel,</strong> a town with a long history of cork production. At its <strong>ethnographic museum</strong> and a cork factory, learn how the bark is harvested and prepared for use. Return to Lagos for dinner.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/v4zCecImQJiqZEzTop03.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/GhuRWeLSh22rwM1b4Zwg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/cZU3tTR3TA2Qpwk74yve.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/NVXSrokfQFK8UEKgCq9H.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/y16x2ZQdSMi0545mQvBn.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-7-space-to-restore",
+      "title": "Day 7 — Space to Restore",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/DjCu00h3SQqdyU5dmwJI.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Begin with breakfast at the hotel and, if you wish, self-guided morning yoga. Take part in an included <strong>sound healing session</strong>, then let the rest of the day unfold at your own pace. Return to a favorite beach, wander Lagos’s streets, or simply rest and reflect on the week. Enjoy a farewell dinner with the group and overnight in Lagos.</p>",
+      "gallery": [
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/Dgru1aJ8TFaPoZYgbktl.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/3ePHQBAOQzaTI2iLTqxg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/0PpG4i9gQ0OS3yjfCju9.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/BuztcTeMSey2QHmKe5qf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/po7-algarve-coastal-wellness-culture/oco3k4jVSmuMm2tO3BUd.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-8-carry-it-home",
+      "title": "Day 8 — Carry It Home",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/CDmT21oGRcaWWESDJ1yK.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Enjoy a final breakfast at the hotel, with time for a self-guided morning stretch or yoga practice if your flight schedule allows. Your escort will accompany the group’s transfer to Faro Airport for the journey home.</p>",
+      "gallery": []
+    },
+    {
+      "id": "what-is-included",
+      "title": "What is included",
+      "subtitle": "",
+      "image": {
+        "src": "images/po7-algarve-coastal-wellness-culture/D4nYYw4zQd65VMNPnC5n.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h2>Included</h2><ul><li><p>Round-trip international airfare and airport transfers</p></li><li><p>Seven nights of hotel accommodations in Lagos</p></li><li><p>An English-speaking tour escort throughout the trip</p></li><li><p>Private coach transportation and the boat excursions listed in the itinerary</p></li><li><p>All scheduled excursions and activities listed in the program</p></li><li><p>Daily hotel breakfasts and dinners</p></li><li><p>Picnic lunches on Days 3 and 5, and lunch during the cooking experience on Day 4</p></li></ul><h2>Not included</h2><ul><li><p>Lunches except where specified in the itinerary</p></li><li><p>Gratuities</p></li><li><p>Personal expenses and activities outside the program</p></li><li><p>Travel insurance</p></li></ul>",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "key": "g8g6feq"
+}

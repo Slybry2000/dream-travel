@@ -1,0 +1,363 @@
+{
+  "slug": "costa-rica-from-forest-to-sea-a-wellness-journey",
+  "title": "Costa Rica: From Forest to Sea — A Wellness Journey",
+  "code": "CRW6",
+  "source": "https://dream-travel.wetravel.com/i/6ab5668bcd3e5b735adbe95c",
+  "updated_at": "2026-09-24T18:48:41.165Z",
+  "status": "published",
+  "hero": {
+    "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/xi6CyYEpR4qbpbmEX613.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 7,
+  "nights": 6,
+  "country": "Costa Rica",
+  "locations": [
+    "San José",
+    "Rincón de la Vieja Volcano",
+    "Liberia",
+    "Guanacaste Province",
+    "Nicoya Peninsula",
+    "Playa Azul"
+  ],
+  "tags": [],
+  "tagline": "Costa Rica: From Forest to Sea- A Wellness Journey",
+  "summary": "Costa Rica invites you to slow down in two strikingly different landscapes. Your journey begins near Rincón de la Vieja, a volcano surrounded by forest, waterfalls and thermal waters. Midway through the trip, you’ll travel to Playa Azul on the Pacific coast, where open skies and ocean air set a gentler pace. The Nicoya Peninsula is known as a Blue Zone, a region associated with long lives and strong community ties.",
+  "pins": [
+    {
+      "name": "San José",
+      "address": "San José Province, San José, Costa Rica",
+      "lat": 9.9280694,
+      "lng": -84.0907246
+    },
+    {
+      "name": "Rincón de la Vieja Volcano",
+      "address": "Rincón de la Vieja Volcano, Alajuela Province, Upala, Costa Rica",
+      "lat": 10.8315286,
+      "lng": -85.3363521
+    },
+    {
+      "name": "Liberia",
+      "address": "Guanacaste Province, Liberia, Costa Rica",
+      "lat": 10.6341273,
+      "lng": -85.4398195
+    },
+    {
+      "name": "Guanacaste Province",
+      "address": "Guanacaste Province, Costa Rica",
+      "lat": 10.407299199999999,
+      "lng": -85.4375574
+    },
+    {
+      "name": "Nicoya Peninsula",
+      "address": "Nicoya Peninsula, Costa Rica",
+      "lat": 9.9590676,
+      "lng": -85.35496499999999
+    },
+    {
+      "name": "Playa Azul",
+      "address": "Provincia de Guanacaste, Playa Azul, Costa Rica",
+      "lat": 10.054331,
+      "lng": -85.7544879
+    }
+  ],
+  "sections": [
+    {
+      "id": "costa-rica-from-forest-to-sea-a-wellness-journey",
+      "title": "Costa Rica: From Forest to Sea- A Wellness Journey",
+      "subtitle": "A 9-Day Adult Wellness Journey Through Volcanoes, Rainforests and the Pacific Coast",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/xi6CyYEpR4qbpbmEX613.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Costa Rica invites you to slow down in two strikingly different landscapes. Your journey begins near Rincón de la Vieja, a volcano surrounded by forest, waterfalls and thermal waters. Midway through the trip, you’ll travel to Playa Azul on the Pacific coast, where open skies and ocean air set a gentler pace. The Nicoya Peninsula is known as a <em>Blue Zone</em>, a region associated with long lives and strong community ties.</strong></p><p><strong>Created for adults, this wellness journey makes room for adventure and genuine rest. Forest walks, movement, nourishing meals, conversation and quiet reflection offer different ways to reconnect with yourself and the people around you. There is no expectation to arrive with a goal or leave transformed. Come curious, enjoy the experience, and take home whatever practices feel meaningful for your everyday life.</strong></p>",
+      "gallery": []
+    },
+    {
+      "id": "day-1-from-the-u-s-to-the-forest",
+      "title": "Day 1 — From the U.S. to the Forest",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/LczHRRiRTvs24VGJ1gaQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Depart the United States and fly to <strong>Juan Santamaría International Airport (SJO)</strong>, which serves the San José area. After arriving in Costa Rica, meet your group for the transfer northwest to your retreat near <strong>Rincón de la Vieja</strong>. Settle in, enjoy the forest surroundings and gather for a welcome dinner. <strong>If flight arrivals allow, the evening can also include a short grounding practice and introductions</strong>—a gentle start after a full travel day.</p>",
+      "gallery": [
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/I6xRkXlQaqfzlYUrY25G.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/QU2KJSkgQmgdNpkoDDhQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/O3r3aTR2Tf2qWeXSFGCe.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/HJDYLZp3QQmVCqwBSWda.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/ChX2dwJS6OjLQ2dyTcws.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-2-waterfalls-warm-waters-renewal",
+      "title": "Day 2 — Waterfalls, Warm Waters & Renewal",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/TJZlwMrFQFCQTFjtkjdY.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Begin with a morning circle and mindful practice before breakfast. Then <strong>set out on a forest hike and waterfall visit</strong>. The Rincón de la Vieja area is shaped by volcanic activity, with trails, waterfalls and thermal waters that make it a memorable place to explore Costa Rica’s natural landscape. A <strong>guided gratitude meditation</strong> offers a moment to pause and take it all in. After lunch and free time, unwind with a <strong>natural spa circuit featuring a sauna, volcanic mud bath and thermal waters</strong>. Come together again for dinner and an evening gathering.</p>",
+      "gallery": [
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/7PuyfVtQQnGudfDOjpjC.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/eVF2FwgEQQuyCd3B4iOB.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/UDs2GS1aRHa9hPXetxaQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/wf4BzbJQKqRadgCI3glQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/oQjFDfQ7eZC1VdVf0zXg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-3-adventure-in-the-canopy",
+      "title": "Day 3 — Adventure in the Canopy",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/cbooUXlGTvycrI6CjS7i.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Start the day with a morning circle and embodied movement, an approachable practice focused on how your body feels as you move. After breakfast, see the l<strong>andscape from above on a zipline adventure.</strong> Later, a Costa Rican <strong>cultural experience offers a chance to learn more about the people and traditions of the region</strong>. Enjoy lunch and dinner together, then share the evening with the group.</p>",
+      "gallery": [
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/QjJAQvy6SSmCpUPGt2Cl.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/deRPkj8tRZO3b73UGbhE.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/wDmeMCOHQUWE7eiufTv0.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/xDWYJTNmTEKK6AaxYNDs.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/Ohe4B3DSmyBdVaJrlSny.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-4-from-forest-to-sea",
+      "title": "Day 4 — From Forest to Sea",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/x4zGCncqSuY8q9l8uyq8.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After a final morning circle and breakfast in the forest, collect your luggage and begin the journey toward the Pacific coast. Stop in <strong>Liberia</strong>, a city in Guanacaste, for a traditional Costa Rican lunch before continuing to <strong>Playa Azul</strong>. On arrival, check in and enjoy a welcome drink and fresh tropical fruit. The rest of the afternoon is yours to settle into the coastal setting before dinner and an evening gathering.</p>",
+      "gallery": [
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/5jwgdsezQhWbyJmL9Muv.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/1TOqrOAQS6FzxS2WLDS2.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/PHp45kSjQZSMIzP4U1X3.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/PNAMK4ZTaq8VlhbTD4RM.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/JDoWPmKRd6dTJetRDgDn.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-5-ocean-air-sunset-joy",
+      "title": "Day 5 — Ocean Air & Sunset Joy",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/zpVOd0wTqR3rur4p4EPA.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Begin with morning meditation and breakfast, then head out for a <strong>catamaran adventure along Costa Rica’s Pacific coast</strong>. Visit local beaches and enjoy time on the water before gathering for a sunset experience. After dinner,<strong> spend the evening together around a bonfire</strong>. With room for both adventure and laughter, this is a day to enjoy the lighter side of wellness.</p><h3></h3>",
+      "gallery": [
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/IvgxJK7mQiyY6QdL7D7K.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/3GmPW4k9Q3e8dii1qmZC.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/DJy1j3tTS4qHGqbrI3pA.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/ykO42J6kSmK9zzMbNnxj.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/mGcbyMJQSvi3fDfapy4u.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-6-the-art-of-resting",
+      "title": "Day 6 — The Art of Resting",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/YEHSTv32TCWDShyFIjYX.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Your final full day begins with <strong>The Art of Resting</strong>, an invitation to slow down and consider what rest looks like in your own life. After breakfast, s<strong>ettle into a sound healing session</strong>, then enjoy lunch before a beach ritual and time for reflection. A <strong>Blue Zone–inspired cooking experience brings the group together around food and the traditions of the Nicoya region.</strong> Close the journey with dinner, music and a final circle to share what you’ll carry home</p>",
+      "gallery": [
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/QAEgW8ORXSAynqYv4QHp.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/wAYv6le2RkynROCi21Zn.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/0khQ6uBSwqspda49912J.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/NcZNyg96Sgq6kO7iSk4a.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/fopVXxXSIyzIlkvdiaMG.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-7-carry-the-journey-home",
+      "title": "Day 7 — Carry the Journey Home",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/vUf30wAASQSvedkbOG0f.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Enjoy a final breakfast at Playa Azul before checking out and transferring to the airport for your flight back to the United States. As you travel home, reflect on the forest paths, ocean moments and new connections of the past week—and on the small ways you might bring that sense of presence into daily life.</p>",
+      "gallery": []
+    },
+    {
+      "id": "what-is-included",
+      "title": "What is included",
+      "subtitle": "",
+      "image": {
+        "src": "images/costa-rica-from-forest-to-sea-a-wellness-journey/aqSIuTbAQbuEseaecLMF.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>INCLUDED</strong></p><ul><li><p>6 nights accommodation at two carefully selected properties</p></li><li><p>Conscious and nourishing meals</p></li><li><p>Private group transportation</p></li><li><p>Holistic and wellness experiences</p></li><li><p>Guided conversations and integration circles</p></li><li><p>Reflective writing and journaling</p></li><li><p>Embodied movement and body-awareness practices</p></li><li><p>Intuitive and symbolic exploration</p></li><li><p>Astrology or other creative self-exploration tools</p></li><li><p>Nature rituals and sunset gatherings</p></li><li><p>Dedicated time for silence, spaciousness, and rest</p></li><li><p>Shared meals and meaningful connection</p></li><li><p>Immersive experiences in Costa Rica's natural landscapes</p></li><li><p>Blue Zone cultural experience</p></li></ul><p><strong>Every element is designed to balance personal reflection with genuine human connection—because both are essential parts of a meaningful retreat experience.</strong></p>",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "key": "v652ekd"
+}

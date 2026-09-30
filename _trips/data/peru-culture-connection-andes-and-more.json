@@ -1,0 +1,433 @@
+{
+  "slug": "peru-culture-connection-andes-and-more",
+  "title": "Peru: Culture, connection, Andes and more",
+  "code": "PeW1",
+  "source": "https://dream-travel.wetravel.com/i/6ab565cd6ad6efdd382e8364",
+  "updated_at": "2026-09-30T02:34:33.533Z",
+  "status": "published",
+  "hero": {
+    "src": "images/peru-culture-connection-andes-and-more/jKGPifj4RP2lf83Tq4aw.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 8,
+  "nights": 7,
+  "country": "Peru",
+  "locations": [
+    "Lima",
+    "Barranco",
+    "Cusco",
+    "Sacred Valley",
+    "Misminay",
+    "Ollantaytambo",
+    "Aguas Calientes",
+    "Historic Sanctuary of Machu Picchu"
+  ],
+  "tags": [],
+  "tagline": "Peru - Culture, Connection, Andes and More",
+  "summary": "Step away from your daily routine and discover a journey that nourishes curiosity, encourages connection, and brings you closer to the natural world. From Lima’s coastal neighborhoods to the mountain landscapes of the Sacred Valley and the extraordinary ruins of Machu Picchu, Peru offers a setting where wellness grows through movement, creativity, cultural exchange, and moments of reflection.",
+  "pins": [
+    {
+      "name": "Lima",
+      "address": "Lima, Peru",
+      "lat": -12.0466888,
+      "lng": -77.04308859999999
+    },
+    {
+      "name": "Barranco",
+      "address": "Barranco, Peru",
+      "lat": -12.141150800000002,
+      "lng": -77.0221186
+    },
+    {
+      "name": "Cusco",
+      "address": "Cusco, Peru",
+      "lat": -13.53195,
+      "lng": -71.96746259999999
+    },
+    {
+      "name": "Sacred Valley",
+      "address": "Sacred Valley, 08670, Peru",
+      "lat": -13.332816300000001,
+      "lng": -72.0844649
+    },
+    {
+      "name": "Misminay",
+      "address": "MQ4W+Q7W, 08655, Peru",
+      "lat": -13.342753199999999,
+      "lng": -72.20358929999999
+    },
+    {
+      "name": "Ollantaytambo",
+      "address": "Ollantaytambo, Peru",
+      "lat": -13.258368899999999,
+      "lng": -72.2642679
+    },
+    {
+      "name": "Aguas Calientes",
+      "address": "Aguas Calientes 08681, Peru",
+      "lat": -13.1550166,
+      "lng": -72.52572920000001
+    },
+    {
+      "name": "Historic Sanctuary of Machu Picchu",
+      "address": "08680, Peru",
+      "lat": -13.1631988,
+      "lng": -72.5452621
+    }
+  ],
+  "sections": [
+    {
+      "id": "peru-culture-connection-andes-and-more",
+      "title": "Peru - Culture, Connection, Andes and More",
+      "subtitle": "A Wellness Journey Through Andean Traditions, Sacred Landscapes & Living Culture",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/jKGPifj4RP2lf83Tq4aw.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Step away from your daily routine and discover a journey that nourishes curiosity, encourages connection, and brings you closer to the natural world. From Lima’s coastal neighborhoods to the mountain landscapes of the Sacred Valley and the extraordinary ruins of Machu Picchu, Peru offers a setting where wellness grows through movement, creativity, cultural exchange, and moments of reflection.</strong></p><p><strong>Designed for adults, this eight-day experience brings together paddleboard yoga, traditional cuisine, community encounters, forest conservation, and the stories of women preserving and shaping Peruvian culture. Explore with local guides, share meals with welcoming hosts, and experience traditions rooted in a deep relationship with the land. Along the way, discover opportunities to reconnect with yourself while learning from the people and places that make Peru so memorable.</strong></p>",
+      "gallery": []
+    },
+    {
+      "id": "day-1-a-warm-welcome-to-peru",
+      "title": "Day 1- A Warm Welcome to Peru",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/KEnbQMwKQ2iBXaqWDIRD.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Arrive in Lima</strong>, Peru’s capital on the Pacific coast, where an English-speaking guide will welcome you and accompany your private transfer to your hotel in Miraflores. This coastal district provides a comfortable base for your introduction to the country. Take time to settle in before an evening at Hotel B in nearby <strong>Barranco</strong>, a neighborhood known for its art and bohemian atmosphere. Enjoy a welcome dinner and an interactive cocktail lesson led by expert bartenders, discovering the ingredients and techniques behind classic and signature drinks. It is an inviting opportunity to meet your fellow travelers and ease into the journey.</p>\n<h4>Hotel B</h4>\nHotel B is situated in the lively Barranco district of Peru, famous for its artistic vibe and nightlife. This hotel combines modern comforts with the allure of a historic building, ensuring a unique stay. Enjoy delicious local cuisine at the on-site restaurant, and don't miss the rooftop terrace offering breathtaking views.",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/YXWRB6NSZCDMXDIOoZzf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/sFPJlbP6SJyBXszuKk15.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/oQKOQc4fQqGVgAYo50c0.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/qaPcpeJSS9utIJOBqI4t.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/jJeOMa2FTXWBL46JypZx.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-2-art-chocolate-the-stories-of-women",
+      "title": "Day 2- Art, Chocolate & the Stories of Women",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/sdcupw53RKSoCTenM6jH.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, <strong>explore Lima’s historic center</strong>, where grand squares, colonial buildings, and busy streets introduce the city’s layered history. Walk through the Main Square, surrounded by the Government Palace, Cathedral, and Archbishop’s Palace, and visit the Convent of Santo Domingo. Continue to the <strong>Larco Museum</strong> for an introduction to Peru’s ancient civilizations and the “Warmikuna: Women in Ancient Peru” workshop, which explores the varied roles women held in pre-Hispanic societies. After an included lunch at the museum café, <strong>discover Barranco’s colorful murals, artists’ spaces, ocean views, and celebrated Bridge of Sighs.</strong> Finish with a cacao experience at El Cacaotal, learning about Peruvian chocolate, small-scale producers, and the cultural stories behind its flavors. The evening is yours to enjoy dinner at your own pace.</p>",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/VWVprLQASsuhhKP69kRW.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/Fkf9eWaTeyDD11k0EbaU.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/KaqBSsryS3Cp0lOPHTgJ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/GWlJmlTwQWetn77XR06x.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/ohJU7WbeS56zvBBqwPZf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-3-into-the-valley-into-a-gentler-rhythm",
+      "title": "Day 3-  Into the Valley, Into a Gentler Rhythm",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/8o66N4YtS5iwcceULunm.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, transfer to the airport for your flight to Cusco, the gateway to Peru’s Andean region. On arrival, meet your local guide and continue into the <strong>Sacred Valley</strong>, a landscape of mountain villages, agricultural fields, and Inca heritage. Along the way, visit <strong>Sulca</strong>, a textile workshop where traditional techniques reveal how fibers are selected, naturally dyed, spun, and woven. Learn about the cultural significance of Andean textiles and the skill involved in working with fibers such as alpaca. Arrive at your Sacred Valley hotel and spend the afternoon resting, adjusting to the altitude, and enjoying the surroundings. Dinner at the hotel completes a gentle introduction to this part of the journey.</p><p><em>Overnight in the Sacred Valley. Breakfast and dinner included.</em></p>",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/g8s8L9upQbOpYl5GBhqd.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/IhaM0qxuRByBzzgSghRM.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/8cUakfmMTIWRjnWtayKJ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/ayzNqdtLSP96bqQwAs99.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/0VLIGWhST2dRZYAizU36.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-4-balance-on-the-water-gratitude-for-the-earth",
+      "title": "Day 4-  Balance on the Water, Gratitude for the Earth",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/TCUwHqOSEWHJUrnYSSRq.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, begin a morning of <strong>mindful movement with stand-up paddleboard yoga on a mountain-framed lake</strong>. A stretching session and safety briefing introduce the equipment before you paddle to calm water for a guided practice focused on breathing, balance, and awareness. An optional cold-water dip may be offered for those who wish to participate, conditions permitting. Later, visit the community of <strong>Misminay</strong>, where local hosts welcome you into an experience of Andean rural life. Share a traditional lunch prepared with local ingredients, then take a short walk to a viewpoint overlooking <strong>Moray’s</strong> remarkable circular agricultural terraces. Participate respectfully in a <em>Pago a la Tierra</em>, an Andean ceremony expressing gratitude to Mother Earth, guided by your hosts. Return to the hotel with time to reflect and enjoy dinner independently.</p><p><em>Overnight in the Sacred Valley. Breakfast and lunch included.</em></p>",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/i37pBaTvSE8Muwmfrr4Q.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/8NaxSTThR6y2RqBXppdT.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/waeyx5ptTuG6oybM8CUx.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/mIVY5RdfSIiW1qtCaK7B.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/MnvEYW2iTyqKbAFrC2ld.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-5-give-back-to-the-land",
+      "title": "Day 5- Give Back to the Land",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/l0NbtAwgRaSrkkgKaXkW.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, <strong>explore the Choquechaka Conservation Area</strong> and learn about the forests that support the region’s distinctive ecosystems. Join a conservation activity appropriate to the local project’s needs, which may include planting trees, making seed balls, or caring for young trees. Continue with an included <strong>pachamanca lunch,</strong> discovering an ancestral cooking tradition in which heated stones are used to prepare meats and vegetables in an earth oven. In the afternoon, explore<strong> Ollantaytambo</strong>, a town where cobblestone streets and Inca structures offer a vivid connection to the past. Climb the archaeological site’s steep stone steps to appreciate its terraces, monumental stonework, and <strong>Temple of the Sun</strong>. Later, b<strong>oard a panoramic Vistadome or 360° train to Aguas Calientes</strong>, the town at the foot of Machu Picchu, and settle in for the evening.</p><p><em>Overnight in Aguas Calientes. Breakfast and lunch included.</em></p>\n<h4>Rancho Margot</h4>\nExperience the tranquility of Rancho Margot, where eco-friendly practices meet breathtaking scenery. Set against the backdrop of Lake Nicaragua, this unique retreat offers organic farm-fresh meals and accommodations crafted from natural materials. Enjoy outdoor adventures like hiking and horseback riding while connecting with the area's rich wildlife.",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/Vyp967vFQ7mHLu2C6AsH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/77fYnnKwQFip3clUTsFH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/NrGGL6stRb6rDbYj6pAk.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/wVR7USYbRRehvIEMcEYC.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/XD4KJunGQKSCs6kldMyJ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-6-wonder-among-the-mountains",
+      "title": "Day 6- Wonder Among the Mountains",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/HLg6sdQvSDmtUAStXLHP.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, <strong>take the shuttle bus from Aguas Calientes to Machu Picchu</strong>, where stone terraces and buildings rise above a dramatic mountain landscape. During your guided visit, learn about the Inca civilization and the architecture, history, and unanswered questions surrounding this extraordinary site. Pause along the designated route to appreciate the views and the care with which the settlement fits its surroundings. Return to Aguas Calientes for lunch and time to explore before boarding your panoramic train for the return journey, followed by onward transportation to Cusco. Arrive at your hotel with memories of one of the journey’s most remarkable experiences.</p>",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/gMciZkbXSFGdafUT517S.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/qYa2uL3jQ0SnmqXD4V9N.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/j11SlTfhRPWVrawueBjB.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/Wk5qJzusQd6obIs2yTYE.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/jbz3R8XHQ9OC40SJfKWE.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-7-nourishment-heritage-celebration",
+      "title": "Day 7- Nourishment, Heritage & Celebration",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/siBn9C7HSlq8AZu80S3X.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, begin a culinary experience with <strong>Mama Seledonia</strong>, an initiative that celebrates regional cooking while creating employment opportunities for women, including single mothers from vulnerable communities. Visit <strong>Cascaparo Market</strong> to discover local ingredients, select products with your host, and help prepare dishes in Seledonia’s kitchen before enjoying a shared tasting. In the afternoon, <strong>explore Cusco</strong>, where Inca foundations and Spanish colonial buildings reveal the city’s complex history. Visit San Pedro Market and Koricancha, a former Inca temple associated with worship of the sun, before continuing to the monumental stone walls of Sacsayhuamán and the ceremonial site of Qenqo. In the evening, gather for a f<strong>arewell dinner and folkloric performance at Artisano Regocijo</strong>, celebrating Peru’s living traditions and the connections formed throughout your journey.</p><p><em>Overnight in Cusco. Breakfast, culinary preparation and tasting, and farewell dinner included.</em></p>",
+      "gallery": [
+        {
+          "src": "images/peru-culture-connection-andes-and-more/tl9BYQDHT0ivKv0lBMb0.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/21CytyRVKqlZc28H5VMw.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/wIF51ZXR5ako5R0tnYc5.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/aenqKRf9TfSk0z1GK74w.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/peru-culture-connection-andes-and-more/3rR49g20SjOKILc9ejPA.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-8-bring-the-journey-home",
+      "title": "Day 8- Bring the Journey Home",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/CDmT21oGRcaWWESDJ1yK.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast at the hotel, t<strong>ransfer to Cusco’s airport for your flight to Lima and onward international journey home.</strong> Leave with memories of mountain landscapes, shared meals, creative traditions, and encounters that offered a deeper understanding of Peru. Carry the spirit of the journey into everyday life through small moments of gratitude, purposeful movement, and a renewed appreciation for the people and places around you.</p><p><em>Breakfast included.</em></p>",
+      "gallery": []
+    },
+    {
+      "id": "what-is-included",
+      "title": "What is included",
+      "subtitle": "",
+      "image": {
+        "src": "images/peru-culture-connection-andes-and-more/aqSIuTbAQbuEseaecLMF.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h2>What Is Included</h2><ul><li><p>International round-trip airfare.</p></li><li><p>Domestic airfare from Lima to Cusco and from Cusco to Lima</p></li><li><p>Seven nights of accommodation: two in Lima, two in the Sacred Valley, one in Aguas Calientes, and two in Cusco.</p></li><li><p>Daily hotel breakfast from Day 2 through Day 8.</p></li><li><p>Private arrival transfer in Lima with an English-speaking guide.</p></li><li><p>Scheduled airport transfers and ground transportation for the itinerary.</p></li><li><p>Local guides for the scheduled guided experiences.</p></li><li><p>Welcome dinner and cocktail lesson at Hotel B.*</p></li><li><p>Lima historic center tour, including the scheduled Convent of Santo Domingo visit.</p></li><li><p>Larco Museum visit and “Warmikuna: Women in Ancient Peru” workshop.</p></li><li><p>Lunch at the Larco Museum café.</p></li><li><p>Guided Barranco exploration and El Cacaotal experience.</p></li><li><p>Sulca textile workshop visit.</p></li><li><p>Dinner at the Sacred Valley hotel on Day 3.</p></li><li><p>Stand-up paddleboard yoga, including the listed equipment and safety briefing.</p></li><li><p>Misminay community visit, traditional lunch, and Mother Earth ceremony.</p></li><li><p>Choquechaka conservation experience and participation in the planned reforestation activity.</p></li><li><p>Pachamanca cooking introduction and lunch.</p></li><li><p>Guided Ollantaytambo town and archaeological site visit.</p></li><li><p>Round-trip panoramic train travel by Vistadome or 360° service, as arranged.</p></li><li><p>Machu Picchu admission, guided visit, and scheduled shuttle bus transportation.</p></li><li><p>Lunch on Day 6, as listed in the supplied meal plan.*</p></li><li><p>Mama Seledonia market visit, cooking experience, and tasting.</p></li><li><p>Guided Cusco tour and the listed nearby archaeological visits.</p></li><li><p>Farewell dinner and folkloric show at Artisano Regocijo.</p></li><li><p>Entrance fees for the scheduled included visits.</p></li></ul><h2>What Is Not Included</h2><ul><li><p>Lunches outside the specified included meals and culinary experiences.</p></li><li><p>Dinners on Days 2, 4, 5, and 6.</p></li><li><p>Additional drinks beyond those included in scheduled meals or tastings.</p></li><li><p>Optional Huayna Picchu admission and hike, available at an additional cost and subject to availability.</p></li><li><p>Travel insurance.</p></li><li><p>Gratuities for guides, drivers, and hotel staff.</p></li><li><p>Passport expenses and any applicable visa or entry fees.</p></li><li><p>Personal purchases, laundry, room service, and other incidental expenses.</p></li><li><p>Airline baggage fees unless included in the purchased airfare.</p></li><li><p>Optional activities or services outside the itinerary.</p></li></ul>",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "the Sacred Valley",
+      "nights": 2
+    },
+    {
+      "place": "Aguas Calientes",
+      "nights": 1
+    },
+    {
+      "place": "Cusco",
+      "nights": 1
+    }
+  ],
+  "key": "n6r4dt7"
+}

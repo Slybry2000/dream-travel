@@ -288,7 +288,7 @@ def library(by_country, dests, lib):
 {site_header()}
   <main>
     <section class="tl-hero"><img src="{hero}" alt=""><div><p class="tl-kicker">Sample itineraries</p><h1>Where will your group go?</h1><a class="tl-button" href="#all">See trips</a></div></section>
-    <section class="tl-intro" id="all"><h2>Trips we have built</h2><p>Every program is a starting point for a private group. Pick one close to what your people want and we will shape it from there.</p></section>
+    <section class="tl-intro" id="all"><h2>These are just samples. We can do much more.</h2><p>Any destination, any type of trip. Pick one close to what your people want and we will shape it from there, or tell us where you want to go and we will build it.</p><p><a class="tl-button" href="/planning/">Tell us what you have in mind</a></p></section>
 {chr(10).join(blocks)}
     <section class="tl-closing"><h2>Don't see your trip?</h2><p>Most of what we run is built from scratch.</p><a class="tl-button" href="/planning/">Plan a custom trip</a></section>
   </main>
