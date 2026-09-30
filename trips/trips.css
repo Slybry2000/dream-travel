@@ -116,6 +116,9 @@ h1, h2, h3, p { margin: 0; }
 .tl-more p { margin: 22px 0 10px; color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
 .tl-more div { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; }
 .tl-more div a { color: var(--ink); font: 400 22px/1.2 var(--editorial); text-underline-offset: 4px; }
+.tl-more div a[aria-current] { color: var(--muted); text-decoration: none; pointer-events: none; }
+.tl-more div a[aria-current]::after { content: " \2022  you are here"; font: 600 10px/1 var(--body, sans-serif); letter-spacing: .08em; text-transform: uppercase; }
+.tl-grid-wrap--more { padding-top: clamp(48px, 7vh, 80px) !important; border-top: 1px solid rgba(0,18,11,.08); }
 .tl-closing { padding: clamp(72px, 11vh, 120px) var(--gutter); text-align: center; }
 .tl-closing h2 { margin-bottom: 12px; color: var(--ink); font: 400 clamp(30px, 3vw, 44px)/1.1 var(--editorial); }
 .tl-closing p { margin-bottom: 28px; font-size: 17px; }

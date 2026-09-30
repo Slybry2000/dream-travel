@@ -263,7 +263,22 @@ def destination(slug, name, trips, meta, lib, by_country):
         "Programs can also be combined with other countries."]
     intro_html = "".join(f"<p>{esc(p)}</p>" for p in intro)
     cards = "\n".join(card(t) for t in trips)
-    others = "".join(f'<a href="{lib}/{s}/">{esc(n)}</a>' for s, (n, _) in by_country.items() if s != slug)
+    countries = "".join(
+        f'<a href="{lib}/{s}/" aria-current="page">{esc(n)}</a>' if s == slug else f'<a href="{lib}/{s}/">{esc(n)}</a>'
+        for s, (n, _) in by_country.items())
+    # "More sample trips": up to 6 trips from the other countries, taken in turn so every country shows.
+    pools = [list(ts) for s, (_, ts) in by_country.items() if s != slug]
+    more = []
+    while pools and len(more) < 6:
+        for pool in pools:
+            if pool and len(more) < 6:
+                more.append(pool.pop(0))
+        pools = [pool for pool in pools if pool]
+    more_cards = "\n".join(card(t) for t in more)
+    more_html = (f"""    <section class="tl-grid-wrap tl-grid-wrap--more"><div class="tl-grid-head"><h2>More sample trips</h2><a href="{lib}/">See all</a></div><div class="tl-grid">
+{more_cards}
+    </div></section>
+""" if more else "")
     return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], hero, public=True)}
 <body>
 {site_header()}
@@ -273,7 +288,7 @@ def destination(slug, name, trips, meta, lib, by_country):
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
     </div></section>
-    <nav class="tl-more" aria-label="More sample trips"><a class="tl-button tl-button--line" href="{lib}/">&larr; See all sample trips</a><p>Or browse another destination:</p><div>{others}</div></nav>
+{more_html}    <nav class="tl-more" aria-label="Sample trips by destination"><a class="tl-button tl-button--line" href="{lib}/">&larr; See all sample trips</a><p>Browse by destination:</p><div>{countries}</div></nav>
     <section class="tl-closing"><h2>Ready to plan your group's trip?</h2><p>Tell us who is going and what they love. René shapes the rest.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>
   </main>
 {site_footer()}
