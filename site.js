@@ -102,9 +102,9 @@
       const sinYaw = Math.sin(yaw);
       const cosPitch = Math.cos(pitch);
       const sinPitch = Math.sin(pitch);
-      const radiusX = Math.min(orbitStage.clientWidth * .31, 350);
-      const radiusY = Math.min(orbitStage.clientHeight * .33, 205);
-      const radiusZ = Math.min(orbitStage.clientWidth * .24, 280);
+      const radiusX = Math.min(orbitStage.clientWidth * .41, 480);
+      const radiusY = Math.min(orbitStage.clientHeight * .36, 250);
+      const radiusZ = Math.min(orbitStage.clientWidth * .3, 360);
       points.forEach(({ item, x, y, z }) => {
         const rotatedX = x * cosYaw + z * sinYaw;
         const yawZ = -x * sinYaw + z * cosYaw;
@@ -177,14 +177,17 @@
       startX = previousX = event.clientX;
       startY = previousY = event.clientY;
       velocityYaw = velocityPitch = 0;
-      orbitStage.classList.add('is-dragging');
-      orbitStage.setPointerCapture(event.pointerId);
     });
+    orbitStage.addEventListener('dragstart', (event) => event.preventDefault());
     orbitStage.addEventListener('pointermove', (event) => {
       if (!dragging) return;
       const dx = event.clientX - previousX;
       const dy = event.clientY - previousY;
-      if (Math.hypot(event.clientX - startX, event.clientY - startY) > 5) moved = true;
+      if (!moved && Math.hypot(event.clientX - startX, event.clientY - startY) > 5) {
+        moved = true;
+        orbitStage.classList.add('is-dragging');
+        orbitStage.setPointerCapture(event.pointerId);
+      }
       yaw += dx * .006;
       if (event.pointerType !== 'touch') pitch = Math.max(-.72, Math.min(.72, pitch - dy * .0045));
       velocityYaw = dx * .0012;
