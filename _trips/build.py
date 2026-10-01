@@ -250,6 +250,7 @@ def itinerary(t):
   </main>
 {site_footer()}
   <script src="{BASE}/trips.js?v={VERSION}" defer></script>
+  <script src="/journey-path.js?v=1" data-page="trips" defer></script>
 </body>
 </html>
 """
@@ -331,6 +332,7 @@ def destination(slug, name, trips, meta, lib, by_country):
   </main>
 {site_footer()}
   <script src="{BASE}/trips.js?v={VERSION}" defer></script>
+  <script src="/journey-path.js?v=1" data-page="trips" defer></script>
 </body>
 </html>
 """
@@ -361,6 +363,7 @@ def library(by_country, dests, lib):
   </main>
 {site_footer()}
   <script src="{BASE}/trips.js?v={VERSION}" defer></script>
+  <script src="/journey-path.js?v=1" data-page="trips" defer></script>
 </body>
 </html>
 """

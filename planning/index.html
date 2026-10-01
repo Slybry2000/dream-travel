@@ -21,10 +21,15 @@
     allow="clipboard-write"
     referrerpolicy="strict-origin-when-cross-origin"
   ></iframe>
+  <script src="../journey-path.js?v=1" data-page="planning"></script>
   <script>
     const planner = document.getElementById('planner');
     const destination = new URL('https://dream-travel-click-planner.perseidechocreations.chatgpt.site/');
     destination.search = location.search;
+    if (window.dtJourneyParams) {
+      const route = window.dtJourneyParams();
+      Object.keys(route).forEach((k) => { if (!destination.searchParams.get(k)) destination.searchParams.set(k, route[k]); });
+    }
     planner.src = destination.toString();
   </script>
   <noscript>
