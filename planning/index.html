@@ -24,7 +24,7 @@
   <script src="../journey-path.js?v=1" data-page="planning"></script>
   <script>
     const planner = document.getElementById('planner');
-    const destination = new URL('https://dream-travel-click-planner.perseidechocreations.chatgpt.site/');
+    const destination = new URL('https://dream-travel-planner.perseidechocreations.workers.dev/');
     destination.search = location.search;
     if (window.dtJourneyParams) {
       const route = window.dtJourneyParams();
@@ -33,7 +33,7 @@
     planner.src = destination.toString();
   </script>
   <noscript>
-    <p class="fallback">JavaScript is required for the planner. <a href="https://dream-travel-click-planner.perseidechocreations.chatgpt.site/">Open the Dream Travel planner</a>.</p>
+    <p class="fallback">JavaScript is required for the planner. <a href="https://dream-travel-planner.perseidechocreations.workers.dev/">Open the Dream Travel planner</a>.</p>
   </noscript>
 </body>
 </html>
