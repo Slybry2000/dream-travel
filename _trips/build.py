@@ -153,13 +153,13 @@ def card(t):
     tags = "".join(f"<span>{esc(x)}</span>" for x in t.get("tags", []))
     nights = overnights_line(t)
     return f"""      <article class="tl-card">
-        <a class="tl-card__media" href="{t['url']}"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}"><span class="tl-card__badge">{esc(duration(t))}</span></a>
+        <a class="tl-card__media" href="{t['url']}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}"><span class="tl-card__badge">{esc(duration(t))}</span></a>
         <div class="tl-card__body">
-          <h3><a href="{t['url']}">{esc(t['title'])}</a></h3>
+          <h3><a href="{t['url']}" target="_blank" rel="noopener">{esc(t['title'])}</a></h3>
           <p class="tl-card__meta"><b>Location(s):</b> {esc(', '.join(t.get('locations', [])[:4]) or t.get('country', ''))}</p>
           {f'<p class="tl-card__tags">{tags}</p>' if tags else ''}
           {f'<p class="tl-card__meta"><b>Overnights:</b> {esc(nights)}</p>' if nights else ''}
-          <a class="tl-button tl-button--line" href="{t['url']}">See itinerary</a>
+          <a class="tl-button tl-button--line" href="{t['url']}" target="_blank" rel="noopener">See itinerary</a>
         </div>
       </article>"""
 
@@ -292,7 +292,7 @@ CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Mo
 
 def mini_card(t):
     """Small photo-and-title card for the "More sample trips" strip."""
-    return (f'      <a class="tl-mini" href="{t["url"]}"><img src="{img_url(t.get("hero"))}" alt="" loading="lazy" style="{focal(t.get("hero"))}">'
+    return (f'      <a class="tl-mini" href="{t["url"]}" target="_blank" rel="noopener"><img src="{img_url(t.get("hero"))}" alt="" loading="lazy" style="{focal(t.get("hero"))}">'
             f'<span><small>{esc(t.get("country", ""))} &middot; {esc(duration(t))}</small>{esc(t["title"])}</span></a>')
 
 

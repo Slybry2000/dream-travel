@@ -27,13 +27,13 @@
 
   const card = (t) => `
     <article class="dt-trip">
-      <a class="dt-trip__media" href="${esc(t.url)}"><img src="${esc(t.image)}" alt="" loading="lazy"><span class="dt-trip__badge">${esc(t.duration)}</span></a>
+      <a class="dt-trip__media" href="${esc(t.url)}" target="_blank" rel="noopener"><img src="${esc(t.image)}" alt="" loading="lazy"><span class="dt-trip__badge">${esc(t.duration)}</span></a>
       <div class="dt-trip__body">
-        <h3><a href="${esc(t.url)}">${esc(t.title)}</a></h3>
+        <h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)}</a></h3>
         <p><b>Location(s):</b> ${esc((t.locations || []).slice(0, 4).join(', ') || t.country)}</p>
         ${t.tags && t.tags.length ? `<p>${esc(t.tags.join(' | '))}</p>` : ''}
         ${t.overnights ? `<p><b>Overnights:</b> ${esc(t.overnights)}</p>` : ''}
-        <a class="dt-trip__cta" href="${esc(t.url)}">See itinerary</a>
+        <a class="dt-trip__cta" href="${esc(t.url)}" target="_blank" rel="noopener">See itinerary</a>
       </div>
     </article>`;
 
