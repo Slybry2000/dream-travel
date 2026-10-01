@@ -276,3 +276,23 @@ h2 { font-size: clamp(38px, 4vw, 62px); } h3 { font-size: clamp(28px, 2.5vw, 42p
 }
 @media (max-width: 390px) { .site-header .brand span { display: none; } .hero__buttons .button { font-size: 9px; } .mobile-menu { padding: 22px; } .mobile-menu__contact { left: 22px; right: 22px; } .footer-main { grid-template-columns: 1fr; } .footer-brand { grid-column: auto; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; } }
+
+/* Homepage: moderately compact spacing (about a third less air than the shared defaults) */
+.home .section-pad { padding-block: clamp(60px, 7vw, 100px); }
+.home .testimonials { padding-top: 44px; padding-bottom: 52px; }
+.home .discovery-orbit { padding-top: clamp(64px, 6vw, 84px); padding-bottom: 56px; }
+.home .story-sections { padding: clamp(20px, 3vw, 44px); gap: clamp(18px, 3vw, 40px); }
+.home .story-row { min-height: 440px; }
+.home .story-row__copy { padding: clamp(28px, 4vw, 60px) clamp(18px, 3.4vw, 56px); }
+.home .story-row__media { position: relative; min-height: 400px; }
+.home .story-row__media img { position: absolute; inset: 0; }
+.home .story-row__copy h2 { font-size: clamp(34px, 3.4vw, 50px); }
+.home .story-row__copy p { margin-top: 14px; }
+.home .story-row__copy .button { margin-top: 20px; }
+.home .why__grid { margin-top: 40px; }
+.home .final-cta { min-height: 260px; padding-block: 52px; }
+@media (max-width: 760px) {
+  .home .section-pad { padding-block: 60px; }
+  .home .story-row__copy { padding: 40px 14px; }
+  .home .story-row__media { min-height: 62vw; max-height: 420px; }
+}
