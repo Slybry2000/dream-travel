@@ -33,8 +33,30 @@
   state.t = Date.now();
   try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
 
+  /* Visitor code (dt_t): a private 16-character code the journey emails carry for each person. It is made on
+     the Dream Travel server from the address, so it holds no email. Remembered for 90 days so later visits to
+     the site are recognised, and every page view is reported to the planner site's visit log (no IP, no user
+     agent, no cookies) so the customer-journey view can show what each person actually looked at. */
+  var VKEY = 'dt_visitor';
+  var visitor = '';
+  try {
+    var saved = JSON.parse(localStorage.getItem(VKEY) || 'null');
+    if (saved && saved.id && Date.now() - (saved.t || 0) < 90 * 24 * 3600 * 1000) visitor = saved.id;
+    var fresh = q.get('dt_t');
+    if (fresh && /^[0-9a-f]{16}$/.test(fresh)) { visitor = fresh; localStorage.setItem(VKEY, JSON.stringify({ id: fresh, t: Date.now() })); }
+  } catch (e) { var f2 = q.get('dt_t'); if (f2 && /^[0-9a-f]{16}$/.test(f2)) visitor = f2; }
+  if (visitor) {
+    try {
+      var beacon = JSON.stringify({ t: visitor, p: page || location.pathname.replace(/^\/|\/$/g, '') || 'home', s: state.src || '' });
+      var endpoint = 'https://dream-travel-planner.perseidechocreations.workers.dev/api/track';
+      if (!(navigator.sendBeacon && navigator.sendBeacon(endpoint, beacon))) fetch(endpoint, { method: 'POST', body: beacon, keepalive: true, mode: 'no-cors' });
+    } catch (e) {}
+  }
+
   function params() {
-    return { dt_src: state.src || 'direct', dt_path: state.path.join('>') || 'none' };
+    var out = { dt_src: state.src || 'direct', dt_path: state.path.join('>') || 'none' };
+    if (visitor) out.dt_t = visitor;
+    return out;
   }
   window.dtJourneyParams = params;
 
@@ -46,6 +68,7 @@
         var u = new URL(a.href, location.href);
         u.searchParams.set('dt_src', p.dt_src);
         u.searchParams.set('dt_path', p.dt_path);
+        if (p.dt_t) u.searchParams.set('dt_t', p.dt_t);
         a.href = u.toString();
       } else if (href.indexOf('calendly.com/') > -1) {
         var c = new URL(a.href);
