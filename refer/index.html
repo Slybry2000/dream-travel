@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <title>Introduce a friend to Dream Travel</title>
+  <style>
+    :root { --ink:#0b2131; --soft:#4b5b68; --line:#d9e0e7; --bg:#f5f7fb; --accent:#4256d6; --accent-ink:#fff; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    main { max-width: 38rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .5rem; }
+    p.lede { color: var(--soft); margin: 0 0 1.5rem; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.25rem; }
+    label { display:block; font-weight:600; margin:1rem 0 .3rem; }
+    label:first-child { margin-top:0; }
+    .hint { font-weight:400; color:var(--soft); font-size:.9rem; }
+    input[type=email], input[type=text], textarea { width:100%; padding:.7rem .8rem; border:1px solid var(--line); border-radius:9px; font:inherit; background:#fff; color:var(--ink); }
+    textarea { min-height: 11rem; resize: vertical; }
+    .row { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.1rem; }
+    button, a.btn { appearance:none; border:0; border-radius:9px; padding:.8rem 1.1rem; font:600 1rem/1 inherit; cursor:pointer; text-decoration:none; display:inline-block; }
+    .primary { background:var(--accent); color:var(--accent-ink); }
+    .secondary { background:#fff; color:var(--accent); border:1px solid var(--accent); }
+    .copied { color:var(--soft); font-size:.9rem; align-self:center; }
+    .cc { margin-top:1rem; color:var(--soft); font-size:.92rem; }
+    .cc code { background:#eef1f6; padding:.1rem .35rem; border-radius:5px; font-size:.9em; overflow-wrap:anywhere; }
+    .err { color:#a12a2a; font-size:.92rem; min-height:1.2em; margin-top:.5rem; }
+    footer { margin-top:2rem; color:var(--soft); font-size:.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Introduce a friend to Dream Travel</h1>
+  <p class="lede">Thank you for thinking of us. Add their email address and send the note from your own email, so it reaches them as a hello from you. It copies Rene, who will pick it up from there.</p>
+
+  <form class="card" id="f" autocomplete="off" novalidate>
+    <label for="to">Their email address</label>
+    <input id="to" type="email" inputmode="email" placeholder="name@theirstudio.com" required>
+
+    <label for="their">Their first name <span class="hint">(optional)</span></label>
+    <input id="their" type="text" placeholder="e.g. Kacie">
+
+    <label for="me">Your first name <span class="hint">(optional)</span></label>
+    <input id="me" type="text" placeholder="e.g. Robin">
+
+    <label for="msg">The note <span class="hint">(change anything you like)</span></label>
+    <textarea id="msg"></textarea>
+
+    <div class="row">
+      <a class="btn primary" id="gmail" href="#" target="_blank" rel="noopener">Open in Gmail</a>
+      <a class="btn secondary" id="mailapp" href="#">Open in my email app</a>
+      <button type="button" class="secondary" id="copy">Copy the note</button>
+      <span class="copied" id="copied" role="status"></span>
+    </div>
+    <div class="err" id="err" role="alert"></div>
+    <p class="cc">It will copy <code id="cc1"></code> and <code>bryan@dream-travel.net</code>. If you write the note yourself instead, please copy the first address so we can pick it up.</p>
+  </form>
+
+  <footer>Nothing you type here is sent to us or stored. It only fills in an email that you send yourself.</footer>
+</main>
+
+<script src="/journey-path.js?v=2" data-page="refer" defer></script>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var r = (q.get('r') || '').toLowerCase();
+  // tracking address: rene.piard+ref<code>@dream-travel.net lands in Rene's inbox and tells us which introduction this is
+  var cc = /^[0-9a-f]{6,16}$/.test(r) ? 'rene.piard+ref' + r + '@dream-travel.net' : 'rene.piard@dream-travel.net';
+  var bryan = 'bryan@dream-travel.net';
+  var $ = function (id) { return document.getElementById(id); };
+  $('cc1').textContent = cc;
+
+  var edited = false;
+  $('msg').addEventListener('input', function () { edited = true; });
+
+  function draft() {
+    var their = $('their').value.trim(), me = $('me').value.trim();
+    return 'Hi' + (their ? ' ' + their : '') + ',\n\n' +
+      'I wanted to introduce you to Rene Piard at Dream Travel. He plans hosted group trips abroad for studio owners and community leaders, and I thought of you. ' +
+      'I have copied him on this note so he can follow up.\n\n' +
+      'Rene, this is someone I think you should talk to.\n\n' +
+      (me || '');
+  }
+  function refresh() {
+    if (!edited) $('msg').value = draft();
+    var to = $('to').value.trim();
+    var subject = 'An introduction: Rene Piard, Dream Travel';
+    var body = $('msg').value;
+    var enc = encodeURIComponent;
+    $('mailapp').href = 'mailto:' + enc(to) + '?cc=' + enc(cc + ',' + bryan) + '&subject=' + enc(subject) + '&body=' + enc(body);
+    $('gmail').href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + enc(to) + '&cc=' + enc(cc + ',' + bryan) + '&su=' + enc(subject) + '&body=' + enc(body);
+  }
+  ['to', 'their', 'me', 'msg'].forEach(function (id) { $(id).addEventListener('input', refresh); });
+  refresh();
+
+  function needTo(ev) {
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('to').value.trim());
+    $('err').textContent = ok ? '' : 'Please add their email address first.';
+    if (!ok) { ev.preventDefault(); $('to').focus(); }
+    return ok;
+  }
+  $('gmail').addEventListener('click', needTo);
+  $('mailapp').addEventListener('click', needTo);
+  $('f').addEventListener('submit', function (e) { e.preventDefault(); });
+
+  $('copy').addEventListener('click', function () {
+    var text = 'To: ' + $('to').value.trim() + '\nCc: ' + cc + ', ' + bryan + '\nSubject: An introduction: Rene Piard, Dream Travel\n\n' + $('msg').value;
+    var done = function () { $('copied').textContent = 'Copied. Paste it into a new email.'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () { $('msg').select(); });
+    else { $('msg').select(); try { document.execCommand('copy'); done(); } catch (e) {} }
+  });
+})();
+</script>
+</body>
+</html>
