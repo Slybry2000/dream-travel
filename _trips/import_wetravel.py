@@ -114,9 +114,8 @@ def overnights(sections):
 
 def convert(it, url, country_arg):
     raw_title = it["title"]
-    code, _, name = raw_title.partition(" - ")
-    if not name or len(code) > 8:
-        code, name = "", raw_title
+    m = re.match(r"^\s*([A-Za-z]{1,4}\d{1,2})\s*[-–]\s*(.+)$", raw_title)
+    code, name = (m.group(1), m.group(2)) if m else ("", raw_title)
     slug = slugify(name)
 
     trip = {"slug": slug, "title": name.strip(), "code": code.strip(), "source": url,
