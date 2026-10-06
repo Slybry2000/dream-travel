@@ -1,0 +1,424 @@
+{
+  "slug": "bow1-bolivia-sacred-lakes-salt-flats-andean-renewal",
+  "title": "BoW1- Bolivia: Sacred Lakes, Salt Flats & Andean Renewal",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ac50c6a5a2d854f7db2da08",
+  "updated_at": "2026-10-06T15:45:19.475Z",
+  "status": "published",
+  "hero": {
+    "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/Nsss3ojmTvST3qzya032.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 9,
+  "nights": 8,
+  "country": "Bolivia",
+  "locations": [
+    "Copacabana",
+    "Sun's Island",
+    "La Paz",
+    "Uyuni",
+    "Colchani"
+  ],
+  "tags": [],
+  "tagline": "Bolivia: Sacred Lakes, Salt Flats & Andean Renewal",
+  "summary": "Discover a different kind of wellness journey in Bolivia, where quiet moments unfold beside sacred lakes, ancient traditions bring meaning to extraordinary landscapes, and wide-open horizons invite you to slow down. Designed for adults seeking a blend of relaxation, cultural discovery, and outdoor exploration, this nine-day experience connects the islands of Lake Titicaca with the dramatic valleys of La Paz and the vast salt flats of Uyuni.",
+  "pins": [
+    {
+      "name": "Copacabana",
+      "address": "Copacabana, Bolivia",
+      "lat": -16.1655568,
+      "lng": -69.088061
+    },
+    {
+      "name": "Sun's Island",
+      "address": "XV72+VPJ Isla del Sol, Comunidad Yumani, Bolivia",
+      "lat": -16.035737,
+      "lng": -69.1484334
+    },
+    {
+      "name": "La Paz",
+      "address": "La Paz, Bolivia",
+      "lat": -16.494359,
+      "lng": -68.1212091
+    },
+    {
+      "name": "Uyuni",
+      "address": "Uyuni, Bolivia",
+      "lat": -20.461817399999997,
+      "lng": -66.8215967
+    },
+    {
+      "name": "Colchani",
+      "address": "Colchani, Bolivia",
+      "lat": -20.2991788,
+      "lng": -66.9362542
+    }
+  ],
+  "sections": [
+    {
+      "id": "bolivia-sacred-lakes-salt-flats-andean-renewal",
+      "title": "Bolivia: Sacred Lakes, Salt Flats & Andean Renewal",
+      "subtitle": "9 Days / 8 Nights",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/Nsss3ojmTvST3qzya032.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Discover a different kind of wellness journey in Bolivia, where quiet moments unfold beside sacred lakes, ancient traditions bring meaning to extraordinary landscapes, and wide-open horizons invite you to slow down. Designed for adults seeking a blend of relaxation, cultural discovery, and outdoor exploration, this nine-day experience connects the islands of Lake Titicaca with the dramatic valleys of La Paz and the vast salt flats of Uyuni.</strong></p><p><strong>Begin with lakeside walks, sunrise movement, and guided meditation on the Island of the Sun, a place deeply connected to Andean history and Inca origin stories. Continue to La Paz to explore striking natural formations and a city where traditional markets and modern cable cars share the same mountain backdrop. On the Uyuni Salt Flats, enjoy lunches surrounded by an endless white landscape, memorable sunsets, and restorative spa experiences at a hotel built from salt. Throughout the journey, opportunities for reflection are woven into days of discovery, creating space to reconnect with yourself while experiencing a remarkable part of South America.</strong></p>",
+      "gallery": []
+    },
+    {
+      "id": "day-1-across-sacred-waters",
+      "title": "Day 1: Across Sacred Waters",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/7EuQW7tDSaK6jIzEEw37.webp",
+        "x": 30.844594594594593,
+        "y": 50
+      },
+      "html": "<p><strong>Begin your journey in Puno, on the Peruvian side of Lake Titicaca, and travel toward Copacabana,</strong> a lakeside town in Bolivia known for its religious traditions and celebrated basilica. Along the way, enjoy views of the lake and the distant peaks of the <strong>Cordillera Real</strong>. After visiting the <strong>Basilica of Our Lady of Copacabana</strong> and walking through town, board a motorboat to the <strong>Island of the Sun</strong>, an island closely associated with Inca legends. Enjoy a traditional lunch in the Huacani area before visiting Pilkokaina, an ancient Inca temple overlooking the water. An easy-to-moderate uphill walk takes you past agricultural terraces and the <strong>community of Yumani to your ecolodge, where adobe cabins sit among the island’s historic terraces.</strong> Settle in, then join a guided meditation walk to a scenic elevated spot for a peaceful introduction to your surroundings.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/hyuyDJ6JSgmPYL7SosW0.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/Wm40DqT6iaQRr9tnODTQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/QOIXhkEqTKWVsou2nR8N.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/wlpBRQHSeK2Ehnm7p4jo.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/ZCCUoi2CQkSSVX46P2yD.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-2-sunrise-stillness-inca-legends",
+      "title": "Day 2: Sunrise, Stillness & Inca Legends",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/t5OjRLU5RsKVjGHIN1Zx.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Welcome the morning with gentle movement as the first sunlight reaches Lake Titicaca. </strong>This unhurried practice offers a chance to ease into the day while learning about Inti, the sun deity honored in Inca tradition. After breakfast, <strong>walk down toward the port of Yumani, stopping at the Inca Garden and its fountain</strong>, traditionally associated with youth and renewal. Continue by boat to<strong> Chinkana</strong>, an archaeological site on the northern part of the island known for its maze-like stone ruins and nearby Sacred Rock. According to Inca tradition, this area is connected to the origins of Manco Cápac and Mama Ocllo, legendary founders of the Inca civilization. <strong>Explore the site before gathering for guided breathing exercises and meditation, allowing time to appreciate the landscape and its cultural significance.</strong> Return to your ecolodge for another quiet evening on the island.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/nDY8QOwUS1SviZl4N0Bn.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/s7nQhaBRFuqW0eA8dGzw.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/K9qBbpd4R9OyZNcjo7tx.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/ISCMUNHOS2OIGVxB8T2u.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/1p5pQp49TwGSVcJem7jH.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-3-from-sunlight-to-moonlight",
+      "title": "Day 3: From Sunlight to Moonlight",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/p1SElafDTNqQybLivohV.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Rise early for a <strong>walk to a nearby apacheta, a mound of stones traditionally placed as an offering to Pachamama</strong>, or Mother Earth, and other sacred elements of the Andean landscape. A <strong>guided walking meditation provides a thoughtful way to welcome the sunrise before heading to Huacani’s port</strong>. <strong>Travel by boat to the Island of the Moon</strong>, another sacred island of Lake Titicaca, to explore I<strong>ñak Uyu, a temple associated with women chosen for religious service during the Inca period.</strong> Its stonework reflects the influence of several Andean cultures, offering a glimpse into the region’s layered history. Following your visit, <strong>join a group meditation</strong> inspired by the complementary symbolism of the sun and moon. Continue by boat to Copacabana, then travel overland to La Paz, where you will settle into your hotel.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/LXPCsVOkQ0CMXwy0C0Eb.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/oJYH2eRToqTig4ax543p.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/lMWMPh8S7uU0uVZCM74f.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/TO8a8LpRSOUHM8J27szw.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/dGLCBWiSSaUO25M2IZao.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-4-walking-among-the-valley-s-stone-spires",
+      "title": "Day 4: Walking Among the Valley’s Stone Spires",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/BVVDbpaZT7aXmGF9aTPB.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Leave the city behind for a <strong>half-day excursion to the Valley of the Souls, or Valle de las Ánimas.</strong> This dramatic landscape is filled with tall, narrow rock formations shaped by erosion, creating the appearance of stone needles rising from the earth. After an approximately 55-minute private transfer, begin a roughly<strong> three-hour hike along a dry riverbed and trails bordered by these unusual formations</strong>. The route offers an opportunity to experience the rugged scenery outside La Paz, with time to appreciate the textures, scale, and quiet of the surrounding canyons. Enjoy a boxed lunch during the excursion before returning to your hotel.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/H34U8L9bR6GWwkWSnKyf.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/pGeiYkfSAKelQn1swYnP.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/yOCFEbwjTKC6BcAsED7y.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/UmrFBBhsQPmoVYNl0NrW.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-5-an-endless-horizon-a-restorative-evening",
+      "title": "Day 5: An Endless Horizon & a Restorative Evening",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/lftlmrRQSvCvTpJYXuUg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Transfer to the airport for your flight to Uyuni</strong>, the gateway to Bolivia’s famous salt flats. Begin your exploration at the <strong>Train Cemetery,</strong> where weathered locomotives offer a glimpse into the region’s railway past, then visit<strong> Colchani</strong> to learn how local communities harvest and process salt. From here, venture onto the<strong> Salar de Uyuni,</strong> an immense salt-covered landscape stretching across more than 10,500 square kilometers. Enjoy lunch in the middle of the flats and watch the changing colors of sunset sweep across the horizon. Later, <strong>settle into your salt-built hotel </strong>and enjoy an 85-minute aromatherapy spa experience featuring a Jacuzzi, a selection of aromatic essences, fruit and nuts, an organic beverage, and your choice of a facial treatment or therapeutic massage. An optional stargazing excursion is available at an additional cost.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/APbpNCQeRdaRu4LbOi6v.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/Cyfg6BzsRdOP8KsV67IZ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/3VnkHCaeQKeYPi0Zvele.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/OlEvDiVRAS8L8ei6tIDM.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/IWCDPcQJOB3lI6VwOqwS.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-6-cactus-islands-moments-of-renewal",
+      "title": "Day 6: Cactus Islands & Moments of Renewal",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/YCzY0xOzSOu1FduM2lAQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>After breakfast, return to the salt flats to visit <strong>Incahuasi Island</strong>, a rocky outcrop surrounded by white salt and covered with towering cacti. Walking through this unusual setting reveals a striking contrast between the island’s textured terrain and the open expanse around it. Enjoy another lunch on the flats before continuing to <strong>Pucará de Ayque</strong>, a pre-Columbian fortress near the base of <strong>Tunupa volcano</strong>, where nearby chullpas, or ancient funerary towers, offer insight into the region’s earlier inhabitants. Take in another sunset before returning to your hotel for a 65-minute salt-themed wellness experience. This relaxing session combines barefoot walking on salt, breathing exercises, an herbal foot treatment, and facial massage, offering a soothing finish to a day of exploration.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/lRcUheITlyis1rRUcLjp.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/4IAAnWMASjiCzUPwI0Vu.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/AKoqj8E6Twq7vUVkuQh7.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/YNDQI5jmRBmmMqhmwZZG.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/jvuUF2OsTUmJRDPBfBqL.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-7-la-paz-from-streets-to-sky",
+      "title": "Day 7: La Paz from Streets to Sky",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/NYptkVPPT7yqAUgB8WhE.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Transfer to Uyuni’s airport for your return flight to La Paz, followed by transportation to your hotel. Later, <strong>discover the city on a guided half-day tour that introduces its historic streets, local traditions, and remarkable setting</strong> within an Andean valley. Visit the <strong>Witches’ Market</strong>, where stalls display items associated with traditional spiritual practices, and explore the colonial district for a closer look at the city’s architectural heritage. Continue to the <strong>Killi Killi </strong>viewpoint for panoramic views across La Paz, then ride a cable car for another perspective on its steep hillsides and densely woven neighborhoods. This day brings together the city’s cultural character and the mountain scenery that shapes everyday life.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/uWgJiT1xRPi4Ddz02WwM.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/zrDWmlXT5K4KnDudTV0w.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/xWzMk15VSRmkPDZeO42P.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/avBqIwMMSTqIXyjU2TRq.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/3JTzIp5TG6NQR7iqZrwk.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-8-a-walk-through-a-lunar-landscape",
+      "title": "Day 8: A Walk Through a Lunar Landscape",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/3c36omtQzmLBpRgWCZgS.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Explore the<strong> Valley of the Moon</strong>, a distinctive natural area outside central La Paz where erosion has shaped clay formations into towers, ridges, and unusual silhouettes. Travel through the city’s modern southern district before arriving at this otherworldly landscape. Follow marked walking trails and pause at scenic viewpoints to appreciate the formations from different angles. With opportunities for photography and quiet observation, the visit offers a memorable final encounter with Bolivia’s varied terrain and a chance to reflect on the experiences of the past week.</p>",
+      "gallery": [
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/YUvPZ8olSyanil3M6rJT.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/5FkzjhbRU2wVk4EavH2K.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/pnpvEtdhTi5iCeUIY5CQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-9-carrying-the-journey-home",
+      "title": "Day 9: Carrying the Journey Home",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/rXvbWUazT3CQnLYDDxcI.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Enjoy breakfast before your scheduled transfer to the airport for your onward journey. Depart with memories of sacred island sunrises, ancient stone temples, vibrant city streets, and the extraordinary stillness of the salt flats.</p>",
+      "gallery": []
+    },
+    {
+      "id": "what-is-included",
+      "title": "What is included",
+      "subtitle": "",
+      "image": {
+        "src": "images/bow1-bolivia-sacred-lakes-salt-flats-andean-renewal/aqSIuTbAQbuEseaecLMF.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h2>What’s Included</h2><ul><li><p>International round-trip airfare, added to your package.</p></li><li><p>Domestic flights between La Paz and Uyuni</p></li><li><p>Scheduled airport transfers, including transfers associated with the domestic flights.</p></li><li><p>Eight nights of accommodation: two on the Island of the Sun, four in La Paz, and two near the Uyuni Salt Flats.</p></li><li><p>Daily breakfasts, lunches, and dinners (unless specified differently)</p></li><li><p>Private ground transportation and scheduled boat journeys described in the itinerary.</p></li><li><p>English-speaking guides or escorts for scheduled excursions.</p></li><li><p>Listed sightseeing tours, entrance fees, tourist tickets, and contribution fees.</p></li><li><p>Guided meditation, breathing exercises, and gentle sunrise movement as described.</p></li><li><p>The 85-minute aromatherapy spa experience, including a choice of facial treatment or therapeutic massage.</p></li><li><p>The 65-minute salt-themed wellness experience.</p></li><li><p>Applicable taxes on included land services.</p></li></ul><h2>What’s Not Included</h2><ul><li><p>Airport taxes listed separately by the supplier.</p></li><li><p>Drinks during meals, except beverages specifically included in the spa experience.</p></li><li><p>Optional stargazing excursion.</p></li><li><p>Early check-in and late check-out.</p></li><li><p>Hotel extras, personal purchases, and other personal expenses.</p></li><li><p>Additional services or activities not listed as included.</p></li><li><p>Travel insurance</p></li></ul>",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "key": "cth5tay"
+}

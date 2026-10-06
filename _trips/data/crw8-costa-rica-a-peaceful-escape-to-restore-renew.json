@@ -1,0 +1,160 @@
+{
+  "slug": "crw8-costa-rica-a-peaceful-escape-to-restore-renew",
+  "title": "CRW8- Costa Rica: A Peaceful Escape to Restore & Renew",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ac500d8ef9e901bd875130f",
+  "updated_at": "2026-10-06T15:44:34.166Z",
+  "status": "published",
+  "hero": {
+    "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/o6H7ZISDiV4USjxxu6Gg.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 5,
+  "nights": 4,
+  "country": "Costa Rica",
+  "locations": [
+    "San José",
+    "Atenas"
+  ],
+  "tags": [],
+  "tagline": "Costa Rica: A Peaceful Escape to Restore & Renew",
+  "summary": "Give yourself time to slow down, enjoy nourishing meals, and reconnect with the simple pleasure of feeling rested. Based in Atenas, in Costa Rica’s Alajuela province, this adults-focused wellness escape offers a peaceful stay at an intimate luxury retreat, approximately 40 minutes by car from Juan Santamaría International Airport.",
+  "pins": [
+    {
+      "name": "San José",
+      "address": "San José Province, San José, Costa Rica",
+      "lat": 9.9280694,
+      "lng": -84.0907246
+    },
+    {
+      "name": "Atenas",
+      "address": "Alajuela Province, Atenas, Costa Rica",
+      "lat": 9.9787131,
+      "lng": -84.380259
+    }
+  ],
+  "sections": [
+    {
+      "id": "costa-rica-a-peaceful-escape-to-restore-renew",
+      "title": "Costa Rica: A Peaceful Escape to Restore & Renew",
+      "subtitle": "A Five-Day Wellness Retreat in Atenas",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/o6H7ZISDiV4USjxxu6Gg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Give yourself time to slow down, enjoy nourishing meals, and reconnect with the simple pleasure of feeling rested. Based in Atenas, in Costa Rica’s Alajuela province, this adults-focused wellness escape offers a peaceful stay at an intimate luxury retreat, approximately 40 minutes by car from Juan Santamaría International Airport.</strong></p><p><strong>Comfortable accommodations, open-air yoga spaces, three swimming pools, a well-equipped gym, and quiet places to unwind make it easy to shape each day around your own pace. The retreat’s farm-to-table cuisine follows an anti-inflammatory approach, with meals prepared without gluten, dairy, or refined sugars. Breakfast and lunch are plant-forward, while protein is offered at dinner.</strong></p><p><strong>Spend your time exploring the property’s nature paths, relaxing beside the pool, or adding a spa treatment or personalized wellness experience. With one home base throughout your stay, this retreat offers room to settle in and enjoy Costa Rica without the demands of a busy touring schedule.</strong></p><h2></h2>",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-your-costa-rican-escape",
+      "title": "Day 1: Welcome to Your Costa Rican Escape",
+      "subtitle": "",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/3gChx4QkR0eKt2TKg9wf.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p><strong>Welcome to Costa Rica! </strong>Arrive at Juan Santamaría International Airport, the gateway for your stay in Atenas. Transfer from the hotel to the retreat in Atenas. </p><p>After checking into your room, <strong>take time to settle in and explore the pools, gardens, and peaceful spaces around the property</strong>. Your first evening is an opportunity to ease into the slower pace of the retreat and become acquainted with its approach to <strong>nourishing, farm-to-table dining.</strong> </p>",
+      "gallery": [
+        {
+          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/oxPkubaLQe257hQ9AofD.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-2-find-your-own-rhythm",
+      "title": "Day 2: Find Your Own Rhythm",
+      "subtitle": "",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/eDcmtXYYTYGCj89GLUlv.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Begin your first full day with a <strong>plant-forward breakfast</strong> and time to enjoy your surroundings. The retreat’s yoga studio and props are available for group use, providing a setting for gentle movement or a leader-arranged practice. Later, <strong>follow the property’s nature paths on a self-guided walk or spend time beside one of the three pools.</strong> With lunch and dinner served on site, there is no need to rush between activities. Read, rest, swim, or simply enjoy a day with fewer demands on your time.</p>",
+      "gallery": [
+        {
+          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/L4pB0QPSDyx2LcYZHY8l.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-3-make-space-for-rest",
+      "title": "Day 3: Make Space for Rest",
+      "subtitle": "",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/QH20umVQziTGM3Ws1ElK.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Today offers the freedom to focus on what helps you feel refreshed. <strong>Enjoy the pools and relaxation areas, visit the gym, or choose an optional appointment at the spa. </strong>The available treatment menu includes massage, Ayurvedic therapies, and other wellness experiences, allowing you to personalize your stay according to your interests. Between meals, leave time to enjoy the property and the pleasure of an unhurried afternoon.</p>",
+      "gallery": [
+        {
+          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/00rVFCXERS6o6yc60UJS.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-4-follow-your-curiosity",
+      "title": "Day 4: Follow Your Curiosity",
+      "subtitle": "",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/mff86PHSSqeAKwQL5N3S.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Spend your final full day enjoying more of the retreat or adding an experience that interests you. Guests who prefer to remain on site can enjoy another nature walk, pool time, or a private wellness or fitness session booked separately. Rituals, ceremonies, and sessions with visiting practitioners are also possible add-ons, subject to arrangements. End the day with dinner and time to appreciate the moments of rest and connection your stay has offered.</p>",
+      "gallery": [
+        {
+          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/qjiKhsVRK6cXdeqtz5hP.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "day-5-carry-the-calm-home",
+      "title": "Day 5: Carry the Calm Home",
+      "subtitle": "",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/riPh3fyJTGLJEZxejQUg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<p>Enjoy a final quiet morning before checking out, with breakfast available according to your departure time and the confirmed meal arrangements. If your schedule allows, <strong>take a last walk or spend a few moments relaxing before the journey home. </strong>Transfer to Juan Santamaría International Airport. Depart with memories of nourishing meals, peaceful surroundings, and time devoted to yourself.</p>",
+      "gallery": [
+        {
+          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/QgonBB7XSLWGlWTYbter.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "what-is-included",
+      "title": "What is included",
+      "subtitle": "",
+      "image": {
+        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/aqSIuTbAQbuEseaecLMF.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h2>What’s Included</h2><ul><li><p>International round-trip airfare</p></li><li><p>Round-trip airport transportation</p></li><li><p>Four nights of retreat accommodation for this proposed program, with room category and single or double occupancy confirmed at booking.</p></li><li><p>Three daily farm-to-table meals at the retreat’s main restaurant, as provided by the group rate. Arrival- and departure-day meal arrangements will be confirmed.</p></li><li><p>Full access to the yoga studio and yoga props.</p></li><li><p>Access to the retreat’s swimming pools, gym, and relaxation areas.</p></li><li><p>Self-guided nature walks on the property.</p></li></ul><h2>What’s Not Included</h2><ul><li><p>Spa treatments, massages, and Ayurvedic therapies.</p></li><li><p>Tours, excursions, and transportation associated with optional outings.</p></li><li><p>Specialized rituals, ceremonies, and sessions with visiting wellness practitioners.</p></li><li><p>Additional educational, wellness, and fitness activities.</p></li><li><p>Guided yoga classes or private instruction unless expressly included in the finalized group program.</p></li><li><p>Optional dining at the poolside lounge or rooftop fine-dining venue.</p></li><li><p>Room-category upgrades or premium accommodations outside the confirmed group rate.</p></li></ul>",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "key": "nw24xwb"
+}
