@@ -137,7 +137,7 @@ def site_header():
     return f"""  <header class="tl-header">
     <a class="tl-brand" href="/" aria-label="Dream Travel home"><img src="/images/logo-header-2x.webp" alt="" width="75" height="64"><span>Dream Travel</span></a>
     <nav class="tl-header__nav" aria-label="Primary"><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/#hosting">Hosting</a><a href="/#plan">Contact</a></nav>
-    <a class="tl-button tl-button--small" href="/planning/">Plan a trip</a>
+    <a class="tl-button tl-button--small" href="/planning/">Talk with Rene</a>
   </header>"""
 
 
@@ -274,7 +274,7 @@ def split_hero(kicker, lead, script, lede, slides):
         <p class="tl-split__kicker">{kicker}</p>
         <h1><span>{lead}</span> <em>{script}{LOOP}</em></h1>
         <p class="tl-split__lede">{lede}</p>
-        <div class="tl-split__buttons"><a class="tl-button" href="#trips">See the trips</a><a class="tl-button tl-button--ghost" href="/planning/">Plan a custom trip</a></div>
+        <div class="tl-split__buttons"><a class="tl-button" href="#trips">See the trips</a><a class="tl-button tl-button--ghost" href="/planning/">Talk about a custom trip</a></div>
       </div>
     </section>"""
 
@@ -287,7 +287,7 @@ def tabs(lib, by_country, current=None):
         for href, label, on in links) + "</nav>"
 
 
-CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Plan a trip</a></section>"""
+CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Talk with Rene</a></section>"""
 
 
 def mini_card(t):

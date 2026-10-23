@@ -6,8 +6,8 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-  <meta name="description" content="Plan a private group journey with Dream Travel.">
-  <title>Plan your group trip | Dream Travel</title>
+  <meta name="description" content="Tell Dream Travel a little about you and your group, then pick a time to talk with Rene.">
+  <title>Talk with Dream Travel about a group trip</title>
   <style>
     html, body { height: 100%; margin: 0; background: #f5f7fb; }
     iframe { display: block; width: 100%; height: 100%; border: 0; }
@@ -17,14 +17,17 @@
 </head>
 <body>
   <iframe id="planner"
-    title="Dream Travel group trip planner"
+    title="Tell us about you and your group"
     allow="clipboard-write"
     referrerpolicy="strict-origin-when-cross-origin"
   ></iframe>
   <script src="../journey-path.js?v=2" data-page="planning"></script>
   <script>
+    // 2026-10-23 (Bryan): /planning/ is now the one-screen intro; the full planner lives at /planning/full/.
+    // Private "continue planning" links from older planner emails carry ?attempt=...: send those to the full planner.
+    if (new URLSearchParams(location.search).has('attempt')) location.replace('full/' + location.search);
     const planner = document.getElementById('planner');
-    const destination = new URL('https://dream-travel-planner.perseidechocreations.workers.dev/');
+    const destination = new URL('https://dream-travel-planner.perseidechocreations.workers.dev/intro');
     destination.search = location.search;
     if (window.dtJourneyParams) {
       const route = window.dtJourneyParams();
@@ -33,7 +36,7 @@
     planner.src = destination.toString();
   </script>
   <noscript>
-    <p class="fallback">JavaScript is required for the planner. <a href="https://dream-travel-planner.perseidechocreations.workers.dev/">Open the Dream Travel planner</a>.</p>
+    <p class="fallback">JavaScript is required for this form. <a href="https://dream-travel-planner.perseidechocreations.workers.dev/intro">Open it here</a>, or write to <a href="mailto:go@dream-travel.net">go@dream-travel.net</a>.</p>
   </noscript>
 </body>
 </html>
