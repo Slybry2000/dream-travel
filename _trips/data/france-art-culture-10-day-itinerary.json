@@ -1,0 +1,270 @@
+{
+  "slug": "france-art-culture-10-day-itinerary",
+  "title": "France Art Culture 10 Day Itinerary",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adb9f2abf3af2676120f89b",
+  "updated_at": "2026-10-23T17:59:23.768Z",
+  "status": "published",
+  "hero": {
+    "src": "images/france-art-culture-10-day-itinerary/hNbhjuyMQaG2hlEnPleA.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "France",
+  "locations": [
+    "Paris",
+    "Chartres Cathedral",
+    "Maison Picassiette",
+    "Château de Chenonceau",
+    "Château du Clos Lucé",
+    "Carnac Standing Stones",
+    "Pont-Aven",
+    "Musée de Pont-Aven",
+    "Château de Comper",
+    "Paimpont",
+    "Dinan",
+    "Mont-Saint-Michel",
+    "Bayeux",
+    "Bayeux Tapestry Museum",
+    "D-Day Landing Beaches",
+    "Giverny (Monet's House and Gardens)",
+    "Eiffel Tower"
+  ],
+  "tags": [],
+  "tagline": "France: An Artistic & Cultural Journey",
+  "summary": "Experience the rich artistic and cultural heritage of France on a journey through Paris, the Loire Valley, Brittany, Normandy, and Giverny. Explore iconic landmarks, historic villages, and world-renowned art, while enjoying regional cuisine, workshops, and immersive local traditions.",
+  "pins": [
+    {
+      "name": "Paris",
+      "address": "Paris, France",
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    {
+      "name": "Chartres Cathedral",
+      "address": "16 Cloître Notre Dame, 28000 Chartres, France",
+      "lat": 48.4473,
+      "lng": 1.487
+    },
+    {
+      "name": "Maison Picassiette",
+      "address": "22 Rue du Repos, 28000 Chartres, France",
+      "lat": 48.4456,
+      "lng": 1.4992
+    },
+    {
+      "name": "Château de Chenonceau",
+      "address": "37150 Chenonceaux, France",
+      "lat": 47.3247,
+      "lng": 1.07
+    },
+    {
+      "name": "Château du Clos Lucé",
+      "address": "2 Rue du Clos Lucé, 37400 Amboise, France",
+      "lat": 47.4106,
+      "lng": 0.9917
+    },
+    {
+      "name": "Carnac Standing Stones",
+      "address": "Alignements de Carnac, 56340 Carnac, France",
+      "lat": 47.6036,
+      "lng": -3.0814
+    },
+    {
+      "name": "Pont-Aven",
+      "address": "29930 Pont-Aven, France",
+      "lat": 47.8556,
+      "lng": -3.7497
+    },
+    {
+      "name": "Musée de Pont-Aven",
+      "address": "Place de l'Hôtel de Ville, 29930 Pont-Aven, France",
+      "lat": 47.8562,
+      "lng": -3.7492
+    },
+    {
+      "name": "Château de Comper",
+      "address": "56430 Concoret, France",
+      "lat": 48.0667,
+      "lng": -2.2667
+    },
+    {
+      "name": "Paimpont",
+      "address": "35380 Paimpont, France",
+      "lat": 48.0181,
+      "lng": -2.1717
+    },
+    {
+      "name": "Dinan",
+      "address": "22100 Dinan, France",
+      "lat": 48.4544,
+      "lng": -2.047
+    },
+    {
+      "name": "Mont-Saint-Michel",
+      "address": "50170 Le Mont-Saint-Michel, France",
+      "lat": 48.6361,
+      "lng": -1.5115
+    },
+    {
+      "name": "Bayeux",
+      "address": "14400 Bayeux, France",
+      "lat": 49.2768,
+      "lng": -0.7039
+    },
+    {
+      "name": "Bayeux Tapestry Museum",
+      "address": "13B Rue de Nesmond, 14400 Bayeux, France",
+      "lat": 49.2762,
+      "lng": -0.7031
+    },
+    {
+      "name": "D-Day Landing Beaches",
+      "address": "Omaha Beach, 14710 Colleville-sur-Mer, France",
+      "lat": 49.3764,
+      "lng": -0.8828
+    },
+    {
+      "name": "Giverny (Monet's House and Gardens)",
+      "address": "84 Rue Claude Monet, 27620 Giverny, France",
+      "lat": 49.0755,
+      "lng": 1.5331
+    },
+    {
+      "name": "Eiffel Tower",
+      "address": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+      "lat": 48.8584,
+      "lng": 2.2945
+    }
+  ],
+  "sections": [
+    {
+      "id": "france-an-artistic-cultural-journey",
+      "title": "France: An Artistic & Cultural Journey",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/hNbhjuyMQaG2hlEnPleA.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>France: An Artistic & Cultural Journey</h4>\nExperience the rich artistic and cultural heritage of France on a journey through Paris, the Loire Valley, Brittany, Normandy, and Giverny. Explore iconic landmarks, historic villages, and world-renowned art, while enjoying regional cuisine, workshops, and immersive local traditions.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-paris",
+      "title": "Day 1 - Welcome to Paris",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/JfiIqklFTkK3nQS8bUq2.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrive in Paris and settle in</h4>\nArrive in Paris and settle in. Enjoy time at leisure to explore the neighborhood, discover a café, or take an evening stroll through the French capital.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-chartres-the-loire-valley",
+      "title": "Day 2 - Chartres & the Loire Valley",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/WrVOlYZ1QwSU259rkcgJ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel from Paris toward the Loire Valley</h4>\nTravel from Paris toward the Loire Valley. Stop in Chartres for a guided visit of its celebrated Gothic cathedral and the famous labyrinth. Discover the extraordinary mosaic-covered Maison Picassiette before continuing to the Loire Valley.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-ch-teaux-art-wine-in-the-loire",
+      "title": "Day 3 - Châteaux, Art & Wine in the Loire",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/R1C10p4iT0uaVBOx9hA6.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit Château de Chenonceau</h4>\nVisit the elegant Château de Chenonceau, spanning the River Cher.\n<h4>Regional Wine Tasting</h4>\nEnjoy a regional wine tasting.\n<h4>Explore Château du Clos Lucé</h4>\nExplore Château du Clos Lucé, Leonardo da Vinci’s final residence, and its creative legacy.\n<h4>Dinner at Clos Lucé</h4>\nDinner is planned at Clos Lucé.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-carnac-brittany",
+      "title": "Day 4 - Carnac & Brittany",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/pLNoVFSXRnKj6oa2IAih.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Head west into Brittany and discover Carnac</h4>\nHead west into Brittany and discover Carnac, renowned for its remarkable prehistoric standing stones, on a guided visit. Continue into the Breton countryside and enjoy a relaxing evening.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-pont-aven-in-the-footsteps-of-gauguin",
+      "title": "Day 5 - Pont-Aven: In the Footsteps of Gauguin",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Discover Pont-Aven, the artists’ village</h4>\nDiscover Pont-Aven, the picturesque artists’ village associated with Paul Gauguin and the Pont-Aven School. Enjoy a guided walk through the village and its galleries, visit the Musée de Pont-Aven, and take part in an art workshop.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-legends-traditions-of-broc-liande",
+      "title": "Day 6 - Legends & Traditions of Brocéliande",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Immerse yourself in Brittany’s folklore</h4>\nImmerse yourself in Brittany’s folklore with a visit to the Château de Comper and a storytelling walk inspired by the legend of the fairy Viviane. Explore Paimpont and the interactive Porte des Secrets experience.\n<h4>Visit a traditional forge for a blacksmith demonstration</h4>\nVisit a traditional forge for a blacksmith demonstration.\n<h4>Breton galette-making demonstration and festive regional dinner</h4>\nEnjoy a Breton galette-making demonstration followed by a festive regional dinner with traditional music and dancing.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-dinan-mont-saint-michel",
+      "title": "Day 7 - Dinan & Mont-Saint-Michel",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/BOroC5yMTuuuu6DUraFg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel through historic Dinan</h4>\nTravel through historic Dinan, with time for lunch, before continuing to magnificent Mont-Saint-Michel.\n<h4>Explore Mont-Saint-Michel and its medieval abbey</h4>\nExplore this extraordinary tidal-island village and its medieval abbey.\n<h4>Continue to Bayeux in Normandy</h4>\nContinue to Bayeux in Normandy.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-normandy-flavors-d-day-history",
+      "title": "Day 8 - Normandy: Flavors & D-Day History",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/frUuBc6TEayEpCeBeSg3.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Cheese-making visit and tasting</h4>\nDiscover Normandy’s culinary traditions with a cheese-making visit and tasting.\n<h4>Guided exploration of the D-Day landing beaches</h4>\nContinue with a guided exploration of the D-Day landing beaches and the region’s moving World War II history.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-bayeux-tapestry-and-monet-s-giverny",
+      "title": "Day 9 - Bayeux Tapestry and Monet’s Giverny",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/nSKOOuGAT6yST6xTtHkQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit the renowned Bayeux Tapestry</h4>\nVisit the renowned Bayeux Tapestry.\n<h4>Travel to Giverny to discover Claude Monet’s house and gardens</h4>\nTravel to Giverny to discover Claude Monet’s house and gardens, a living source of Impressionist inspiration.\n<h4>Art workshop in Giverny</h4>\nAn art workshop is planned in Giverny before returning to Paris.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-paris-at-your-own-pace",
+      "title": "Day 10 - Paris at Your Own Pace",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-art-culture-10-day-itinerary/XRfRMm87QXKtqtcJ4asE.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Free day in Paris</h4>\nEnjoy a free day in Paris to visit museums, browse galleries, shop, or explore favorite neighborhoods.\n<h4>Special dinner at the Eiffel Tower</h4>\nConclude the journey with a special dinner experience at the Eiffel Tower, as envisioned in the original program.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "key": "cw9haun"
+}
