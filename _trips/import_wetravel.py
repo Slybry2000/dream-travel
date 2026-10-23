@@ -89,8 +89,17 @@ def image_ref(img, slug):
     out = IMAGES / slug / f"{handle}.webp"
     if not out.exists():
         out.parent.mkdir(parents=True, exist_ok=True)
-        url = f"https://cdn.filestackcontent.com/rotate=deg:exif/resize=fit:max,width:1800/output=format:webp/quality=v:78/{handle}"
-        out.write_bytes(fetch(url))
+        base = "https://cdn.filestackcontent.com"
+        # Filestack refuses to convert some images (400); try a plain resize, then skip the photo.
+        for url in (f"{base}/rotate=deg:exif/resize=fit:max,width:1800/output=format:webp/quality=v:78/{handle}",
+                    f"{base}/resize=fit:max,width:1800/output=format:webp/{handle}"):
+            try:
+                out.write_bytes(fetch(url))
+                break
+            except urllib.error.HTTPError as e:
+                print(f"  photo {handle}: {e.code} from {url.split('/' + handle)[0]}", file=sys.stderr)
+        else:
+            return None
     pos = (img.get("metadata") or {}).get("position") or {"x": 50, "y": 50}
     return {"src": f"images/{slug}/{handle}.webp", "x": pos.get("x", 50), "y": pos.get("y", 50)}
 

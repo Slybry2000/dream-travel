@@ -1,0 +1,280 @@
+{
+  "slug": "provence-art-culture-11-day-itinerary",
+  "title": "Provence Art Culture 11 Day Itinerary",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adbaf8e7c222e294586a9aa",
+  "updated_at": "2026-10-23T19:08:04.506Z",
+  "status": "published",
+  "hero": {
+    "src": "images/provence-art-culture-11-day-itinerary/DO1HLmMyTRa2U6qKTqS8.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 11,
+  "nights": 10,
+  "country": "France",
+  "locations": [
+    "Paris",
+    "Montmartre & Sacré-Cœur Basilica",
+    "Place du Tertre",
+    "Notre-Dame Cathedral",
+    "Sainte-Chapelle",
+    "Aix-en-Provence",
+    "Atelier de Cézanne",
+    "Peyrolles-en-Provence",
+    "Camargue",
+    "Le Grau-du-Roi",
+    "Cassis",
+    "Mucem, Marseille",
+    "Arles",
+    "Château La Coste",
+    "Chartres Cathedral",
+    "Maison Picassiette"
+  ],
+  "tags": [],
+  "tagline": "Adventure in Provence: 11-Day Art, Culture & Heritage Journey",
+  "summary": "Experience the creative spirit of France, from Parisian landmarks and Cézanne’s studio to mosaic art, Mediterranean landscapes and the traditions of Provence.",
+  "pins": [
+    {
+      "name": "Paris",
+      "address": "Paris, France",
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    {
+      "name": "Montmartre & Sacré-Cœur Basilica",
+      "address": "35 Rue du Chevalier de la Barre, 75018 Paris, France",
+      "lat": 48.8867,
+      "lng": 2.3431
+    },
+    {
+      "name": "Place du Tertre",
+      "address": "Place du Tertre, 75018 Paris, France",
+      "lat": 48.8862,
+      "lng": 2.3408
+    },
+    {
+      "name": "Notre-Dame Cathedral",
+      "address": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France",
+      "lat": 48.853,
+      "lng": 2.3499
+    },
+    {
+      "name": "Sainte-Chapelle",
+      "address": "8 Boulevard du Palais, 75001 Paris, France",
+      "lat": 48.8554,
+      "lng": 2.345
+    },
+    {
+      "name": "Aix-en-Provence",
+      "address": "Aix-en-Provence, France",
+      "lat": 43.5297,
+      "lng": 5.4474
+    },
+    {
+      "name": "Atelier de Cézanne",
+      "address": "9 Avenue Paul Cézanne, 13100 Aix-en-Provence, France",
+      "lat": 43.5372,
+      "lng": 5.4566
+    },
+    {
+      "name": "Peyrolles-en-Provence",
+      "address": "Peyrolles-en-Provence, France",
+      "lat": 43.6472,
+      "lng": 5.5617
+    },
+    {
+      "name": "Camargue",
+      "address": "Camargue, France",
+      "lat": 43.5167,
+      "lng": 4.4167
+    },
+    {
+      "name": "Le Grau-du-Roi",
+      "address": "Le Grau-du-Roi, France",
+      "lat": 43.5381,
+      "lng": 4.1361
+    },
+    {
+      "name": "Cassis",
+      "address": "Cassis, France",
+      "lat": 43.215,
+      "lng": 5.5406
+    },
+    {
+      "name": "Mucem, Marseille",
+      "address": "7 Promenade Robert Laffont, 13002 Marseille, France",
+      "lat": 43.2965,
+      "lng": 5.3619
+    },
+    {
+      "name": "Arles",
+      "address": "Arles, France",
+      "lat": 43.6766,
+      "lng": 4.6278
+    },
+    {
+      "name": "Château La Coste",
+      "address": "2750 Route de la Cride, 13610 Le Puy-Sainte-Réparade, France",
+      "lat": 43.6272,
+      "lng": 5.3972
+    },
+    {
+      "name": "Chartres Cathedral",
+      "address": "16 Cloître Notre Dame, 28000 Chartres, France",
+      "lat": 48.4474,
+      "lng": 1.487
+    },
+    {
+      "name": "Maison Picassiette",
+      "address": "22 Rue du Repos, 28000 Chartres, France",
+      "lat": 48.4457,
+      "lng": 1.4992
+    }
+  ],
+  "sections": [
+    {
+      "id": "adventure-in-provence-11-day-art-culture-heritage-journey",
+      "title": "Adventure in Provence: 11-Day Art, Culture & Heritage Journey",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/DO1HLmMyTRa2U6qKTqS8.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Adventure in Provence: 11-Day Art, Culture & Heritage Journey</h4>\nExperience the creative spirit of France, from Parisian landmarks and Cézanne’s studio to mosaic art, Mediterranean landscapes and the traditions of Provence.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-paris",
+      "title": "Day 1 - Welcome to Paris",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/rh5pRSTaQfOokrJugcUU.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrive in Paris</h4>\nArrive in Paris and settle into your accommodations. Enjoy time to explore the neighborhood at your own pace and discover the atmosphere of the French capital.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-paris-montmartre-and-historic-treasures",
+      "title": "Day 2 - Paris: Montmartre and Historic Treasures",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/W21YkAQMOnMW1kIvbwuQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Panoramic sightseeing drive in Paris</h4>\nDiscover Paris on a panoramic sightseeing drive.\n<h4>Explore Montmartre, Sacré-Cœur Basilica, and Place du Tertre</h4>\nExplore Montmartre, the Sacré-Cœur Basilica and artists’ Place du Tertre.\n<h4>Île de la Cité, Notre-Dame Cathedral, and Sainte-Chapelle</h4>\nContinue toward Île de la Cité to admire Notre-Dame Cathedral and visit the exquisite stained-glass chapel of Sainte-Chapelle.\n<h4>Evening at leisure</h4>\nThe evening is yours to enjoy.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-high-speed-train-to-provence",
+      "title": "Day 3 - High-Speed Train to Provence",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/RzzH0vjSGCoKC1OhbjOb.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>High-speed train to Provence</h4>\nTravel south by high-speed train to Provence and continue to Aix-en-Provence.\n<h4>Settle in and free time in Aix-en-Provence</h4>\nSettle in and enjoy free time to wander its elegant streets, fountains, cafés and lively squares.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-c-zanne-and-contemporary-mosaics",
+      "title": "Day 4 - Cézanne and Contemporary Mosaics",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/HQv7sgSQDWXORidXdAG4.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Browse the Grand Market of Aix-en-Provence</h4>\nBrowse the colorful Grand Market of Aix-en-Provence.\n<h4>Visit Atelier de Cézanne</h4>\nVisit the Atelier de Cézanne, where the artist worked.\n<h4>Meet mosaic artist Larissa Perekrestova-Clion in Peyrolles</h4>\nTravel to Peyrolles to meet mosaic artist Larissa Perekrestova-Clion, visit her studio and discover examples of her work around the village.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-camargue-landscapes-and-traditions",
+      "title": "Day 5 - Camargue: Landscapes and Traditions",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/D3bvTRr4TceiFGjrTzUq.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Scenic boat excursion in the Camargue</h4>\nJourney to the Camargue for a scenic boat excursion through this distinctive southern landscape.\n<h4>Visit a traditional manade (ranch)</h4>\nVisit a traditional manade (ranch) and enjoy a special regional meal accompanied by flamenco music and dance.\n<h4>Regional meal with flamenco music and dance</h4>\nEnjoy a special regional meal accompanied by flamenco music and dance at a traditional manade.\n<h4>Visit Le Grau-du-Roi</h4>\nSpend time in the seaside town of Le Grau-du-Roi before returning to Aix.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-cassis-and-marseille",
+      "title": "Day 6 - Cassis and Marseille",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/2vGWtys6SPyTIBD5XGtE.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Explore Cassis harbor and waterfront</h4>\nDiscover the Mediterranean charm of Cassis, with time to explore its harbor and waterfront.\n<h4>Guided visit of Mucem in Marseille</h4>\nContinue to Marseille for a guided visit of Mucem, the Museum of European and Mediterranean Civilisations.\n<h4>Free time in Marseille</h4>\nEnjoy free time in the city of Marseille after your guided visit.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-arles-and-the-world-of-van-gogh",
+      "title": "Day 7 - Arles and the World of Van Gogh",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/OZbO8XRTKKw2NHGc2cfg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided walking tour of Arles inspired by Van Gogh</h4>\nExplore Arles on a guided walking tour inspired by Vincent van Gogh.\n<h4>Discover Arles' Roman heritage and amphitheater</h4>\nDiscover the city’s Roman heritage, including its famous amphitheater.\n<h4>Lunch and independent exploration in Arles</h4>\nEnjoy time for lunch and independent exploration before returning to Aix for a relaxed afternoon.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-art-architecture-and-proven-al-flavors",
+      "title": "Day 8 - Art, Architecture and Provençal Flavors",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Visit Château La Coste for art and architecture trail</h4>\nVisit Château La Coste for a guided walk through its art-and-architecture trail and a wine tasting.\n<h4>Lunch at leisure</h4>\nEnjoy lunch at leisure.\n<h4>Cheese tasting at a local farm</h4>\nStop at a local farm for a cheese tasting.\n<h4>Evening in Aix-en-Provence</h4>\nReturn to Aix-en-Provence for an evening in town.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-return-to-paris-and-seine-dinner-cruise",
+      "title": "Day 9 - Return to Paris and Seine Dinner Cruise",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/90GnSzWdSEm8900gthHp.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>High-speed train to Paris</h4>\nTravel back to Paris by high-speed train.\n<h4>Seine dinner cruise</h4>\nIn the evening, enjoy a special dinner aboard a boat on the Seine, followed by a scenic cruise past the city’s illuminated landmarks.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-paris-at-leisure-or-optional-chartres-excursion",
+      "title": "Day 10 - Paris at Leisure or Optional Chartres Excursion",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/tHDoBlZkTXirRs6cKozD.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Paris at Leisure or Optional Chartres Excursion</h4>\nEnjoy a free day to explore Paris independently. Alternatively, join an optional excursion to Chartres, with a stop at Rudolf Nureyev’s grave, a guided visit of Chartres Cathedral and a visit to the remarkable mosaic-covered Maison Picassiette.",
+      "gallery": []
+    },
+    {
+      "id": "day-11-au-revoir-france",
+      "title": "Day 11 - Au Revoir, France",
+      "subtitle": "",
+      "image": {
+        "src": "images/provence-art-culture-11-day-itinerary/ePtjNeh8SvK7r3yWxC0q.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Breakfast</h4>\nAfter breakfast, conclude your journey and make your onward travel arrangements.\n<h4>Departure from France</h4>\nConclude your journey and make your onward travel arrangements.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "category": "Art & Culture",
+  "key": "s7wsvs7"
+}

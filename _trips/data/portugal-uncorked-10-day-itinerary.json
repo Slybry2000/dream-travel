@@ -1,0 +1,198 @@
+{
+  "slug": "portugal-uncorked-10-day-itinerary",
+  "title": "Portugal Uncorked 10 Day Itinerary",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adbaf227c222e294586a8b0",
+  "updated_at": "2026-10-23T19:06:57.633Z",
+  "status": "published",
+  "hero": {
+    "src": "images/portugal-uncorked-10-day-itinerary/aCyaipF5S5kgZCvEKGTx.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "Portugal",
+  "locations": [
+    "Lisbon",
+    "Sintra",
+    "Tomar",
+    "Óbidos",
+    "Conímbriga",
+    "Porto"
+  ],
+  "tags": [],
+  "tagline": "Portugal Uncorked: Art, Culture & Culinary Journey",
+  "summary": "Experience Portugal’s vibrant cities and rich heritage on a journey through Lisbon, Sintra, Tomar, Óbidos, Conímbriga, and Porto. Discover historic monuments, contemporary art, medieval towns, Roman ruins, and local wine traditions, culminating in immersive workshops and culinary delights across this captivating country.",
+  "pins": [
+    {
+      "name": "Lisbon",
+      "address": "Lisbon, Portugal",
+      "lat": 38.7223,
+      "lng": -9.1393
+    },
+    {
+      "name": "Sintra",
+      "address": "Sintra, Portugal",
+      "lat": 38.8029,
+      "lng": -9.3817
+    },
+    {
+      "name": "Tomar",
+      "address": "Tomar, Portugal",
+      "lat": 39.6031,
+      "lng": -8.4094
+    },
+    {
+      "name": "Óbidos",
+      "address": "Óbidos, Portugal",
+      "lat": 39.3601,
+      "lng": -9.1569
+    },
+    {
+      "name": "Conímbriga",
+      "address": "Conímbriga, Condeixa-a-Velha, Portugal",
+      "lat": 40.0922,
+      "lng": -8.4986
+    },
+    {
+      "name": "Porto",
+      "address": "Porto, Portugal",
+      "lat": 41.1579,
+      "lng": -8.6291
+    }
+  ],
+  "sections": [
+    {
+      "id": "portugal-uncorked-art-culture-culinary-journey",
+      "title": "Portugal Uncorked: Art, Culture & Culinary Journey",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/aCyaipF5S5kgZCvEKGTx.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Portugal Uncorked: Art, Culture & Culinary Journey</h4>\nExperience Portugal’s vibrant cities and rich heritage on a journey through Lisbon, Sintra, Tomar, Óbidos, Conímbriga, and Porto. Discover historic monuments, contemporary art, medieval towns, Roman ruins, and local wine traditions, culminating in immersive workshops and culinary delights across this captivating country.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-lisbon",
+      "title": "Day 1 - Welcome to Lisbon",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/dYbGNHcZTvm4mgj6cchU.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrive in Lisbon</h4>\nArrive in Portugal’s lively capital and settle in. Meet your English-speaking tour conductor and fellow travelers at an informal welcome gathering. Enjoy the evening at leisure in Lisbon.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-lisbon-monuments-and-contemporary-art",
+      "title": "Day 2 - Lisbon: Monuments and Contemporary Art",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/VKfr5mYTA2y0JRi5A4o0.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided Panoramic City Tour of Lisbon</h4>\nExplore Lisbon on a guided panoramic city tour. Discover the historic Belém district and visit the magnificent Jerónimos Monastery, celebrated for its distinctive Manueline architecture.\n<h4>Visit to Banksy Museum</h4>\nIn the afternoon, visit the Banksy Museum for a contrasting look at contemporary street art.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-portuguese-tiles-and-wine-traditions",
+      "title": "Day 3 - Portuguese Tiles and Wine Traditions",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Visit to National Tile Museum</h4>\nVisit the National Tile Museum, housed in the former Madre de Deus convent, and trace the history of Portugal’s celebrated azulejo tiles from the 15th century onward.\n<h4>Wine Estate Visit and Tasting</h4>\nTravel to a wine estate outside Lisbon for a guided visit and tasting of regional wines accompanied by savory snacks.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-sintra-s-palaces-and-historic-tomar",
+      "title": "Day 4 - Sintra’s Palaces and Historic Tomar",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/Y3T6pKmRQMiJ9WKF603z.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit Pena Palace and Gardens in Sintra</h4>\nTravel to enchanting Sintra to explore the colorful Pena Palace and its gardens.\n<h4>Explore Quinta da Regaleira</h4>\nVisit the mysterious Quinta da Regaleira, renowned for its symbolic architecture and landscaped grounds.\n<h4>Orientation Walk in Tomar</h4>\nContinue to Tomar for an orientation walk through its historic center, with the Convent of Christ and old synagogue considered as time permits.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-medieval-bidos-and-a-vineyard-visit",
+      "title": "Day 5 - Medieval Óbidos and a Vineyard Visit",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/dqgST7uLQEyDLOvqyxCj.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Discover Óbidos</h4>\nDiscover Óbidos, a beautifully preserved medieval town with cobbled lanes, whitewashed houses, and picturesque walls.\n<h4>Free Time for Lunch and Exploration in Óbidos</h4>\nEnjoy free time for lunch and exploration in Óbidos.\n<h4>Visit a Local Wine Estate for Tasting</h4>\nVisit a local wine estate for a tasting paired with tapas.\n<h4>Return to Tomar for the Evening</h4>\nReturn to Tomar for the evening.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-roman-heritage-and-porto",
+      "title": "Day 6 - Roman Heritage and Porto",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/pM4N6T62SMuG2nVXHlvr.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit Conimbriga Archaeological Site and Museum</h4>\nJourney north, stopping at the archaeological site and museum of Conímbriga to discover Portugal’s Roman past.\n<h4>Guided Introduction to Porto</h4>\nContinue to Porto, where a guided afternoon introduction reveals the city’s historic streets, distinctive architecture, and riverside atmosphere.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-porto-and-the-douro-river",
+      "title": "Day 7 - Porto and the Douro River",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/1WjyAew8RRKljAxHnWI5.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided Morning Tour of Porto</h4>\nContinue discovering Porto on a guided morning tour.\n<h4>Douro River Cruise on Rabelo-Style Boat</h4>\nBoard a traditional rabelo-style boat for a scenic cruise along the Douro River, admiring Porto’s waterfront and famous bridges.\n<h4>Free Time to Explore Porto</h4>\nEnjoy free time to explore at your own pace.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-return-to-lisbon-and-cork-craft-workshop",
+      "title": "Day 8 - Return to Lisbon and Cork Craft Workshop",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/zUnjThsmQXa3aeZVJtCD.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel back to Lisbon</h4>\nTravel back to Lisbon.\n<h4>Portuguese Cork Workshop</h4>\nTake part in a hands-on Portuguese cork workshop. Learn about this distinctive local material and create two small items to bring home as personal souvenirs.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-lisbon-street-art-and-farewell-dinner",
+      "title": "Day 9 - Lisbon Street Art and Farewell Dinner",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/BdoLQwA1TGyS3ArJtK6R.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided Street-Art Walking Tour with Tuk-Tuk</h4>\nExplore Lisbon’s vibrant urban art scene on a guided street-art walking tour, with tuk-tuk transportation arranged for the outing.\n<h4>Afternoon at Leisure</h4>\nSpend the afternoon at leisure before gathering for a special farewell dinner featuring Portuguese flavors.\n<h4>Farewell Dinner</h4>\nGather for a special farewell dinner featuring Portuguese flavors.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-departure",
+      "title": "Day 10 - Departure",
+      "subtitle": "",
+      "image": {
+        "src": "images/portugal-uncorked-10-day-itinerary/8QGfUXVYSTinLekVuMpS.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Breakfast</h4>\nEnjoy breakfast and conclude your Portuguese journey.\n<h4>Departure</h4>\nMake your own way to the airport for your onward flight.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "category": "Art & Culture",
+  "key": "g2uxdbh"
+}

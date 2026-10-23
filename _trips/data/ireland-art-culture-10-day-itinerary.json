@@ -1,0 +1,307 @@
+{
+  "slug": "ireland-art-culture-10-day-itinerary",
+  "title": "Ireland Art Culture 10 Day Itinerary",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adbacbfbf3af26761211f96",
+  "updated_at": "2026-10-23T18:57:02.086Z",
+  "status": "published",
+  "hero": {
+    "src": "images/ireland-art-culture-10-day-itinerary/nT2VIVnyRSmCdslOG848.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "Ireland",
+  "locations": [
+    "Dublin",
+    "Trinity College Dublin",
+    "St. Patrick’s Cathedral",
+    "Temple Bar",
+    "Ulysses Rare Books",
+    "Hill of Tara",
+    "Marble Arch Caves Global Geopark",
+    "Enniskillen Castle",
+    "Donegal",
+    "Giant’s Causeway",
+    "Old Bushmills Distillery",
+    "Donegal Craft Village",
+    "Sligo",
+    "Kiltimagh",
+    "Cliffs of Moher",
+    "Listowel",
+    "Killarney",
+    "Kerry Bog Village Museum",
+    "Muckross House and Gardens",
+    "Blarney Woollen Mills",
+    "Rock of Cashel"
+  ],
+  "tags": [],
+  "tagline": "10-Day Ireland: Art, Heritage & Scenic Landscapes",
+  "summary": "Experience Ireland’s vibrant culture, storied heritage, and breathtaking scenery on a 10-day journey. Explore Dublin’s historic streets, marvel at the Giant’s Causeway, discover artisan crafts, and travel through iconic landscapes from the Cliffs of Moher to the Ring of Kerry. Enjoy a blend of art, history, and natural beauty.",
+  "pins": [
+    {
+      "name": "Dublin",
+      "address": "Dublin, Ireland",
+      "lat": 53.349805,
+      "lng": -6.26031
+    },
+    {
+      "name": "Trinity College Dublin",
+      "address": "College Green, Dublin 2, Ireland",
+      "lat": 53.3437935,
+      "lng": -6.2545726
+    },
+    {
+      "name": "St. Patrick’s Cathedral",
+      "address": "St Patrick's Close, Dublin 8, Ireland",
+      "lat": 53.339444,
+      "lng": -6.271944
+    },
+    {
+      "name": "Temple Bar",
+      "address": "Temple Bar, Dublin, Ireland",
+      "lat": 53.3456,
+      "lng": -6.2643
+    },
+    {
+      "name": "Ulysses Rare Books",
+      "address": "10 Duke St, Dublin 2, Ireland",
+      "lat": 53.342007,
+      "lng": -6.258274
+    },
+    {
+      "name": "Hill of Tara",
+      "address": "Hill of Tara, Dunsany, Co. Meath, Ireland",
+      "lat": 53.578056,
+      "lng": -6.610833
+    },
+    {
+      "name": "Marble Arch Caves Global Geopark",
+      "address": "43 Marlbank Rd, Florencecourt, Enniskillen BT92 1EW, UK",
+      "lat": 54.2511,
+      "lng": -7.8122
+    },
+    {
+      "name": "Enniskillen Castle",
+      "address": "Enniskillen Castle, Enniskillen, Co. Fermanagh, BT74 7HL, UK",
+      "lat": 54.3447,
+      "lng": -7.6406
+    },
+    {
+      "name": "Donegal",
+      "address": "Donegal, Co. Donegal, Ireland",
+      "lat": 54.6538,
+      "lng": -8.1096
+    },
+    {
+      "name": "Giant’s Causeway",
+      "address": "44 Causeway Rd, Bushmills BT57 8SU, UK",
+      "lat": 55.2408,
+      "lng": -6.5116
+    },
+    {
+      "name": "Old Bushmills Distillery",
+      "address": "2 Distillery Rd, Bushmills BT57 8XH, UK",
+      "lat": 55.2041,
+      "lng": -6.5233
+    },
+    {
+      "name": "Donegal Craft Village",
+      "address": "Lurganboy, Donegal, Co. Donegal, Ireland",
+      "lat": 54.6531,
+      "lng": -8.0992
+    },
+    {
+      "name": "Sligo",
+      "address": "Sligo, Co. Sligo, Ireland",
+      "lat": 54.2766,
+      "lng": -8.4761
+    },
+    {
+      "name": "Kiltimagh",
+      "address": "Kiltimagh, Co. Mayo, Ireland",
+      "lat": 53.8572,
+      "lng": -8.9992
+    },
+    {
+      "name": "Cliffs of Moher",
+      "address": "Cliffs of Moher, Lislorkan North, Co. Clare, Ireland",
+      "lat": 52.9715,
+      "lng": -9.4309
+    },
+    {
+      "name": "Listowel",
+      "address": "Listowel, Co. Kerry, Ireland",
+      "lat": 52.4467,
+      "lng": -9.4856
+    },
+    {
+      "name": "Killarney",
+      "address": "Killarney, Co. Kerry, Ireland",
+      "lat": 52.0597,
+      "lng": -9.5046
+    },
+    {
+      "name": "Kerry Bog Village Museum",
+      "address": "Glenbeigh Rd, Ballincleave, Co. Kerry, Ireland",
+      "lat": 52.0552,
+      "lng": -9.9302
+    },
+    {
+      "name": "Muckross House and Gardens",
+      "address": "Muckross, Killarney, Co. Kerry, Ireland",
+      "lat": 52.0172,
+      "lng": -9.5016
+    },
+    {
+      "name": "Blarney Woollen Mills",
+      "address": "Blarney, Co. Cork, Ireland",
+      "lat": 51.9291,
+      "lng": -8.5706
+    },
+    {
+      "name": "Rock of Cashel",
+      "address": "St. Patrick's Rock of Cashel, Cashel, Co. Tipperary, Ireland",
+      "lat": 52.5206,
+      "lng": -7.8903
+    }
+  ],
+  "sections": [
+    {
+      "id": "10-day-ireland-art-heritage-scenic-landscapes",
+      "title": "10-Day Ireland: Art, Heritage & Scenic Landscapes",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/nT2VIVnyRSmCdslOG848.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>10-Day Ireland: Art, Heritage & Scenic Landscapes</h4>\nExperience Ireland’s vibrant culture, storied heritage, and breathtaking scenery on a 10-day journey. Explore Dublin’s historic streets, marvel at the Giant’s Causeway, discover artisan crafts, and travel through iconic landscapes from the Cliffs of Moher to the Ring of Kerry. Enjoy a blend of art, history, and natural beauty.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-dublin",
+      "title": "Day 1 - Welcome to Dublin",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/bxOuTmgTT2OZLhPJqItg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrive in Dublin</h4>\nArrive in Dublin and settle into your hotel.\n<h4>Guided Walking Tour of Dublin</h4>\nDiscover the Irish capital on a guided walking tour, exploring its lively streets, historic architecture, and cultural landmarks.\n<h4>Evening at Leisure</h4>\nEnjoy an evening at leisure.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-dublin-s-literary-historic-treasures",
+      "title": "Day 2 - Dublin’s Literary & Historic Treasures",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/PtqxZI1IQ9CIlvBtsMZw.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Sightseeing Tour of Dublin</h4>\nExplore Dublin on a sightseeing tour. Visit Trinity College to see the celebrated Book of Kells, tour St. Patrick’s Cathedral, and wander through the Temple Bar district.\n<h4>Visit Ulysses Rare Books</h4>\nStop by Ulysses Rare Books and enjoy free time in the afternoon.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-ancient-ireland-to-donegal",
+      "title": "Day 3 - Ancient Ireland to Donegal",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/sqxJSo0SOyVphe0CqyhN.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel via Hill of Tara</h4>\nTravel north via the Hill of Tara, one of Ireland’s most significant ancient sites.\n<h4>Visit Marble Arch Caves Global Geopark</h4>\nContinue to the spectacular Marble Arch Caves Global Geopark.\n<h4>Visit Enniskillen Castle</h4>\nVisit Enniskillen Castle before arriving in Donegal for the evening.\n<h4>Dinner</h4>\nDinner is included.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-giant-s-causeway-the-north-coast",
+      "title": "Day 4 - Giant's Causeway & the North Coast",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/BwHyNaDdTsl5MnCtX6eQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Full-day excursion to Giant's Causeway</h4>\nSet out on a full-day excursion to the extraordinary Giant’s Causeway, famous for its dramatic basalt columns.\n<h4>Visit Bushmills and historic distillery</h4>\nContinue to Bushmills for lunch and a visit to the historic distillery, then return to Donegal.\n<h4>Dinner</h4>\nDinner is included.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-craft-traditions-sligo",
+      "title": "Day 5 - Craft Traditions & Sligo",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/6iffqDfRRPq1hPMsEMKF.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit Donegal Craft Village</h4>\nVisit Donegal Craft Village to discover local artisans and traditional Irish craftsmanship.\n<h4>Explore Sligo and Lunch</h4>\nContinue to Sligo, with time to explore the town and enjoy lunch.\n<h4>Travel to Kiltimagh</h4>\nTravel to Kiltimagh for the night.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-cliffs-of-moher-county-kerry",
+      "title": "Day 6 - Cliffs of Moher & County Kerry",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/YcEtzGsrRF6hMcFBHiCs.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Journey to the Cliffs of Moher</h4>\nJourney to the breathtaking Cliffs of Moher and take in the Atlantic coastal scenery.\n<h4>Continue through the Irish countryside to Listowel</h4>\nContinue through the Irish countryside to Listowel, a charming market town with time for browsing and shopping.\n<h4>Arrive in Killarney for the evening</h4>\nArrive in Killarney for the evening.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-killarney-at-your-own-pace",
+      "title": "Day 7 - Killarney at Your Own Pace",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/XBE3FwYR5GtTo9M3wSxA.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Leisure day in Killarney</h4>\nEnjoy a leisure day in Killarney. Choose to explore the town, play golf, or relax with a spa treatment.\n<h4>Optional memoryware assemblage mosaic workshop</h4>\nAn optional memoryware assemblage mosaic workshop with the group leader offers a creative way to reflect on the journey.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-ring-of-kerry-muckross-house",
+      "title": "Day 8 - Ring of Kerry & Muckross House",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/P4mH3t57R0SfVy9PK4bJ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Ring of Kerry scenic excursion</h4>\nExperience the beautiful Ring of Kerry on a scenic full-day excursion.\n<h4>Stop at Kerry Bog Village Museum</h4>\nStop at Kerry Bog Village Museum during your Ring of Kerry excursion.\n<h4>Visit Muckross House and Gardens</h4>\nContinue to Muckross House and Gardens in Killarney National Park.\n<h4>Dinner at Muckross House</h4>\nEnjoy an included dinner at Muckross House before returning to Killarney.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-blarney-cashel-return-to-dublin",
+      "title": "Day 9 - Blarney, Cashel & Return to Dublin",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/n69uTNATClanYxj00mrA.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel toward Dublin with a stop at Blarney Woollen Mills</h4>\nTravel toward Dublin with a stop at Blarney Woollen Mills for shopping and lunch.\n<h4>Pause at the historic Rock of Cashel</h4>\nPause for a view and photo opportunity at the historic Rock of Cashel.\n<h4>Continue to Dublin for your final evening</h4>\nContinue to Dublin for your final evening.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-farewell-ireland",
+      "title": "Day 10 - Farewell Ireland",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-art-culture-10-day-itinerary/DxOeVXcSlaXFpKFlFa3g.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Breakfast</h4>\nEnjoy breakfast before departing for the airport and your onward journey home.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "category": "Art & Culture",
+  "key": "axu7qe4"
+}

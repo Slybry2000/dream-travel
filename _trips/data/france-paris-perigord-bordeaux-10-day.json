@@ -1,0 +1,255 @@
+{
+  "slug": "france-paris-perigord-bordeaux-10-day",
+  "title": "France Paris Perigord Bordeaux 10 Day",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adbabc37c222e2945869d55",
+  "updated_at": "2026-10-23T18:51:22.436Z",
+  "status": "published",
+  "hero": {
+    "src": "images/france-paris-perigord-bordeaux-10-day/9Rd5tv5pSuSrq0rG8kIE.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "France",
+  "locations": [
+    "Paris",
+    "Montmartre (Sacré-Cœur & Place du Tertre)",
+    "Le Marais District",
+    "Angoulême",
+    "Brantôme",
+    "Montignac",
+    "Sarlat-la-Canéda",
+    "Beynac Castle",
+    "La Roque-Gageac",
+    "Castel Merle",
+    "Lascaux IV",
+    "Bordeaux",
+    "La Cité du Vin",
+    "Montcaret (Roman Villa)"
+  ],
+  "tags": [],
+  "tagline": "10 Days of Art, Heritage & Flavors | Paris • Périgord • Bordeaux",
+  "summary": "Experience the best of France as you journey from the vibrant streets of Paris to the picturesque Périgord region and the renowned vineyards of Bordeaux. Discover artistic traditions, historic landmarks, and culinary delights, immersing yourself in the rich heritage and flavors that define these iconic French destinations.",
+  "pins": [
+    {
+      "name": "Paris",
+      "address": "Paris, France",
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    {
+      "name": "Montmartre (Sacré-Cœur & Place du Tertre)",
+      "address": "35 Rue du Chevalier de la Barre, 75018 Paris, France",
+      "lat": 48.8867,
+      "lng": 2.3431
+    },
+    {
+      "name": "Le Marais District",
+      "address": "Le Marais, 75003 Paris, France",
+      "lat": 48.8592,
+      "lng": 2.3622
+    },
+    {
+      "name": "Angoulême",
+      "address": "Angoulême, France",
+      "lat": 45.6484,
+      "lng": 0.156
+    },
+    {
+      "name": "Brantôme",
+      "address": "Brantôme, 24310 Brantôme en Périgord, France",
+      "lat": 45.3631,
+      "lng": 0.6477
+    },
+    {
+      "name": "Montignac",
+      "address": "Montignac, 24290 Montignac-Lascaux, France",
+      "lat": 45.0667,
+      "lng": 1.1667
+    },
+    {
+      "name": "Sarlat-la-Canéda",
+      "address": "Sarlat-la-Canéda, 24200 Sarlat-la-Canéda, France",
+      "lat": 44.8897,
+      "lng": 1.2167
+    },
+    {
+      "name": "Beynac Castle",
+      "address": "Château de Beynac, 24220 Beynac-et-Cazenac, France",
+      "lat": 44.8381,
+      "lng": 1.1467
+    },
+    {
+      "name": "La Roque-Gageac",
+      "address": "La Roque-Gageac, 24250 La Roque-Gageac, France",
+      "lat": 44.8242,
+      "lng": 1.1847
+    },
+    {
+      "name": "Castel Merle",
+      "address": "Castel Merle, 24620 Sergeac, France",
+      "lat": 44.9767,
+      "lng": 1.1647
+    },
+    {
+      "name": "Lascaux IV",
+      "address": "Lascaux IV, Avenue de Lascaux, 24290 Montignac, France",
+      "lat": 45.0531,
+      "lng": 1.1667
+    },
+    {
+      "name": "Bordeaux",
+      "address": "Bordeaux, France",
+      "lat": 44.8378,
+      "lng": -0.5792
+    },
+    {
+      "name": "La Cité du Vin",
+      "address": "134 Quai de Bacalan, 33300 Bordeaux, France",
+      "lat": 44.8625,
+      "lng": -0.5516
+    },
+    {
+      "name": "Montcaret (Roman Villa)",
+      "address": "Montcaret, 24230 Montcaret, France",
+      "lat": 44.8667,
+      "lng": 0.0667
+    }
+  ],
+  "sections": [
+    {
+      "id": "10-days-of-art-heritage-flavors-paris-p-rigord-bordeaux",
+      "title": "10 Days of Art, Heritage & Flavors | Paris • Périgord • Bordeaux",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/9Rd5tv5pSuSrq0rG8kIE.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Art, Culture & Heritage</h4>\nExperience the best of France as you journey from the vibrant streets of Paris to the picturesque Périgord region and the renowned vineyards of Bordeaux. Discover artistic traditions, historic landmarks, and culinary delights, immersing yourself in the rich heritage and flavors that define these iconic French destinations.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-paris",
+      "title": "Day 1 - Welcome to Paris",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/nFW1ttSyT5G5FqbPc0wh.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrive in Paris and settle in</h4>\nArrive in Paris and settle in. Enjoy an introductory stroll through the neighborhood with your tour escort, followed by an evening at leisure.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-montmartre-the-marais",
+      "title": "Day 2 - Montmartre & the Marais",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/84fom6ZzQsyIjZQZ9yMF.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Discover Montmartre, Sacré-Cœur and Place du Tertre</h4>\nDiscover the artistic spirit of Montmartre, including Sacré-Cœur and Place du Tertre, where painters have gathered for generations.\n<h4>Explore the Marais district</h4>\nContinue to the historic Marais district, known for its atmospheric streets and lively cultural scene.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-paris-to-the-p-rigord-brantome-truffles",
+      "title": "Day 3 - Paris to the Périgord: Brantome & Truffles",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Travel by train to Angoulême and continue to Périgord</h4>\nTravel by train to Angoulême, then continue into the picturesque Périgord region.\n<h4>Explore Brantôme</h4>\nExplore Brantôme, with its riverside abbey and historic village setting.\n<h4>Visit a truffle farm</h4>\nVisit a truffle farm to learn about the prized black truffle, see a truffle-hunting demonstration, and enjoy a tasting.\n<h4>Overnight in the Montignac area</h4>\nOvernight in the Montignac area.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-sarlat-beynac-castle-the-dordogne-river",
+      "title": "Day 4 - Sarlat, Beynac Castle & the Dordogne River",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/ChRRoj2PQPyQOA99XiMc.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Stroll through Sarlat’s medieval lanes and market</h4>\nStroll through Sarlat’s medieval lanes and colorful market.\n<h4>Visit Beynac Castle</h4>\nVisit imposing Beynac Castle overlooking the Dordogne Valley.\n<h4>Scenic gabare boat ride on the Dordogne River</h4>\nContinue to La Roque-Gageac for a scenic ride aboard a traditional flat-bottomed gabare boat on the Dordogne River.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-prehistoric-art-lascaux",
+      "title": "Day 5 - Prehistoric Art & Lascaux",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Visit Castel Merle</h4>\nVisit Castel Merle to discover prehistoric artistic traditions.\n<h4>Limestone relief-sculpture workshop</h4>\nTake part in a hands-on limestone relief-sculpture workshop using techniques inspired by early art.\n<h4>Prehistoric-style cuisine demonstration</h4>\nEnjoy a demonstration of prehistoric-style cuisine.\n<h4>Explore Lascaux IV</h4>\nExplore Lascaux IV, an extraordinary recreation of the famed prehistoric cave paintings.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-bordeaux-architecture-wine-heritage",
+      "title": "Day 6 - Bordeaux: Architecture & Wine Heritage",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/FOl8MyGwQeWtOOYqjqXY.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Journey to Bordeaux</h4>\nJourney to Bordeaux for a guided exploration of the city’s elegant architecture, including its cathedral, grand opera house, and Place de la Bourse.\n<h4>Visit La Cité du Vin</h4>\nVisit La Cité du Vin, an immersive cultural museum devoted to wine and its place in world history.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-roman-mosaics-vineyard-traditions",
+      "title": "Day 7 - Roman Mosaics & Vineyard Traditions",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/NwyTZLjFTeag2w5ZFcLa.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Discover Gallo-Roman mosaics at Montcaret</h4>\nDiscover the remarkable Gallo-Roman mosaics at Montcaret, where the remains of an ancient villa reveal intricate floors and Roman daily life.\n<h4>Vineyard tasting and winegrower's lunch</h4>\nContinue to a vineyard for a regional tasting experience accompanied by a traditional winegrower's lunch.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-return-to-paris",
+      "title": "Day 8 - Return to Paris",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/0kAKFm3zRE6jL5Q9Doh7.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel by train to Paris</h4>\nTravel by train to Paris.\n<h4>Afternoon and evening at leisure in Paris</h4>\nEnjoy the afternoon and evening at leisure to explore museums, galleries, cafés, or favorite neighborhoods at your own pace.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-paris-landmarks-seine-river",
+      "title": "Day 9 - Paris Landmarks & Seine River",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/25IiBwRgTYe5T5byyFwN.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Discover more of historic Paris, including Sainte-Chapelle and the Notre-Dame area</h4>\nDiscover more of historic Paris, including Sainte-Chapelle and the Notre-Dame area.\n<h4>Free time near the Eiffel Tower</h4>\nEnjoy free time near the Eiffel Tower.\n<h4>Memorable Parisian dining experience</h4>\nEnjoy a memorable Parisian dining experience.\n<h4>Cruise along the Seine</h4>\nEnjoy a cruise along the Seine.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-farewell-france",
+      "title": "Day 10 - Farewell France",
+      "subtitle": "",
+      "image": {
+        "src": "images/france-paris-perigord-bordeaux-10-day/axHlgGPT8CJ4PVtJyQmp.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Enjoy your final morning before departing for your onward journey home.</h4>\nEnjoy your final morning before departing for your onward journey home.",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "the Montignac area",
+      "nights": 1
+    }
+  ],
+  "category": "Art & Culture",
+  "key": "hjxqcbj"
+}

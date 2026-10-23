@@ -1,0 +1,282 @@
+{
+  "slug": "ireland-celtic-traditions-10-day",
+  "title": "Ireland Celtic Traditions 10 Day",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adbac33bf3af26761211e1d",
+  "updated_at": "2026-10-23T18:53:37.994Z",
+  "status": "published",
+  "hero": {
+    "src": "images/ireland-celtic-traditions-10-day/5kxeDTO7R7mgHo2JbmIQ.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "Ireland",
+  "locations": [
+    "Dublin",
+    "Trinity College",
+    "St. Patrick’s Cathedral",
+    "Brú na Bóinne / Newgrange",
+    "Donegal Town",
+    "Donegal Craft Village",
+    "Cong",
+    "Galway",
+    "Connemara",
+    "Kylemore Abbey",
+    "Cliffs of Moher",
+    "Killarney",
+    "Ring of Kerry",
+    "Kissane Sheep Farm",
+    "Muckross Traditional Farms",
+    "Cobh Heritage Centre",
+    "Rock of Cashel",
+    "Temple Bar"
+  ],
+  "tags": [],
+  "tagline": "10-Day Journey Through Celtic Traditions, Art & Scenic Wonders",
+  "summary": "Experience the heart of Ireland as you explore ancient passage tombs, vibrant cities, and breathtaking landscapes. From Dublin’s historic treasures to the rugged beauty of Connemara and the dramatic Cliffs of Moher, this journey immerses you in Celtic traditions, local crafts, and the warmth of Irish hospitality.",
+  "pins": [
+    {
+      "name": "Dublin",
+      "address": "Dublin, Ireland",
+      "lat": 53.349805,
+      "lng": -6.26031
+    },
+    {
+      "name": "Trinity College",
+      "address": "Trinity College, College Green, Dublin 2, Ireland",
+      "lat": 53.3437935,
+      "lng": -6.2545726
+    },
+    {
+      "name": "St. Patrick’s Cathedral",
+      "address": "St Patrick's Close, Dublin 8, Ireland",
+      "lat": 53.339444,
+      "lng": -6.271944
+    },
+    {
+      "name": "Brú na Bóinne / Newgrange",
+      "address": "Newgrange, Donore, Co. Meath, Ireland",
+      "lat": 53.6947,
+      "lng": -6.4758
+    },
+    {
+      "name": "Donegal Town",
+      "address": "Donegal Town, Co. Donegal, Ireland",
+      "lat": 54.6538,
+      "lng": -8.1116
+    },
+    {
+      "name": "Donegal Craft Village",
+      "address": "Donegal Craft Village, Lurganboy, Donegal Town, Co. Donegal, Ireland",
+      "lat": 54.6467,
+      "lng": -8.0992
+    },
+    {
+      "name": "Cong",
+      "address": "Cong, Co. Mayo, Ireland",
+      "lat": 53.5333,
+      "lng": -9.2833
+    },
+    {
+      "name": "Galway",
+      "address": "Galway, Ireland",
+      "lat": 53.2707,
+      "lng": -9.0568
+    },
+    {
+      "name": "Connemara",
+      "address": "Connemara, Co. Galway, Ireland",
+      "lat": 53.4862,
+      "lng": -9.9387
+    },
+    {
+      "name": "Kylemore Abbey",
+      "address": "Kylemore Abbey, Pollacappul, Connemara, Co. Galway, Ireland",
+      "lat": 53.5616,
+      "lng": -9.8896
+    },
+    {
+      "name": "Cliffs of Moher",
+      "address": "Cliffs of Moher, Lislorkan North, Co. Clare, Ireland",
+      "lat": 52.9715,
+      "lng": -9.4309
+    },
+    {
+      "name": "Killarney",
+      "address": "Killarney, Co. Kerry, Ireland",
+      "lat": 52.0597,
+      "lng": -9.5046
+    },
+    {
+      "name": "Ring of Kerry",
+      "address": "Ring of Kerry, Co. Kerry, Ireland",
+      "lat": 51.9487,
+      "lng": -9.9176
+    },
+    {
+      "name": "Kissane Sheep Farm",
+      "address": "Kissane Sheep Farm, Moll's Gap, Killarney, Co. Kerry, Ireland",
+      "lat": 51.9972,
+      "lng": -9.6906
+    },
+    {
+      "name": "Muckross Traditional Farms",
+      "address": "Muckross Traditional Farms, Muckross, Killarney, Co. Kerry, Ireland",
+      "lat": 52.0172,
+      "lng": -9.5016
+    },
+    {
+      "name": "Cobh Heritage Centre",
+      "address": "Cobh Heritage Centre, Deepwater Quay, Cobh, Co. Cork, Ireland",
+      "lat": 51.8496,
+      "lng": -8.2951
+    },
+    {
+      "name": "Rock of Cashel",
+      "address": "Rock of Cashel, St. Patrick's Rock, Cashel, Co. Tipperary, Ireland",
+      "lat": 52.5206,
+      "lng": -7.8903
+    },
+    {
+      "name": "Temple Bar",
+      "address": "Temple Bar, Dublin, Ireland",
+      "lat": 53.3456,
+      "lng": -6.2646
+    }
+  ],
+  "sections": [
+    {
+      "id": "10-day-journey-through-celtic-traditions-art-scenic-wonders",
+      "title": "10-Day Journey Through Celtic Traditions, Art & Scenic Wonders",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/5kxeDTO7R7mgHo2JbmIQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>10-Day Journey Through Celtic Traditions, Art & Scenic Wonders</h4>\nExperience the heart of Ireland as you explore ancient passage tombs, vibrant cities, and breathtaking landscapes. From Dublin’s historic treasures to the rugged beauty of Connemara and the dramatic Cliffs of Moher, this journey immerses you in Celtic traditions, local crafts, and the warmth of Irish hospitality.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-dublin",
+      "title": "Day 1 - Welcome to Dublin",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/ShQSn3QtS1u3Uv1hXf6E.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrive independently in Dublin and settle in.</h4>\nArrive independently in Dublin and settle in.\n<h4>Welcome drink and introduction</h4>\nGather with fellow travelers for a welcome drink and an introduction to the journey.\n<h4>Evening at leisure</h4>\nEnjoy the evening at leisure.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-dublin-s-historic-treasures",
+      "title": "Day 2 - Dublin’s Historic Treasures",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/mXseXt55SBygkxlDXYI0.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided sightseeing tour of Dublin</h4>\nDiscover Dublin on a guided sightseeing tour, including Trinity College and the celebrated Book of Kells.\n<h4>Visit St. Patrick’s Cathedral</h4>\nVisit St. Patrick’s Cathedral and enjoy a walking tour through the historic city center.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-newgrange-donegal",
+      "title": "Day 3 - Newgrange & Donegal",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/2e2PVysTGCIwmwqJuZoQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit Brú na Bóinne and Newgrange</h4>\nTravel north to Brú na Bóinne and explore the extraordinary prehistoric passage tomb at Newgrange, a UNESCO World Heritage Site.\n<h4>Continue through Irish countryside to Donegal</h4>\nContinue through the Irish countryside to Donegal.\n<h4>Group dinner in Donegal</h4>\nEnjoy a group dinner in Donegal.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-irish-crafts-galway",
+      "title": "Day 4 - Irish Crafts & Galway",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Stroll through Donegal Town</h4>\nStroll through Donegal Town and visit Donegal Craft Village, where local artisans keep creative traditions alive.\n<h4>Visit Donegal Craft Village</h4>\nVisit Donegal Craft Village, where local artisans keep creative traditions alive.\n<h4>Travel toward Galway with stop in Cong</h4>\nTravel toward Galway with a stop in picturesque Cong, known for its connection to the film The Quiet Man.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-connemara-kylemore-abbey",
+      "title": "Day 5 - Connemara & Kylemore Abbey",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/KaiSpreoShuEmP3Sgeln.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Scenic excursion through Connemara</h4>\nEnjoy a scenic excursion through the rugged landscapes of Connemara.\n<h4>Visit Kylemore Abbey</h4>\nVisit Kylemore Abbey, its historic grounds and Victorian walled garden, before returning to Galway for free time.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-cliffs-of-moher-killarney",
+      "title": "Day 6 - Cliffs of Moher & Killarney",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/dl3YVgyCTdqgKUcVyGtt.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Cliffs of Moher visit</h4>\nTake in sweeping Atlantic views at the dramatic Cliffs of Moher.\n<h4>Travel to Killarney</h4>\nContinue south through beautiful countryside to the lively town of Killarney.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-ring-of-kerry-rural-traditions",
+      "title": "Day 7 - Ring of Kerry & Rural Traditions",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/spkcGu5bSVmKEuuVhQtt.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Explore the Ring of Kerry</h4>\nExplore the magnificent Ring of Kerry.\n<h4>Visit Kissane Sheep Farm</h4>\nVisit Kissane Sheep Farm for a look at traditional sheep farming and a sheepdog demonstration.\n<h4>Discover Muckross Traditional Farms</h4>\nDiscover rural heritage at Muckross Traditional Farms.\n<h4>Group dinner and cultural experience</h4>\nEnjoy a group dinner and cultural experience.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-cobh-cashel-dublin",
+      "title": "Day 8 - Cobh, Cashel & Dublin",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/OsefUIxWTue3sxYuMMkU.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel to Cobh Heritage Centre</h4>\nTravel to Cobh Heritage Centre to discover stories of Irish emigration and the town’s connection to the Titanic.\n<h4>Visit the Rock of Cashel</h4>\nContinue to the historic Rock of Cashel before returning to Dublin.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-creative-workshop-farewell",
+      "title": "Day 9 - Creative Workshop & Farewell",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/DD6puCW5ThCibEF1p8h1.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Group-led creative workshop</h4>\nTake part in a morning group-led creative workshop.\n<h4>Free time in Dublin</h4>\nEnjoy free time in Dublin before gathering for a farewell dinner in the lively Temple Bar area.\n<h4>Farewell dinner in Temple Bar</h4>\nGather for a farewell dinner in the lively Temple Bar area.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-farewell-ireland",
+      "title": "Day 10 - Farewell Ireland",
+      "subtitle": "",
+      "image": {
+        "src": "images/ireland-celtic-traditions-10-day/S7H1K7hgSOq9PAlaiD8d.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Program concludes in Dublin</h4>\nThe program concludes in Dublin. Depart independently for your onward journey home.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "category": "Art & Culture",
+  "key": "wx57jvp"
+}
