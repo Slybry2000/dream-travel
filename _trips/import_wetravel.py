@@ -1,6 +1,6 @@
 """Import a WeTravel itinerary link into the Dream Travel trips library.
 
-    python _trips/import_wetravel.py https://dream-travel.wetravel.com/i/<id> [--country "Costa Rica"]
+    python _trips/import_wetravel.py https://dream-travel.wetravel.com/i/<id> [--country "Costa Rica"] [--category "Art & Culture"]
 
 WeTravel server-renders the whole itinerary into the page as Next.js flight data, so
 one plain GET is enough: no login, no browser. This writes:
@@ -24,7 +24,7 @@ DATA = ROOT / "data"
 IMAGES = ROOT.parent / "trips" / "images"   # published photos
 UA = {"User-Agent": "Mozilla/5.0 (Dream Travel trip importer)"}
 # Fields a person may edit by hand; a re-import never overwrites them.
-KEEP = ("slug", "key", "listed", "country", "tags", "status", "summary", "sort", "hero_position", "overnights")
+KEEP = ("slug", "key", "listed", "country", "category", "tags", "status", "summary", "sort", "hero_position", "overnights")
 SKIP_SECTIONS = ("about dream-travel", "about dream travel", "about us")
 
 
@@ -176,11 +176,14 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("url")
     ap.add_argument("--country", help="override the country read from the map pins")
+    ap.add_argument("--category", default="Wellness",
+                    help='type of trip shown on the website, e.g. "Wellness" or "Art & Culture"')
     args = ap.parse_args()
 
     url = args.url.split("#")[0]
     page = fetch(url).decode("utf-8", "replace")
     trip = convert(extract_itinerary(page), url, args.country)
+    trip["category"] = args.category
 
     DATA.mkdir(exist_ok=True)
     # Match an earlier import of the same link, even if its slug was edited by hand.

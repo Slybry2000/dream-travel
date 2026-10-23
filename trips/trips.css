@@ -140,6 +140,7 @@ h1, h2, h3, p { margin: 0; }
 .tl-tabs a { flex: none; padding: 8px 16px; border-radius: 999px; color: var(--ink); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
 .tl-tabs a:hover { background: var(--blush); }
 .tl-tabs a[aria-current] { color: var(--paper); background: var(--ink); }
+.tl-tabs__sep { flex: none; align-self: stretch; width: 1px; margin: 6px 8px; background: rgba(0,18,11,.18); }
 .tl-dest .tl-grid-wrap { padding: 28px var(--gutter) 36px; }
 .tl-dest .tl-grid-wrap + .tl-grid-wrap { padding-top: 8px; }
 .tl-dest .tl-grid-head { margin-bottom: 14px; }

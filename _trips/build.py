@@ -88,6 +88,8 @@ def load():
         if t.get("status", "published") != "published":
             continue
         t["country_slug"] = slugify(t.get("country") or "elsewhere")
+        t["category"] = t.get("category") or "Wellness"
+        t["category_slug"] = slugify(t["category"])
         t["hosted"] = t.get("host_copy") or not t.get("source")
         t["url"] = f"{BASE}/{t['slug']}-{t['key']}/" if t["hosted"] else t["source"]
         trips.append(t)
@@ -150,7 +152,7 @@ def site_footer():
 
 
 def card(t):
-    tags = "".join(f"<span>{esc(x)}</span>" for x in t.get("tags", []))
+    tags = "".join(f"<span>{esc(x)}</span>" for x in [t["category"]] + t.get("tags", []))
     nights = overnights_line(t)
     return f"""      <article class="tl-card">
         <a class="tl-card__media" href="{t['url']}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}"><span class="tl-card__badge">{esc(duration(t))}</span></a>
@@ -279,12 +281,18 @@ def split_hero(kicker, lead, script, lede, slides):
     </section>"""
 
 
+CATEGORIES = {}   # category slug -> (name, trips); filled in main() before any page is written
+
+
 def tabs(lib, by_country, current=None):
-    links = [(f"{lib}/", "All trips", current is None)] + \
-            [(f"{lib}/{s}/", n, s == current) for s, (n, _) in by_country.items()]
-    return '    <nav class="tl-tabs" aria-label="Sample trips by destination">' + "".join(
-        f'<a href="{href}"{" aria-current=" + chr(34) + "page" + chr(34) if on else ""}>{esc(label)}</a>'
-        for href, label, on in links) + "</nav>"
+    """All trips, then one tab per type of trip, a divider, then one tab per country."""
+    def link(href, label, on):
+        return f'<a href="{href}"{" aria-current=" + chr(34) + "page" + chr(34) if on else ""}>{esc(label)}</a>'
+    kinds = "".join(link(f"{lib}/{s}/", n, s == current) for s, (n, _) in CATEGORIES.items())
+    places = "".join(link(f"{lib}/{s}/", n, s == current) for s, (n, _) in by_country.items())
+    return ('    <nav class="tl-tabs" aria-label="Sample trips by type and destination">'
+            + link(f"{lib}/", "All trips", current is None) + kinds
+            + '<span class="tl-tabs__sep" aria-hidden="true"></span>' + places + "</nav>")
 
 
 CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Talk with Rene</a></section>"""
@@ -338,10 +346,37 @@ def destination(slug, name, trips, meta, lib, by_country):
 """
 
 
+def category(slug, name, trips, lib, by_country):
+    """One type of trip (Wellness, Art & Culture...) across every country."""
+    slides = [img_url(t.get("hero")) for t in trips if t.get("hero")]
+    lede = (f"Sample {name.lower()} programs for private groups. Each one is a starting point: "
+            "we shape the dates, pace, hotels and activities around your group.")
+    count = f"{len(trips)} sample trip{'s' if len(trips) != 1 else ''}"
+    cards = "\n".join(card(t) for t in trips)
+    return f"""{head(f"{name} Group Trips | Dream Travel", lede, slides[0] if slides else "", public=True)}
+<body class="tl-dest">
+{site_header()}
+  <main>
+{split_hero(count, "Group trips for", esc(name), esc(lede), slides)}
+{tabs(lib, by_country, slug)}
+    <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
+{cards}
+    </div></section>
+{CTA}
+  </main>
+{site_footer()}
+  <script src="{BASE}/trips.js?v={VERSION}" defer></script>
+  <script src="/journey-path.js?v=1" data-page="trips" defer></script>
+</body>
+</html>
+"""
+
+
 def library(by_country, dests, lib):
+    # Grouped by type of trip; each card still names its country, and the tabs filter by either.
     blocks = []
-    for slug, (name, trips) in by_country.items():
-        cards = "\n".join(card(t) for t in trips)
+    for slug, (name, trips) in CATEGORIES.items():
+        cards = "\n".join(card(t) for t in sorted(trips, key=lambda t: (t["country_slug"], t.get("sort", 100), t["title"])))
         blocks.append(f"""    <section class="tl-grid-wrap"><div class="tl-grid-head"><h2><a href="{lib}/{slug}/">{esc(name)}</a></h2><a href="{lib}/{slug}/">{len(trips)} trip{'s' if len(trips) != 1 else ''} &rarr;</a></div><div class="tl-grid">
 {cards}
     </div></section>""")
@@ -387,12 +422,19 @@ def main():
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(itinerary(t), encoding="utf-8")
 
+    CATEGORIES.clear()
+    for t in trips:
+        CATEGORIES.setdefault(t["category_slug"], (t["category"], []))[1].append(t)
+    for slug, (name, group) in CATEGORIES.items():
+        (lib_dir / slug).mkdir(parents=True, exist_ok=True)
+        (lib_dir / slug / "index.html").write_text(category(slug, name, group, lib, by_country), encoding="utf-8")
+
     for slug, (name, group) in by_country.items():
         (lib_dir / slug).mkdir(parents=True, exist_ok=True)
         (lib_dir / slug / "index.html").write_text(destination(slug, name, group, dests.get(slug, {}), lib, by_country), encoding="utf-8")
     (lib_dir / "index.html").write_text(library(by_country, dests, lib), encoding="utf-8")
 
-    feed = [{"title": t["title"], "url": SITE + t["url"] if t["hosted"] else t["url"], "country": t.get("country"), "country_slug": t["country_slug"],
+    feed = [{"title": t["title"], "url": SITE + t["url"] if t["hosted"] else t["url"], "country": t.get("country"), "country_slug": t["country_slug"], "category": t["category"],
              "days": t.get("days"), "duration": duration(t), "image": SITE + img_url(t.get("hero")),
              "locations": t.get("locations", []), "tags": t.get("tags", []), "overnights": overnights_line(t),
              "summary": t.get("summary", "")} for t in trips if t.get("listed")]
