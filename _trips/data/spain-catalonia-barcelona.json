@@ -1,0 +1,232 @@
+{
+  "slug": "spain-catalonia-barcelona",
+  "title": "Spain: Catalonia & Barcelona",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ad513bf3ff7a1f970e82f50",
+  "updated_at": "2026-10-23T21:24:06.598Z",
+  "status": "published",
+  "hero": {
+    "src": "images/spain-catalonia-barcelona/otoYZhArTkyTgQQEGUux.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 8,
+  "nights": 7,
+  "country": "Spain",
+  "locations": [
+    "Barcelona Airport (El Prat)",
+    "Sagrada Família",
+    "Passeig de Gràcia",
+    "Park Güell",
+    "Dalí Theatre-Museum",
+    "Besalú",
+    "Gothic Quarter (Barri Gòtic)",
+    "Poble Espanyol",
+    "Alta Alella Winery",
+    "Lloret de Mar",
+    "Girona",
+    "Marimurtra Botanical Garden",
+    "Tossa de Mar"
+  ],
+  "tags": [],
+  "tagline": "Catalonia & Barcelona: Simply Dazzling 8-Day Tour",
+  "summary": "Experience the vibrant culture, stunning architecture, and breathtaking coastal scenery of Catalonia and Barcelona. This 8-day tour features guided visits to iconic sites such as the Sagrada Família, Park Güell, the Dalí Theatre-Museum, and the medieval streets of Girona and Besalú, with comfortable accommodations along the Costa Brava.",
+  "pins": [
+    {
+      "name": "Barcelona Airport (El Prat)",
+      "address": "Aeropuerto de Barcelona-El Prat, 08820 El Prat de Llobregat, Barcelona, Spain",
+      "lat": 41.2974,
+      "lng": 2.0833
+    },
+    {
+      "name": "Sagrada Família",
+      "address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+      "lat": 41.4036,
+      "lng": 2.1744
+    },
+    {
+      "name": "Passeig de Gràcia",
+      "address": "Passeig de Gràcia, 08007 Barcelona, Spain",
+      "lat": 41.3917,
+      "lng": 2.1649
+    },
+    {
+      "name": "Park Güell",
+      "address": "Carrer d'Olot, s/n, 08024 Barcelona, Spain",
+      "lat": 41.4145,
+      "lng": 2.1527
+    },
+    {
+      "name": "Dalí Theatre-Museum",
+      "address": "Plaça Gala i Salvador Dalí, 5, 17600 Figueres, Girona, Spain",
+      "lat": 42.267,
+      "lng": 2.9599
+    },
+    {
+      "name": "Besalú",
+      "address": "17850 Besalú, Girona, Spain",
+      "lat": 42.2,
+      "lng": 2.7
+    },
+    {
+      "name": "Gothic Quarter (Barri Gòtic)",
+      "address": "Barri Gòtic, 08002 Barcelona, Spain",
+      "lat": 41.3839,
+      "lng": 2.1763
+    },
+    {
+      "name": "Poble Espanyol",
+      "address": "Av. Francesc Ferrer i Guàrdia, 13, 08038 Barcelona, Spain",
+      "lat": 41.3689,
+      "lng": 2.1486
+    },
+    {
+      "name": "Alta Alella Winery",
+      "address": "Camí Baix de Tiana, s/n, 08328 Alella, Barcelona, Spain",
+      "lat": 41.4833,
+      "lng": 2.2833
+    },
+    {
+      "name": "Lloret de Mar",
+      "address": "17310 Lloret de Mar, Girona, Spain",
+      "lat": 41.7,
+      "lng": 2.85
+    },
+    {
+      "name": "Girona",
+      "address": "17001 Girona, Spain",
+      "lat": 41.9831,
+      "lng": 2.8249
+    },
+    {
+      "name": "Marimurtra Botanical Garden",
+      "address": "Passeig Carles Faust, 9, 17300 Blanes, Girona, Spain",
+      "lat": 41.6833,
+      "lng": 2.79
+    },
+    {
+      "name": "Tossa de Mar",
+      "address": "17320 Tossa de Mar, Girona, Spain",
+      "lat": 41.7167,
+      "lng": 2.9333
+    }
+  ],
+  "sections": [
+    {
+      "id": "catalonia-barcelona-simply-dazzling-8-day-tour",
+      "title": "Catalonia & Barcelona: Simply Dazzling 8-Day Tour",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/otoYZhArTkyTgQQEGUux.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Catalonia & Barcelona: Simply Dazzling 8-Day Tour</h4>\nExperience the vibrant culture, stunning architecture, and breathtaking coastal scenery of Catalonia and Barcelona. This 8-day tour features guided visits to iconic sites such as the Sagrada Família, Park Güell, the Dalí Theatre-Museum, and the medieval streets of Girona and Besalú, with comfortable accommodations along the Costa Brava.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-barcelona-arrival-and-costa-brava-welcome",
+      "title": "Day 1 - Barcelona Arrival and Costa Brava Welcome",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/ehKdXNaTQa4wDPfhcsEw.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrival at Barcelona Airport</h4>\nArrive at Barcelona Airport and meet your French-speaking tour director. Depending on flight times, transfer into central Barcelona for an introductory walk with your tour director, or travel directly to your Costa Brava hotel to enjoy its facilities and the beach.\n<h4>Costa Brava Hotel</h4>\nCheck in and overnight at a centrally located 4-star hotel in the seaside resort of Lloret de Mar, close to the main beach and local entertainment. Superior 4-star hotels are available facing the sea in coastal residential and hotel areas.\n<h4>Welcome Sangria and Dinner</h4>\nEvening: Welcome sangria, dinner, and overnight at the hotel on the Costa Brava.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-barcelona-gaudi-and-modernism",
+      "title": "Day 2 - Barcelona: Gaudi and Modernism",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/ZBSiczoRmSu4eN1W5WKg.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided visit to the Sagrada Familia</h4>\nMorning: Guided visit to the Sagrada Família. Construction of Gaudí’s monumental church began in 1882 and remained unfinished when he died in 1926. Work has continued through donations and visitor contributions, including the Passion Façade by Subirachs, new towers, and colorful stained-glass windows. Enjoy an exterior guided explanation followed by admission for an interior visit.\n<h4>Lunch: Tapas at a restaurant in central Barcelona</h4>\nLunch: Tapas at a restaurant in central Barcelona.\n<h4>Guided walk along Passeig de Gracia and Park Guell</h4>\nAfternoon: Guided walk along Passeig de Gràcia to admire the city’s outstanding Modernist residences by Gaudí, Domènech i Montaner, Puig i Cadafalch, and others. Finish with a visit to magnificent Park Güell, designed by Gaudí for his patron Eusebi Güell.\n<h4>Dinner at Costa Brava hotel</h4>\nEvening: Return to the Costa Brava hotel for dinner.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-figueres-dal-and-medieval-besal",
+      "title": "Day 3 - Figueres, Dalí and Medieval Besalú",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/yUP2ygjETxdUJZDNLo3c.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided tour of Figueres and Dalí Theatre-Museum</h4>\nDepart for Figueres, birthplace of Salvador Dalí, an emblematic figure of Surrealism. Enjoy a guided tour of the town and the Dalí Theatre-Museum, housed in the former municipal theater that the artist rebuilt to display his works.\n<h4>Lunch at a restaurant</h4>\nLunch: At a restaurant.\n<h4>Guided walk in Besalú</h4>\nContinue to the beautifully preserved medieval village of Besalú. A guided walk through its atmospheric streets introduces the famous stone bridge, synagogue, and Jewish ritual baths (mikveh). Return to the hotel in the late afternoon.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-barcelona-the-gothic-quarter",
+      "title": "Day 4 - Barcelona: The Gothic Quarter",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/RGuwJhkTL78lB5HRHTSQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided walking tour of Barcelona’s Gothic Quarter</h4>\nTake a guided walking tour of Barcelona’s Gothic Quarter around the cathedral. Admire the exterior of the splendid Gothic cathedral and explore medieval lanes rich in history and surprising details. See the famous La Rambla boulevard and legendary La Boqueria market.\n<h4>Visit to Poble Espanyol on Montjuïc hill</h4>\nContinue to Poble Espanyol on Montjuïc hill, an open-air complex representing the architectural styles of the Iberian Peninsula. Wander from an Aragonese setting to an Andalusian square and a Castilian Plaza Mayor.\n<h4>Paella lunch at Poble Espanyol</h4>\nEnjoy a paella lunch within Poble Espanyol.\n<h4>Free time in central Barcelona</h4>\nEnjoy free time in the central shopping streets and on La Rambla, with its street performers and flower stalls.\n<h4>Optional admission to Casa Batlló or Casa Milà</h4>\nOptional: Admission to Casa Batlló or Casa Milà, landmark works of Modernist architecture; price on request.\n<h4>Dinner at hotel</h4>\nEvening: Return to the hotel for dinner.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-winery-visit-and-lloret-de-mar",
+      "title": "Day 5 - Winery Visit and Lloret de Mar",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/RXvwB2yjQf6c5LhdhoJh.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided tour and tasting at Alta Alella winery</h4>\nAfter breakfast, travel to the Alta Alella winery, a small wine estate north of Barcelona. Enjoy a guided tour of the facilities followed by a tasting of its signature product.\n<h4>Lunch at hotel</h4>\nReturn to the hotel for lunch.\n<h4>Free afternoon in Lloret de Mar</h4>\nThe afternoon is free. Those interested may join the tour director for a beautiful coastal walk along the Camí de Ronda in Lloret de Mar, a seaside path linking Lloret’s main beach to Fenals Cove.\n<h4>Dinner and overnight at hotel</h4>\nEvening: Dinner and overnight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-surprising-girona",
+      "title": "Day 6 - Surprising Girona",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/sPjPc6rISnmh5u8xY9h0.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided tour of Girona</h4>\nTravel to Girona for a guided tour of this attractive provincial capital, renowned for its rich heritage and exceptionally well-preserved historic center. Highlights include the cathedral, city walls, Arab Baths, and old neighborhoods.\n<h4>Lunch at a restaurant</h4>\nLunch: At a restaurant. Return to the hotel afterward for time to prepare for the evening.\n<h4>Flamenco dinner and show</h4>\nDepart by coach with your guide for dinner accompanied by a flamenco show and traditional Spanish music. Overnight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-blanes-and-tossa-de-mar",
+      "title": "Day 7 - Blanes and Tossa de Mar",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/q7WjkOHITRemIjw0vK3x.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit to Marimurtra Botanical Garden in Blanes</h4>\nTravel a short distance to Blanes to visit the magnificent Marimurtra Botanical Garden. Overlooking the Mediterranean, its 16 hectares contain more than 4,000 plant species. Founded in the early 20th century by German entrepreneur and botany enthusiast Karl Faust, it is considered one of Europe’s finest Mediterranean gardens.\n<h4>Lunch at hotel</h4>\nReturn to the hotel for lunch.\n<h4>Visit to Tossa de Mar</h4>\nTravel to the picturesque coastal town of Tossa de Mar. Walk with your tour director through the old town’s narrow streets toward the castle area, with superb views of the rugged coastline, or enjoy a leisurely stroll along the seafront.\n<h4>Dinner and overnight at hotel</h4>\nEvening: Return to the hotel for dinner and overnight.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-departure-from-costa-brava",
+      "title": "Day 8 - Departure from Costa Brava",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-catalonia-barcelona/pwx6ClfT3OUXn90OzhBK.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Transfer to Barcelona Airport</h4>\nTransfer to Barcelona Airport, receive assistance with check-in formalities, and depart on your return flight.",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "the hotel",
+      "nights": 1
+    }
+  ],
+  "category": "Art & Culture",
+  "key": "73f9kds"
+}

@@ -1,0 +1,240 @@
+{
+  "slug": "spain-andalusian-treasures",
+  "title": "Spain: Andalusian Treasures",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ad5106a537036e6b3061aac",
+  "updated_at": "2026-10-23T21:24:05.584Z",
+  "status": "published",
+  "hero": {
+    "src": "images/spain-andalusian-treasures/CHlCCXPCS0ui47DhhVhE.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 8,
+  "nights": 7,
+  "country": "Spain",
+  "locations": [
+    "Málaga Airport",
+    "Málaga City Center",
+    "Mijas",
+    "Algeciras",
+    "Ronda",
+    "Zahara de la Sierra",
+    "Jerez de la Frontera",
+    "Seville",
+    "Córdoba",
+    "Almuñécar",
+    "Salobreña",
+    "Granada (Alhambra)",
+    "Alpujarras (Pampaneira)"
+  ],
+  "tags": [],
+  "tagline": "Andalusian Treasures",
+  "summary": "Explore the heart of southern Spain on an 8-day journey through Andalusia’s most iconic cities. Discover Málaga’s vibrant culture, Ronda’s dramatic landscapes, Seville’s historic grandeur, Córdoba’s Moorish heritage, Granada’s Alhambra, and the picturesque villages of the Alpujarras. Experience a blend of history, architecture, and culinary delights.",
+  "pins": [
+    {
+      "name": "Málaga Airport",
+      "address": "Av. del Comandante García Morato, s/n, 29004 Málaga, Spain",
+      "lat": 36.6749,
+      "lng": -4.4991
+    },
+    {
+      "name": "Málaga City Center",
+      "address": "Málaga, Spain",
+      "lat": 36.7213,
+      "lng": -4.4214
+    },
+    {
+      "name": "Mijas",
+      "address": "Mijas, 29650 Málaga, Spain",
+      "lat": 36.5953,
+      "lng": -4.6373
+    },
+    {
+      "name": "Algeciras",
+      "address": "Algeciras, Cádiz, Spain",
+      "lat": 36.1408,
+      "lng": -5.4562
+    },
+    {
+      "name": "Ronda",
+      "address": "Ronda, Málaga, Spain",
+      "lat": 36.7423,
+      "lng": -5.1671
+    },
+    {
+      "name": "Zahara de la Sierra",
+      "address": "Zahara de la Sierra, Cádiz, Spain",
+      "lat": 36.8381,
+      "lng": -5.3907
+    },
+    {
+      "name": "Jerez de la Frontera",
+      "address": "Jerez de la Frontera, Cádiz, Spain",
+      "lat": 36.685,
+      "lng": -6.1266
+    },
+    {
+      "name": "Seville",
+      "address": "Seville, Spain",
+      "lat": 37.3891,
+      "lng": -5.9845
+    },
+    {
+      "name": "Córdoba",
+      "address": "Córdoba, Spain",
+      "lat": 37.8882,
+      "lng": -4.7794
+    },
+    {
+      "name": "Almuñécar",
+      "address": "Almuñécar, Granada, Spain",
+      "lat": 36.7357,
+      "lng": -3.6883
+    },
+    {
+      "name": "Salobreña",
+      "address": "Salobreña, Granada, Spain",
+      "lat": 36.7452,
+      "lng": -3.5867
+    },
+    {
+      "name": "Granada (Alhambra)",
+      "address": "C. Real de la Alhambra, s/n, 18009 Granada, Spain",
+      "lat": 37.1761,
+      "lng": -3.5881
+    },
+    {
+      "name": "Alpujarras (Pampaneira)",
+      "address": "Pampaneira, Granada, Spain",
+      "lat": 36.9467,
+      "lng": -3.3617
+    }
+  ],
+  "sections": [
+    {
+      "id": "andalusian-treasures",
+      "title": "Andalusian Treasures",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/spain-andalusian-treasures/CHlCCXPCS0ui47DhhVhE.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Andalusian Treasures</h4>\nExplore the heart of southern Spain on an 8-day journey through Andalusia’s most iconic cities. Discover Málaga’s vibrant culture, Ronda’s dramatic landscapes, Seville’s historic grandeur, Córdoba’s Moorish heritage, Granada’s Alhambra, and the picturesque villages of the Alpujarras. Experience a blend of history, architecture, and culinary delights.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-m-laga-the-modern-capital-of-the-costa-del-sol",
+      "title": "Day 1 - Málaga: The Modern Capital of the Costa del Sol",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-andalusian-treasures/eLSEHGydRdyzGUiYBaS6.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrival at Málaga Airport</h4>\nArrival at Málaga Airport and welcome by the French-speaking tour director.\n<h4>Transfer or Guided Visit</h4>\nDepending on flight time, transfer to the hotel or enjoy a guided introductory visit to Málaga or Mijas.\n<h4>Guided Introductory Visit to Málaga</h4>\nDiscover Málaga’s Roman theater, two medieval fortresses, covered market, lively pedestrian shopping streets, renowned museums (Picasso, Thyssen, Pompidou), and the boutiques and restaurants of its revitalized marina.\n<h4>Visit to Mijas</h4>\nMijas: This picturesque hillside white village overlooks the Costa del Sol. On clear days, Gibraltar is visible from its gardens. Wander flower-lined streets, see the donkey taxis and the Virgin of the Rock sanctuary, and browse local crafts.\n<h4>Dinner</h4>\nDinner and overnight: Hotel in the Algeciras area.\n<h4>Hotel in the Algeciras area</h4>\nOvernight at a hotel in the Algeciras area.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-ronda-a-jewel-in-the-heart-of-the-mountains",
+      "title": "Day 2 - Ronda: A Jewel in the Heart of the Mountains",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-andalusian-treasures/cMBboBQTiunDJEE9pNHR.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided tour of Ronda’s stone bullring and Bullfighting Museum</h4>\nGuided tour of Ronda’s stone bullring and Bullfighting Museum. Cross the Puente Nuevo over the gorge and explore the old town’s whitewashed lanes.\n<h4>Visit Casa Don Bosco</h4>\nVisit Casa Don Bosco, an Art Nouveau-style mansion with gardens overlooking the gorge.\n<h4>Tapas lunch in central Ronda</h4>\nTapas lunch in central Ronda.\n<h4>Drive toward Cádiz province around the Grazalema Mountains</h4>\nDrive toward Cádiz province around the Grazalema Mountains, one of Spain’s rainiest areas.\n<h4>Stop in Zahara de la Sierra</h4>\nStop in Zahara de la Sierra, a designated historic village with a square, church, chapel, clock tower and castle ruins above the valley (castle admission not included).\n<h4>Dinner</h4>\nDinner and overnight: Costa de la Luz or Algeciras area.\n<h4>Hotel in Costa de la Luz or Algeciras area</h4>\nOvernight at a hotel in the Costa de la Luz or Algeciras area.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-jerez-andalusia-s-capital-of-wine-and-horses",
+      "title": "Day 3 - Jerez: Andalusia's Capital of Wine and Horses",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-andalusian-treasures/YX9e0WBVSWOQeDLlbAVr.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided visit to González Byass / Tío Pepe winery</h4>\nGuided visit to the González Byass / Tío Pepe winery, established in 1835, including a sherry tasting.\n<h4>Guided visit to the Royal Andalusian School of Equestrian Art</h4>\nGuided visit to the Royal Andalusian School of Equestrian Art, including stables, saddlery, palace rooms, equestrian museum, carriage collection and a daily horse-training session.\n<h4>Lunch at a picturesque restaurant</h4>\nLunch at a picturesque restaurant.\n<h4>Late-afternoon arrival in Seville</h4>\nLate-afternoon arrival in Seville; introductory walking or coach tour, according to available time.\n<h4>Optional: Fighting bull ranch visit</h4>\nGuided visit to a traditional fighting bull ranch in the dehesa countryside, learning about breeding and selection. €35 per person, plus €4 per person for groups smaller than 25.\n<h4>Dinner</h4>\nDinner and overnight: Hotel near Seville.\n<h4>Hotel near Seville</h4>\nOvernight at a hotel near Seville.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-seville-andalusia-s-dazzling-capital",
+      "title": "Day 4 - Seville: Andalusia's Dazzling Capital",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-andalusian-treasures/6AbmZ4n9RaelPCOs3U74.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided panoramic coach tour</h4>\nGuided panoramic coach tour: Murillo Gardens, former Royal Tobacco Factory (now university), Tower of Gold, Maestranza Bullring and Paseo de las Delicias with pavilions from the 1929 Ibero-American Exposition.\n<h4>Walking tour of Santa Cruz</h4>\nWalking tour of Santa Cruz, the old Jewish Quarter, with orange-tree squares, cobbled lanes, tiled patios and flower-filled houses.\n<h4>Visit Seville Cathedral and Giralda</h4>\nVisit Seville Cathedral, one of the largest Gothic cathedrals in the world, and see the Giralda, originally the minaret of the former mosque.\n<h4>Traditional lunch in central Seville</h4>\nTraditional lunch in central Seville.\n<h4>Walk through María Luisa Park and Plaza de España</h4>\nWalk through María Luisa Park and admire Plaza de España, its grand architecture and ceramic panels representing Spain’s provinces.\n<h4>Optional: Royal Alcázar admission, independent visit</h4>\nRoyal Alcázar admission, independent visit: €16.50 per person (2026 rate).\n<h4>Optional: Short Guadalquivir River cruise</h4>\nShort Guadalquivir River cruise: €14.50 per person.\n<h4>Optional: Ceramic tile workshop</h4>\nCeramic tile workshop: discover the history of Seville’s azulejos and Triana ceramic decoration, then decorate your own tile. Approximately 2–2.5 hours, maximum 25–30 people; price on request.\n<h4>Optional: Spanish fan workshop</h4>\nSpanish fan workshop: explore the history and symbolism of fans, including their former “language of love,” then decorate your own fan. Approximately 2–2.5 hours, maximum 25–30 people; price on request.\n<h4>Dinner</h4>\nDinner and overnight: Hotel in Seville.\n<h4>Hotel in Seville</h4>\nOvernight at a hotel in Seville.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-c-rdoba-and-costa-tropical-discovery",
+      "title": "Day 5 - Córdoba and Costa Tropical Discovery",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-andalusian-treasures/of5r5OQRZeVr6l3SbFuQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel to Córdoba</h4>\nTravel to Córdoba and take a guided tour of the Mosque–Cathedral, a former great mosque converted to a cathedral after 1236, with Umayyad, Gothic, Renaissance and Baroque architectural elements.\n<h4>Guided tour of the Mosque–Cathedral</h4>\nGuided tour of the Mosque–Cathedral, a former great mosque converted to a cathedral after 1236, with Umayyad, Gothic, Renaissance and Baroque architectural elements.\n<h4>Walk through the Judería</h4>\nWalk through the Judería, the historic Jewish Quarter, home to a 14th-century synagogue.\n<h4>Tapas lunch in central Córdoba</h4>\nTapas lunch in central Córdoba.\n<h4>Visit a family olive oil mill</h4>\nOn the way to the Costa Tropical, visit a family olive oil mill. Learn the production process, view historical machinery, watch an audiovisual presentation and enjoy a tasting.\n<h4>Hotel in Almuñécar or Salobreña</h4>\nCheck in to the hotel and enjoy a welcome sangria. Dinner and overnight: Almuñécar or Salobreña.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-granada-the-city-of-sultans",
+      "title": "Day 6 - Granada: The City of Sultans",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-andalusian-treasures/bcqTwhDSImpfAHzqg3k3.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided visit to the Alhambra</h4>\nGuided visit to the Alhambra, including the intricately decorated Nasrid palaces, courtyards and fountains, Generalife summer residence and gardens, and Charles V Palace.\n<h4>Paella lunch in Sierra Nevada foothills</h4>\nPaella lunch at a restaurant in the Sierra Nevada foothills overlooking the Granada plain.\n<h4>Walk through the Albaicín</h4>\nWalk with the tour director through the Albaicín, the old Moorish neighborhood, with whitewashed lanes and views of the Alhambra and Sierra Nevada.\n<h4>Free time in the Alcaicería</h4>\nFree time in the Alcaicería, Granada’s historic market area.\n<h4>Important Alhambra ticket conditions</h4>\n<h4>Dinner</h4>\nDinner and overnight: Almuñécar or Salobreña.\n<h4>Hotel in Almuñécar or Salobreña</h4>\nOvernight at a hotel in Almuñécar or Salobreña.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-the-alpujarras-a-culinary-journey-through-the-sierra-nevada",
+      "title": "Day 7 - The Alpujarras: A Culinary Journey Through the Sierra Nevada",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Travel into the Alpujarras mountains</h4>\nTravel into the mountains with the tour director. At elevations above 1,200 meters, local conditions favor traditional ham curing.\n<h4>Visit a ham-curing facility</h4>\nVisit a ham-curing facility and taste regional charcuterie, cheeses and a glass of wine.\n<h4>Traditional mountain lunch</h4>\nEnjoy a traditional mountain lunch.\n<h4>Explore villages such as Pampaneira</h4>\nExplore picturesque villages such as Pampaneira, with distinctive architecture, narrow lanes and artisan shops.\n<h4>Optional adjustment: earlier return to Almuñécar</h4>\nArrange an earlier return to Almuñécar for the beach, seaside promenade or more time in town.\n<h4>Dinner</h4>\nDinner and overnight: Almuñécar or Salobreña.\n<h4>Hotel in Almuñécar or Salobreña</h4>\nOvernight at a hotel in Almuñécar or Salobreña.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-almu-car-to-m-laga-departure",
+      "title": "Day 8 - Almuñécar to Málaga: Departure",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Transfer to Málaga Airport</h4>\nTransfer to Málaga Airport, with assistance at check-in, for the return flight. Depending on flight time, additional sightseeing or lunch at a hotel or restaurant can be arranged at extra cost upon request.",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "a hotel in the Algeciras area",
+      "nights": 1
+    },
+    {
+      "place": "a hotel in the Costa de la Luz or Algeciras area",
+      "nights": 1
+    },
+    {
+      "place": "a hotel near Seville",
+      "nights": 1
+    },
+    {
+      "place": "a hotel in Seville",
+      "nights": 1
+    },
+    {
+      "place": "a hotel in Almuñécar or Salobreña",
+      "nights": 2
+    }
+  ],
+  "category": "Art & Culture",
+  "key": "4jtj4t6"
+}

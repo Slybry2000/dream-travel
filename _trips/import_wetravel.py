@@ -152,6 +152,9 @@ def convert(it, url, country_arg):
                 if ref:
                     ref["caption"] = (g.get("caption") or g.get("description") or "").strip() if isinstance(g, dict) else ""
                     gallery.append(ref)
+        # WeTravel's Smart Dates add bare "Day 9", "Day 10"... placeholders with nothing in them.
+        if re.fullmatch(r"day\s*\d+", title, re.I) and not any(b for b in body) and not gallery:
+            continue
         sections.append({"id": slugify(title) or sec["id"][:8], "title": title,
                          "subtitle": (sec.get("subtitle") or "").strip(),
                          "image": image_ref(sec.get("image"), slug),

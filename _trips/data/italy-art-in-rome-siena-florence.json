@@ -1,0 +1,230 @@
+{
+  "slug": "italy-art-in-rome-siena-florence",
+  "title": "Italy: Art in Rome, Siena & Florence",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ad651693ff7a1f970ea4212",
+  "updated_at": "2026-10-23T21:24:08.770Z",
+  "status": "published",
+  "hero": {
+    "src": "images/italy-art-in-rome-siena-florence/Tsbob50GR7eG0zY4sEF1.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 9,
+  "nights": 8,
+  "country": "Italy",
+  "locations": [
+    "Rome",
+    "Vatican Museums & St. Peter’s Basilica",
+    "Siena",
+    "Siena Cathedral",
+    "Florence",
+    "Florence Cathedral (Duomo)",
+    "Piazza della Signoria",
+    "Ponte Vecchio",
+    "Accademia Gallery",
+    "Uffizi Gallery",
+    "Florence Airport"
+  ],
+  "tags": [],
+  "tagline": "Art & Culture in Italy: Rome, Siena & Florence",
+  "summary": "Explore the masterpieces of the Renaissance, meet contemporary artisans, and create your own art in inspiring Italian settings. This sample itinerary blends guided cultural visits, hands-on creative workshops, local cuisine, and time to enjoy each destination.",
+  "pins": [
+    {
+      "name": "Rome",
+      "address": "Rome, Italy",
+      "lat": 41.9028,
+      "lng": 12.4964
+    },
+    {
+      "name": "Vatican Museums & St. Peter’s Basilica",
+      "address": "Viale Vaticano, 00165 Roma RM, Italy",
+      "lat": 41.9065,
+      "lng": 12.4536
+    },
+    {
+      "name": "Siena",
+      "address": "Siena, Italy",
+      "lat": 43.3188,
+      "lng": 11.3308
+    },
+    {
+      "name": "Siena Cathedral",
+      "address": "Piazza del Duomo, 8, 53100 Siena SI, Italy",
+      "lat": 43.3172,
+      "lng": 11.3296
+    },
+    {
+      "name": "Florence",
+      "address": "Florence, Italy",
+      "lat": 43.7696,
+      "lng": 11.2558
+    },
+    {
+      "name": "Florence Cathedral (Duomo)",
+      "address": "Piazza del Duomo, 50122 Firenze FI, Italy",
+      "lat": 43.7731,
+      "lng": 11.256
+    },
+    {
+      "name": "Piazza della Signoria",
+      "address": "Piazza della Signoria, 50122 Firenze FI, Italy",
+      "lat": 43.7695,
+      "lng": 11.2551
+    },
+    {
+      "name": "Ponte Vecchio",
+      "address": "Ponte Vecchio, 50125 Firenze FI, Italy",
+      "lat": 43.7679,
+      "lng": 11.2531
+    },
+    {
+      "name": "Accademia Gallery",
+      "address": "Via Ricasoli, 58/60, 50129 Firenze FI, Italy",
+      "lat": 43.776,
+      "lng": 11.2583
+    },
+    {
+      "name": "Uffizi Gallery",
+      "address": "Piazzale degli Uffizi, 6, 50122 Firenze FI, Italy",
+      "lat": 43.7678,
+      "lng": 11.2556
+    },
+    {
+      "name": "Florence Airport",
+      "address": "Via del Termine, 11, 50127 Firenze FI, Italy",
+      "lat": 43.81,
+      "lng": 11.2051
+    }
+  ],
+  "sections": [
+    {
+      "id": "art-culture-in-italy-rome-siena-florence",
+      "title": "Art & Culture in Italy: Rome, Siena & Florence",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/Tsbob50GR7eG0zY4sEF1.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Art & Culture in Italy: Rome, Siena & Florence</h4>\nExplore the masterpieces of the Renaissance, meet contemporary artisans, and create your own art in inspiring Italian settings. This sample itinerary blends guided cultural visits, hands-on creative workshops, local cuisine, and time to enjoy each destination.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-rome",
+      "title": "Day 1 - Welcome to Rome",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/dOhNlFVdT3GdB9byga98.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrival in Rome</h4>\nArrive in Rome and transfer to your centrally located hotel.\n<h4>Orientation walk through historic piazzas</h4>\nEnjoy an orientation walk through historic piazzas.\n<h4>Welcome dinner featuring Roman specialties</h4>\nWelcome dinner featuring Roman specialties.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-ancient-rome-and-the-art-of-the-city",
+      "title": "Day 2 - Ancient Rome and the Art of the City",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/IEjXTpTBSNya3YSDgPFt.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Colosseum and Roman Forum guided visit</h4>\nDiscover the Colosseum and Roman Forum with a local guide.\n<h4>Explore Rome’s historic center</h4>\nContinue through Rome’s historic center to admire its architecture, fountains, and public sculpture.\n<h4>Optional sketching session in a piazza</h4>\nOptional sketching session in a picturesque piazza.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-vatican-masterpieces-and-creative-rome",
+      "title": "Day 3 - Vatican Masterpieces and Creative Rome",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/DDyS3BdWTta1wwqtMs4A.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit the Vatican Museums and Sistine Chapel</h4>\nVisit the Vatican Museums and Sistine Chapel with a specialist guide, subject to reservations.\n<h4>Explore St. Peter’s Basilica</h4>\nExplore St. Peter’s Basilica when accessible.\n<h4>Private drawing or watercolor workshop</h4>\nJoin a private drawing or watercolor workshop led by a local artist, or reserve time for a workshop led by your group’s own instructor.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-artisans-food-and-the-roman-lifestyle",
+      "title": "Day 4 - Artisans, Food, and the Roman Lifestyle",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/B5eeQNZQqupMplNIyGug.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Meet artisans in a working studio</h4>\nMeet artisans in a working studio for a behind-the-scenes visit and a hands-on mosaic-making experience.\n<h4>Food-focused walk or cooking class</h4>\nEnjoy a food-focused walk or cooking class featuring regional ingredients.\n<h4>Free evening to explore Rome</h4>\nFree evening to explore Rome.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-through-tuscany-to-siena",
+      "title": "Day 5 - Through Tuscany to Siena",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/qeuJO90GS8SGJcVEGbgj.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel by private coach through the Tuscan countryside to Siena</h4>\nTravel by private coach through the Tuscan countryside to Siena.\n<h4>Explore the medieval streets and Piazza del Campo</h4>\nExplore the medieval streets and Piazza del Campo.\n<h4>Visit Siena Cathedral</h4>\nVisit Siena Cathedral, renowned for its decorative art and architecture.\n<h4>Overnight in Siena or the surrounding countryside</h4>\nOvernight in Siena or the surrounding countryside.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-siena-and-a-tuscan-creative-workshop",
+      "title": "Day 6 - Siena and a Tuscan Creative Workshop",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/8SCAkxS7QXerEoWxJ6oU.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided visit to Siena museum or historic site</h4>\nDiscover Siena’s artistic heritage, including works of the Sienese school, during a guided visit to a local museum or historic site.\n<h4>Tuscan traditions creative workshop</h4>\nTake part in a workshop inspired by Tuscan traditions, such as painting, ceramics, or decorative techniques.\n<h4>Relaxed regional dinner</h4>\nEnjoy a relaxed regional dinner.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-florence-the-renaissance-comes-alive",
+      "title": "Day 7 - Florence: The Renaissance Comes Alive",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/GEQmRN4VSjCQipsCFX0w.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Continue to Florence</h4>\nContinue to Florence.\n<h4>Guided walking tour of Florence</h4>\nTake a guided walking tour featuring the Duomo complex, Piazza della Signoria, and Ponte Vecchio.\n<h4>Visit the Accademia Gallery</h4>\nVisit the Accademia Gallery to see Michelangelo’s David, subject to availability.\n<h4>Evening at leisure</h4>\nEnjoy an evening at leisure.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-florence-great-art-and-hands-on-creation",
+      "title": "Day 8 - Florence: Great Art and Hands-On Creation",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/juqIfi1bR0SZbTieBxZw.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Visit the Uffizi Gallery</h4>\nVisit the Uffizi Gallery with an art-focused guide, subject to advance booking.\n<h4>Meet a Florentine artisan or take part in a workshop</h4>\nMeet a Florentine artisan in a studio or take part in a fresco, marbling, or painting workshop.\n<h4>Farewell dinner</h4>\nA farewell dinner celebrates the group’s creative journey.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-arrivederci-italia",
+      "title": "Day 9 - Arrivederci, Italia!",
+      "subtitle": "",
+      "image": {
+        "src": "images/italy-art-in-rome-siena-florence/7O7VMo4WRvqM0GxZnmHi.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Breakfast</h4>\nBreakfast and transfer to Florence Airport for individual departures, or extend the journey with additional time in Tuscany.\n<h4>Transfer to Florence Airport</h4>\nTransfer to Florence Airport for individual departures, or extend the journey with additional time in Tuscany.",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "Siena or the surrounding countryside",
+      "nights": 1
+    }
+  ],
+  "category": "Art & Culture",
+  "key": "t4qp5us"
+}

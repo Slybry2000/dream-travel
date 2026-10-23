@@ -1,0 +1,225 @@
+{
+  "slug": "scotland-castles-culture-highlands",
+  "title": "Scotland: Castles, Culture & Highlands",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6adb8cecbf3af2676120c03d",
+  "updated_at": "2026-10-23T21:24:09.793Z",
+  "status": "published",
+  "hero": {
+    "src": "images/scotland-castles-culture-highlands/hGnt132VT1yoLC5VI44e.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 9,
+  "nights": 8,
+  "country": "Scotland",
+  "locations": [
+    "Edinburgh",
+    "St Andrews",
+    "Aberdeen",
+    "Inverness",
+    "Loch Ness",
+    "Leith",
+    "The Kelpies",
+    "Ballater",
+    "Balmoral Castle",
+    "Clava Cairns",
+    "Culloden Battlefield"
+  ],
+  "tags": [],
+  "tagline": "Scotland: Castles, Culture & Highlands",
+  "summary": "Experience Scotland’s rich heritage and breathtaking landscapes on a journey through historic cities, charming villages, and the legendary Highlands. Explore iconic castles, vibrant culture, and local traditions from Edinburgh to Loch Ness, with immersive visits, tastings, and guided walks along the way.",
+  "pins": [
+    {
+      "name": "Edinburgh",
+      "address": "Edinburgh, Scotland, UK",
+      "lat": 55.9533,
+      "lng": -3.1883
+    },
+    {
+      "name": "St Andrews",
+      "address": "St Andrews, Fife, Scotland, UK",
+      "lat": 56.3398,
+      "lng": -2.7967
+    },
+    {
+      "name": "Aberdeen",
+      "address": "Aberdeen, Scotland, UK",
+      "lat": 57.1497,
+      "lng": -2.0943
+    },
+    {
+      "name": "Inverness",
+      "address": "Inverness, Scotland, UK",
+      "lat": 57.4778,
+      "lng": -4.2247
+    },
+    {
+      "name": "Loch Ness",
+      "address": "Loch Ness, Scotland, UK",
+      "lat": 57.3229,
+      "lng": -4.4244
+    },
+    {
+      "name": "Leith",
+      "address": "Leith, Edinburgh, Scotland, UK",
+      "lat": 55.9806,
+      "lng": -3.172
+    },
+    {
+      "name": "The Kelpies",
+      "address": "The Kelpies, Helix Park, Falkirk, Scotland, UK",
+      "lat": 56.0201,
+      "lng": -3.7529
+    },
+    {
+      "name": "Ballater",
+      "address": "Ballater, Aberdeenshire, Scotland, UK",
+      "lat": 57.0446,
+      "lng": -3.0491
+    },
+    {
+      "name": "Balmoral Castle",
+      "address": "Balmoral Castle, Ballater, Aberdeenshire, Scotland, UK",
+      "lat": 57.0406,
+      "lng": -3.2336
+    },
+    {
+      "name": "Clava Cairns",
+      "address": "Clava Cairns, Inverness, Scotland, UK",
+      "lat": 57.4761,
+      "lng": -4.0817
+    },
+    {
+      "name": "Culloden Battlefield",
+      "address": "Culloden Battlefield, Inverness, Scotland, UK",
+      "lat": 57.4806,
+      "lng": -4.0918
+    }
+  ],
+  "sections": [
+    {
+      "id": "scotland-castles-culture-highlands",
+      "title": "Scotland: Castles, Culture & Highlands",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/hGnt132VT1yoLC5VI44e.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Scotland: Castles, Culture & Highlands</h4>\nExperience Scotland’s rich heritage and breathtaking landscapes on a journey through historic cities, charming villages, and the legendary Highlands. Explore iconic castles, vibrant culture, and local traditions from Edinburgh to Loch Ness, with immersive visits, tastings, and guided walks along the way.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-welcome-to-edinburgh",
+      "title": "Day 1 - Welcome to Edinburgh",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/LqkPsHyqRAKWtGhrjir0.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Welcome to Edinburgh</h4>\nArrive in Scotland’s historic capital and settle in. Gather for a welcome orientation and drink, with a memorable appearance by a traditional Scottish bagpiper. Enjoy the evening at leisure.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-edinburgh-stories-and-history",
+      "title": "Day 2 - Edinburgh: Stories and History",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/oE2CQSvrTuq3x4N4NJV0.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Panoramic city tour and guided orientation walk</h4>\nDiscover Edinburgh on a panoramic city tour and guided orientation walk.\n<h4>National Museum of Scotland</h4>\nExplore Scotland’s heritage at the National Museum of Scotland.\n<h4>Real Mary King’s Close</h4>\nDescend beneath the Royal Mile for an atmospheric visit to the Real Mary King’s Close.\n<h4>Independent exploration</h4>\nTime remains for independent exploration.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-royal-edinburgh",
+      "title": "Day 3 - Royal Edinburgh",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/SFjxiazRjK3FFbTCQUKl.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Palace of Holyroodhouse visit</h4>\nVisit the Palace of Holyroodhouse, the royal residence at the foot of the Royal Mile.\n<h4>Edinburgh Castle visit</h4>\nVisit Edinburgh Castle, dramatically perched above the city.\n<h4>Evening at leisure</h4>\nEnjoy an evening at leisure.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-museum-collections-leith-and-the-kelpies",
+      "title": "Day 4 - Museum Collections, Leith and the Kelpies",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/uDVdHnTtS3SZO8xtSFzn.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Behind-the-scenes museum archive experience</h4>\nEnjoy a behind-the-scenes museum archive experience featuring a talk, questions and a collection visit.\n<h4>Visit to Leith waterfront district</h4>\nContinue to the waterfront district of Leith for lunch and free time.\n<h4>Guided visit to the Kelpies sculptures</h4>\nDiscover the monumental Kelpies sculptures on a guided visit.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-st-andrews-and-scottish-distilling",
+      "title": "Day 5 - St Andrews and Scottish Distilling",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/dKVvZ1ykStug7UPJKkWq.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Explore St Andrews cathedral grounds and castle</h4>\nTravel to St Andrews to explore the historic cathedral grounds and castle.\n<h4>Scottish distillery group lunch, guided tour and tasting</h4>\nContinue to a Scottish distillery for a group lunch, guided tour and tasting.\n<h4>Travel onward to Aberdeen</h4>\nTravel onward to Aberdeen.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-highland-cattle-and-balmoral",
+      "title": "Day 6 - Highland Cattle and Balmoral",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/NN1PKleRAiwJcA9UQAdS.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Explore the village of Ballater</h4>\nExplore the charming village of Ballater.\n<h4>Visit a Highland cattle farm</h4>\nVisit a Highland cattle farm to meet its distinctive shaggy-haired residents and learn about local farming traditions.\n<h4>Tasting lunch</h4>\nEnjoy a tasting lunch before visiting Balmoral Castle’s grounds, gardens and exhibitions.\n<h4>Visit Balmoral Castle</h4>\nVisit Balmoral Castle’s grounds, gardens and exhibitions, subject to seasonal access.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-inverness-and-loch-ness",
+      "title": "Day 7 - Inverness and Loch Ness",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/KRi57TRUGaiQHhGP8UjQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided walk through Inverness</h4>\nJourney into the Highlands for a guided walk through Inverness.\n<h4>Scenic drive along Loch Ness</h4>\nTake in the scenery along legendary Loch Ness, with opportunities for photographs.\n<h4>Discover Clava Cairns</h4>\nDiscover the ancient Clava Cairns before returning to Aberdeen.\n<h4>Visit Culloden battlefield</h4>\nVisit the historic Culloden battlefield before returning to Aberdeen.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-return-to-edinburgh-and-farewell-dinner",
+      "title": "Day 8 - Return to Edinburgh and Farewell Dinner",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/aB5RHyAxT5OBYsOW8ZZP.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Travel back to Edinburgh</h4>\nTravel back to Edinburgh and enjoy free time to explore, shop or revisit favorite places.\n<h4>Farewell dinner</h4>\nCelebrate the journey together over a special three-course farewell dinner.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-end-of-the-journey",
+      "title": "Day 9 - End of the Journey",
+      "subtitle": "",
+      "image": {
+        "src": "images/scotland-castles-culture-highlands/NbkY8xqJRXWXGwklentV.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Breakfast</h4>\nEnjoy breakfast and conclude the cultural tour.\n<h4>Optional mosaic workshops</h4>\nTravelers continuing with separately arranged mosaic workshops may begin their next creative experience.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "category": "Art & Culture",
+  "key": "qfba7rn"
+}
