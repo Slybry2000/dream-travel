@@ -284,15 +284,26 @@ def split_hero(kicker, lead, script, lede, slides):
 CATEGORIES = {}   # category slug -> (name, trips); filled in main() before any page is written
 
 
-def tabs(lib, by_country, current=None):
-    """All trips, then one tab per type of trip, a divider, then one tab per country."""
+def tabs(lib, by_country, cat=None, country=None):
+    """Two rows. Type of trip first (All trips, Wellness, Art & Culture...), then the countries that have trips
+    of that type. Choosing a country keeps the type: on Art & Culture, France opens /art-culture/france/ (Bryan,
+    2026-10-23: switching countries must not drop the type filter)."""
     def link(href, label, on):
         return f'<a href="{href}"{" aria-current=" + chr(34) + "page" + chr(34) if on else ""}>{esc(label)}</a>'
-    kinds = "".join(link(f"{lib}/{s}/", n, s == current) for s, (n, _) in CATEGORIES.items())
-    places = "".join(link(f"{lib}/{s}/", n, s == current) for s, (n, _) in by_country.items())
-    return ('    <nav class="tl-tabs" aria-label="Sample trips by type and destination">'
-            + link(f"{lib}/", "All trips", current is None) + kinds
-            + '<span class="tl-tabs__sep" aria-hidden="true"></span>' + places + "</nav>")
+    def has(c, k):
+        return any(t["country_slug"] == k for t in CATEGORIES[c][1])
+    # Row 1: types. From a country page, a type keeps the country when that pairing has trips.
+    kinds = link(f"{lib}/{country}/" if country and not cat else f"{lib}/", "All trips", cat is None)
+    for s, (n, _) in CATEGORIES.items():
+        href = f"{lib}/{s}/{country}/" if country and has(s, country) else f"{lib}/{s}/"
+        kinds += link(href, n, s == cat)
+    # Row 2: countries, limited to the chosen type.
+    places = [(k, n) for k, (n, _) in by_country.items() if not cat or has(cat, k)]
+    base = f"{lib}/{cat}/" if cat else f"{lib}/"
+    row2 = link(base, "All countries", country is None) + "".join(link(f"{base}{k}/", n, k == country) for k, n in places)
+    return ('    <div class="tl-filter">'
+            '<nav class="tl-tabs tl-tabs--kinds" aria-label="Sample trips by type">' + kinds + "</nav>"
+            '<nav class="tl-tabs tl-tabs--places" aria-label="Sample trips by destination">' + row2 + "</nav></div>")
 
 
 CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Talk with Rene</a></section>"""
@@ -304,35 +315,40 @@ def mini_card(t):
             f'<span><small>{esc(t.get("country", ""))} &middot; {esc(duration(t))}</small>{esc(t["title"])}</span></a>')
 
 
-def destination(slug, name, trips, meta, lib, by_country):
+def destination(slug, name, trips, meta, lib, by_country, cat=None):
     # Hero photos: "country_heroes" in config.json (paths under trips/), else the trips' cover photos.
     slides = [f"{BASE}/{src}" for src in config().get("country_heroes", {}).get(slug, [])] or \
              [img_url(t.get("hero")) for t in trips if t.get("hero")]
     if meta.get("hero"):
         slides.insert(0, meta["hero"])
+    if cat:   # a type page shows its own trips' photos (a Portugal beach is wrong for Portugal art trips)
+        slides = [img_url(t.get("hero")) for t in trips if t.get("hero")] or slides
     intro = meta.get("intro") or [
         f"Sample programs for private groups traveling to {name}. Each one is a starting point: "
         "we shape the dates, pace, hotels and activities around your group."]
     cards = "\n".join(card(t) for t in trips)
     # "More sample trips": up to 6 trips from the other countries, taken in turn so every country shows.
-    pools = [list(ts) for s, (_, ts) in by_country.items() if s != slug]
+    pools = [[t for t in ts if not cat or t["category_slug"] == cat] for s, (_, ts) in by_country.items() if s != slug]
+    pools = [p for p in pools if p]
     more = []
     while pools and len(more) < 6:
         for pool in pools:
             if pool and len(more) < 6:
                 more.append(pool.pop(0))
         pools = [pool for pool in pools if pool]
-    more_html = (f"""    <section class="tl-strip"><div class="tl-grid-head"><h2>More sample trips</h2><a href="{lib}/">See all &rarr;</a></div><div class="tl-strip__row">
+    more_html = (f"""    <section class="tl-strip"><div class="tl-grid-head"><h2>More sample trips</h2><a href="{lib}/{cat + '/' if cat else ''}">See all &rarr;</a></div><div class="tl-strip__row">
 {chr(10).join(mini_card(t) for t in more)}
     </div></section>
 """ if more else "")
     count = f"{len(trips)} sample trip{'s' if len(trips) != 1 else ''}"
-    return f"""{head(f"{name} Group Trips | Dream Travel", intro[0], slides[0], public=True)}
+    title = f"{CATEGORIES[cat][0]} trips to {name}" if cat else f"{name} Group Trips"
+    kicker = f"{CATEGORIES[cat][0]} trips to" if cat else "Group trips to"
+    return f"""{head(f"{title} | Dream Travel", intro[0], slides[0], public=True)}
 <body class="tl-dest">
 {site_header()}
   <main>
-{split_hero(count, "Group trips to", esc(name), esc(intro[0]), slides)}
-{tabs(lib, by_country, slug)}
+{split_hero(count, kicker, esc(name), esc(intro[0]), slides)}
+{tabs(lib, by_country, cat, slug)}
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
     </div></section>
@@ -372,6 +388,14 @@ def category(slug, name, trips, lib, by_country):
 """
 
 
+def kind_tile(slug, name, trips, lib):
+    """Big photo tile on the all-trips page: the main way in, one per type of trip."""
+    hero = next((t.get("hero") for t in trips if t.get("hero")), None)
+    countries = sorted({t.get("country") or "Elsewhere" for t in trips})
+    return (f'      <a class="tl-kind" href="{lib}/{slug}/"><img src="{img_url(hero)}" alt="" loading="lazy" style="{focal(hero)}">'
+            f'<span><small>{len(trips)} sample trip{"s" if len(trips) != 1 else ""} &middot; {esc(", ".join(countries))}</small>{esc(name)} &rarr;</span></a>')
+
+
 def library(by_country, dests, lib):
     # Grouped by type of trip; each card still names its country, and the tabs filter by either.
     blocks = []
@@ -392,6 +416,9 @@ def library(by_country, dests, lib):
   <main>
 {split_hero(f"{total} sample trips &middot; {len(by_country)} countries", "Where will", "your group go?", lede, slides)}
 {tabs(lib, by_country)}
+    <section class="tl-kinds" aria-label="Choose a type of trip">
+{chr(10).join(kind_tile(s, n, ts, lib) for s, (n, ts) in CATEGORIES.items())}
+    </section>
     <div id="trips"></div>
 {chr(10).join(blocks)}
 {CTA}
@@ -428,6 +455,13 @@ def main():
     for slug, (name, group) in CATEGORIES.items():
         (lib_dir / slug).mkdir(parents=True, exist_ok=True)
         (lib_dir / slug / "index.html").write_text(category(slug, name, group, lib, by_country), encoding="utf-8")
+
+    for cslug, (cname, cgroup) in CATEGORIES.items():
+        for slug, (name, group) in by_country.items():
+            pair = [t for t in group if t["category_slug"] == cslug]
+            if pair:
+                (lib_dir / cslug / slug).mkdir(parents=True, exist_ok=True)
+                (lib_dir / cslug / slug / "index.html").write_text(destination(slug, name, pair, dests.get(slug, {}), lib, by_country, cslug), encoding="utf-8")
 
     for slug, (name, group) in by_country.items():
         (lib_dir / slug).mkdir(parents=True, exist_ok=True)

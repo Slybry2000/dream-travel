@@ -141,6 +141,22 @@ h1, h2, h3, p { margin: 0; }
 .tl-tabs a:hover { background: var(--blush); }
 .tl-tabs a[aria-current] { color: var(--paper); background: var(--ink); }
 .tl-tabs__sep { flex: none; align-self: stretch; width: 1px; margin: 6px 8px; background: rgba(0,18,11,.18); }
+/* Two-row filter (2026-10-23): type of trip, then the countries that have that type. One sticky block. */
+.tl-filter { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid rgba(0,18,11,.08); }
+.tl-filter .tl-tabs { position: static; border-bottom: 0; }
+.tl-filter .tl-tabs--kinds { padding-bottom: 4px; }
+.tl-filter .tl-tabs--places { padding-top: 2px; }
+.tl-filter .tl-tabs--places a { padding: 6px 12px; color: var(--muted); font-size: 11px; }
+.tl-filter .tl-tabs--places a[aria-current] { color: var(--ink); background: var(--blush); }
+@media (max-width: 700px) { .tl-filter .tl-tabs { justify-content: flex-start; } }
+/* Type tiles on the all-trips page: the main way in. */
+.tl-kinds { max-width: 1240px; margin: 0 auto; padding: 28px var(--gutter) 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.tl-kind { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; color: #fff; background: var(--forest); text-decoration: none; }
+.tl-kind img { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+.tl-kind:hover img { transform: scale(1.04); }
+.tl-kind::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(0,18,11,.85)); }
+.tl-kind span { position: absolute; z-index: 1; right: 0; bottom: 0; left: 0; padding: 16px 18px; font: 400 clamp(26px, 2.4vw, 34px)/1.1 var(--editorial); }
+.tl-kind small { display: block; margin-bottom: 6px; color: var(--mint); font: 600 10px/1.3 var(--body); letter-spacing: .08em; text-transform: uppercase; }
 .tl-dest .tl-grid-wrap { padding: 28px var(--gutter) 36px; }
 .tl-dest .tl-grid-wrap + .tl-grid-wrap { padding-top: 8px; }
 .tl-dest .tl-grid-head { margin-bottom: 14px; }
