@@ -1,12 +1,12 @@
 {
   "slug": "yoga-retreat-in-costa-rica",
-  "title": "Yoga Retreat in Costa Rica",
-  "code": "CRW3",
+  "title": "Costa Rica: Yoga Retreat in Arenal",
+  "code": "",
   "source": "https://dream-travel.wetravel.com/i/6aaee217932e3d74d6e1728d",
-  "updated_at": "2026-09-20T21:43:47.616Z",
+  "updated_at": "2026-10-23T21:38:32.408Z",
   "status": "published",
   "hero": {
-    "src": "images/yoga-retreat-in-costa-rica/TLELGizTKUh4uoZy2nXA.webp",
+    "src": "images/costa-rica-yoga-retreat-in-arenal/TLELGizTKUh4uoZy2nXA.webp",
     "x": 50,
     "y": 50
   },
@@ -40,26 +40,26 @@
       "title": "Yoga & Wellness Retreat in Arenal, Costa Rica",
       "subtitle": "",
       "image": {
-        "src": "images/yoga-retreat-in-costa-rica/TLELGizTKUh4uoZy2nXA.webp",
+        "src": "images/costa-rica-yoga-retreat-in-arenal/TLELGizTKUh4uoZy2nXA.webp",
         "x": 50,
         "y": 50
       },
       "html": "<p>Spend <strong>7 nights in the beautiful Arenal region</strong>, surrounded by tropical gardens and views of one of Costa Rica’s most iconic landscapes. Your stay at <strong>Lomas del Volcán Hotel</strong> combines regular yoga practice with time to relax, explore, and experience some of the highlights of the region. &nbsp;</p><p><strong>Your retreat includes:</strong></p><ul><li><p>Morning and afternoon <strong>yoga sessions</strong>, generally held on the deck or in the gardens</p></li><li><p>A special <strong>sunrise yoga session at El Castillo viewpoint</strong></p></li><li><p><strong>Chocolate experience</strong> at Eden</p></li><li><p><strong>Río Balsa Class II &amp; III white-water rafting</strong>, including lunch</p></li><li><p>Visit to the <strong>Arenal Místico Hanging Bridges</strong></p></li><li><p>Evening visit to the <strong>hot springs</strong>, including dinner</p></li><li><p>Plenty of <strong>free time to relax, enjoy the hotel, and explore La Fortuna</strong></p></li><li><p><strong>7 breakfasts, 1 lunch and 3 dinners</strong>, including a welcome dinner and farewell dinner</p></li><li><p><strong>7 nights at Lomas del Volcán Hotel</strong> in bungalow deluxe accommodations</p></li><li><p>Private transportation for the included activities</p></li><li><p>Private guided <strong>airport transfers between San José and La Fortuna</strong>&nbsp;</p></li></ul>\n<h4>Hotel Lomas del Volcan</h4>\nExperience the beauty of Costa Rica at Hotel Lomas del Volcan, where stunning views of Arenal Volcano greet you. Surrounded by lush tropical gardens, this accommodation offers spacious bungalows with private terraces. Enjoy the on-site organic farm's fresh produce and unwind in the natural hot springs, all while being close to La Fortuna's attractions.",
       "gallery": [
         {
-          "src": "images/yoga-retreat-in-costa-rica/o4IbvLIgSSygiFhRUOwI.webp",
+          "src": "images/costa-rica-yoga-retreat-in-arenal/o4IbvLIgSSygiFhRUOwI.webp",
           "x": 50,
           "y": 50,
           "caption": ""
         },
         {
-          "src": "images/yoga-retreat-in-costa-rica/qSsxPEgHQBCAW0NZTUEQ.webp",
+          "src": "images/costa-rica-yoga-retreat-in-arenal/qSsxPEgHQBCAW0NZTUEQ.webp",
           "x": 50,
           "y": 50,
           "caption": ""
         },
         {
-          "src": "images/yoga-retreat-in-costa-rica/vjSfRvTCQWpdZa2zlEU2.webp",
+          "src": "images/costa-rica-yoga-retreat-in-arenal/vjSfRvTCQWpdZa2zlEU2.webp",
           "x": 50,
           "y": 50,
           "caption": ""
@@ -71,7 +71,7 @@
       "title": "“Your Retreat at a Glance”",
       "subtitle": "",
       "image": {
-        "src": "images/yoga-retreat-in-costa-rica/Ys65sZApROy8MliMpbZH.webp",
+        "src": "images/costa-rica-yoga-retreat-in-arenal/Ys65sZApROy8MliMpbZH.webp",
         "x": 50,
         "y": 50
       },
@@ -83,7 +83,7 @@
       "title": "",
       "subtitle": "",
       "image": {
-        "src": "images/yoga-retreat-in-costa-rica/9Hm6U76HRViWsdF81Qhy.webp",
+        "src": "images/costa-rica-yoga-retreat-in-arenal/9Hm6U76HRViWsdF81Qhy.webp",
         "x": 50,
         "y": 50
       },
@@ -92,6 +92,6 @@
     }
   ],
   "overnights": [],
-  "key": "qs4xshk",
-  "category": "Wellness"
+  "category": "Wellness",
+  "key": "qs4xshk"
 }

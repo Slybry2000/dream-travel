@@ -1,12 +1,12 @@
 {
   "slug": "ireland-celtic-traditions-10-day",
-  "title": "Ireland Celtic Traditions 10 Day",
+  "title": "Ireland: Celtic Traditions, Art & Scenic Wonders",
   "code": "",
   "source": "https://dream-travel.wetravel.com/i/6adbac33bf3af26761211e1d",
-  "updated_at": "2026-10-23T18:53:37.994Z",
+  "updated_at": "2026-10-23T21:24:15.300Z",
   "status": "published",
   "hero": {
-    "src": "images/ireland-celtic-traditions-10-day/5kxeDTO7R7mgHo2JbmIQ.webp",
+    "src": "images/ireland-celtic-traditions-art-scenic-wonders/SYTzWLh7SHmEKlKHsLPT.webp",
     "x": 50,
     "y": 50
   },
@@ -152,7 +152,7 @@
       "title": "10-Day Journey Through Celtic Traditions, Art & Scenic Wonders",
       "subtitle": "Introduction",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/5kxeDTO7R7mgHo2JbmIQ.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/SYTzWLh7SHmEKlKHsLPT.webp",
         "x": 50,
         "y": 50
       },
@@ -164,7 +164,7 @@
       "title": "Day 1 - Welcome to Dublin",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/ShQSn3QtS1u3Uv1hXf6E.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/zXIAPYe2TYmFuBxhMF0U.webp",
         "x": 50,
         "y": 50
       },
@@ -176,7 +176,7 @@
       "title": "Day 2 - Dublin’s Historic Treasures",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/mXseXt55SBygkxlDXYI0.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/DoPMbJvDTzKu9qOJWUjo.webp",
         "x": 50,
         "y": 50
       },
@@ -188,7 +188,7 @@
       "title": "Day 3 - Newgrange & Donegal",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/2e2PVysTGCIwmwqJuZoQ.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/ZvcIumxMTquh5IJwoYO4.webp",
         "x": 50,
         "y": 50
       },
@@ -199,7 +199,11 @@
       "id": "day-4-irish-crafts-galway",
       "title": "Day 4 - Irish Crafts & Galway",
       "subtitle": "",
-      "image": null,
+      "image": {
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/LrmRBZOCSSi7KNU8jNmH.webp",
+        "x": 50,
+        "y": 50
+      },
       "html": "<h4>Stroll through Donegal Town</h4>\nStroll through Donegal Town and visit Donegal Craft Village, where local artisans keep creative traditions alive.\n<h4>Visit Donegal Craft Village</h4>\nVisit Donegal Craft Village, where local artisans keep creative traditions alive.\n<h4>Travel toward Galway with stop in Cong</h4>\nTravel toward Galway with a stop in picturesque Cong, known for its connection to the film The Quiet Man.",
       "gallery": []
     },
@@ -208,7 +212,7 @@
       "title": "Day 5 - Connemara & Kylemore Abbey",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/KaiSpreoShuEmP3Sgeln.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/PaHekP8TQSJNq5aZcDFA.webp",
         "x": 50,
         "y": 50
       },
@@ -220,7 +224,7 @@
       "title": "Day 6 - Cliffs of Moher & Killarney",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/dl3YVgyCTdqgKUcVyGtt.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/5ptGzTVDSvaL7heh87Hb.webp",
         "x": 50,
         "y": 50
       },
@@ -232,7 +236,7 @@
       "title": "Day 7 - Ring of Kerry & Rural Traditions",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/spkcGu5bSVmKEuuVhQtt.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/pjgYMNsCQxmeKuRRtBe0.webp",
         "x": 50,
         "y": 50
       },
@@ -244,7 +248,7 @@
       "title": "Day 8 - Cobh, Cashel & Dublin",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/OsefUIxWTue3sxYuMMkU.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/i36zqp2wRvekyUl0lTPM.webp",
         "x": 50,
         "y": 50
       },
@@ -256,7 +260,7 @@
       "title": "Day 9 - Creative Workshop & Farewell",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/DD6puCW5ThCibEF1p8h1.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/RK4zl1w7TYeZ1VTIwnd4.webp",
         "x": 50,
         "y": 50
       },
@@ -268,7 +272,7 @@
       "title": "Day 10 - Farewell Ireland",
       "subtitle": "",
       "image": {
-        "src": "images/ireland-celtic-traditions-10-day/S7H1K7hgSOq9PAlaiD8d.webp",
+        "src": "images/ireland-celtic-traditions-art-scenic-wonders/A41dmLAfSRehFZqwyEUR.webp",
         "x": 50,
         "y": 50
       },

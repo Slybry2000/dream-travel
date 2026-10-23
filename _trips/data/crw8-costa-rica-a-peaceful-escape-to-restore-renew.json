@@ -1,17 +1,17 @@
 {
   "slug": "crw8-costa-rica-a-peaceful-escape-to-restore-renew",
   "title": "Costa Rica: A Peaceful Escape to Restore & Renew",
-  "code": "CRW8",
+  "code": "",
   "source": "https://dream-travel.wetravel.com/i/6ac500d8ef9e901bd875130f",
-  "updated_at": "2026-10-06T15:44:34.166Z",
+  "updated_at": "2026-10-23T21:36:31.570Z",
   "status": "published",
   "hero": {
-    "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/o6H7ZISDiV4USjxxu6Gg.webp",
+    "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/o6H7ZISDiV4USjxxu6Gg.webp",
     "x": 50,
     "y": 50
   },
-  "days": 5,
-  "nights": 4,
+  "days": 0,
+  "nights": 0,
   "country": "Costa Rica",
   "locations": [
     "San José",
@@ -40,7 +40,7 @@
       "title": "Costa Rica: A Peaceful Escape to Restore & Renew",
       "subtitle": "A Five-Day Wellness Retreat in Atenas",
       "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/o6H7ZISDiV4USjxxu6Gg.webp",
+        "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/o6H7ZISDiV4USjxxu6Gg.webp",
         "x": 50,
         "y": 50
       },
@@ -48,18 +48,66 @@
       "gallery": []
     },
     {
-      "id": "day-1-welcome-to-your-costa-rican-escape",
-      "title": "Day 1: Welcome to Your Costa Rican Escape",
+      "id": "what-can-you-expect",
+      "title": "What Can You Expect?",
       "subtitle": "",
       "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/3gChx4QkR0eKt2TKg9wf.webp",
+        "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/3gChx4QkR0eKt2TKg9wf.webp",
         "x": 50,
         "y": 50
       },
-      "html": "<p><strong>Welcome to Costa Rica! </strong>Arrive at Juan Santamaría International Airport, the gateway for your stay in Atenas. Transfer from the hotel to the retreat in Atenas. </p><p>After checking into your room, <strong>take time to settle in and explore the pools, gardens, and peaceful spaces around the property</strong>. Your first evening is an opportunity to ease into the slower pace of the retreat and become acquainted with its approach to <strong>nourishing, farm-to-table dining.</strong> </p>",
+      "html": "<p>Settle into a slower rhythm in <strong>Atenas, Costa Rica</strong>, where lush surroundings, nourishing food, and time for yourself create the setting for a restorative getaway. Based at an intimate luxury retreat approximately 40 minutes from Juan Santamaría International Airport, this adults-focused escape gives you one comfortable home base and the freedom to shape your stay around what you enjoy most.</p><p><strong>The minimum stay is five days and four nights, but that is just the starting point.</strong> Extend your visit and personalize it with excursions, spa treatments, cultural outings, and wellness experiences. Whether you picture quiet days by the pool, opportunities to explore Costa Rica, or a little of both, this trip can become the escape you want it to be.</p><p>At the retreat, your days unfold at an easy pace. Enjoy three swimming pools, peaceful gardens, self-guided nature paths, a well-equipped gym, and an open-air yoga space with props available for use. Spend a morning swimming or walking, settle in with a book after lunch, or arrange a guided yoga practice or private fitness session at an additional cost. There is room to be active, rest, and spend time together without filling every hour.</p><p>Farm-to-table dining is part of the experience, with <strong>three daily meals included during your retreat stay</strong>, subject to arrival and departure arrangements. The menu follows an anti-inflammatory approach, with dishes prepared without gluten, dairy, or refined sugars. Breakfast and lunch are plant-forward, while protein is offered at dinner, bringing fresh ingredients and thoughtful preparation to each day.</p><p>For those who want to explore beyond the property, <strong>optional tours offer a closer look at Costa Rican culture, food, and everyday life</strong>. Visit a family-run coffee plantation to follow the journey from seed to cup, explore Atenas on a cultural walking tour, browse a local farmers market, or discover how cacao becomes chocolate during a farm visit in San Mateo. These outings can be added to your stay, giving you the flexibility to balance exploration with downtime.</p><p>You can also personalize your retreat with optional massages, Ayurvedic therapies, private wellness sessions, and specially arranged rituals or experiences with visiting practitioners. These services, along with excursions and guided instruction, are available at an additional cost and subject to availability.</p><p>With <strong>round-trip international airfare and airport transportation included</strong>, your getaway begins with the essentials taken care of. Come for five days or stay longer, keep your plans simple or add experiences that spark your curiosity, and enjoy time in Costa Rica at a pace that feels right for you.</p>",
       "gallery": [
         {
-          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/oxPkubaLQe257hQ9AofD.webp",
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/oxPkubaLQe257hQ9AofD.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/uqFx6KPiRHa1sbDtgGgU.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/wGv5tFW0TaqzyJPqQcd8.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/gOZZwfxGRim5UDlYxQlb.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/zXoNIOYXSst6Aa5ddCNg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/3WkdYuWlTmuJ6xx0VIvJ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/9eAK2jMR3mHw6HAW34Z8.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/4RhtazXrRoOY8nQP2lLG.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/MHUY5abQfmCBXkKPIavg.webp",
           "x": 50,
           "y": 50,
           "caption": ""
@@ -67,18 +115,36 @@
       ]
     },
     {
-      "id": "day-2-find-your-own-rhythm",
-      "title": "Day 2: Find Your Own Rhythm",
-      "subtitle": "",
+      "id": "tours-excursions-a-la-carte-add-ons",
+      "title": "Tours & Excursions- A La Carte Add-ons",
+      "subtitle": "Each excursion is carefully selected to connect you with the real Costa Rica — its landscapes, wildlife, culture, and people.",
       "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/eDcmtXYYTYGCj89GLUlv.webp",
-        "x": 50,
+        "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/LKr7vUjpQyqhEVODdMQK.webp",
+        "x": 90.20000000000002,
         "y": 50
       },
-      "html": "<p>Begin your first full day with a <strong>plant-forward breakfast</strong> and time to enjoy your surroundings. The retreat’s yoga studio and props are available for group use, providing a setting for gentle movement or a leader-arranged practice. Later, <strong>follow the property’s nature paths on a self-guided walk or spend time beside one of the three pools.</strong> With lunch and dinner served on site, there is no need to rush between activities. Read, rest, swim, or simply enjoy a day with fewer demands on your time.</p>",
+      "html": "<h4>Coffee Plantation Tour</h4>\n<p>A must-do for coffee lovers. El Toledo is a family-run gourmet coffee plantation and roaster — from seed to cup, you'll experience the full journey of Costa Rica's finest export.</p>\n<h4>Atenas Cultural Tour</h4>\n<p>A walking tour through our town to meet the locals. Costa Ricans are known for their grace and kindness — immerse yourself in the sweet elegance of their culture and daily life.</p>\n<h4>Farmers Market</h4>\n<p>Tour the local harvest and discover the very ingredients that inspire our chefs' daily menus. A vibrant immersion into Costa Rica's food culture.</p>\n<h4>Costa Rica Chocolate Tour</h4>\n<p>Our Choco Tour in San Mateo is led by Alexander, a passionate cacao expert and owner of the farm — from bean to bar, deep in the Costa Rican jungle.</p>",
       "gallery": [
         {
-          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/L4pB0QPSDyx2LcYZHY8l.webp",
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/rHkF4mYUQvntJHefXfdA.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/0atau50LQWy2CC8Bq2Wg.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/IDX535b4QbO9hVcFDn4d.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/qd0gTxByTcSu3uxKMdJQ.webp",
           "x": 50,
           "y": 50,
           "caption": ""
@@ -86,18 +152,54 @@
       ]
     },
     {
-      "id": "day-3-make-space-for-rest",
-      "title": "Day 3: Make Space for Rest",
+      "id": "healing-activities-a-la-carte-add-ons",
+      "title": "Healing Activities - A La Carte Add-Ons",
       "subtitle": "",
       "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/QH20umVQziTGM3Ws1ElK.webp",
+        "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/suvMnjxSXOHef0YtKB8w.webp",
         "x": 50,
         "y": 50
       },
-      "html": "<p>Today offers the freedom to focus on what helps you feel refreshed. <strong>Enjoy the pools and relaxation areas, visit the gym, or choose an optional appointment at the spa. </strong>The available treatment menu includes massage, Ayurvedic therapies, and other wellness experiences, allowing you to personalize your stay according to your interests. Between meals, leave time to enjoy the property and the pleasure of an unhurried afternoon.</p>",
+      "html": "<h4>Sound Healing</h4>\n<p>Indulge in the transcendent magic of our sound bath, a group experience that harmonizes your body, mind, and soul through the captivating vibrations of ancient instruments.</p>\n<h4>Cacao Ceremony</h4>\n<p>Sip on the elixir of the heart, a sacred cup of ceremonial cacao, in a group ceremony of soulful connections and spiritual revelations. Let the grop energy and the mystical brew guide your path to enlightenment.</p>\n<h4>Pranayama</h4>\n<p>A communal ritual of pranayama awaits, inviting you to journey through sacred breath-work. Synchronize your inhalations and exhalations, allowing the power of communal breath to release physical and emotional obstacles, liberating</p><p>your body, mind, and spirit.</p>\n<h4>Meditation</h4>\n<p>Surrender to the cosmic energy within, as you engage in a communal meditation journey. Let the shared silence and stillness open your soul to deeper levels of awareness, allowing for profound insights and profound connections with fellow seekers.</p>\n<h4>Ecstatic Dance</h4>\n<p>Ecstatic Dance is a free-form, conscious dance journey that invites participants to move, release, and express themselves authentically through music and body movement. Without choreography, judgment, or talking, this practice creates a sacred space to connect with the body, process emotions, and elevate energy. Each session is accompanied by a carefully curated set of music that guides the group into a dynamic and liberating experience.</p>\n<h4>Reiki</h4>\n<p>A collective energy healing experience where participants receive Reiki simultaneously in a serene, meditative environment. Gentle hands-on or hovering techniques channel universal life force energy to balance the energetic body, reduce stress, and support emotional and physical well-being.</p>\n<h4>Full Moon Release Ceremony</h4>\n<p>A lunar ritual that supports letting go and emotional renewal.</p><p><strong>Benefits</strong></p><ul><li><p>Helps release emotional patterns</p></li><li><p>Promotes inner peace</p></li><li><p>Strengthens intention</p></li><li><p>Supports spiritual connection</p></li></ul>",
       "gallery": [
         {
-          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/00rVFCXERS6o6yc60UJS.webp",
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/dpzp1OxwTqST65iSx1tC.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/21TEN0H3Tf6mhQhnu4YV.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/xSgrte0SMWqLHH8ZHwCQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/VKEBLjCTrizm0PqMNw54.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/8FiKAlH4RnOlJJEzs2uw.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/93I8SbzmRteYNrOtzkBw.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/O0ZIr6aRrKfaSA1AX1G9.webp",
           "x": 50,
           "y": 50,
           "caption": ""
@@ -105,18 +207,30 @@
       ]
     },
     {
-      "id": "day-4-follow-your-curiosity",
-      "title": "Day 4: Follow Your Curiosity",
+      "id": "physical-activities-a-la-carte-add-ons",
+      "title": "Physical Activities- A La Carte Add-Ons",
       "subtitle": "",
       "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/mff86PHSSqeAKwQL5N3S.webp",
+        "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/ckf2dPcS2WV2sDHyguvx.webp",
         "x": 50,
         "y": 50
       },
-      "html": "<p>Spend your final full day enjoying more of the retreat or adding an experience that interests you. Guests who prefer to remain on site can enjoy another nature walk, pool time, or a private wellness or fitness session booked separately. Rituals, ceremonies, and sessions with visiting practitioners are also possible add-ons, subject to arrangements. End the day with dinner and time to appreciate the moments of rest and connection your stay has offered.</p>",
+      "html": "<h4>Nature Guided Hike</h4>\n<p>Embark on a transformational journey through the vibrant landscapes of Costa Rica, as you hike through our crystal mountain, organic coffee plantation, and lush jungle, and observe the diverse flora and fauna. The climb and descent offer an opportunity for invigorating physical activity and spiritual renewal, while the surrounding natural beauty and native wildlife awaken your senses. Our guides will enrich your experience with insights into the region's unique biodiversity and culture. Soak in the abundant life-force energy of our stunning environment and nourish your mind, body, and soul.</p>\n<h4>Pilates Class</h4>\n<p>Engage your core, align your body, and dive into the rhythm of music in a dynamic Pilates mat class. With each movement, challenge your strength and flexibility, guided by a curated theme, principle, and the support of Pilates props. Harmonize with your breath and experience the elegance of each pose, tapping into the power of your body.</p>\n<h4>Yoga Class </h4>\n<p>Regardless of your yoga experience level, unify your body, mind, and soul in a dynamic group class that honors both your individual abilities and the communal energy of a shared practice. Breathe, move, and connect with yourself and the group,</p><p>harmonizing your flow into a powerful</p><p>rhythm that transcends barriers and</p><p>elevates your spiritual practice.</p>",
       "gallery": [
         {
-          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/qjiKhsVRK6cXdeqtz5hP.webp",
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/Al7vwtVvRMylDoqdKJ6w.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/dxxoxwa3RAWuqBFdhYAd.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/L3CpELiFRsyHPWAPSbb6.webp",
           "x": 50,
           "y": 50,
           "caption": ""
@@ -124,38 +238,44 @@
       ]
     },
     {
-      "id": "day-5-carry-the-calm-home",
-      "title": "Day 5: Carry the Calm Home",
+      "id": "gastronomy-experiences-a-la-carte-add-ons",
+      "title": "Gastronomy Experiences- A La Carte Add-ons",
       "subtitle": "",
       "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/riPh3fyJTGLJEZxejQUg.webp",
+        "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/Tek3DNIGRDyKyzoPmkwh.webp",
         "x": 50,
         "y": 50
       },
-      "html": "<p>Enjoy a final quiet morning before checking out, with breakfast available according to your departure time and the confirmed meal arrangements. If your schedule allows, <strong>take a last walk or spend a few moments relaxing before the journey home. </strong>Transfer to Juan Santamaría International Airport. Depart with memories of nourishing meals, peaceful surroundings, and time devoted to yourself.</p>",
+      "html": "<h4>Tea Tasting </h4>\n<p>Indulge in a sensory journey through an exclusive selection of 7 exquisite teas, steeped in the rich cultural heritage of ancient traditions and modern innovation.</p>\n<h4>Cooking Class </h4>\n<p>Learn together the art of crafting organic meals in our hands-on cooking class, a journey through culinary delights that will ignite your passion for food.</p>\n<h4>Wine Tasting </h4>\n<p>Indulge in a decadent organic wine tasting experience, complemented by a tantalizing array of appetizers including a ceviche shot, nuts and seeds, olives, popcorn, and cheese, all paired harmoniously with a selection of 5 different wines (sparkling, white, and red wines). A symphony of flavors awaits.</p>\n<h4>Master of Mixology</h4>\n<p>Embrace the alchemy of mixology and create 2 signature cocktails and one mocktail in an exhilarating hands-on class. Master the craft of blending spirits, fresh juices, and garnishes to craft three delectable concoctions that perfectly capture your unique taste, your inner bartender is sure to be captivate</p>",
       "gallery": [
         {
-          "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/QgonBB7XSLWGlWTYbter.webp",
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/bD2H6C0sQ5aunCxs8VOl.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/NzgDcLPwTHqCPRUUyTaQ.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/kiKb1sUS9uG9oG43yMwI.webp",
+          "x": 50,
+          "y": 50,
+          "caption": ""
+        },
+        {
+          "src": "images/costa-rica-a-peaceful-escape-to-restore-renew/NUOHoOSAT4GLm8FzVfaF.webp",
           "x": 50,
           "y": 50,
           "caption": ""
         }
       ]
-    },
-    {
-      "id": "what-is-included",
-      "title": "What is included",
-      "subtitle": "",
-      "image": {
-        "src": "images/crw8-costa-rica-a-peaceful-escape-to-restore-renew/aqSIuTbAQbuEseaecLMF.webp",
-        "x": 50,
-        "y": 50
-      },
-      "html": "<h2>What’s Included</h2><ul><li><p>International round-trip airfare</p></li><li><p>Round-trip airport transportation</p></li><li><p>Four nights of retreat accommodation for this proposed program, with room category and single or double occupancy confirmed at booking.</p></li><li><p>Three daily farm-to-table meals at the retreat’s main restaurant, as provided by the group rate. Arrival- and departure-day meal arrangements will be confirmed.</p></li><li><p>Full access to the yoga studio and yoga props.</p></li><li><p>Access to the retreat’s swimming pools, gym, and relaxation areas.</p></li><li><p>Self-guided nature walks on the property.</p></li></ul><h2>What’s Not Included</h2><ul><li><p>Spa treatments, massages, and Ayurvedic therapies.</p></li><li><p>Tours, excursions, and transportation associated with optional outings.</p></li><li><p>Specialized rituals, ceremonies, and sessions with visiting wellness practitioners.</p></li><li><p>Additional educational, wellness, and fitness activities.</p></li><li><p>Guided yoga classes or private instruction unless expressly included in the finalized group program.</p></li><li><p>Optional dining at the poolside lounge or rooftop fine-dining venue.</p></li><li><p>Room-category upgrades or premium accommodations outside the confirmed group rate.</p></li></ul>",
-      "gallery": []
     }
   ],
   "overnights": [],
-  "key": "nw24xwb",
-  "category": "Wellness"
+  "category": "Wellness",
+  "key": "nw24xwb"
 }
