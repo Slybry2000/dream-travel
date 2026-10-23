@@ -35,6 +35,9 @@ files (which contain the keys) cannot be downloaded from the website.
 **Without WeTravel:** copy any `data/*.json` file, delete its `"key"` and `"source"`,
 edit the text, drop photos in `trips/images/<slug>/`, run `build.py`.
 
+**Type of trip** (`"category"`: "Wellness", "Art & Culture"...): shown on every card, groups the
+overview, and gets its own page and tab. Pass `--category "Art & Culture"` when importing; trips
+without one count as Wellness. Re-imports keep it.
 **Tag cards** (Classic, Small Group...): fill `"tags"`; re-imports keep your tags.
 **Destination intro copy:** add `destinations.json` like `{"costa-rica": {"intro": ["..."]}}`.
 
