@@ -49,3 +49,10 @@ WordPress Custom HTML block:
     <script src="https://adults.dream-travel.net/trips/embed.js" async></script>
 
 Use `all` instead of a country slug to show every listed trip.
+
+**Pickleball trips stay out of this library (decided 2026-10-29).** Pickleball is its own
+brand at pickleball.dream-travel.net (separate repo: C:\Projects\pickleball-dream-travel).
+On WeTravel (same Dream Travel account) name them "Pickleball <Country>: <title>" so they
+sort apart from the adult/wellness "Country: Theme" itineraries. Never run
+`import_wetravel.py` on a pickleball itinerary, so it cannot appear on adults.dream-travel.net.
+The pickleball site's trip cards link straight to the WeTravel page instead.

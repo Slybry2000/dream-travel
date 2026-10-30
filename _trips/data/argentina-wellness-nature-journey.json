@@ -1,0 +1,207 @@
+{
+  "slug": "argentina-wellness-nature-journey",
+  "title": "Argentina: Wellness & Nature Journey",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6ae41bafb1e2f9f387a35b1f",
+  "updated_at": "2026-10-30T05:51:21.544Z",
+  "status": "published",
+  "hero": {
+    "src": "images/argentina-wellness-nature-journey/kBBXEUEZQ8Kzmp4Wz6Pv.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 7,
+  "nights": 6,
+  "country": "Argentina",
+  "locations": [
+    "Ezeiza International Airport (Buenos Aires)",
+    "Carlos Thays Botanical Garden",
+    "Japanese Garden (Jardín Japonés)",
+    "Palermo Rose Garden (El Rosedal)",
+    "Gioia Cocina Botánica (Palacio Duhau – Park Hyatt)",
+    "Aeroparque Jorge Newbery (Buenos Aires Domestic Airport)",
+    "Puerto Iguazú Airport (Cataratas del Iguazú International Airport)",
+    "Iguazu National Park (Argentine Side)",
+    "Devil's Throat (Garganta del Diablo)",
+    "Yabuticaba Jungle Market (Mercado de la Selva Yabuticaba)",
+    "Green Mandioca – Selvaje Lodge",
+    "Iguaçu National Park (Brazilian Side)",
+    "La Ventana Tango"
+  ],
+  "tags": [],
+  "tagline": "Buenos Aires & Iguazú",
+  "summary": "Experience a unique blend of wellness and nature in Argentina, combining the vibrant city life of Buenos Aires with the breathtaking natural beauty of Iguazú. Enjoy mindful activities, immersive nature experiences, and authentic local cuisine, all designed to foster relaxation, connection, and well-being throughout your journey.",
+  "pins": [
+    {
+      "name": "Ezeiza International Airport (Buenos Aires)",
+      "address": "Autopista Tte. Gral. Ricchieri Km 33,5, B1802 Ezeiza, Buenos Aires, Argentina",
+      "lat": -34.8128,
+      "lng": -58.5392
+    },
+    {
+      "name": "Carlos Thays Botanical Garden",
+      "address": "Av. Santa Fe 3951, C1425BHB CABA, Argentina",
+      "lat": -34.5825,
+      "lng": -58.4244
+    },
+    {
+      "name": "Japanese Garden (Jardín Japonés)",
+      "address": "Av. Casares 2966, C1425 CABA, Argentina",
+      "lat": -34.5726,
+      "lng": -58.4107
+    },
+    {
+      "name": "Palermo Rose Garden (El Rosedal)",
+      "address": "Av. Infanta Isabel 900, C1425 CABA, Argentina",
+      "lat": -34.5672,
+      "lng": -58.4166
+    },
+    {
+      "name": "Gioia Cocina Botánica (Palacio Duhau – Park Hyatt)",
+      "address": "Av. Alvear 1661, C1014AAD CABA, Argentina",
+      "lat": -34.5897,
+      "lng": -58.3897
+    },
+    {
+      "name": "Aeroparque Jorge Newbery (Buenos Aires Domestic Airport)",
+      "address": "Av. Rafael Obligado s/n, C1425DAA CABA, Argentina",
+      "lat": -34.5592,
+      "lng": -58.4156
+    },
+    {
+      "name": "Puerto Iguazú Airport (Cataratas del Iguazú International Airport)",
+      "address": "Ruta Nacional 101 Km 141, 3370 Puerto Iguazú, Misiones, Argentina",
+      "lat": -25.7373,
+      "lng": -54.4734
+    },
+    {
+      "name": "Iguazu National Park (Argentine Side)",
+      "address": "Ruta 101, 3370 Puerto Iguazú, Misiones, Argentina",
+      "lat": -25.6953,
+      "lng": -54.4367
+    },
+    {
+      "name": "Devil's Throat (Garganta del Diablo)",
+      "address": "Iguazu National Park, Misiones, Argentina",
+      "lat": -25.6867,
+      "lng": -54.4411
+    },
+    {
+      "name": "Yabuticaba Jungle Market (Mercado de la Selva Yabuticaba)",
+      "address": "Av. Victoria Aguirre 430, 3370 Puerto Iguazú, Misiones, Argentina",
+      "lat": -25.5997,
+      "lng": -54.5732
+    },
+    {
+      "name": "Green Mandioca – Selvaje Lodge",
+      "address": "Selvaje Lodge Iguazú, Puerto Iguazú, Misiones, Argentina",
+      "lat": -25.6135,
+      "lng": -54.5632
+    },
+    {
+      "name": "Iguaçu National Park (Brazilian Side)",
+      "address": "Rodovia BR 469, KM 18, Foz do Iguaçu - PR, 85853-830, Brazil",
+      "lat": -25.6107,
+      "lng": -54.4869
+    },
+    {
+      "name": "La Ventana Tango",
+      "address": "Balcarce 425, C1064AAI CABA, Argentina",
+      "lat": -34.6157,
+      "lng": -58.3712
+    }
+  ],
+  "sections": [
+    {
+      "id": "argentina-wellness-buenos-aires-iguaz",
+      "title": "Argentina Wellness: Buenos Aires & Iguazú",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/kBBXEUEZQ8Kzmp4Wz6Pv.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Argentina Wellness: Buenos Aires & Iguazú</h4>\nExperience a unique blend of wellness and nature in Argentina, combining the vibrant city life of Buenos Aires with the breathtaking natural beauty of Iguazú. Enjoy mindful activities, immersive nature experiences, and authentic local cuisine, all designed to foster relaxation, connection, and well-being throughout your journey.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-arrival-in-buenos-aires-and-hotel-transfer",
+      "title": "Day 1 - Arrival in Buenos Aires and Hotel Transfer",
+      "subtitle": "",
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/14SISMRgQK2ZHAO5aprA.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Transfer Airport Ezeiza to Downtown Hotel</h4>\nTransfer Airport Ezeiza to Downtown Hotel. Private service with guide.\n<h4>Buenos Aires Hotel</h4>\nAccommodation in Buenos Aires.\n<h4>Meals included: None</h4>\nNo meals included on this day.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-buenos-aires-wellness-city-tour",
+      "title": "Day 2 - Buenos Aires Wellness City Tour",
+      "subtitle": "",
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/rGKE1PP4QLKfOd6SXbAJ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Private City Tour & Urban Wellness Experience</h4>\nWe recommend a City Tour &amp; Urban Wellness Experience to give the itinerary an authentic wellness identity, combining Buenos Aires’ main green spaces with activities focused on connecting with nature, mindfulness and healthy gastronomy. The visit begins at Carlos Thays Botanical Garden, where guests will enjoy a leisurely walk along its paths and among its diverse plant species, with moments dedicated to mindful observation and breathing exercises. Continue to the Japanese Garden, an oasis of serenity in the heart of the city. Explore its gardens, bridges and ponds, with time for quiet contemplation and connecting with nature. The experience continues at Palermo Rose Garden (El Rosedal), where guests can enjoy a relaxing walk along its paths and green spaces.\n<h4>Lunch at Gioia Cocina Botánica</h4>\nAt midday, enjoy a distinctive experience at Gioia Cocina Botánica (Monday to Saturday), located at Palacio Duhau – Park Hyatt Buenos Aires. Its botanical-inspired cuisine places seasonal vegetables, legumes, mushrooms and fresh ingredients at the heart of a creative and refined gastronomic proposal. Set in an elegant atmosphere overlooking the hotel’s gardens, this experience invites guests to discover a mindful approach to lunch, celebrating natural flavors, seasonal produce and the connection between gastronomy and well-being. Includes: Three-course à la carte lunch, One glass of wine selected by the sommelier, One non-alcoholic beverage, One coffee or tea, accompanied by petit fours.\n<h4>Estado Puro Spa Experience</h4>\nFree time to enjoy Estado Puro Spa, where guests can relax and rejuvenate with the hydrotherapy circuit, whirlpool, heated loungers, dry and steam saunas, and a sensory experience featuring special showers. Return to the hotel.\n<h4>Buenos Aires Hotel</h4>\nAccommodation.\n<h4>Meals included: Breakfast and Lunch</h4>\nMeals included: Breakfast and Lunch",
+      "gallery": []
+    },
+    {
+      "id": "day-3-buenos-aires-to-iguazu-transfer-and-flight",
+      "title": "Day 3 - Buenos Aires to Iguazu Transfer and Flight",
+      "subtitle": "",
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/DMHeBpUQAOqgq15wleAN.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Transfer Downtown Hotel to Aeroparque Buenos Aires</h4>\nTransfer from Downtown Hotel to Aeroparque Buenos Aires. Private service with guide.\n<h4>Flight from Buenos Aires to Iguazu</h4>\nFlight from Buenos Aires to Iguazu (not included).\n<h4>Transfer Puerto Iguazu Airport to Hotel</h4>\nTransfer from Puerto Iguazu Airport to the hotel. Private service with guide.\n<h4>Iguazu Hotel</h4>\nAccommodation.\n<h4>Meals included: Breakfast</h4>\nMeals included: Breakfast",
+      "gallery": []
+    },
+    {
+      "id": "day-4-iguazu-falls-and-jungle-market",
+      "title": "Day 4 - Iguazu Falls and Jungle Market",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Iguazu Falls Argentine Side Immersive Nature Experience</h4>\nDiscover Iguazu Falls from the Argentine (including National Park Fee) side through an immersive nature experience that combines breathtaking landscapes, biodiversity and mindful connection with the surrounding environment. Accompanied by a guide, explore the walkways and trails of Iguazu National Park, surrounded by lush subtropical rainforest. During the visit, take time to appreciate the sounds of the jungle, observe the local flora and fauna, and connect with nature at a relaxed pace. The tour includes the park’s main circuits, offering different perspectives of the spectacular waterfalls, including the iconic Devil’s Throat, subject to park operations. Throughout the experience, moments of mindful observation and quiet contemplation invite guests to slow down, engage their senses and fully appreciate the power and beauty of nature.\n<h4>Visit to Yabuticaba Jungle Market</h4>\nAfter visiting Iguazu Falls on the Argentine side, continue to Yabuticaba Jungle Market (Mercado de la Selva Yabuticaba), where guests can discover local products and regional flavors, offering an authentic introduction to the culture and natural richness of Misiones. Return to the hotel in the afternoon, with free time to relax and enjoy the natural surroundings.\n<h4>Dinner at Green Mandioca – Selvaje Lodge</h4>\nEnjoy a distinctive dining experience at Green Mandioca, where regional cuisine celebrates the authentic flavors of Misiones through locally sourced ingredients, seasonal produce and traditional culinary influences. The experience includes a two-course menu and one beverage per person, served in a peaceful setting surrounded by the lush subtropical rainforest. A perfect way to round off the day, combining authentic regional flavors with the serenity of the jungle.\n<h4>Iguazu Hotel</h4>\nAccommodation.\n<h4>Meals included: Breakfast and Dinner</h4>\nMeals included: Breakfast and Dinner",
+      "gallery": []
+    },
+    {
+      "id": "day-5-iguazu-falls-brazilian-side-and-yoga",
+      "title": "Day 5 - Iguazu Falls Brazilian Side and Yoga",
+      "subtitle": "",
+      "image": null,
+      "html": "<h4>Iguazu Falls Brazilian Side Immersive Nature Experience</h4>\nDiscover Iguazu Falls from the Brazilian side (including National Park Fee) through an immersive nature experience, enjoying unique panoramic views of one of South America’s most breathtaking landscapes. Accompanied by a guide, explore the walkways of Iguaçu National Park, which offer different perspectives of the majestic waterfalls and allow visitors to appreciate the sheer scale of the falls from a privileged vantage point. During the walk, take time to admire the scenery, observe the subtropical vegetation and connect with the sounds and energy of the rainforest. The visit invites guests to enjoy the natural surroundings at a relaxed pace, with moments for mindful observation, photography and quiet contemplation of this extraordinary setting. At the end of the tour, return to the hotel, with free time to relax.\n<h4>Yoga Session at Selvaje Lodge</h4>\nEnjoy a rejuvenating yoga session during your stay at Selvaje Lodge. Surrounded by the peaceful natural environment of the rainforest, this practice offers an opportunity to relax, reconnect with yourself and restore balance between body and mind.\n<h4>Selvaje Lodge</h4>\nAccommodation.\n<h4>Meals included: Breakfast</h4>\nMeals included: Breakfast",
+      "gallery": []
+    },
+    {
+      "id": "day-6-iguazu-to-buenos-aires-and-tango-experience",
+      "title": "Day 6 - Iguazu to Buenos Aires and Tango Experience",
+      "subtitle": "",
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/sXenu9r9QOGDFJ0FlnS5.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Transfer from hotel to Puerto Iguazu Airport</h4>\nTransfer from the hotel to Puerto Iguazu Airport. Private service with guide.\n<h4>Flight from Iguazu to Buenos Aires</h4>\nFlight from Iguazu to Buenos Aires (not included)\n<h4>Transfer from Aeroparque Buenos Aires Airport to Downtown Hotel</h4>\nTransfer from Aeroparque Buenos Aires Airport to Downtown Hotel. Private service with guide.\n<h4>Tango & Cultural Wellness Experience in La Ventana Tango</h4>\nDiscover the passion and elegance of Argentine tango through an introductory dance lesson, exploring posture, balance, movement and connection through music. In the evening, enjoy a traditional tango dinner show featuring professional dancers and live music, offering an authentic introduction to Buenos Aires’ cultural heritage. A unique experience that combines movement, artistic expression and local traditions.\n<h4>Buenos Aires Hotel</h4>\nAccommodation.\n<h4>Meals included: Breakfast and Dinner</h4>\nMeals included: Breakfast and Dinner",
+      "gallery": []
+    },
+    {
+      "id": "day-7-buenos-aires-departure",
+      "title": "Day 7 - Buenos Aires Departure",
+      "subtitle": "",
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/qC0PdDmOQfCoL8UiwiFC.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Transfer from Downtown Hotel to Airport Ezeiza</h4>\nTransfer from Downtown Hotel to Airport Ezeiza. Private service with guide.",
+      "gallery": []
+    }
+  ],
+  "overnights": [],
+  "category": "Wellness",
+  "key": "xd9c7ft"
+}
