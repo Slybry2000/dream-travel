@@ -3,7 +3,7 @@
   "title": "Argentina: Wellness & Nature Journey",
   "code": "",
   "source": "https://dream-travel.wetravel.com/i/6ae41bafb1e2f9f387a35b1f",
-  "updated_at": "2026-10-30T05:51:21.544Z",
+  "updated_at": "2026-10-30T06:12:53.252Z",
   "status": "published",
   "hero": {
     "src": "images/argentina-wellness-nature-journey/kBBXEUEZQ8Kzmp4Wz6Pv.webp",
@@ -164,7 +164,11 @@
       "id": "day-4-iguazu-falls-and-jungle-market",
       "title": "Day 4 - Iguazu Falls and Jungle Market",
       "subtitle": "",
-      "image": null,
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/05ap1QtQT32cKFbwIwgw.webp",
+        "x": 50,
+        "y": 50
+      },
       "html": "<h4>Iguazu Falls Argentine Side Immersive Nature Experience</h4>\nDiscover Iguazu Falls from the Argentine (including National Park Fee) side through an immersive nature experience that combines breathtaking landscapes, biodiversity and mindful connection with the surrounding environment. Accompanied by a guide, explore the walkways and trails of Iguazu National Park, surrounded by lush subtropical rainforest. During the visit, take time to appreciate the sounds of the jungle, observe the local flora and fauna, and connect with nature at a relaxed pace. The tour includes the park’s main circuits, offering different perspectives of the spectacular waterfalls, including the iconic Devil’s Throat, subject to park operations. Throughout the experience, moments of mindful observation and quiet contemplation invite guests to slow down, engage their senses and fully appreciate the power and beauty of nature.\n<h4>Visit to Yabuticaba Jungle Market</h4>\nAfter visiting Iguazu Falls on the Argentine side, continue to Yabuticaba Jungle Market (Mercado de la Selva Yabuticaba), where guests can discover local products and regional flavors, offering an authentic introduction to the culture and natural richness of Misiones. Return to the hotel in the afternoon, with free time to relax and enjoy the natural surroundings.\n<h4>Dinner at Green Mandioca – Selvaje Lodge</h4>\nEnjoy a distinctive dining experience at Green Mandioca, where regional cuisine celebrates the authentic flavors of Misiones through locally sourced ingredients, seasonal produce and traditional culinary influences. The experience includes a two-course menu and one beverage per person, served in a peaceful setting surrounded by the lush subtropical rainforest. A perfect way to round off the day, combining authentic regional flavors with the serenity of the jungle.\n<h4>Iguazu Hotel</h4>\nAccommodation.\n<h4>Meals included: Breakfast and Dinner</h4>\nMeals included: Breakfast and Dinner",
       "gallery": []
     },
@@ -172,7 +176,11 @@
       "id": "day-5-iguazu-falls-brazilian-side-and-yoga",
       "title": "Day 5 - Iguazu Falls Brazilian Side and Yoga",
       "subtitle": "",
-      "image": null,
+      "image": {
+        "src": "images/argentina-wellness-nature-journey/qb4toUyJS5ehOgIWiEPw.webp",
+        "x": 50,
+        "y": 50
+      },
       "html": "<h4>Iguazu Falls Brazilian Side Immersive Nature Experience</h4>\nDiscover Iguazu Falls from the Brazilian side (including National Park Fee) through an immersive nature experience, enjoying unique panoramic views of one of South America’s most breathtaking landscapes. Accompanied by a guide, explore the walkways of Iguaçu National Park, which offer different perspectives of the majestic waterfalls and allow visitors to appreciate the sheer scale of the falls from a privileged vantage point. During the walk, take time to admire the scenery, observe the subtropical vegetation and connect with the sounds and energy of the rainforest. The visit invites guests to enjoy the natural surroundings at a relaxed pace, with moments for mindful observation, photography and quiet contemplation of this extraordinary setting. At the end of the tour, return to the hotel, with free time to relax.\n<h4>Yoga Session at Selvaje Lodge</h4>\nEnjoy a rejuvenating yoga session during your stay at Selvaje Lodge. Surrounded by the peaceful natural environment of the rainforest, this practice offers an opportunity to relax, reconnect with yourself and restore balance between body and mind.\n<h4>Selvaje Lodge</h4>\nAccommodation.\n<h4>Meals included: Breakfast</h4>\nMeals included: Breakfast",
       "gallery": []
     },
