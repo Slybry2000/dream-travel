@@ -7,7 +7,7 @@
 --set "<section title prefix>=<Unsplash photo id>"  put that Unsplash photo on the section (repeatable).
     The id is the part after "photo-" in an images.unsplash.com address. Find photos with the
     browser snippet in _trips/ADDING-TRIPS.md (Unsplash blocks scripts).
---optimize  swap every photo for a page-ready copy (max 1600 px wide JPEG). Smart import brings in
+--optimize  swap every photo for a page-ready copy (JPEG, max 1600 px on the longer side). Smart import brings in
     1-10 MB originals; this makes pages download about 30% less and first loads much faster.
 --warm      open every photo the way the WeTravel page does, so the first real visitor gets cached copies.
 
@@ -20,7 +20,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from wetravel import CDN, adult_trip, backup_itinerary, call, upload_by_url
 
-SMALL = CDN + "/rotate=deg:exif/resize=fit:max,width:1600/output=format:jpg,quality:70/compress/{}"
+SMALL = CDN + "/rotate=deg:exif/resize=fit:max,width:1600,height:1600/output=format:jpg,quality:70/compress/{}"
 UNSPLASH = "https://images.unsplash.com/photo-{}?w=1600&q=70&fm=jpg"
 PAGE = CDN + "/rotate=deg:exif/resize=fit:max,width:1920/quality=v:75/compress/cache=expiry:2628000/fallback=file:{0},cache:2628000/{0}"
 
