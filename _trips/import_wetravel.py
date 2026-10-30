@@ -178,6 +178,14 @@ def convert(it, url, country_arg):
     paras = re.findall(r"<p>(.*?)</p>", first_text["html"], re.S) if first_text else []
     paras = [html.unescape(re.sub(r"<[^>]+>", "", p)).strip() for p in paras]
     trip["summary"] = next((p for p in paras if len(p) > 80), "")
+    if not trip["summary"]:
+        # Smart-imported intros have no <p> tags: take the first long run of text instead.
+        for s in sections[:3]:
+            text = re.sub(r"<h\d[^>]*>.*?</h\d>", " ", s["html"], flags=re.S)
+            text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", text))).strip()
+            if len(text) > 80 and not re.match(r"day\s*\d+", s["title"], re.I):
+                trip["summary"] = text[:600]
+                break
     trip["pins"] = pins
     trip["sections"] = sections
     trip["overnights"] = overnights(days)

@@ -1,0 +1,283 @@
+[
+  {
+    "title": "France: An Artistic & Cultural Journey",
+    "kind": "trip",
+    "uuid": "3976367699",
+    "itinerary_id": "6adb9f2abf3af2676120f89b",
+    "country": "France",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/nQjlQ",
+    "on_website": true
+  },
+  {
+    "title": "France: Paris, Périgord & Bordeaux",
+    "kind": "trip",
+    "uuid": "1910953315",
+    "itinerary_id": "6adbabc37c222e2945869d55",
+    "country": "France",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/oaYhJ",
+    "on_website": true
+  },
+  {
+    "title": "France: Provence Art, Culture & Heritage",
+    "kind": "trip",
+    "uuid": "0207520223",
+    "itinerary_id": "6adbaf8e7c222e294586a9aa",
+    "country": "France",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/giivw",
+    "on_website": true
+  },
+  {
+    "title": "Greece: An Artistic Journey",
+    "kind": "trip",
+    "uuid": "2345778977",
+    "itinerary_id": "6ad668a03ff7a1f970ea7748",
+    "country": "Greece",
+    "category": "Art & Culture",
+    "link": "https://dream-travel.wetravel.com/trips/greece-an-artistic-journey-dream-travel-2345778977",
+    "on_website": false,
+    "note": "Written for a specific client group (names the client). Kept off the website until Rene decides."
+  },
+  {
+    "title": "Ireland: Art, Heritage & Scenic Landscapes",
+    "kind": "trip",
+    "uuid": "6901194257",
+    "itinerary_id": "6adbacbfbf3af26761211f96",
+    "country": "Ireland",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/lGBpm",
+    "on_website": true
+  },
+  {
+    "title": "Ireland: Celtic Traditions, Art & Scenic Wonders",
+    "kind": "trip",
+    "uuid": "9723197695",
+    "itinerary_id": "6adbac33bf3af26761211e1d",
+    "country": "Ireland",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/gqobv",
+    "on_website": true
+  },
+  {
+    "title": "Italy & Slovenia: Art & Mosaic Discovery",
+    "kind": "trip",
+    "uuid": "4965551406",
+    "itinerary_id": "6adbad477c222e294586a2e2",
+    "country": "Italy",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/mQKBo",
+    "on_website": true
+  },
+  {
+    "title": "Italy: Art in Rome, Siena & Florence",
+    "kind": "trip",
+    "uuid": "2652391267",
+    "itinerary_id": "6ad651693ff7a1f970ea4212",
+    "country": "Italy",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/NksTk",
+    "on_website": true
+  },
+  {
+    "title": "Italy: Emilia-Romagna, Culture & Cuisine",
+    "kind": "trip",
+    "uuid": "8775495945",
+    "itinerary_id": "6ad7a329711699f2a9eee34d",
+    "country": "Italy",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/dIxmB",
+    "on_website": true
+  },
+  {
+    "title": "Portugal & Spain: Art, Culture & Cuisine",
+    "kind": "trip",
+    "uuid": "0264064431",
+    "itinerary_id": "6adbae687c222e294586a727",
+    "country": "Portugal",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/DFGlC",
+    "on_website": true
+  },
+  {
+    "title": "Portugal: Art, Culture & Cuisine Uncorked",
+    "kind": "trip",
+    "uuid": "6944040420",
+    "itinerary_id": "6adbaf227c222e294586a8b0",
+    "country": "Portugal",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/JAVgK",
+    "on_website": true
+  },
+  {
+    "title": "Scotland: Castles, Culture & Highlands",
+    "kind": "trip",
+    "uuid": "0913657937",
+    "itinerary_id": "6adb8cecbf3af2676120c03d",
+    "country": "Scotland",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/rYzns",
+    "on_website": true
+  },
+  {
+    "title": "Spain: Andalusian Treasures",
+    "kind": "trip",
+    "uuid": "2162778464",
+    "itinerary_id": "6ad5106a537036e6b3061aac",
+    "country": "Spain",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/uvNqP",
+    "on_website": true
+  },
+  {
+    "title": "Spain: Catalonia & Barcelona",
+    "kind": "trip",
+    "uuid": "6480121358",
+    "itinerary_id": "6ad513bf3ff7a1f970e82f50",
+    "country": "Spain",
+    "category": "Art & Culture",
+    "link": "https://tri.ps/unBRb",
+    "on_website": true
+  },
+  {
+    "title": "Bolivia: Sacred Lakes, Salt Flats & Andean Renewal",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ac50c6a5a2d854f7db2da08",
+    "country": "Bolivia",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ac50c6a5a2d854f7db2da08",
+    "on_website": true
+  },
+  {
+    "title": "Chile: From Desert Skies to Southern Shores",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab565b16ad6efdd382e82be",
+    "country": "Chile",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab565b16ad6efdd382e82be",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: A Peaceful Escape to Restore & Renew",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ac500d8ef9e901bd875130f",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ac500d8ef9e901bd875130f",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: Arenal Volcano Yoga & Wellness Retreat",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6aad620a35d313dcc230cbdd",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6aad620a35d313dcc230cbdd",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: From Forest to Sea Wellness Journey",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab5668bcd3e5b735adbe95c",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab5668bcd3e5b735adbe95c",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: Mother Nature's Gifts, Jungle & Beach Wellness",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab566a2cd3e5b735adbea04",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab566a2cd3e5b735adbea04",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: Rainforest Wellness & Reset",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab5667dcd3e5b735adbe95b",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab5667dcd3e5b735adbe95b",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: Sustainability, Culture & Wellness",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6aaedf8a932e3d74d6e17195",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6aaedf8a932e3d74d6e17195",
+    "on_website": true
+  },
+  {
+    "title": "Costa Rica: Yoga Retreat in Arenal",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6aaee217932e3d74d6e1728d",
+    "country": "Costa Rica",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6aaee217932e3d74d6e1728d",
+    "on_website": true
+  },
+  {
+    "title": "Greece: A Journey of Wellness, Culture & Discovery",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab27f830bca8433d8b4ae27",
+    "country": "Greece",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab27f830bca8433d8b4ae27",
+    "on_website": true
+  },
+  {
+    "title": "Peru: Culture, Connection & the Andes",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab565cd6ad6efdd382e8364",
+    "country": "Peru",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab565cd6ad6efdd382e8364",
+    "on_website": true
+  },
+  {
+    "title": "Portugal: Algarve Coastal Wellness & Culture",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab565fccd3e5b735adbe7cc",
+    "country": "Portugal",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab565fccd3e5b735adbe7cc",
+    "on_website": true
+  },
+  {
+    "title": "Portugal: The Art of Well-Being",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab90d956ad6efdd3833084a",
+    "country": "Portugal",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab90d956ad6efdd3833084a",
+    "on_website": true
+  },
+  {
+    "title": "Portugal: Wild Algarve Yoga & Atlantic Escape",
+    "kind": "itinerary",
+    "uuid": null,
+    "itinerary_id": "6ab9082ccd3e5b735ae044d4",
+    "country": "Portugal",
+    "category": "Wellness",
+    "link": "https://dream-travel.wetravel.com/i/6ab9082ccd3e5b735ae044d4",
+    "on_website": true
+  }
+]

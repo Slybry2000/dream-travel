@@ -16,3 +16,6 @@ node_modules/
 
 # Python
 __pycache__/
+
+# Working files (backups, downloads); never committed
+.tmp/
