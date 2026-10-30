@@ -169,3 +169,21 @@ python _trips/build.py
   check catches it.
 - WeTravel replaces the whole itinerary on every API edit: always back up and verify (the photo
   tool does both).
+
+## Added 2026-10-29 (Argentina wellness sample)
+- A PDF can arrive by email instead of Drive. Download the attachment from Gmail in Chrome
+  (it may stay `*.crdownload`; it is complete), then use Smart Import on the **Itineraries** page
+  (Smart Import > PDF to itinerary) to make a standalone wellness itinerary. Copy the PDF into
+  the Claude scratchpad first: `file_upload` can only read files this session may read.
+- Rename a standalone itinerary: editor > Settings > "Itinerary name" (find the textbox, ctrl+a, type, Tab).
+  Take the theme from the PDF's own headline (`Argentina: Wellness & Nature Journey`).
+- Standalone wellness trips have no uuid, so `trip_register.py` and `trip_qa.py` skip them. After
+  `import_wetravel.py <link> --country X`, add a homepage orbit card if the country is new.
+- Smart Import can take 2-5 minutes and the page may keep showing "Creating Your Itinerary" even after
+  it is done; reload the Itineraries list. The Smart Import button does nothing while a previous
+  import is still building. Screenshots of the editor often time out; use `find` and `get_page_text`.
+- Publishing: `origin/main` on GitHub may be ahead, and another session's uncommitted changes can
+  block a fast-forward. Commit your own paths, replay that commit on GitHub's main in a throwaway
+  `git worktree` (`git worktree add --detach <dir> FETCH_HEAD`, `git cherry-pick`), and push
+  `HEAD:main` over HTTPS. A safety hook blocks any command containing `rm -rf`.
+- Do not name the supplier's staff in commit messages (the repo is public).
