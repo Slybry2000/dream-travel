@@ -19,7 +19,8 @@
   if (!state || Date.now() - (state.t || 0) > TTL) state = { src: '', path: [], t: Date.now() };
 
   /* A new arrival from a tagged link starts a fresh route. */
-  var src = q.get('utm_source');
+  /* Short links for texts: ?t=<visitor code>&s=text is the same as the long ?utm_source=journey-text&dt_t=<code>. */
+  var src = q.get('utm_source') || (/^[a-z]{2,12}$/.test(q.get('s') || '') ? 'journey-' + q.get('s') : '');
   if (src && src !== 'leader-kit') {
     var label = src + (q.get('utm_content') ? ':' + q.get('utm_content') : '');
     if (label !== state.src) state = { src: label, path: [], t: Date.now() };
@@ -48,9 +49,9 @@
   try {
     var saved = JSON.parse(localStorage.getItem(VKEY) || 'null');
     if (saved && saved.id && Date.now() - (saved.t || 0) < 90 * 24 * 3600 * 1000) visitor = saved.id;
-    var fresh = q.get('dt_t');
+    var fresh = q.get('dt_t') || q.get('t');
     if (fresh && /^[0-9a-f]{16}$/.test(fresh)) { visitor = fresh; localStorage.setItem(VKEY, JSON.stringify({ id: fresh, t: Date.now() })); }
-  } catch (e) { var f2 = q.get('dt_t'); if (f2 && /^[0-9a-f]{16}$/.test(f2)) visitor = f2; }
+  } catch (e) { var f2 = q.get('dt_t') || q.get('t'); if (f2 && /^[0-9a-f]{16}$/.test(f2)) visitor = f2; }
   if (visitor) {
     try {
       var beacon = JSON.stringify({ t: visitor, p: page || location.pathname.replace(/^\/|\/$/g, '') || 'home', s: state.src || '' });
