@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dream Travel: lead a group trip without carrying it</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Custom group trips for adults. You bring the people, Dream Travel carries the trip. Book a conversation with Rene.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<!-- Links are written as double-brace url placeholders (path, then label). build-v2.js turns each into a tracked link:
+     utm_source=journey-email, utm_content=onepager2-CHANNEL-LABEL (CHANNEL = pdf or web), and dt_t (the person's private visitor code) when a person is named.
+     The qr placeholder becomes an inline QR code of the main button's tracked link (print only); the logo placeholder becomes an inline logo. -->
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  :root { --ink:#14100c; --cream:#f1e8d8; --cream-strong:#faf3e6; --paper:#ece2cf; --terracotta:#b85c38; --terracotta-text:#984a2c; --muted:#4a3b30; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--cream-strong); -webkit-text-size-adjust: 100%; }
+  html, body { color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: var(--cream-strong); font: 400 16px/1.5 'Inter', Arial, sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; letter-spacing: -.01em; }
+  .mono { font: 500 11px/1.2 'JetBrains Mono', monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--terracotta-text); }
+  .page { max-width: 760px; margin: 0 auto; background: var(--cream-strong); }
+  @media screen { .print-only { display: none !important; } }
+
+  /* ---------- phone / screen ---------- */
+  .top { background: var(--ink); color: var(--cream); padding: 22px 20px 26px; }
+  .brand { display: flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+  .brand img { width: 28px; height: 28px; border-radius: 50%; }
+  .brand b { font: 600 16px 'Fraunces', serif; color: var(--cream-strong); }
+  .brand .mono { margin-left: auto; color: #d3764e; font-size: 10px; }
+  h1 { font-size: 36px; line-height: 1.04; color: var(--cream-strong); letter-spacing: -.025em; }
+  h1 i { color: #e69a77; font-weight: 600; }
+  .lede { margin-top: 12px; font-size: 16px; line-height: 1.5; color: var(--cream); }
+  .cta { display: block; margin-top: 18px; background: var(--terracotta-text); color: var(--cream-strong); padding: 15px 18px; border-radius: 2px; }
+  .cta b { display: block; font: 600 20px/1.15 'Fraunces', serif; }
+  .cta span { display: block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: var(--cream); }
+  .reassure { margin-top: 10px; font-size: 13.5px; line-height: 1.45; color: var(--cream); }
+
+  .body { padding: 6px 20px 0; }
+  .sec { margin-top: 26px; }
+  .sec > .rule { height: 2px; width: 26px; background: var(--terracotta); margin-bottom: 8px; }
+  .sec h2 { font-size: 24px; line-height: 1.15; margin: 6px 0 10px; }
+  .worries { display: grid; gap: 14px; }
+  .worry h3 { font-size: 18px; line-height: 1.2; }
+  .worry p { margin-top: 4px; color: var(--muted); font-size: 15px; }
+  .worry p b { color: var(--ink); font-weight: 600; }
+
+  .proof { margin-top: 20px; border: 1px solid rgba(20,16,12,.22); padding: 12px 14px; background: var(--paper); }
+  .proof ul { list-style: none; display: grid; gap: 4px; margin-top: 5px; font-size: 14.5px; color: var(--ink); }
+  .steps { list-style: none; counter-reset: s; display: grid; gap: 10px; }
+  .steps li { counter-increment: s; position: relative; padding-left: 34px; color: var(--muted); font-size: 15px; }
+  .steps li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; top: 2px; font: 500 12px 'JetBrains Mono', monospace; color: var(--terracotta-text); }
+  .steps b { color: var(--ink); font-weight: 600; }
+
+  .trips { background: var(--paper); padding: 16px; margin-top: 26px; }
+  .trips p.note { margin: 4px 0 8px; color: var(--muted); font-size: 14px; }
+  .tgrid { display: grid; }
+  .tgrid a { display: flex; gap: 8px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid rgba(20,16,12,.16); font-size: 14.5px; line-height: 1.3; }
+  .tgrid b { font-weight: 600; color: var(--ink); }
+  .tgrid span { margin-left: auto; font: 500 11px 'JetBrains Mono', monospace; letter-spacing: .06em; color: var(--terracotta-text); white-space: nowrap; }
+  .more { margin-top: 10px; color: var(--muted); font-size: 14px; }
+  .more a { color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--terracotta); }
+
+  .host { display: grid; gap: 8px; }
+  .host p { color: var(--muted); font-size: 15px; }
+  .host li { list-style: none; padding-left: 10px; border-left: 2px solid var(--terracotta); color: var(--muted); font-size: 15px; margin-top: 6px; }
+  .host li b { color: var(--ink); font-weight: 600; }
+
+  .straight { margin-top: 26px; font: italic 600 17px/1.4 'Fraunces', serif; color: var(--ink); border-left: 3px solid var(--terracotta); padding-left: 12px; }
+  .straight small { display: block; margin-top: 4px; font: 400 14px/1.45 'Inter', sans-serif; font-style: normal; color: var(--muted); }
+
+  .foot { background: var(--ink); color: var(--cream); padding: 24px 20px 28px; margin-top: 28px; }
+  .foot h3 { font-size: 26px; color: var(--cream-strong); line-height: 1.12; }
+  .foot > p { margin-top: 8px; font-size: 15px; }
+  .foot .cta { background: var(--terracotta-text); }
+  .foot .alt { margin-top: 14px; font-size: 14.5px; color: var(--cream); }
+  .foot .alt a { color: var(--cream-strong); border-bottom: 1px solid var(--terracotta); }
+  .contact { margin-top: 12px; font-size: 14px; color: var(--cream); }
+  .contact a { border-bottom: 1px solid var(--terracotta); color: var(--cream-strong); }
+
+  .sticky { position: sticky; bottom: 0; z-index: 5; background: var(--ink); padding: 10px 14px; border-top: 1px solid rgba(241,232,216,.25); }
+  .sticky a { display: block; text-align: center; background: var(--terracotta-text); color: var(--cream-strong); font: 600 17px 'Fraunces', serif; padding: 13px; border-radius: 2px; }
+
+  @media (min-width: 700px) {
+    .top { padding: 34px 40px 34px; } h1 { font-size: 46px; }
+    .body { padding: 6px 40px 0; } .foot { padding: 30px 40px 34px; }
+    .worries { grid-template-columns: 1fr 1fr; gap: 20px 28px; }
+    .cta { display: inline-block; min-width: 360px; }
+    .sticky { display: none; }
+  }
+
+  /* ---------- print: US Letter, exactly one page ---------- */
+  @media print {
+    html { height: 10.9in; overflow: hidden; background: var(--ink); }
+    body { font-size: 10px; line-height: 1.4; width: 8.5in; height: 10.97in; display: flex; flex-direction: column; overflow: hidden; }
+    .page { max-width: none; width: 8.5in; height: 100%; display: flex; flex-direction: column; }
+    .sticky, .screen-only { display: none !important; }
+    .print-only { display: block; }
+    .mono { font-size: 7.4px; letter-spacing: .2em; }
+    .top { padding: .34in .55in .2in; }
+    .brand { margin-bottom: .15in; } .brand img { width: 24px; height: 24px; } .brand b { font-size: 13px; } .brand .mono { font-size: 7.4px; }
+    h1 { font-size: 36px; }
+    .lede { margin-top: 7px; font-size: 11px; line-height: 1.45; max-width: 6.3in; }
+    .topcta { display: flex; gap: 14px; align-items: center; margin-top: 11px; }
+    .cta { margin-top: 0; padding: 9px 13px; flex: 0 0 auto; width: 3.6in; min-width: 0; display: block; }
+    .cta b { font-size: 15px; } .cta span { font-size: 8.8px; margin-top: 2px; }
+    .reassure { margin-top: 0; font-size: 9px; line-height: 1.45; flex: 1; }
+    .body { padding: 0 .55in; flex: 1; }
+    .sec { margin-top: 15px; } .sec h2 { font-size: 15px; margin: 3px 0 6px; } .sec > .rule { margin-bottom: 4px; }
+    .worries { grid-template-columns: 1fr 1fr; gap: 8px 22px; }
+    .worry h3 { font-size: 12.4px; } .worry p { font-size: 9.9px; margin-top: 2px; line-height: 1.38; }
+    .proof { margin-top: 10px; padding: 6px 10px; } .proof ul { grid-template-columns: 1fr 1fr; font-size: 9.2px; gap: 2px 18px; }
+    .steps { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .steps li { font-size: 9.9px; padding-left: 22px; line-height: 1.38; } .steps li::before { font-size: 8px; top: 1px; }
+    .trips { padding: 8px 12px 7px; margin-top: 11px; }
+    .trips p.note { font-size: 8.8px; margin: 2px 0 3px; }
+    .tgrid { grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .tgrid a { padding: 3px 0; font-size: 9.2px; } .tgrid span { font-size: 7.2px; }
+    .more { margin-top: 4px; font-size: 8.8px; }
+    .twocol { display: grid; grid-template-columns: 1.15fr 1fr; gap: 22px; margin-top: 11px; align-items: start; }
+    .twocol .sec { margin-top: 0; }
+    .host p, .host li { font-size: 9.5px; line-height: 1.38; } .host li { margin-top: 3px; }
+    .straight { margin-top: 0; font-size: 11.4px; padding-left: 10px; } .straight small { font-size: 9.2px; margin-top: 3px; line-height: 1.4; }
+    .foot { padding: .17in .55in .2in; margin-top: 11px; display: grid; grid-template-columns: 1fr 1.3in; gap: 4px 18px; align-items: center; }
+    .foot h3 { font-size: 16px; } .foot > p { font-size: 9.2px; margin-top: 2px; }
+    .foot .cta { margin-top: 7px; width: 3.8in; }
+    .foot .left { min-width: 0; }
+    .qr { text-align: center; } .qr svg { width: .95in; height: .95in; background: var(--cream-strong); padding: 7px; display: block; margin: 0 auto; box-sizing: content-box; }
+    .qr small { display: block; margin-top: 3px; font: 500 6.6px 'JetBrains Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--cream); }
+    .foot .alt { font-size: 8.8px; margin-top: 6px; } .contact { font-size: 8.8px; margin-top: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <div class="brand">
+      <img src="data:image/webp;base64,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" alt="">
+      <b>Dream Travel</b>
+      <span class="mono">Group trips for adults</span>
+    </div>
+    <h1>You bring the people. We <i>carry</i> the trip.</h1>
+    <p class="lede">Custom group trips for adults, led by someone their group already trusts: a studio owner, club president, alumni chair, congregation leader, family organizer, or the friend who always ends up planning. Groups of eight or more.</p>
+    <div class="topcta">
+      <a class="cta" href="https://adults.dream-travel.net/planning/?utm_source=journey-email&amp;utm_content=onepager2-web-book-with-rene"><b>Book a conversation with Rene Piard</b><span>Rene is the founder. Tell us a little about your group (about a minute), then pick a time on his calendar.</span></a>
+      <p class="reassure">You do not need trip details yet. No price and no itinerary until you have talked. Rene gives any price himself, once he has heard about your group.</p>
+    </div>
+  </header>
+
+  <main class="body">
+    <section class="sec">
+      <div class="rule"></div><span class="mono">What organizers worry about</span>
+      <h2>The four worries, answered straight</h2>
+      <div class="worries">
+        <div class="worry"><h3>Will this become my second job?</h3><p>It should not. Your travelers book their own flights. Hotels, in-country transport, local guides, registrations, payments and supplier coordination are carried for you, and a point of contact stays reachable from before the first flight through the last dinner. What we ask of you: invite your people and be the voice they trust. <b>Your job is your people.</b></p></div>
+        <div class="worry"><h3>What will it cost me?</h3><p>There is no fee to host. Rene sets every trip&rsquo;s price himself, after he has heard about your group, so <b>nothing on this page is a quote.</b> Hosting a group does not mean you take on anyone else&rsquo;s cost.</p></div>
+        <div class="worry"><h3>What if people drop out, or I cannot fill it?</h3><p>A fair worry, and no page can answer it for your group. Before you invite anyone, <b>ask Rene how deposits, payment deadlines and cancellations work</b>, and what happens if the group comes up short. Not sure of your numbers yet? That is fine to say.</p></div>
+        <div class="worry"><h3>Will it feel like a generic tour?</h3><p>Every trip is built around your group: your theme, your pace, what your people have loved before and what they never want to repeat. <b>The trips below are examples, not a catalog.</b></p></div>
+      </div>
+    </section>
+
+    
+    <section class="sec">
+      <div class="rule"></div><span class="mono">How it works</span>
+      <h2>A conversation first, then the trip</h2>
+      <ol class="steps">
+        <li><b>Tell us about your group.</b> A short form so Rene comes prepared.</li>
+        <li><b>Talk with Rene.</b> Who travels with you, what your group has loved, what it never wants to repeat.</li>
+        <li><b>Shape the trip, if it fits.</b> A local partner we know receives your group and runs the days.</li>
+      </ol>
+    </section>
+
+    <section class="trips">
+      <span class="mono">Examples of what we build &middot; <span class="screen-only">tap a trip to see it in our sample library</span><span class="print-only">full library at adults.dream-travel.net/trips</span></span>
+      <p class="note">Sample trips, 6 to 10 days. Yours would be different.</p>
+      <div class="tgrid">
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/costa-rica/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-costa-rica-arenal"><b>Costa Rica: Arenal Volcano Yoga &amp; Wellness</b><span>6 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/portugal/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-portugal-algarve-yoga"><b>Portugal: Wild Algarve Yoga &amp; Atlantic Escape</b><span>8 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/greece/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-greece"><b>Greece: Wellness, Culture &amp; Discovery</b><span>9 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/portugal/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-portugal-well-being"><b>Portugal: The Art of Well-Being</b><span>6 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/costa-rica/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-costa-rica-forest-sea"><b>Costa Rica: From Forest to Sea</b><span>7 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/chile/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-chile"><b>Chile: From Desert Skies to Southern Shores</b><span>10 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/peru/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-peru"><b>Peru: Culture, Connection &amp; the Andes</b><span>8 DAYS</span></a>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/wellness/costa-rica/?utm_source=journey-email&amp;utm_content=onepager2-web-trip-costa-rica-sustainability"><b>Costa Rica: Sustainability, Culture &amp; Wellness</b><span>9 DAYS</span></a>
+      </div>
+      <p class="more">Art, food and wine, and more, in Italy, France, Spain, Ireland, Scotland and beyond. <a href="https://adults.dream-travel.net/trips/library-9mqqye8/?utm_source=journey-email&amp;utm_content=onepager2-web-all-trips">See every sample trip</a>.</p>
+    </section>
+
+    <div class="twocol">
+      <section class="sec host">
+        <div><div class="rule"></div><span class="mono">For you, the host</span></div>
+        <h2>Hosting can give something back</h2>
+        <ul>
+          <li><b>Give it back.</b> Redirect your share to a school, club or fund your people already care about.</li>
+          <li><b>Travel free.</b> When your group fills the trip, your host seat travels free, earned once the booked guests you bring cover it.</li>
+          <li><b>Earn a share.</b> A set commission on each booked guest you bring, if you want it.</li>
+        </ul>
+        <p>Full terms are set up front in your host agreement.</p>
+      </section>
+      <p class="straight">No price, date or availability is promised on this page.<small>Rene gives those himself, once he knows your group. Ask him anything, including the hard questions about deposits, cancellations and who is responsible if something goes wrong.</small></p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="left">
+      <h3>Start with one conversation.</h3>
+      <p>No trip details needed. You will not be added to a newsletter.</p>
+      <a class="cta" href="https://adults.dream-travel.net/planning/?utm_source=journey-email&amp;utm_content=onepager2-web-book-with-rene-footer"><b>Book a conversation with Rene</b><span class="screen-only">About a minute to start, then pick a time.</span><span class="print-only">adults.dream-travel.net/planning</span></a>
+      <p class="alt">Just want ideas first? <a href="https://adults.dream-travel.net/trips/library-9mqqye8/?utm_source=journey-email&amp;utm_content=onepager2-web-sample-trips">Browse sample trips</a>, or <a href="https://adults.dream-travel.net/?utm_source=journey-email&amp;utm_content=onepager2-web-website">visit our website</a>.</p>
+      <p class="contact">Prefer to write or call? <a href="mailto:go@dream-travel.net">go@dream-travel.net</a> &nbsp;&middot;&nbsp; <a href="tel:+15712068949">571 206 8949</a></p>
+    </div>
+    <div class="qr print-only"><small>Scan to book</small></div>
+  </footer>
+
+  <div class="sticky"><a href="https://adults.dream-travel.net/planning/?utm_source=journey-email&amp;utm_content=onepager2-web-book-with-rene-sticky">Book a conversation with Rene</a></div>
+</div>
+</body>
+</html>
