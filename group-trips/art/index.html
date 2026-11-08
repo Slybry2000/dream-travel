@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dream Travel: art group trips for hosts</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<!-- Links use https://adults.dream-travel.net/path/?utm_source=journey-email&amp;utm_content=onepager-web-label. build.js turns each into a tracked link: utm_source=journey-email, utm_content=onepager-<label>, and dt_t (the person's private visitor code) when a person is named. -->
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  :root { --ink:#14100c; --cream:#f1e8d8; --cream-strong:#faf3e6; --paper:#ece2cf; --terracotta:#b85c38; --terracotta-text:#984a2c; --muted:#4a3b30; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { height: 10.9in; overflow: hidden; background: var(--ink); }
+  html, body { color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: var(--cream-strong); font: 400 10.2px/1.46 'Inter', Arial, sans-serif; width: 8.5in; height: 10.97in; display: flex; flex-direction: column; overflow: hidden; }
+  a { color: inherit; text-decoration: none; }
+  .mono { font: 500 7.6px/1.2 'JetBrains Mono', monospace; letter-spacing: .2em; text-transform: uppercase; color: var(--terracotta-text); }
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; letter-spacing: -.01em; }
+
+  .top { background: var(--ink); color: var(--cream); padding: .36in .6in .3in; }
+  .brand { display: flex; align-items: center; gap: 9px; margin-bottom: .2in; }
+  .brand img { width: 26px; height: 26px; border-radius: 50%; }
+  .brand b { font: 600 14px 'Fraunces', serif; color: var(--cream-strong); }
+  .brand .mono { margin-left: auto; color: #d3764e; }
+  h1 { font-size: 35px; line-height: 1.04; color: var(--cream-strong); letter-spacing: -.025em; max-width: 6.6in; }
+  h1 i { color: #e69a77; font-weight: 600; }
+  .lede { margin-top: 10px; max-width: 6.3in; font-size: 11.6px; line-height: 1.5; color: var(--cream); }
+  .cta { display: inline-block; background: var(--terracotta); color: #fff; font: 600 15px 'Fraunces', serif; padding: 11px 22px 11px; letter-spacing: 0; }
+  .cta u { text-decoration: none; margin-left: 8px; }
+  .hero-cta { display: flex; align-items: center; gap: 16px; margin-top: 15px; }
+  .hero-cta p { font-size: 9.2px; line-height: 1.4; color: var(--cream); max-width: 3.1in; }
+  .hero-cta p b { color: var(--cream-strong); font-weight: 600; }
+
+  .main { padding: .2in .6in 0; display: grid; grid-template-columns: 1fr 1fr; gap: .17in .34in; flex: 1; align-content: start; }
+  .sec h2 { font-size: 14.5px; line-height: 1.15; margin: 4px 0 5px; }
+  .sec p, .sec li { color: var(--muted); }
+  .sec p b { color: var(--ink); font-weight: 600; }
+  .rule { height: 2px; width: 26px; background: var(--terracotta); margin-bottom: 6px; }
+  .wide { grid-column: 1 / -1; }
+
+  .pay h2 { margin-bottom: 7px; }
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 .22in; list-style: none; }
+  .tiers li { padding-left: 10px; border-left: 2px solid var(--terracotta); }
+  .tiers b { display: block; font: 600 13px 'Fraunces', serif; color: var(--ink); margin-bottom: 1px; }
+  .fine { margin-top: 8px; font-size: 9.6px; line-height: 1.45; }
+
+  .steps { list-style: none; counter-reset: s; }
+  .steps li { counter-increment: s; position: relative; padding-left: 24px; margin-top: 6px; }
+  .steps li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; top: 1px; font: 500 8.5px 'JetBrains Mono', monospace; color: var(--terracotta-text); }
+  .steps b { color: var(--ink); font-weight: 600; }
+
+  .qa p { margin-top: 5px; }
+  .qa p b { display: block; font-weight: 600; color: var(--ink); }
+
+  .proof { background: var(--paper); padding: 11px 16px 10px; }
+  .qgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 .22in; margin-top: 7px; }
+  .quote { font: italic 600 11.4px/1.4 'Fraunces', serif; color: var(--ink); border-left: 3px solid var(--terracotta); padding-left: 10px; }
+  .quote small { display: block; margin-top: 4px; font: 500 7.2px 'JetBrains Mono', monospace; font-style: normal; letter-spacing: .14em; text-transform: uppercase; color: var(--terracotta-text); }
+  .slot { border: 1px dashed var(--terracotta-text); padding: 6px 9px; font: 500 8.6px/1.4 'Inter', sans-serif; color: var(--terracotta-text); }
+  .trips { font-size: 10.2px; line-height: 1.7; color: var(--muted); }
+  .trips a { color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--terracotta); white-space: nowrap; }
+  .trips a span { font: 500 7.6px 'JetBrains Mono', monospace; color: var(--terracotta-text); margin-left: 3px; }
+
+  .foot { background: var(--ink); color: var(--cream); padding: .2in .6in .2in; margin-top: .17in; }
+  .foot-row { display: flex; align-items: center; gap: 22px; }
+  .foot h3 { font-size: 19px; color: var(--cream-strong); line-height: 1.15; }
+  .foot h3 + p { margin-top: 3px; font-size: 9.6px; color: var(--cream); }
+  .foot .cta { margin-left: auto; white-space: nowrap; font-size: 16px; padding: 13px 24px; }
+  .sub { margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(241,232,216,.22); font-size: 8.8px; color: var(--cream); display: flex; flex-wrap: wrap; gap: 3px 14px; }
+  .sub a { border-bottom: 1px solid rgba(230,154,119,.7); color: var(--cream-strong); }
+  .legal { margin-top: 7px; font-size: 7.8px; line-height: 1.4; color: rgba(241,232,216,.72); }
+  .sub .r { margin-left: auto; }
+
+  .screen-only { }
+  @media print { .screen-only { display: none !important; } }
+  @media screen {
+    html { height: auto; overflow: visible; background: var(--cream-strong); -webkit-text-size-adjust: 100%; }
+    body { width: 100%; max-width: 820px; height: auto; margin: 0 auto; overflow: visible; font-size: 15.5px; line-height: 1.5; }
+    .mono { font-size: 11px; letter-spacing: .16em; }
+    .top { padding: 22px 22px 26px; }
+    .brand b { font-size: 16px; } .brand img { width: 28px; height: 28px; } .brand .mono { font-size: 10px; letter-spacing: .12em; }
+    h1 { font-size: clamp(30px, 7vw, 42px); max-width: none; }
+    .lede { font-size: 16px; max-width: none; }
+    .hero-cta { flex-direction: column; align-items: stretch; gap: 10px; }
+    .hero-cta p { font-size: 13.5px; max-width: none; }
+    .cta { display: block; text-align: center; font-size: 19px; padding: 16px 18px; }
+    .main { padding: 8px 22px 0; grid-template-columns: 1fr; gap: 26px; }
+    .sec h2 { font-size: 22px; }
+    .tiers { grid-template-columns: 1fr; gap: 14px; }
+    .tiers b { font-size: 17px; }
+    .fine { font-size: 13.5px; }
+    .steps li { padding-left: 32px; } .steps li::before { font-size: 11px; top: 3px; }
+    .proof { padding: 16px; }
+    .trips { font-size: 14.5px; line-height: 1.9; } .trips a span { font-size: 10px; }
+    .foot { padding: 24px 22px 28px; margin-top: 26px; }
+    .foot-row { flex-direction: column; align-items: stretch; gap: 14px; }
+    .foot h3 { font-size: 25px; } .foot h3 + p { font-size: 14.5px; }
+    .foot .cta { margin-left: 0; font-size: 19px; padding: 16px 18px; }
+    .sub { font-size: 14px; gap: 8px 16px; }
+    .sub .r { margin-left: 0; flex-basis: 100%; }
+    .legal { font-size: 11.5px; }
+    .dl { display: block; margin-top: 12px; text-align: center; border: 1px solid rgba(241,232,216,.55); padding: 13px 16px; font: 600 15px 'Inter', sans-serif; color: var(--cream-strong); border-bottom-color: rgba(241,232,216,.55) !important; }
+  }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="/images/logo-header-2x.webp" alt="">
+      <b>Dream Travel</b>
+      <span class="mono">Art group trips for hosts</span>
+    </div>
+    <h1>Take your art group abroad. We plan the trip. Your seat can be <i>free.</i></h1>
+    <p class="lede">You teach or lead artists, and your people trust you. Dream Travel builds the whole trip around their love of art. Rene, who runs Dream Travel, talks it through with you himself before anything is planned.</p>
+    <div class="hero-cta">
+      <a class="cta" href="https://adults.dream-travel.net/planning/?utm_source=journey-email&amp;utm_content=onepager-web-book-with-rene">Talk with Rene about your group<u>&rarr;</u></a>
+      <p><b>No fee to host.</b> Answer a few quick questions, then pick a time on his calendar. No trip details needed yet.</p>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="sec wide pay">
+      <div class="rule"></div><span class="mono">What hosting can look like</span>
+      <h2>Pick the one that fits your group</h2>
+      <ul class="tiers">
+        <li><b>A covered seat.</b> Your host seat can be covered by the bookings of the guests you bring.</li>
+        <li><b>A host share.</b> Hosts may receive a set share on each guest who books. The terms are in your host agreement.</li>
+        <li><b>Give it back.</b> Your share can go to a school, a club or a fund your people already care about.</li>
+      </ul>
+      <p class="fine"><b>You see the exact terms in writing before you invite a single person.</b> Host seats and shares are paid through the traveler price. What a host receives depends on how many guests book, and nothing is guaranteed. Hosting means bringing your own group. It is not a sales role.</p>
+    </div>
+
+    <div class="sec">
+      <div class="rule"></div><span class="mono">How it works</span>
+      <h2>You bring the people. We carry the rest.</h2>
+      <ol class="steps">
+        <li><b>Talk.</b> Rene listens first: who is coming, what your artists loved on past trips, what they never want to repeat.</li>
+        <li><b>Shape.</b> He drafts a custom trip around your pace and theme. We coordinate hotels, transport, local guides and suppliers.</li>
+        <li><b>Host.</b> A local partner we know receives your group and runs the days. Our team and the local partner stay reachable from before the first flight to the last dinner.</li>
+      </ol>
+    </div>
+
+    <div class="sec qa">
+      <div class="rule"></div><span class="mono">Straight answers</span>
+      <h2>What hosts ask first</h2>
+      <p><b>"I do not have time."</b> You bring the group. We handle the planning and the supplier calls.</p>
+      <p><b>"What if not enough people sign up?"</b> Eight travelers is enough to run a trip, and a first trip can stay small. Tell Rene the number you honestly expect and the trip is shaped around it.</p>
+      <p><b>"What does it cost me?"</b> No fee to host. Host seats and shares are paid through the traveler price, and your host agreement shows the numbers first. Travelers book their own flights.</p>
+    </div>
+
+    <div class="sec wide proof">
+      <p class="trips"><span class="mono" style="margin-right:6px">Sample trips</span>
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/art-culture/italy/?utm_source=journey-email&amp;utm_content=onepager-web-trip-art-italy-rome-siena-florence">Italy: Rome, Siena, Florence<span>9 DAYS</span></a> &nbsp;
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/art-culture/france/?utm_source=journey-email&amp;utm_content=onepager-web-trip-art-france-provence">France: Provence<span>11 DAYS</span></a> &nbsp;
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/art-culture/portugal/?utm_source=journey-email&amp;utm_content=onepager-web-trip-art-portugal-uncorked">Portugal<span>10 DAYS</span></a> &nbsp;
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/art-culture/spain/?utm_source=journey-email&amp;utm_content=onepager-web-trip-art-spain-andalusia">Spain: Andalusia<span>8 DAYS</span></a> &nbsp;
+        <a href="https://adults.dream-travel.net/trips/library-9mqqye8/art-culture/ireland/?utm_source=journey-email&amp;utm_content=onepager-web-trip-art-ireland">Ireland<span>10 DAYS</span></a>.
+        These are examples, not a catalog. Yours is built from scratch, for 8 or more travelers, with <a href="https://adults.dream-travel.net/trips/library-9mqqye8/art-culture/?utm_source=journey-email&amp;utm_content=onepager-web-all-trips-art">more art and culture trips</a> to see.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot-row">
+      <div>
+        <h3>Your group has a trip in it.<br>Start with a conversation.</h3>
+        <p>A few quick questions, then pick a time on Rene&rsquo;s calendar.</p>
+      </div>
+      <a class="cta" href="https://adults.dream-travel.net/planning/?utm_source=journey-email&amp;utm_content=onepager-web-book-with-rene">Talk with Rene about your group<u>&rarr;</u></a>
+    </div>
+    <div class="sub">
+      <span>Not ready to talk?</span>
+      <a href="https://adults.dream-travel.net/planning/full/?utm_source=journey-email&amp;utm_content=onepager-web-full-planner">Fill out the 5-minute planner</a>
+      <a href="https://adults.dream-travel.net/trips/library-9mqqye8/?utm_source=journey-email&amp;utm_content=onepager-web-sample-trips-art">See sample trips</a>
+      <a href="https://adults.dream-travel.net/?utm_source=journey-email&amp;utm_content=onepager-web-website">Visit our website</a>
+      <span class="r"><a href="mailto:go@dream-travel.net">go@dream-travel.net</a> &nbsp;&middot;&nbsp; <a href="tel:+15712068949">571 206 8949</a></span>
+    </div>
+    <p class="legal">Dream Travel International Corp. &middot; Batton Hollow Rd, Vienna, VA 22182. Sample trips are examples. Final details are confirmed with your group.</p>
+    <a class="dl screen-only" href="dream-travel-group-trips-art.pdf" download>Download this page as a PDF</a>
+  </footer>
+</body>
+</html>
