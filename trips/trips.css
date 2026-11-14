@@ -214,7 +214,8 @@ h1, h2, h3, p { margin: 0; }
   .tl-row__text { min-height: 0; max-width: none; }
   .tl-facts { grid-template-columns: 1fr; }
   .tl-header__nav { display: none; }
-  .tl-footer { grid-template-columns: 1fr; } .tl-footer__contact { text-align: left; }
+  .tl-footer { grid-template-columns: 1fr; padding: 24px var(--gutter); gap: 12px; } .tl-footer__contact { text-align: left; }
+  .tl-footer p { margin-top: 6px; } .tl-footer__small { padding-top: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
 @media print {

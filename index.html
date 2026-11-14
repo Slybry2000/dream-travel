@@ -52,9 +52,14 @@ p{font-size:clamp(14px,1.1vw,17px);line-height:1.5;opacity:.92;margin-bottom:22p
  body{overflow:auto}
  .split{flex-direction:column;height:auto}
  .half{flex:none!important;height:62vh;min-height:360px}
- .split[data-open] .half{height:64px;min-height:0}
- .split[data-open] .half.is-open{height:calc(100vh - 192px)}
- .tab{flex-direction:row}.tab .lab{writing-mode:horizontal-tb;font-size:18px}
+ body:has(.split[data-open]){overflow:hidden}
+ .split[data-open] ~ .foot{display:none}
+ .split[data-open] .half.is-open{height:100vh;height:100dvh}
+ .split[data-open] .half:not(.is-open){position:fixed;bottom:0;left:0;width:50%;height:40px;min-height:0;z-index:7;transition:transform .25s}
+ .split[data-open] .half:not(.is-open)[data-slot="1"]{left:50%}
+ .split.strips-off .half:not(.is-open){transform:translateY(100%)}
+ .tab{flex-direction:row;gap:8px}.tab .lab{writing-mode:horizontal-tb;font-size:14px;white-space:nowrap}.tab .arr{font-size:15px}
+ .split[data-open] .half:not(.is-open) .bg{filter:brightness(.8)}
  .brand{position:absolute}.brand img{height:60px}.brand span{font-size:22px}
  .foot{position:static;padding:14px;background:#1c1c1c}
 }
@@ -116,6 +121,8 @@ function openPanel(h){
     x.classList.toggle('is-open',x===h);
     x.querySelector('.arr').textContent=j<i?'→':'←';              // arrow points toward the open panel
   });
+  var n=0; halves.forEach(function(x){ x.setAttribute('data-slot', x===h?'':n++); });   // phone: the two closed panels sit side by side in a slim bottom bar
+  split.classList.remove('strips-off');
   split.setAttribute('data-open','1');
   applyMode();
 }
@@ -128,6 +135,15 @@ halves.forEach(function(h,i){
     [].forEach.call(doc.querySelectorAll('.site-header .brand, .site-footer .brand, .tl-brand'),function(a){
       a.addEventListener('click',function(e){ e.preventDefault(); top.location.href='/'; });
     });
+    // phone: the slim bar slides away when you scroll down, comes back when you scroll up
+    try{ var w=f.contentWindow, last=0;
+      w.addEventListener('scroll',function(){
+        var y=w.pageYOffset||0;
+        if(y>last+8&&y>60) split.classList.add('strips-off');
+        else if(y<last-8||y<20) split.classList.remove('strips-off');
+        last=y;
+      },{passive:true});
+    }catch(e){}
     // a link to another section's landing page opens that panel instead
     if(p in LANDING && halves[LANDING[p]]!==h){
       var t=halves[LANDING[p]];
