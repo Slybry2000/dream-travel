@@ -113,6 +113,14 @@ function applyMode(){      // sample-trips pages: accordion goes away, the Dream
   var o=halves.filter(function(x){return x.classList.contains('is-open')})[0];
   split.classList.toggle('full', !!o && pathOf(o.querySelector('.site')).indexOf(LIBRARY)===0);
 }
+var NAMES=['pickleball','wellness','art'];
+function syncUrl(){      // keep the address bar pointing at what is on screen, so a refresh reloads this page, not the front door
+  var o=halves.filter(function(x){return x.classList.contains('is-open')})[0];
+  if(!o||!history.replaceState) return;
+  var f=o.querySelector('.site'), p=pathOf(f)||o.getAttribute('data-src'), u='/?open='+NAMES[halves.indexOf(o)];
+  if(p&&p.charAt(0)==='/'&&p!==o.getAttribute('data-src')){ try{ u+='&go='+encodeURIComponent(p+f.contentWindow.location.search); }catch(e){} }
+  try{ history.replaceState(null,'',u); }catch(e){}
+}
 function openPanel(h){
   var f=h.querySelector('.site');
   if(!f.getAttribute('src')) f.src=h.getAttribute('data-src');   // load once; switching back keeps your place
@@ -125,6 +133,7 @@ function openPanel(h){
   split.classList.remove('strips-off');
   split.setAttribute('data-open','1');
   applyMode();
+  syncUrl();
 }
 halves.forEach(function(h,i){
   h.addEventListener('click',function(){ if(!h.classList.contains('is-open')) openPanel(h); });  // whole panel is the button (strips too)
@@ -150,13 +159,17 @@ halves.forEach(function(h,i){
       t.querySelector('.site').src=p;
       f.src=h.getAttribute('data-src');
       openPanel(t);
-    } else applyMode();
+    } else { applyMode(); syncUrl(); }
   });
 });
 // OPEN-ON-LOAD: ?open=pickleball|wellness|art  (or the pickleball.* address) opens that panel first
 var q=(location.search.match(/[?&]open=([a-z-]+)/)||[])[1]||(location.hostname.indexOf('pickleball')===0?'pickleball':'');
 var ORDER={'pickleball':0,'wellness':1,'art':2,'art-culture':2};
-if(q in ORDER) openPanel(halves[ORDER[q]]);
+var go=decodeURIComponent((location.search.match(/[?&]go=([^&]+)/)||[])[1]||'');
+if(q in ORDER){
+  if(/^\/[^\/\:]/.test(go)) halves[ORDER[q]].querySelector('.site').src=go;   // refresh: reopen the same inner page
+  openPanel(halves[ORDER[q]]);
+}
 </script>
 </body>
 </html>

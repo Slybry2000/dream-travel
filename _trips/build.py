@@ -301,17 +301,10 @@ def tabs(lib, by_country, cat=None, country=None):
     places = [(k, n) for k, (n, _) in by_country.items() if not cat or has(cat, k)]
     base = f"{lib}/{cat}/" if cat else f"{lib}/"
     row2 = link(base, "All countries", country is None) + "".join(link(f"{base}{k}/", n, k == country) for k, n in places)
-    def sel(label, rows):   # phone: two small dropdowns replace the wrapped rows of buttons, so the bar stays one line as trip types and countries grow
-        opts = "".join(f'<option value="{h}"{" selected" if on else ""}>{esc(l)}</option>' for h, l, on in rows)
-        return f'<select aria-label="{label}" onchange="location.href=this.value">{opts}</select>'
-    krows = [(f"{lib}/{country}/" if country and not cat else f"{lib}/", "All trips", cat is None)]
-    for s_, (n_, _) in CATEGORIES.items():
-        krows.append((f"{lib}/{s_}/{country}/" if country and has(s_, country) else f"{lib}/{s_}/", n_, s_ == cat))
-    prows = [(base, "All countries", country is None)] + [(f"{base}{k}/", n, k == country) for k, n in places]
-    selects = '<div class="tl-selects">' + sel("Trip type", krows) + sel("Country", prows) + "</div>"
-    return ('    <div class="tl-filter">' + selects +
+    return ('    <div class="tl-filter">'
             '<nav class="tl-tabs tl-tabs--kinds" aria-label="Sample trips by type">' + kinds + "</nav>"
-            '<nav class="tl-tabs tl-tabs--places" aria-label="Sample trips by destination">' + row2 + "</nav></div>")
+            '<nav class="tl-tabs tl-tabs--places" aria-label="Sample trips by destination">' + row2 + "</nav>"
+            "<button type=\"button\" class=\"tl-more\" onclick=\"var f=this.parentNode;f.classList.toggle('is-open');this.textContent=f.classList.contains('is-open')?'Fewer countries':'More countries'\">More countries</button></div>")
 
 
 CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Most of what we run is built from scratch around your group.</p><a class="tl-button" href="/planning/">Talk with Rene</a></section>"""
