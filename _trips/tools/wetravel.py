@@ -4,8 +4,8 @@ The API key lives in Dream-Travel/.env as WETRAVEL_API_KEY (Rene's Partner API k
 token). It is never printed. Access tokens last 1 hour; one is fetched per run.
 
 The registry (_trips/adult_trips.json) is the allowlist of ADULT trips. Every tool that changes
-anything in WeTravel refuses a trip that is not in it, so student and pickleball trips can never
-be touched by accident.
+anything in WeTravel refuses a trip that is not in it, so student trips can never be touched by
+accident. (Pickleball became a lane of the adult site on 2026-11-13, so pickleball trips are allowed.)
 """
 import json
 import re
@@ -108,8 +108,6 @@ def title_problems(title):
         problems.append("no internal codes like CRW1 -")
     if re.search(r"\b20\d\d\b", title):
         problems.append("no years in the name")
-    if title.lower().startswith("pickleball"):
-        problems.append("pickleball trips are a separate brand; never treat them as adult trips here")
     if STUDENT_MARKERS.search(title):
         problems.append("looks like a student trip; never touch student trips")
     return problems
@@ -130,5 +128,5 @@ def adult_trip(uuid):
     entry = next((e for e in registry() if e.get("uuid") == uuid), None)
     if not entry:
         raise SystemExit(f"Refusing: trip {uuid} is not in _trips/adult_trips.json. "
-                         "Only registered ADULT trips may be changed (never student or pickleball trips).")
+                         "Only registered ADULT trips may be changed (never student trips).")
     return entry

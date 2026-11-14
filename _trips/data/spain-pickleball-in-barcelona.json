@@ -1,0 +1,235 @@
+{
+  "slug": "spain-pickleball-in-barcelona",
+  "title": "Spain: Pickleball in Barcelona",
+  "code": "",
+  "source": "https://dream-travel.wetravel.com/i/6af7b13e1be7917d95eca28e",
+  "updated_at": "2026-11-14T01:01:11.789Z",
+  "status": "published",
+  "hero": {
+    "src": "images/spain-pickleball-in-barcelona/FtlWetvURYW7Ph0QZ3Zx.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "Spain",
+  "locations": [
+    "Barcelona Airport",
+    "Barcelona Cathedral (Gothic Quarter)",
+    "La Boqueria Market",
+    "Sagrada Família",
+    "Passeig de Gràcia",
+    "Park Güell",
+    "Montserrat Monastery",
+    "Palau de la Música Catalana",
+    "Torres Wineries",
+    "Sitges"
+  ],
+  "tags": [],
+  "tagline": "10-Day Pickleball Adventure in Barcelona",
+  "summary": "Experience the vibrant city of Barcelona while enjoying daily pickleball sessions led by professionals. Explore iconic sites such as the Gothic Quarter, Sagrada Família, Montserrat, and the Palau de la Música Catalana. Savor Catalan cuisine, visit renowned wineries, and discover the charm of coastal Sitges on this immersive 10-day adventure.",
+  "pins": [
+    {
+      "name": "Barcelona Airport",
+      "address": "Aeropuerto de Barcelona-El Prat, 08820 El Prat de Llobregat, Barcelona, Spain",
+      "lat": 41.2974,
+      "lng": 2.0833
+    },
+    {
+      "name": "Barcelona Cathedral (Gothic Quarter)",
+      "address": "Pla de la Seu, s/n, 08002 Barcelona, Spain",
+      "lat": 41.384,
+      "lng": 2.1764
+    },
+    {
+      "name": "La Boqueria Market",
+      "address": "La Rambla, 91, 08001 Barcelona, Spain",
+      "lat": 41.3825,
+      "lng": 2.1722
+    },
+    {
+      "name": "Sagrada Família",
+      "address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+      "lat": 41.4036,
+      "lng": 2.1744
+    },
+    {
+      "name": "Passeig de Gràcia",
+      "address": "Passeig de Gràcia, 08007 Barcelona, Spain",
+      "lat": 41.3917,
+      "lng": 2.165
+    },
+    {
+      "name": "Park Güell",
+      "address": "Carrer d'Olot, s/n, 08024 Barcelona, Spain",
+      "lat": 41.4145,
+      "lng": 2.1527
+    },
+    {
+      "name": "Montserrat Monastery",
+      "address": "08199 Montserrat, Barcelona, Spain",
+      "lat": 41.5912,
+      "lng": 1.8371
+    },
+    {
+      "name": "Palau de la Música Catalana",
+      "address": "C/ Palau de la Música, 4-6, 08003 Barcelona, Spain",
+      "lat": 41.387,
+      "lng": 2.1751
+    },
+    {
+      "name": "Torres Wineries",
+      "address": "Finca El Maset, s/n, 08796 Pacs del Penedès, Barcelona, Spain",
+      "lat": 41.3667,
+      "lng": 1.7
+    },
+    {
+      "name": "Sitges",
+      "address": "Sitges, 08870 Barcelona, Spain",
+      "lat": 41.2372,
+      "lng": 1.8059
+    }
+  ],
+  "sections": [
+    {
+      "id": "10-day-pickleball-adventure-in-barcelona",
+      "title": "10-Day Pickleball Adventure in Barcelona",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/FtlWetvURYW7Ph0QZ3Zx.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Pickleball and Culture in Barcelona</h4>\nExperience the vibrant city of Barcelona while enjoying daily pickleball sessions led by professionals. Explore iconic sites such as the Gothic Quarter, Sagrada Família, Montserrat, and the Palau de la Música Catalana. Savor Catalan cuisine, visit renowned wineries, and discover the charm of coastal Sitges on this immersive 10-day adventure.",
+      "gallery": []
+    },
+    {
+      "id": "day-1-arrival-in-barcelona",
+      "title": "Day 1 - Arrival in Barcelona",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/nPZClYAxRY6oi46Q13RN.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Arrival at Barcelona Airport</h4>\nArrival at Barcelona Airport.\n<h4>Welcome by your tour conductor</h4>\nWelcome by your tour conductor.\n<h4>Transfer to central Barcelona and walk</h4>\nDepending on flight schedules, transfer to central Barcelona for a walk with your tour escort.\n<h4>Hotel in the city center</h4>\nCheck-in at a hotel in the city center.\n<h4>Dinner included</h4>\nDinner included on the first evening for added convenience.",
+      "gallery": []
+    },
+    {
+      "id": "day-2-barcelona-the-gothic-quarter",
+      "title": "Day 2 - Barcelona: The Gothic Quarter",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/eaJ6hERmSQ1cyJwhloQj.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Guided tour of Barcelona’s Gothic Quarter</h4>\nGuided tour of Barcelona’s Gothic Quarter around Barcelona Cathedral. View the magnificent Gothic cathedral from outside and explore medieval streets rich in history and surprising details. You will also see the famous Las Ramblas and the legendary Boqueria Market.\n<h4>Lunch on your own</h4>\nLunch on your own.\n<h4>Afternoon free to enjoy the city</h4>\nAfternoon free to enjoy the city.\n<h4>Dinner on your own</h4>\nDinner on your own.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-3-pickleball-and-barcelona",
+      "title": "Day 3 - Pickleball and Barcelona",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/uWWwdsQbSkaqTRj6PXGf.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>After breakfast at the hotel</h4>\nAfter breakfast at the hotel, travel to the outskirts of Barcelona for a pickleball training session led by professionals.\n<h4>Pickleball training session</h4>\nTravel to the outskirts of Barcelona for a pickleball training session led by professionals.\n<h4>Pickleball venue: to be confirmed</h4>\nPickleball venue: to be confirmed (Vila Pickleball is the likely facility).\n<h4>Lunch on your own</h4>\nLunch on your own.\n<h4>Guided visit to the Sagrada Família</h4>\nIn the afternoon, guided visit to the Sagrada Família. Construction of this major work by Gaudí began in 1882, and it remained unfinished at the artist’s death in 1926. Work has continued thanks to donations and visitors, including Subirachs’s Passion Façade, new towers, and colorful stained-glass windows inside. Guided exterior visit followed by admission to the interior.\n<h4>Return to the hotel</h4>\nReturn to the hotel; dinner on your own.\n<h4>Dinner on your own</h4>\nDinner on your own.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-4-pickleball-and-barcelona",
+      "title": "Day 4 - Pickleball and Barcelona",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/w7in7lKTQmvkWIuB6ell.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>After breakfast, travel to the outskirts of Barcelona</h4>\nAfter breakfast, travel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Pickleball training session</h4>\nTravel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Lunch on your own</h4>\nLunch on your own.\n<h4>Guided tour of Passeig de Gràcia and Park Güell</h4>\nIn the afternoon, guided tour of Passeig de Gràcia to admire the city’s finest Modernist buildings by leading architects, including Gaudí, Domènech i Montaner, and Puig i Cadafalch, each with its distinctive façade. Conclude with a visit to magnificent Park Güell, designed by Gaudí for his patron Eusebi Güell.\n<h4>Return to the hotel</h4>\nReturn to the hotel; dinner on your own.\n<h4>Dinner on your own</h4>\nDinner on your own.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-5-pickleball-and-montserrat",
+      "title": "Day 5 - Pickleball and Montserrat",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/w60NPXcaSvSqMz6CvHUH.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>After breakfast, travel to the outskirts of Barcelona</h4>\nAfter breakfast, travel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Pickleball training session</h4>\nTravel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Lunch on your own</h4>\nLunch on your own.\n<h4>Bus to Montserrat mountain range</h4>\nDepart by bus for the spectacular Montserrat mountain range, with towering cliffs overlooking the valley.\n<h4>Visit Montserrat Monastery and Black Madonna</h4>\nVisit Montserrat Monastery, perched on the mountainside, and the throne room housing the famous 'Moreneta,' the Black Madonna and patron saint of Catalonia.\n<h4>Ascend to the monastery by rack railway</h4>\nAscend to the monastery by rack railway, one of the most scenic ways to reach the site.\n<h4>Return to the hotel</h4>\nReturn to the hotel; dinner on your own.\n<h4>Dinner on your own</h4>\nDinner on your own.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-6-pickleball-and-gastronomy",
+      "title": "Day 6 - Pickleball and Gastronomy",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/2XxBUSCXRc2678ByD9KW.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>After breakfast, travel to the outskirts of Barcelona</h4>\nAfter breakfast, travel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Pickleball training session</h4>\nTravel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Lunch on your own</h4>\nLunch on your own.\n<h4>Guided visit to the Palau de la Musica Catalana</h4>\nIn the afternoon, guided visit to the Palau de la Música Catalana. Still in use today, this breathtaking concert hall was designed by architect Domènech i Montaner, a major figure in Modernism and a teacher of Gaudí. A UNESCO World Heritage Site, it is renowned for its exuberant stained glass, mosaics, and sculptures.\n<h4>Hands-on cooking class with professional chefs</h4>\nIn the late afternoon, enjoy a hands-on cooking class led by professional chefs at a specially equipped venue in central Barcelona. Each participant prepares a traditional Spanish dish with guidance from the chefs. Afterwards, everyone shares and enjoys the dishes they have made; drinks are included and self-served in a relaxed, home-like atmosphere.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-7-pickleball-and-barcelona",
+      "title": "Day 7 - Pickleball and Barcelona",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/NgvzmxkdRbumRzQJ0ZJp.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>After breakfast, travel to the outskirts of Barcelona</h4>\nAfter breakfast, travel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Pickleball training session</h4>\nTravel to the outskirts of Barcelona for a professionally led pickleball training session.\n<h4>Lunch on your own</h4>\nLunch on your own.\n<h4>Afternoon free to explore Barcelona at your own pace</h4>\nAfternoon free to explore Barcelona at your own pace.\n<h4>Dinner on your own</h4>\nDinner on your own.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-8-excursion",
+      "title": "Day 8 - Excursion",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/hoN1v9rwQ6ansXrtHcZQ.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>After breakfast, depart for a visit to the renowned Torres wineries</h4>\nAfter breakfast, depart for a visit to the renowned Torres wineries, a leading name in Catalan winemaking. Tour the extensive facilities and taste a selection of the estate’s wines.\n<h4>Torres wineries tour and tasting</h4>\nTour the extensive facilities of Torres wineries and taste a selection of the estate’s wines.\n<h4>Lunch at El Celleret restaurant</h4>\nAfter the visit, enjoy lunch at El Celleret restaurant, located on the estate. The menus showcase Catalan culinary culture, accompanied by Torres wines.\n<h4>Continue to Sitges</h4>\nAfter lunch, continue to Sitges, a charming coastal town south of Barcelona and one of the most pleasant destinations on the Catalan coast.\n<h4>Guided walk in Sitges</h4>\nEnjoy a short guided walk in Sitges followed by free time to round out the afternoon.\n<h4>Return to the hotel</h4>\nReturn to the hotel; dinner on your own.\n<h4>Dinner on your own</h4>\nDinner on your own.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-9-free-day-in-barcelona",
+      "title": "Day 9 - Free Day in Barcelona",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/IyUrIrJvTFqmlEy4N9PE.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Free day in Barcelona</h4>\nFree day in Barcelona, with bed and breakfast accommodation.\n<h4>Optional dinner at La Pedrera restaurant or flamenco dinner</h4>\nOptional: dinner at the La Pedrera restaurant or a flamenco dinner in the heart of Las Ramblas.\n<h4>Overnight at the hotel</h4>\nOvernight at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-10-return-transfer",
+      "title": "Day 10 - Return Transfer",
+      "subtitle": "",
+      "image": {
+        "src": "images/spain-pickleball-in-barcelona/2Wh86tPGTYC5vfPWK5kc.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Transfer to Barcelona Airport</h4>\nTransfer to Barcelona Airport, assistance with check-in formalities, and departure flight home.",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "the hotel",
+      "nights": 8
+    }
+  ],
+  "category": "Pickleball",
+  "key": "tv5p4g4"
+}

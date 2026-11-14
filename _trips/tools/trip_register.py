@@ -2,7 +2,7 @@
 
     python _trips/tools/trip_register.py <uuid> --country France --category "Art & Culture" --link https://tri.ps/xxxxx
 
-Refuses student-looking and pickleball names. Run trip_rename.py first if the name is not yet
+Refuses student-looking names. Run trip_rename.py first if the name is not yet
 "Country: Theme". Standalone itineraries (no uuid) are added by hand to adult_trips.json.
 """
 import argparse

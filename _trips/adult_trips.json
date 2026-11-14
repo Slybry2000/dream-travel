@@ -279,5 +279,25 @@
     "category": "Wellness",
     "link": "https://dream-travel.wetravel.com/i/6ab9082ccd3e5b735ae044d4",
     "on_website": true
+  },
+  {
+    "title": "France: Pickleball in the French Alps",
+    "kind": "trip",
+    "uuid": "7320764070",
+    "itinerary_id": "6af7b0b41be7917d95eca1b6",
+    "country": "France",
+    "category": "Pickleball",
+    "link": "https://tri.ps/QQaVE",
+    "on_website": false
+  },
+  {
+    "title": "Spain: Pickleball in Barcelona",
+    "kind": "trip",
+    "uuid": "9641686931",
+    "itinerary_id": "6af7b13e1be7917d95eca28e",
+    "country": "Spain",
+    "category": "Pickleball",
+    "link": "https://tri.ps/inEKP",
+    "on_website": false
   }
 ]

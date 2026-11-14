@@ -6,9 +6,12 @@ batch. Proven end to end on 2026-10-23 (8 art trips). Start it in Claude with `/
 
 ## Golden rules
 
-1. **Adult trips only.** Never touch student trips (school names, "HS", "Exchange", years) or
-   pickleball trips (their own brand, named "Pickleball <Country>: ..."). The tools refuse any
-   trip that is not in `_trips/adult_trips.json`; never add a student or pickleball trip to it.
+1. **Adult trips only (art, wellness, pickleball).** Never touch student trips (school names, "HS",
+   "Exchange", years). Pickleball is NOT a separate brand any more: since the 2026-11-13 Bryan/Rene
+   call it is one lane of the adult site beside Wellness and Art & Culture, category `Pickleball`,
+   named like any other trip ("France: Pickleball in the French Alps"). The tools refuse any trip
+   that is not in `_trips/adult_trips.json`; never add a student trip to it.
+   (pickleball.dream-travel.net will later redirect to adults.dream-travel.net/pickleball/.)
 2. **Same result as Rene's own process.** WeTravel's Smart Import (PDF → itinerary, with its own
    Unsplash photos) only exists in the WeTravel screens, so trips are built there; the API is used
    afterwards to check and fix them.
@@ -47,7 +50,7 @@ Algarve, Arenal) goes after the colon. Use the trip's own headline from the PDF 
 | `python _trips/tools/trip_qa.py [uuid ...]` | Read-only check of every adult trip (or the ones given): name, private/1-25/no dates, a photo on every day, same photo twice (by look), photos over 800 KB, possible client names, short link opens. Exit 1 if anything needs fixing. |
 | `python _trips/tools/trip_photos.py <uuid> --set "Day 5 -=<unsplash id>" --optimize --warm` | Puts chosen Unsplash photos on days, swaps all photos for page-ready copies, pre-loads them. Backs up first, then proves only photos changed. |
 | `python _trips/tools/trip_rename.py <uuid> "Country: Theme"` | Renames a bookable trip via the API; rejects bad names and non-adult trips. |
-| `python _trips/tools/trip_register.py <uuid> --country X --category "Art & Culture" --link https://tri.ps/xxxxx` | Adds a new trip to the allowlist. Refuses student/pickleball names. |
+| `python _trips/tools/trip_register.py <uuid> --country X --category "Art & Culture" --link https://tri.ps/xxxxx` | Adds a new trip to the allowlist. Refuses student names. |
 | `python _trips/import_wetravel.py https://dream-travel.wetravel.com/i/<itinerary id> --country X --category "Art & Culture"` | Copies a trip onto the website library (card data + photos). |
 | `python _trips/build.py` | Rebuilds the website's trip pages. |
 
