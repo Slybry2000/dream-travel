@@ -288,7 +288,7 @@
     "country": "France",
     "category": "Pickleball",
     "link": "https://tri.ps/QQaVE",
-    "on_website": false
+    "on_website": true
   },
   {
     "title": "Spain: Pickleball in Barcelona",
@@ -298,6 +298,6 @@
     "country": "Spain",
     "category": "Pickleball",
     "link": "https://tri.ps/inEKP",
-    "on_website": false
+    "on_website": true
   }
 ]
