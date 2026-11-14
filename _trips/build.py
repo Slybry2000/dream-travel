@@ -138,7 +138,7 @@ def head(title, description, image="", extra="", public=False):
 def site_header():
     return f"""  <header class="tl-header">
     <a class="tl-brand" href="/" aria-label="Dream Travel home"><img src="/images/logo-header-2x.webp" alt="" width="75" height="64"><span>Dream Travel</span></a>
-    <nav class="tl-header__nav" aria-label="Primary"><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/#hosting">Hosting</a><a href="/#plan">Contact</a></nav>
+    <nav class="tl-header__nav" aria-label="Primary"><a class="nav-pb" href="/pickleball/">Pickleball</a><a href="/wellness/">Wellness</a><a href="/art-culture/">Art &amp; Culture</a><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/home.html#hosting">Hosting</a><a href="/home.html#plan">Contact</a></nav>
     <a class="tl-button tl-button--small" href="/planning/">Talk with Rene</a>
   </header>"""
 
@@ -416,9 +416,6 @@ def library(by_country, dests, lib):
   <main>
 {split_hero(f"{total} sample trips &middot; {len(by_country)} countries", "Where will", "your group go?", lede, slides)}
 {tabs(lib, by_country)}
-    <section class="tl-kinds" aria-label="Choose a type of trip">
-{chr(10).join(kind_tile(s, n, ts, lib) for s, (n, ts) in CATEGORIES.items())}
-    </section>
     <div id="trips"></div>
 {chr(10).join(blocks)}
 {CTA}

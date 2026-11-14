@@ -224,3 +224,13 @@ h1, h2, h3, p { margin: 0; }
   .tl-row__media { position: relative; height: 3.4in; top: 0; }
   .tl-row__text { min-height: 0; padding: 18px 0 28px; max-width: none; }
 }
+
+/* filter tabs wrap onto extra rows (no sideways scrolling); quiet scrollbar */
+.tl-tabs, .tl-filter .tl-tabs { position: static; flex-wrap: wrap; overflow: visible; justify-content: center; row-gap: 4px; }
+.tl-tabs__sep { display: none; }
+@media (max-width: 700px) { .tl-tabs a { padding: 7px 12px; } .tl-filter .tl-tabs--places a { padding: 6px 10px; } }
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(120,120,120,.4); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(120,120,120,.75); }
+.nav-pb { color: #ffb48a; }
