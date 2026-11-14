@@ -235,3 +235,11 @@ h1, h2, h3, p { margin: 0; }
 ::-webkit-scrollbar-thumb { background: rgba(120,120,120,.4); border-radius: 5px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(120,120,120,.75); }
 .nav-pb { color: #ffb48a; }
+
+/* sample-trips filter: dropdowns on phones (scales as trip types and countries grow), buttons on wider screens */
+.tl-selects { display: none; }
+@media (max-width: 700px) {
+  .tl-filter .tl-tabs { display: none; }
+  .tl-selects { display: flex; gap: 8px; padding: 8px var(--gutter); }
+  .tl-selects select { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid rgba(0,18,11,.2); border-radius: 999px; background: var(--paper); color: var(--ink); font: 600 13px/1.2 inherit; font-family: inherit; }
+}
