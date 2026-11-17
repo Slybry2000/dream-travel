@@ -47,6 +47,7 @@ p{font-size:clamp(14px,1.1vw,17px);line-height:1.5;opacity:.92;margin-bottom:22p
 .split[data-open] ~ .brand,.split[data-open] ~ .foot{opacity:0;pointer-events:none}
 .foot{position:fixed;bottom:14px;left:0;right:0;z-index:5;text-align:center;font-size:13px;pointer-events:none;transition:opacity .3s}
 .foot a{pointer-events:auto;color:#fff;background:rgba(0,0,0,.45);border-radius:999px;padding:7px 16px;text-decoration:none}
+.foot a+a{margin-left:10px}
 .foot a:hover{background:rgba(0,0,0,.7)}
 @media(max-width:760px){
  body{overflow:auto}
@@ -103,7 +104,7 @@ p{font-size:clamp(14px,1.1vw,17px);line-height:1.5;opacity:.92;margin-bottom:22p
   </section>
 </main>
 <a class="brand" href="/"><img src="/images/logo-header-2x.webp" alt=""><span>Dream Travel</span></a>
-<div class="foot"><a href="/trips/library-9mqqye8/">Browse every sample trip</a></div>
+<div class="foot"><a href="/about.html">About us</a> <a href="/trips/library-9mqqye8/">Browse every sample trip</a></div>
 <script>
 if(location.hash&&location.hash.length>1){location.replace('/home.html'+location.hash);}   // old links like /#hosting still work
 var split=document.getElementById('split'), halves=[].slice.call(split.querySelectorAll('.half'));
