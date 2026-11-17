@@ -138,7 +138,7 @@ def head(title, description, image="", extra="", public=False):
 def site_header():
     return f"""  <header class="tl-header">
     <a class="tl-brand" href="/" aria-label="Dream Travel home"><img src="/images/logo-header-2x.webp" alt="" width="75" height="64"><span>Dream Travel</span></a>
-    <nav class="tl-header__nav" aria-label="Primary"><a class="nav-pb" href="/pickleball/">Pickleball</a><a href="/wellness/">Wellness</a><a href="/art-culture/">Art &amp; Culture</a><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/home.html#hosting">Hosting</a><a href="/about.html">About</a><a href="/home.html#plan">Contact</a></nav>
+    <nav class="tl-header__nav" aria-label="Primary"><a class="nav-pb" href="/pickleball/">Pickleball</a><a href="/wellness/">Wellness</a><a href="/art-culture/">Art &amp; Culture</a><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/home.html#hosting">Hosting</a><a href="/about.html">About us</a><a href="/home.html#plan">Contact</a></nav>
     <a class="tl-button tl-button--small" href="/planning/">Talk with Rene</a>
   </header>"""
 
