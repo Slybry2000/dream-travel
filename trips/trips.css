@@ -245,3 +245,4 @@ h1, h2, h3, p { margin: 0; }
   .tl-filter.is-open .tl-tabs--places { max-height: none; }
   .tl-more { display: block; margin: 0 auto 4px; padding: 2px 12px; border: 0; background: none; color: var(--muted); font: 600 11px/1.4 inherit; font-family: inherit; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 }
+.tl-header__nav { gap: clamp(14px, 1.9vw, 28px); } .tl-header__nav a { white-space: nowrap; }

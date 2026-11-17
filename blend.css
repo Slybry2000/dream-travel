@@ -40,3 +40,12 @@
 .tl-tabs,.tl-filter .tl-tabs{position:static;flex-wrap:wrap;overflow:visible;justify-content:center;row-gap:4px}
 .tl-tabs__sep{display:none}
 @media (max-width:700px){.tl-tabs a{padding:7px 12px}.tl-filter .tl-tabs--places a{padding:6px 10px}}
+
+/* About band (2026-11-17): short "who we are" strip on lane pages, leads to /about.html */
+.about-band { padding: clamp(56px, 7vw, 92px) var(--gutter, 24px); text-align: center; background: rgba(149,205,184,.16); border-top: 1px solid rgba(0,18,11,.14); }
+.about-band__inner { width: min(760px, 100%); margin: 0 auto; }
+.about-band h2 { font-size: clamp(26px, 3vw, 40px); }
+.about-band p { max-width: 600px; margin: 16px auto 0; font-size: clamp(16px, 1.2vw, 18px); }
+.about-band .button { margin-top: 24px; }
+.header-phone { white-space: nowrap; } .desktop-nav { gap: clamp(14px, 1.9vw, 42px); }
+@media (max-width: 1180px) { .header-phone { display: none; } }
