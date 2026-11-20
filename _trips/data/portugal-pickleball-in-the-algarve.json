@@ -1,0 +1,119 @@
+{
+  "slug": "portugal-pickleball-in-the-algarve",
+  "title": "Portugal: Pickleball in the Algarve",
+  "code": "",
+  "status": "published",
+  "hero": {
+    "src": "images/portugal-pickleball-in-the-algarve/algarve-cliffs.webp",
+    "x": 50,
+    "y": 50
+  },
+  "days": 10,
+  "nights": 9,
+  "country": "Portugal",
+  "locations": [
+    "Faro",
+    "Lagos",
+    "Ponta da Piedade",
+    "Olhao",
+    "Ria Formosa",
+    "Loule",
+    "Tavira"
+  ],
+  "tags": [],
+  "tagline": "10-Day Pickleball Adventure in the Algarve",
+  "summary": "Pickleball in the mornings and the best of the Algarve in between: golden cliffs, historic towns, a boat ride through the Ria Formosa, a live Fado performance and plenty of free time. Ten days, nine nights, based on the Algarve coast near Albufeira or Vilamoura. Avoid summer dates.",
+  "pins": [],
+  "sections": [
+    {
+      "id": "10-day-pickleball-in-the-algarve",
+      "title": "10-Day Pickleball in the Algarve",
+      "subtitle": "Introduction",
+      "image": {
+        "src": "images/portugal-pickleball-in-the-algarve/algarve-cliffs.webp",
+        "x": 50,
+        "y": 50
+      },
+      "html": "<h4>Pickleball and culture in Portugal</h4>\nPickleball in the mornings and the best of the Algarve in between: golden cliffs, historic towns, a boat ride through the Ria Formosa, a live Fado performance and plenty of free time. Ten days, nine nights, based on the Algarve coast near Albufeira or Vilamoura. Avoid summer dates.",
+      "gallery": []
+    },
+    {
+      "id": "day-1",
+      "title": "Day 1 - Welcome to the Algarve",
+      "subtitle": "",
+      "html": "<h4>Arrival and transfer</h4>\nArrival at Faro International Airport, meet and greet, and private transfer to the hotel.\n<h4>Welcome dinner</h4>\nCheck-in, then a welcome dinner at the hotel.",
+      "gallery": []
+    },
+    {
+      "id": "day-2",
+      "title": "Day 2 - Free day to relax",
+      "subtitle": "",
+      "html": "<h4>At leisure</h4>\nBreakfast at the hotel and a free day to recover and enjoy the Algarve at your own pace.",
+      "gallery": []
+    },
+    {
+      "id": "day-3",
+      "title": "Day 3 - Pickleball and Faro",
+      "subtitle": "",
+      "html": "<h4>Pickleball</h4>\nMorning pickleball session (upon availability), with a transfer to the club and back to the hotel.\n<h4>Faro</h4>\nExplore the historic capital of the Algarve: the Old Town with its cobblestone streets and medieval walls, the Arco da Vila, Faro Cathedral and the Carmo Church with its Chapel of Bones.",
+      "gallery": []
+    },
+    {
+      "id": "day-4",
+      "title": "Day 4 - Pickleball and Lagos",
+      "subtitle": "",
+      "html": "<h4>Pickleball</h4>\nMorning pickleball session (upon availability), with a transfer to the club and back to the hotel.\n<h4>Lagos and Ponta da Piedade</h4>\nWalk the historic centre of Lagos, then see the golden cliffs, rock formations and Atlantic viewpoints of Ponta da Piedade.",
+      "gallery": []
+    },
+    {
+      "id": "day-5",
+      "title": "Day 5 - Pickleball and a free afternoon",
+      "subtitle": "",
+      "html": "<h4>Pickleball</h4>\nMorning pickleball session (upon availability), with a transfer to the club and back to the hotel.\n<h4>Afternoon at leisure</h4>\nThe afternoon is free. Optional: a morning cooking class.",
+      "gallery": []
+    },
+    {
+      "id": "day-6",
+      "title": "Day 6 - Pickleball, Olhao and the Ria Formosa",
+      "subtitle": "",
+      "html": "<h4>Pickleball</h4>\nMorning pickleball session (upon availability), with a transfer to the club and back to the hotel.\n<h4>Olhao and Ria Formosa</h4>\nVisit the fishing port and colorful market of Olhao, take a boat ride through the Ria Formosa nature reserve, and see the old town and churches.",
+      "gallery": []
+    },
+    {
+      "id": "day-7",
+      "title": "Day 7 - Pickleball and a free afternoon",
+      "subtitle": "",
+      "html": "<h4>Pickleball</h4>\nMorning pickleball session (upon availability), with a transfer to the club and back to the hotel.\n<h4>Afternoon at leisure</h4>\nThe afternoon is free.",
+      "gallery": []
+    },
+    {
+      "id": "day-8",
+      "title": "Day 8 - Loule and Tavira",
+      "subtitle": "",
+      "html": "<h4>Loule</h4>\nVisit the lively covered market and historic centre of this traditional market town.\n<h4>Tavira</h4>\nCastle of Tavira (exterior), the Roman Bridge and the Renaissance Church of Misericordia (included), followed by a live Fado performance (included) in a local church.",
+      "gallery": []
+    },
+    {
+      "id": "day-9",
+      "title": "Day 9 - Free day and farewell dinner",
+      "subtitle": "",
+      "html": "<h4>At leisure</h4>\nA full day at leisure.\n<h4>Farewell dinner</h4>\nGet together at the hotel reception for a farewell dinner.",
+      "gallery": []
+    },
+    {
+      "id": "day-10",
+      "title": "Day 10 - Departure",
+      "subtitle": "",
+      "html": "<h4>Transfer to Faro Airport</h4>\nBreakfast, check-out and private transfer to Faro International Airport according to your flight schedule.",
+      "gallery": []
+    }
+  ],
+  "overnights": [
+    {
+      "place": "the hotel",
+      "nights": 9
+    }
+  ],
+  "category": "Pickleball",
+  "key": "da0058e"
+}
