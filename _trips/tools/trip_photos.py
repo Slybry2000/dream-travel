@@ -63,7 +63,7 @@ def main():
         idx = [i for i, s in enumerate(secs) if (s.get("title") or "").startswith(prefix.strip())]
         if len(idx) != 1:
             raise SystemExit(f"'{prefix}' matches {len(idx)} sections; use a longer, unique start of the title")
-        sources[idx[0]] = UNSPLASH.format(photo.strip())
+        sources[idx[0]] = photo.strip() if photo.strip().startswith('http') else UNSPLASH.format(photo.strip())
     if args.optimize:
         for i, s in enumerate(secs):
             h = (s.get("image") or {}).get("handle")
