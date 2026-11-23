@@ -298,7 +298,7 @@ def live_card(t, dep):
         button = f'<a class="tl-button" href="{book}" target="_blank" rel="noopener">Book this trip</a>'
     else:   # dates set, but no bookable WeTravel departure yet
         badge = '<span class="tl-ribbon tl-ribbon--soon"><b>Opening soon</b></span>'
-        button = '<a class="tl-button tl-button--line" href="/planning/">Reserve your interest</a>'
+        button = f'<a class="tl-button tl-button--line" href="{dep.get("reserve_url") or "/planning/"}" target="_blank" rel="noopener">Reserve your spot</a>'
     link = book or t["url"]
     return f"""      <article class="tl-card tl-card--live{' tl-card--out' if out else ''}">
         <a class="tl-card__media" href="{link}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}">{badge}</a>
