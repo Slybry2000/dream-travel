@@ -287,20 +287,25 @@ IDEAS_HEAD = """<div class="tl-ideas-head" id="ideas"><h2>Trip ideas</h2>
 LIVE = []   # trips with real dates and prices; filled in main()
 
 
-def live_card(t):
-    info = t["live"]
-    dates = "".join(f"<li>{esc(d)}</li>" for d in info["dates"])
-    out = info.get("sold_out")
-    badge = ('<span class="tl-ribbon tl-ribbon--out"><b>Sold out</b></span>' if out
-             else '<span class="tl-ribbon tl-ribbon--open"><b>Booking open</b></span>')
-    button = ('<a class="tl-button tl-button--line" href="/planning/">Ask about the next trip</a>' if out
-              else f'<a class="tl-button" href="{t["url"]}" target="_blank" rel="noopener">Book this trip</a>')
+def live_card(t, dep):
+    out = dep.get("sold_out")
+    book = dep.get("book_url")
+    if out:
+        badge = '<span class="tl-ribbon tl-ribbon--out"><b>Sold out</b></span>'
+        button = '<a class="tl-button tl-button--line" href="/planning/">Ask about the next trip</a>'
+    elif book:
+        badge = '<span class="tl-ribbon tl-ribbon--open"><b>Booking open</b></span>'
+        button = f'<a class="tl-button" href="{book}" target="_blank" rel="noopener">Book this trip</a>'
+    else:   # dates set, but no bookable WeTravel departure yet
+        badge = '<span class="tl-ribbon tl-ribbon--soon"><b>Opening soon</b></span>'
+        button = '<a class="tl-button tl-button--line" href="/planning/">Reserve your interest</a>'
+    link = book or t["url"]
     return f"""      <article class="tl-card tl-card--live{' tl-card--out' if out else ''}">
-        <a class="tl-card__media" href="{t['url']}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}">{badge}</a>
+        <a class="tl-card__media" href="{link}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}">{badge}</a>
         <div class="tl-card__body">
-          <h3><a href="{t['url']}" target="_blank" rel="noopener">{esc(t['title'])}</a></h3>
-          <p class="tl-card__price">{esc(info['price'])} <small>per person</small></p>
-          <ul class="tl-card__dates">{dates}</ul>
+          <h3><a href="{link}" target="_blank" rel="noopener">{esc(t['title'])}</a></h3>
+          <p class="tl-card__price">{esc(dep['price'])} <small>per person</small></p>
+          <ul class="tl-card__dates"><li>{esc(dep['dates'])}</li></ul>
           <p class="tl-card__meta">{esc(duration(t))} &middot; {esc(', '.join(t.get('locations', [])[:3]) or t.get('country', ''))}</p>
           {button}
         </div>
@@ -308,13 +313,13 @@ def live_card(t):
 
 
 def live_section(cat=None, country=None):
-    """"Join a trip": trips that already have dates and prices. Kept apart from the trip ideas below."""
-    pick = [t for t in LIVE if (not cat or t["category_slug"] == cat) and (not country or t["country_slug"] == country)]
+    """"Join a trip": one card per dated departure. Kept apart from the trip ideas below."""
+    pick = [(t, d) for t in LIVE for d in t["live"] if (not cat or t["category_slug"] == cat) and (not country or t["country_slug"] == country)]
     if not pick:
         return ""
-    pick.sort(key=lambda t: bool(t["live"].get("sold_out")))   # sold-out trips go last
-    cards = "\n".join(live_card(t) for t in pick)
-    return f"""    <section class="tl-live" id="join"><div class="tl-grid-head"><h2>Join a trip</h2><p>Real dates, real prices, open for booking now.</p></div><div class="tl-grid">
+    pick.sort(key=lambda td: (bool(td[1].get("sold_out")), not td[1].get("book_url")))   # bookable first, sold out last
+    cards = "\n".join(live_card(t, d) for t, d in pick)
+    return f"""    <section class="tl-live" id="join"><div class="tl-grid-head"><h2>Join a trip</h2><p>Real dates and prices. Each date is its own trip.</p></div><div class="tl-grid">
 {cards}
     </div></section>"""
 
@@ -477,7 +482,6 @@ def main():
     trips, dests = load()
     all_trips = trips
     LIVE[:] = [t for t in trips if t.get("live")]
-    trips = [t for t in trips if not t.get("live")]
     lib_dir = OUT / library_key()
     lib = f"{BASE}/{lib_dir.name}"
     # Wipe previously generated pages so a removed, drafted or re-keyed trip disappears too.

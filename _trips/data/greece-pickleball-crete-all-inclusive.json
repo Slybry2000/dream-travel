@@ -23,11 +23,15 @@
   "overnights": [],
   "category": "Pickleball",
   "key": "juctb3w",
-  "live": {
-    "price": "$2,950",
-    "dates": [
-      "May 14–20, 2027",
-      "Sep 19–25, 2027"
-    ]
-  }
+  "live": [
+    {
+      "price": "$2,950",
+      "dates": "May 14–20, 2027",
+      "book_url": "https://dream-travel.wetravel.com/trips/greek-pickleball-paradise-crete-all-inclusive-with-athens-option-dream-travel-2780374925"
+    },
+    {
+      "price": "$2,950",
+      "dates": "Sep 19–25, 2027"
+    }
+  ]
 }

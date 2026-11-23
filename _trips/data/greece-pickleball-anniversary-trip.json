@@ -25,11 +25,11 @@
   "overnights": [],
   "category": "Pickleball",
   "key": "rq8sryn",
-  "live": {
-    "price": "$4,950",
-    "dates": [
-      "May 22–30, 2027"
-    ],
-    "sold_out": true
-  }
+  "live": [
+    {
+      "price": "$4,950",
+      "dates": "May 22–30, 2027",
+      "sold_out": true
+    }
+  ]
 }
