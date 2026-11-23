@@ -268,3 +268,6 @@ h1, h2, h3, p { margin: 0; }
 .tl-ribbon--open b { background: #1f7a4f; } .tl-ribbon--out b { background: #5F5E5A; } .tl-ribbon--sample b { background: #c97a52; }
 .tl-card__badge--live { display: none; }
 .tl-card__badge { top: auto; bottom: 0; border-radius: 8px 0 0 0; }
+.tl-ideas-head__note { display: flex; align-items: flex-start; gap: 12px; margin: 14px 0 0 !important; padding: 14px 18px; border-radius: 10px; background: #fdf1ea; border: 1.5px solid #c97a52; color: var(--ink) !important; font-size: 16px !important; line-height: 1.5; }
+.tl-ideas-head__icon { flex: none; width: 22px; height: 22px; margin-top: 1px; border-radius: 50%; background: #c97a52; color: #fff; font: italic 600 14px/22px var(--editorial); text-align: center; }
+.tl-ideas-head__note strong { font-weight: 600; }

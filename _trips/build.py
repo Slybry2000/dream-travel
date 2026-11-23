@@ -281,6 +281,9 @@ def split_hero(kicker, lead, script, lede, slides):
     </section>"""
 
 
+IDEAS_HEAD = """<div class="tl-ideas-head" id="ideas"><h2>Trip ideas</h2>
+      <p class="tl-ideas-head__note"><b class="tl-ideas-head__icon" aria-hidden="true">i</b><span><strong>These are samples only.</strong> They are starting points with no dates or prices, not booked trips. Tell us your group and we shape one around you.</span></p></div>"""
+
 LIVE = []   # trips with real dates and prices; filled in main()
 
 
@@ -385,6 +388,7 @@ def destination(slug, name, trips, meta, lib, by_country, cat=None):
   <main>
 {split_hero(count, kicker, esc(name), esc(intro[0]), slides)}
 {live_section(cat=cat, country=slug)}
+    {IDEAS_HEAD}
 {tabs(lib, by_country, cat, slug)}
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
@@ -412,7 +416,7 @@ def category(slug, name, trips, lib, by_country):
   <main>
 {split_hero(count, "Group trips for", esc(name), esc(lede), slides)}
 {live_section(cat=slug)}
-    <div class="tl-ideas-head" id="ideas"><h2>Trip ideas</h2><p>Starting points with no dates or prices.</p></div>
+    {IDEAS_HEAD}
 {tabs(lib, by_country, slug)}
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
@@ -455,7 +459,7 @@ def library(by_country, dests, lib):
   <main>
 {split_hero(f"{total} trip ideas &middot; {len(by_country)} countries", "Where will", "your group go?", lede, slides)}
 {live_section()}
-    <div class="tl-ideas-head" id="ideas"><h2>Trip ideas</h2><p>Starting points with no dates or prices. Tell us your group and we shape one around you.</p></div>
+    {IDEAS_HEAD}
 {tabs(lib, by_country)}
     <div id="trips"></div>
 {chr(10).join(blocks)}
