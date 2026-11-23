@@ -246,3 +246,18 @@ h1, h2, h3, p { margin: 0; }
   .tl-more { display: block; margin: 0 auto 4px; padding: 2px 12px; border: 0; background: none; color: var(--muted); font: 600 11px/1.4 inherit; font-family: inherit; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 }
 .tl-header__nav { gap: clamp(14px, 1.9vw, 28px); } .tl-header__nav a { white-space: nowrap; }
+
+/* Join a trip: live departures, kept apart from the trip ideas below */
+.tl-live { max-width: 1240px; margin: 0 auto; padding: 44px 24px 12px; }
+.tl-live .tl-grid-head p { color: var(--muted); font-size: 15px; margin: 0; }
+.tl-card--live { border: 2px solid var(--mint); }
+.tl-card__badge--live { top: 12px; right: auto; left: 12px; border-radius: 99px; padding: 6px 14px; background: #1f7a4f; color: #fff; font-weight: 600; letter-spacing: .02em; }
+.tl-card__price { margin: 2px 0 0; color: var(--ink); font: 600 22px/1.2 var(--body); } .tl-card__price small { color: var(--muted); font-size: 13px; font-weight: 400; }
+.tl-card__dates { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tl-card__dates li { padding: 3px 12px; border-radius: 99px; background: var(--mint); color: var(--ink); font-size: 13px; font-weight: 500; }
+.tl-ideas-head { max-width: 1240px; margin: 36px auto 0; padding: 28px 24px 0; border-top: 1px solid rgba(0,18,11,.12); }
+.tl-ideas-head h2 { margin: 0 0 4px; color: var(--ink); font: 400 30px/1.15 var(--editorial); } .tl-ideas-head p { margin: 0; color: var(--muted); font-size: 15px; }
+.tl-header__nav .nav-join { font-weight: 600; }
+.tl-card--out { border-color: #c9c9c9; } .tl-card--out .tl-card__media img { filter: grayscale(.85); opacity: .7; }
+.tl-card__badge--out { background: #5b6b74; }
+.tl-card--out .tl-card__dates li { background: #e4e4e4; color: #5b6b74; text-decoration: line-through; }

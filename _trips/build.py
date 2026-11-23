@@ -138,7 +138,7 @@ def head(title, description, image="", extra="", public=False):
 def site_header():
     return f"""  <header class="tl-header">
     <a class="tl-brand" href="/" aria-label="Dream Travel home"><img src="/images/logo-header-2x.webp" alt="" width="75" height="64"><span>Dream Travel</span></a>
-    <nav class="tl-header__nav" aria-label="Primary"><a class="nav-pb" href="/pickleball/">Pickleball</a><a href="/wellness/">Wellness</a><a href="/art-culture/">Art &amp; Culture</a><a href="{BASE}/{library_key()}/">Sample trips</a><a href="/home.html#hosting">Hosting</a><a href="/about.html">About us</a><a href="/home.html#plan">Contact</a></nav>
+    <nav class="tl-header__nav" aria-label="Primary"><a class="nav-pb" href="/pickleball/">Pickleball</a><a href="/wellness/">Wellness</a><a href="/art-culture/">Art &amp; Culture</a><a class="nav-join" href="{BASE}/{library_key()}/#join">Join a trip</a><a href="{BASE}/{library_key()}/#ideas">Trip ideas</a><a href="/home.html#hosting">Hosting</a><a href="/about.html">About us</a><a href="/home.html#plan">Contact</a></nav>
     <a class="tl-button tl-button--small" href="/planning/">Talk with Rene</a>
   </header>"""
 
@@ -147,7 +147,7 @@ def site_footer():
     return """  <footer class="tl-footer">
     <div><a class="tl-brand" href="/"><img src="/images/logo-footer-2x.webp" alt="" width="56" height="48"><span>Dream Travel</span></a><p>Hosted. Private. Custom.</p></div>
     <div class="tl-footer__contact"><a href="mailto:go@dream-travel.net">go@dream-travel.net</a><a href="tel:+15712068949">571 206 8949</a></div>
-    <p class="tl-footer__small">&copy; 2026 Dream Travel International Corp. Sample programs. Final details are confirmed with your group.</p>
+    <p class="tl-footer__small">&copy; 2026 Dream Travel International Corp. Trip ideas are starting points. Final details are confirmed with your group.</p>
   </footer>"""
 
 
@@ -281,6 +281,41 @@ def split_hero(kicker, lead, script, lede, slides):
     </section>"""
 
 
+LIVE = []   # trips with real dates and prices; filled in main()
+
+
+def live_card(t):
+    info = t["live"]
+    dates = "".join(f"<li>{esc(d)}</li>" for d in info["dates"])
+    out = info.get("sold_out")
+    badge = ('<span class="tl-card__badge tl-card__badge--live tl-card__badge--out">Sold out</span>' if out
+             else '<span class="tl-card__badge tl-card__badge--live">Booking open</span>')
+    button = ('<a class="tl-button tl-button--line" href="/planning/">Ask about the next trip</a>' if out
+              else f'<a class="tl-button" href="{t["url"]}" target="_blank" rel="noopener">Book this trip</a>')
+    return f"""      <article class="tl-card tl-card--live{' tl-card--out' if out else ''}">
+        <a class="tl-card__media" href="{t['url']}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}">{badge}</a>
+        <div class="tl-card__body">
+          <h3><a href="{t['url']}" target="_blank" rel="noopener">{esc(t['title'])}</a></h3>
+          <p class="tl-card__price">{esc(info['price'])} <small>per person</small></p>
+          <ul class="tl-card__dates">{dates}</ul>
+          <p class="tl-card__meta">{esc(duration(t))} &middot; {esc(', '.join(t.get('locations', [])[:3]) or t.get('country', ''))}</p>
+          {button}
+        </div>
+      </article>"""
+
+
+def live_section(cat=None, country=None):
+    """"Join a trip": trips that already have dates and prices. Kept apart from the trip ideas below."""
+    pick = [t for t in LIVE if (not cat or t["category_slug"] == cat) and (not country or t["country_slug"] == country)]
+    if not pick:
+        return ""
+    pick.sort(key=lambda t: bool(t["live"].get("sold_out")))   # sold-out trips go last
+    cards = "\n".join(live_card(t) for t in pick)
+    return f"""    <section class="tl-live" id="join"><div class="tl-grid-head"><h2>Join a trip</h2><p>Real dates, real prices, open for booking now.</p></div><div class="tl-grid">
+{cards}
+    </div></section>"""
+
+
 CATEGORIES = {}   # category slug -> (name, trips); filled in main() before any page is written
 
 
@@ -302,8 +337,8 @@ def tabs(lib, by_country, cat=None, country=None):
     base = f"{lib}/{cat}/" if cat else f"{lib}/"
     row2 = link(base, "All countries", country is None) + "".join(link(f"{base}{k}/", n, k == country) for k, n in places)
     return ('    <div class="tl-filter">'
-            '<nav class="tl-tabs tl-tabs--kinds" aria-label="Sample trips by type">' + kinds + "</nav>"
-            '<nav class="tl-tabs tl-tabs--places" aria-label="Sample trips by destination">' + row2 + "</nav>"
+            '<nav class="tl-tabs tl-tabs--kinds" aria-label="Trip ideas by type">' + kinds + "</nav>"
+            '<nav class="tl-tabs tl-tabs--places" aria-label="Trip ideas by destination">' + row2 + "</nav>"
             "<button type=\"button\" class=\"tl-more\" onclick=\"var f=this.parentNode;f.classList.toggle('is-open');this.textContent=f.classList.contains('is-open')?'Fewer countries':'More countries'\">More countries</button></div>")
 
 
@@ -311,7 +346,7 @@ CTA = """    <section class="tl-cta"><p><strong>Don't see your trip?</strong> Mo
 
 
 def mini_card(t):
-    """Small photo-and-title card for the "More sample trips" strip."""
+    """Small photo-and-title card for the "More trip ideas" strip."""
     return (f'      <a class="tl-mini" href="{t["url"]}" target="_blank" rel="noopener"><img src="{img_url(t.get("hero"))}" alt="" loading="lazy" style="{focal(t.get("hero"))}">'
             f'<span><small>{esc(t.get("country", ""))} &middot; {esc(duration(t))}</small>{esc(t["title"])}</span></a>')
 
@@ -325,7 +360,7 @@ def destination(slug, name, trips, meta, lib, by_country, cat=None):
     if cat:   # a type page shows its own trips' photos (a Portugal beach is wrong for Portugal art trips)
         slides = [img_url(t.get("hero")) for t in trips if t.get("hero")] or slides
     intro = meta.get("intro") or [
-        f"Sample programs for private groups traveling to {name}. Each one is a starting point: "
+        f"Trip ideas for private groups traveling to {name}. Each one is a starting point, with no dates or prices: "
         "we shape the dates, pace, hotels and activities around your group."]
     cards = "\n".join(card(t) for t in trips)
     # "More sample trips": up to 6 trips from the other countries, taken in turn so every country shows.
@@ -337,11 +372,11 @@ def destination(slug, name, trips, meta, lib, by_country, cat=None):
             if pool and len(more) < 6:
                 more.append(pool.pop(0))
         pools = [pool for pool in pools if pool]
-    more_html = (f"""    <section class="tl-strip"><div class="tl-grid-head"><h2>More sample trips</h2><a href="{lib}/{cat + '/' if cat else ''}">See all &rarr;</a></div><div class="tl-strip__row">
+    more_html = (f"""    <section class="tl-strip"><div class="tl-grid-head"><h2>More trip ideas</h2><a href="{lib}/{cat + '/' if cat else ''}">See all &rarr;</a></div><div class="tl-strip__row">
 {chr(10).join(mini_card(t) for t in more)}
     </div></section>
 """ if more else "")
-    count = f"{len(trips)} sample trip{'s' if len(trips) != 1 else ''}"
+    count = f"{len(trips)} trip idea{'s' if len(trips) != 1 else ''}"
     title = f"{CATEGORIES[cat][0]} trips to {name}" if cat else f"{name} Group Trips"
     kicker = f"{CATEGORIES[cat][0]} trips to" if cat else "Group trips to"
     return f"""{head(f"{title} | Dream Travel", intro[0], slides[0], public=True)}
@@ -349,6 +384,7 @@ def destination(slug, name, trips, meta, lib, by_country, cat=None):
 {site_header()}
   <main>
 {split_hero(count, kicker, esc(name), esc(intro[0]), slides)}
+{live_section(cat=cat, country=slug)}
 {tabs(lib, by_country, cat, slug)}
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
@@ -366,15 +402,17 @@ def destination(slug, name, trips, meta, lib, by_country, cat=None):
 def category(slug, name, trips, lib, by_country):
     """One type of trip (Wellness, Art & Culture...) across every country."""
     slides = [img_url(t.get("hero")) for t in trips if t.get("hero")]
-    lede = (f"Sample {name.lower()} programs for private groups. Each one is a starting point: "
+    lede = (f"{name} trip ideas for private groups. Each one is a starting point, with no dates or prices: "
             "we shape the dates, pace, hotels and activities around your group.")
-    count = f"{len(trips)} sample trip{'s' if len(trips) != 1 else ''}"
+    count = f"{len(trips)} trip idea{'s' if len(trips) != 1 else ''}"
     cards = "\n".join(card(t) for t in trips)
     return f"""{head(f"{name} Group Trips | Dream Travel", lede, slides[0] if slides else "", public=True)}
 <body class="tl-dest">
 {site_header()}
   <main>
 {split_hero(count, "Group trips for", esc(name), esc(lede), slides)}
+{live_section(cat=slug)}
+    <div class="tl-ideas-head" id="ideas"><h2>Trip ideas</h2><p>Starting points with no dates or prices.</p></div>
 {tabs(lib, by_country, slug)}
     <section class="tl-grid-wrap" id="trips"><div class="tl-grid">
 {cards}
@@ -394,7 +432,7 @@ def kind_tile(slug, name, trips, lib):
     hero = next((t.get("hero") for t in trips if t.get("hero")), None)
     countries = sorted({t.get("country") or "Elsewhere" for t in trips})
     return (f'      <a class="tl-kind" href="{lib}/{slug}/"><img src="{img_url(hero)}" alt="" loading="lazy" style="{focal(hero)}">'
-            f'<span><small>{len(trips)} sample trip{"s" if len(trips) != 1 else ""} &middot; {esc(", ".join(countries))}</small>{esc(name)} &rarr;</span></a>')
+            f'<span><small>{len(trips)} trip idea{"s" if len(trips) != 1 else ""} &middot; {esc(", ".join(countries))}</small>{esc(name)} &rarr;</span></a>')
 
 
 def library(by_country, dests, lib):
@@ -409,13 +447,15 @@ def library(by_country, dests, lib):
     slides = [f"{BASE}/{src}" for src in config().get("hero_rotation", [])] or \
              [img_url(t.get("hero")) for _, ts in by_country.values() for t in ts if t.get("hero")]
     total = sum(len(ts) for _, ts in by_country.values())
-    lede = ("These are just samples. Any destination, any type of trip: pick one close to what your people want "
+    lede = ("Trips with dates are open for booking just below. The ideas after that are starting points, not booked departures: pick one close to what your people want "
             "and we will shape it from there, or tell us where you want to go and we will build it.")
-    return f"""{head("Group Trips | Dream Travel", "Sample itineraries for private group travel with Dream Travel.", slides[0] if slides else "", public=True)}
+    return f"""{head("Group Trips | Dream Travel", "Open trips to join, plus trip ideas for private group travel with Dream Travel.", slides[0] if slides else "", public=True)}
 <body class="tl-dest">
 {site_header()}
   <main>
-{split_hero(f"{total} sample trips &middot; {len(by_country)} countries", "Where will", "your group go?", lede, slides)}
+{split_hero(f"{total} trip ideas &middot; {len(by_country)} countries", "Where will", "your group go?", lede, slides)}
+{live_section()}
+    <div class="tl-ideas-head" id="ideas"><h2>Trip ideas</h2><p>Starting points with no dates or prices. Tell us your group and we shape one around you.</p></div>
 {tabs(lib, by_country)}
     <div id="trips"></div>
 {chr(10).join(blocks)}
@@ -431,6 +471,9 @@ def library(by_country, dests, lib):
 
 def main():
     trips, dests = load()
+    all_trips = trips
+    LIVE[:] = [t for t in trips if t.get("live")]
+    trips = [t for t in trips if not t.get("live")]
     lib_dir = OUT / library_key()
     lib = f"{BASE}/{lib_dir.name}"
     # Wipe previously generated pages so a removed, drafted or re-keyed trip disappears too.
@@ -469,7 +512,7 @@ def main():
     feed = [{"title": t["title"], "url": SITE + t["url"] if t["hosted"] else t["url"], "country": t.get("country"), "country_slug": t["country_slug"], "category": t["category"],
              "days": t.get("days"), "duration": duration(t), "image": SITE + img_url(t.get("hero")),
              "locations": t.get("locations", []), "tags": t.get("tags", []), "overnights": overnights_line(t),
-             "summary": t.get("summary", "")} for t in trips if t.get("listed")]
+             "summary": t.get("summary", "")} for t in all_trips if t.get("listed")]
     (OUT / "trips.json").write_text(json.dumps({"updated": VERSION, "trips": feed}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Built {len(trips)} trip(s). Links:")
     for t in trips:
