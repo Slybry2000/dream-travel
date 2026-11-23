@@ -155,7 +155,7 @@ def card(t):
     tags = "".join(f"<span>{esc(x)}</span>" for x in [t["category"]] + t.get("tags", []))
     nights = overnights_line(t)
     return f"""      <article class="tl-card">
-        <a class="tl-card__media" href="{t['url']}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}"><span class="tl-card__badge">{esc(duration(t))}</span></a>
+        <a class="tl-card__media" href="{t['url']}" target="_blank" rel="noopener"><img src="{img_url(t.get('hero'))}" alt="" loading="lazy" style="{focal(t.get('hero'))}"><span class="tl-card__badge">{esc(duration(t))}</span><span class="tl-ribbon tl-ribbon--sample" aria-label="Sample trip"><b>Sample trip</b></span></a>
         <div class="tl-card__body">
           <h3><a href="{t['url']}" target="_blank" rel="noopener">{esc(t['title'])}</a></h3>
           <p class="tl-card__meta"><b>Location(s):</b> {esc(', '.join(t.get('locations', [])[:4]) or t.get('country', ''))}</p>
@@ -288,8 +288,8 @@ def live_card(t):
     info = t["live"]
     dates = "".join(f"<li>{esc(d)}</li>" for d in info["dates"])
     out = info.get("sold_out")
-    badge = ('<span class="tl-card__badge tl-card__badge--live tl-card__badge--out">Sold out</span>' if out
-             else '<span class="tl-card__badge tl-card__badge--live">Booking open</span>')
+    badge = ('<span class="tl-ribbon tl-ribbon--out"><b>Sold out</b></span>' if out
+             else '<span class="tl-ribbon tl-ribbon--open"><b>Booking open</b></span>')
     button = ('<a class="tl-button tl-button--line" href="/planning/">Ask about the next trip</a>' if out
               else f'<a class="tl-button" href="{t["url"]}" target="_blank" rel="noopener">Book this trip</a>')
     return f"""      <article class="tl-card tl-card--live{' tl-card--out' if out else ''}">

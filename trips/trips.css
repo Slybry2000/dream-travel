@@ -261,3 +261,10 @@ h1, h2, h3, p { margin: 0; }
 .tl-card--out { border-color: #c9c9c9; } .tl-card--out .tl-card__media img { filter: grayscale(.85); opacity: .7; }
 .tl-card__badge--out { background: #5b6b74; }
 .tl-card--out .tl-card__dates li { background: #e4e4e4; color: #5b6b74; text-decoration: line-through; }
+
+/* Corner ribbon: Booking open / Sold out on live trips, Sample trip on ideas */
+.tl-ribbon { position: absolute; top: 0; left: 0; width: 120px; height: 120px; overflow: hidden; pointer-events: none; z-index: 2; }
+.tl-ribbon b { position: absolute; top: 24px; left: -36px; width: 150px; padding: 5px 0; transform: rotate(-45deg); color: #fff; font: 600 11px/1.2 var(--body); letter-spacing: .04em; text-align: center; text-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,.25); }
+.tl-ribbon--open b { background: #1f7a4f; } .tl-ribbon--out b { background: #5F5E5A; } .tl-ribbon--sample b { background: #c97a52; }
+.tl-card__badge--live { display: none; }
+.tl-card__badge { top: auto; bottom: 0; border-radius: 8px 0 0 0; }
