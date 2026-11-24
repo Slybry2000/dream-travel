@@ -23,6 +23,12 @@ PAGE = """<!doctype html>
 """
 
 
+# /g/call/ = Rene's booking page (the real address is a very long Google Calendar link).
+EXTRA = {
+    "call": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2HNBLi-YY0iJuNEU1m4Qm-7uw3HuGQd7cZsN0JHKmsR-g6NKYRxTrTlpbRZl8wdF_7lRrpy0y-",
+}
+
+
 def code_for(rel):
     parts = [p for p in rel.split("/") if p]
     if not parts:
@@ -31,6 +37,8 @@ def code_for(rel):
         return "wellness" if len(parts) == 1 else "w-" + parts[1]
     if parts[0] == "art-culture":
         return "art" if len(parts) == 1 else "a-" + parts[1]
+    if parts[0] == "pickleball":
+        return "pickleball" if len(parts) == 1 else "p-" + parts[1]
     return parts[0]
 
 
@@ -50,6 +58,14 @@ def main():
         seen[code] = rel
         dest = "/" + LIB + "/" + (rel + "/" if rel else "")
         mapping["/" + LIB + "/" + (rel + "/" if rel else "")] = code
+        out = os.path.join(ROOT, "g", code)
+        os.makedirs(out, exist_ok=True)
+        with open(os.path.join(out, "index.html"), "w", encoding="utf-8", newline="\n") as f:
+            f.write(PAGE.format(dest=dest, dest_js=json.dumps(dest)))
+    # Short links to pages that are not trip pages (kept out of map.json, which is trip pages only).
+    for code, dest in EXTRA.items():
+        if code in seen:
+            sys.exit("Short code %r is already a trip page" % code)
         out = os.path.join(ROOT, "g", code)
         os.makedirs(out, exist_ok=True)
         with open(os.path.join(out, "index.html"), "w", encoding="utf-8", newline="\n") as f:
