@@ -190,3 +190,38 @@ python _trips/build.py
   `git worktree` (`git worktree add --detach <dir> FETCH_HEAD`, `git cherry-pick`), and push
   `HEAD:main` over HTTPS. A safety hook blocks any command containing `rm -rf`.
 - Do not name the supplier's staff in commit messages (the repo is public).
+
+## Public (bookable) listings, added 2026-11-19
+For a trip we sell to individuals (FIT), not to a group leader: build it in the WeTravel builder, **Public**,
+real dates, group max = rooms held x 2, **Packages: Yes** (one package per room type, USD, deposit + payment plan),
+eSignature No. Reuse an existing itinerary with Trip Page > Use Existing Itinerary instead of a PDF.
+`trip_qa.py` will flag "public" and the group size: that is expected for these. First one: Greece: Pickleball in
+Crete, All-Inclusive (tri.ps/wxREl, May 14-20 2027, $2,950 shared / $4,300 private room, $1,000 deposit).
+Registered with `on_website: false`: the link is deliberately NOT on adults.dream-travel.net.
+
+## Bookable trips: cloning a trip that travelers can pay for (traveler form, cancellation policy)
+
+Steps 1-8 above build **private, not-for-sale** trips from PDFs (no packages, no eSignature).
+Use this section instead when Rene wants a trip people can actually **book**, such as the
+September Crete, May 3-city and September 3-city trips built on 2026-11-23. Clone the closest
+existing bookable trip (the May trip is the reference) rather than starting from the PDF import.
+
+This extends "Public (bookable) listings" above (dates, packages, prices). NOTE: that section says
+eSignature No for the trip builder; the cancellation policy below is a separate signed document that the
+May trip carries. If the two disagree on a live trip, copy the May trip and ask Rene.
+
+Every bookable trip needs ALL of these before it is handed to Rene. Check each one at the end;
+the 2026-11-23 build forgot the last two.
+
+1. **Traveler form:** "Adult Trip Traveler Form" (17 questions), due right after checkout,
+   auto-reminders on, same settings as the May trip. Reload the page and confirm it stuck.
+2. **Insurance reminder form:** WeTravel adds an "Insurance Reminder - Final Call" form by
+   itself (due 8 days after booking). The May trip does not have it. Do not decide: tell Rene
+   he can keep or delete it.
+3. **Cancellation policy document with e-sign** (same document as the May trip).
+4. **Short links** (tri.ps): Shorten URL, and confirm with `curl -sI https://tri.ps/<code>`.
+5. **Leave it a draft.** WeTravel shows "You have unpublished changes". Never press Publish;
+   Rene reviews and publishes. Never email travelers or change prices.
+
+Finish with a plain checklist to Bryan: for each trip, which of the five are done, which are
+missing, and what Rene must decide.

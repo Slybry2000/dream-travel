@@ -56,3 +56,10 @@ On WeTravel (same Dream Travel account) name them "Pickleball <Country>: <title>
 sort apart from the adult/wellness "Country: Theme" itineraries. Never run
 `import_wetravel.py` on a pickleball itinerary, so it cannot appear on adults.dream-travel.net.
 The pickleball site's trip cards link straight to the WeTravel page instead.
+Built 2026-11-04 (Greece, from a clean rewritten PDF, no operator names): "Pickleball Greece: Athens,
+Crete & Santorini" https://tri.ps/ktsXF (trip 7306111830) and "Pickleball Greece: Crete All-Inclusive"
+https://tri.ps/leQDX (trip 7024867511); sheet rows 40-41 (now). Two older sheet rows, URL imports of
+the operator's own site that named him, were removed from the sheet on Bryan's yes; their WeTravel
+itineraries (/i/6ae43901b1e2f9f387a386da, /i/6ae43828b1e2f9f387a386d1) still exist, never send them. `trip_qa.py` is adult-only
+(it rejects the "Pickleball" name), so check pickleball trips by eye. The sheet only opens in the
+Chrome profile signed in as bryan@dream-travel.net (Browser 2 that day).
